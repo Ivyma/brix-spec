@@ -1,0 +1,155 @@
+h1, .h1 { font-size: 20px; }
+h2, .h2 { font-size: 16px; }
+h3, .h3 { font-size: 14px; }
+small, .small { color: #666; }
+pre {
+    background-color: #FAFAFA;
+}
+.marginfix {
+    height: 1px;
+}
+.display-table {
+    display: table;
+}
+.display-table-cell {
+    display: table-cell;
+}
+.text-align-center {
+    text-align: center;
+}
+.vertical-align-middle {
+    vertical-align: middle;
+}
+
+* {
+    transition: all .15s ease-in-out;
+}
+
+.hljs {
+    padding: 0;
+    background-color: transparent;
+}
+
+.spec-anchor {
+    display: block;
+    height: 10px;
+    margin-top: -10px;
+}
+
+.sidebar-wrapper {
+    display: inline;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    z-index: 10;
+    width: 200px;
+    min-height: 500px;
+    padding: 40px 10px 25px 10px;
+
+    .sidebar {
+        .sidebar-item {
+            a {
+                color: #666666;
+                display: block;
+                padding: 10px 15px;
+                &:hover {
+                    background-color: #F8F8F8;
+                }
+            }
+            &.active a {
+                background-color: #F7987D;
+                color: #FFF;
+            }
+        }
+    }
+}
+
+.main-wrapper {
+    margin-left: 200px;
+    padding: 25px 30px 25px 35px;
+    border-left: 1px solid #E6E6E6;
+}
+
+@media (max-width: 768px) {
+    .sidebar-wrapper {
+        display: none;
+    }
+    .main-wrapper {
+        margin-left: 0px;
+    }
+}
+
+
+// 
+.demo-background-color-item {
+    margin-bottom: 10px;
+}
+.demo-background-color-item .content {
+    color: #FFF;
+    height: 64px; 
+    line-height: 64px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+.demo-background-color-item .content .up,
+.demo-background-color-item .content .down {
+    height: 32px;
+    line-height: 32px;
+    vertical-align: middle;
+    text-align: center;
+}
+.demo-background-color-item .content .up {
+    border-radius: 5px 5px 0 0;
+}
+.demo-background-color-item .content .down {
+    border-radius: 0 0 5px 5px;
+}
+
+// ----------------------------------------
+// 组件
+// ----------------------------------------
+
+.basics,
+.components {
+    .panel {
+        border: 1px solid #E5E5E5;
+        .panel-heading, .panel-footer {
+            background-color: #FAFAFA;
+        }
+        .panel-heading {
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            color: #666;
+            font-weight: bold;
+            line-height: 20px;
+        }
+        .panel-footer {
+            white-space: nowrap;
+            overflow: hidden;
+            a {
+                color: #666;
+                margin-right: 10px;
+                &:hover {
+                    color: #333;
+                }
+            }
+        }
+    }
+}
+.basics {
+    .panel {
+        .panel-body {
+            height: 110px;
+            overflow: hidden;
+        }
+    }
+}
+.components {
+    .panel {
+        .panel-body {
+            height: 210px;
+            overflow: hidden;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<title>阿里妈妈产品设计规范</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="favicon.png">
+<link href="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+<link href="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/brix-components/css-tool/mm.css" rel="stylesheet">
+<link href="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/brix-components/css-tool/browser.css" rel="stylesheet">
+<link href="./assets/spec.css" rel="stylesheet">
+<script src="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/require+config.js"></script>
+<script src="spec.components/config.js"></script>
+
+<div bx-name="vteam/header"></div>
+
+<div class="container display-table">
+    <div id="indexMainWrapper" class="display-table-cell vertical-align-middle">
+        <div class="browser">
+            <div class="topbar">
+                <div class="circles">
+                    <div class="circle shutup"></div>
+                    <div class="circle minimize"></div>
+                    <div class="circle maximize"></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="site-layout-example-top">
+                    <span class="flat-text-logo">Hello MineCraft</span>
+                </div>
+                <div class="site-layout-example-right">
+                    <p class="flat-text small"></p>
+                    <p class="flat-text full-width"></p>
+                    <p class="flat-text full-width"></p>
+                    <p class="flat-text full-width"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div bx-name="vteam/footer"></div>
+
+<script src="spec.components/boot.js"></script>
+<script>
+    require(['jquery'], function($){
+        $(function(){
+            $('#indexMainWrapper').height(
+                $(window).height() - 50
+            )
+        })    
+    })
+    require(['brix/loader'], function(Loader) {
+        Loader.boot(function() {
+
+        })
+    })
+</script>

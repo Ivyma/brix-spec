@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<title>阿里妈妈产品设计规范</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="favicon.png">
+<link href="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+<script src="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/require+config.js"></script>
+<!-- <script src="http://mo.local:4242/require+config.js"></script> -->
+
+<div bx-name="components/nprogress"></div>
+
+<style type="text/css">
+    .demo-background-color-item {
+        margin-bottom: 10px;
+    }
+    .demo-background-color-item .content {
+        color: #FFF;
+        height: 64px; 
+        line-height: 64px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 4px;
+    }
+    .demo-background-color-item .content .up,
+    .demo-background-color-item .content .down {
+        height: 32px;
+        line-height: 32px;
+        vertical-align: middle;
+        text-align: center;
+    }
+    .demo-background-color-item .content .up {
+        border-radius: 5px 5px 0 0;
+    }
+    .demo-background-color-item .content .down {
+        border-radius: 0 0 5px 5px;
+    }
+</style>
+
+<div bx-name="vteam/header"></div>
+<div bx-name="vteam/components"></div>
+<div bx-name="vteam/css"></div>
+<div bx-name="vteam/footer"></div>
+
+<script type="text/javascript">
+    /* global require */
+    require.config({
+        map: {
+            '*': {
+                // 扩展组件
+                'vteam/header': 'spec.components/header/header.js',
+                'vteam/footer': 'spec.components/footer/footer.js',
+                'vteam/css': 'spec.components/css/css.js',
+                'vteam/components': 'spec.components/components/components.js',
+            }
+        }
+    })
+    require(['css!css-tool/mm.css'])
+    require(['brix/loader'], function(Loader) {
+        /* jshint unused:false */
+        Loader.boot(function() {
+            console.log('done!')
+        }, function(error, instance, index, count) {
+            var nprogress = Loader.query('components/nprogress')
+            if (nprogress.length) nprogress.set((index + 1) / count)
+        })
+    })
+</script>
