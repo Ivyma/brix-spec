@@ -1,0 +1,595 @@
+/* */
+@font-face {
+    font-family: 'specfont';
+    src: url('//at.alicdn.com/t/font_1435834666_5790358.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_1435834666_5790358.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_1435834666_5790358.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/font_1435834666_5790358.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_1435834666_5790358.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.specfont {
+  font-family: "specfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 基础 */
+h1, .h1 { font-size: 20px; }
+h2, .h2 { font-size: 16px; }
+h3, .h3 { font-size: 14px; }
+h4, .h4 { margin-top: 20px; margin-bottom: 10px; }
+
+small, .small { color: #666; }
+
+pre {
+    background-color: #FAFAFA;
+}
+
+hr {
+    border-top: 1px solid #e6e6e6;
+}
+
+body .table {
+    thead tr th {
+        height: 60px;
+        padding: 0 8px;
+        background-color: #fafafa;
+        color: #999;
+        font-weight: normal;
+        vertical-align: middle;
+        border: none;
+    }
+    tbody tr td {
+        padding: 28px 8px 16px;
+        line-height: 1em;
+        max-height: 90px;
+        color: #333;
+        border-top: none;
+        border-bottom: 1px solid #ebebeb;
+    }
+    tbody tr:hover {
+        background-color: #f4f8ff;
+    }
+
+    &.table-bordered {
+        thead tr th {
+            border: 1px solid #e6e6e6;
+        }
+    }
+}
+.lead {
+    font-size: 12px;
+}
+
+.marginfix {
+    height: 1px;
+}
+
+.text-align-center {
+    text-align: center;
+}
+.vertical-align-middle {
+    vertical-align: middle;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.hljs {
+    padding: 0;
+    background-color: transparent;
+}
+
+/* Grid */
+
+@media (min-width: 30em) {
+    .ungrid-row { 
+        width: 100%; 
+        display: table; 
+        table-layout: fixed; 
+    }
+    .ungrid-col { 
+        display: table-cell; 
+    }
+}
+
+* {
+    transition: all .15s ease-in-out;
+}
+
+/* mm.css */
+
+@brand: #FF6600;
+@brand-hover: #fc4218;
+
+body .btn {
+    border: 0;
+    &.btn-brand {
+        border: 0;
+        background-color: @brand;
+        &:hover, &.hover, 
+        &:focus, &.focus, 
+        &:active, &.active {
+            border: 0;
+            color: #fff;
+            background-color: @brand-hover;
+        }
+    }
+    &.btn-disabled {
+        border: 0;
+        cursor: not-allowed;
+    }
+    &.btn-progress {
+        position: relative;
+        .btn-progress-bar {
+            position: absolute;
+            height: 32px;
+            width: 50%;
+            top: 0px;
+            left: 0px;
+            border-radius: 4px 0px 0px 4px;
+            background-color: #cccccc;
+        }
+        span {
+            position: relative;
+        }
+        &:hover {
+            background-color: #e6e6e6;
+        }
+    }
+    &.btn-brand.btn-progress {
+        .btn-progress-bar {
+            background-color: @brand-hover;
+        }
+        &:hover {
+            background-color: @brand;
+        }
+    }
+
+    &.btn-bounce {
+        .one, .two, .three {
+            display: inline-block;
+            margin: auto 5px;
+            border-radius: 100%;
+            width: 5px;
+            height: 5px;
+            background-color: #FFF;
+        }
+    }
+}
+
+/* */
+.spec-anchor {
+    display: block;
+    height: 50px;
+    margin-top: -50px;
+}
+
+.sidebar-wrapper {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+    width: 200px;
+    min-height: 500px;
+    height: 100%;
+    padding: 90px 0px 25px 0px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    overflow: scroll;
+
+    .sidebar {
+        padding-bottom: 40px;
+        .sidebar-item,
+        .sidebar-item-sub {
+            a {
+                color: #666;
+                display: block;
+                padding: 10px 20px;
+                &:hover {
+                    background-color: #F8F8F8;
+                }
+                small {
+                    color: #999;
+                    font-size: 65%;
+                }
+            }
+            &.active a {
+                background-color: #F7987D;
+                &, small {
+                    color: #FFF;
+                }
+            }
+        }
+        .sidebar-item-sub {
+            a {
+                padding: 5px 10px 5px 40px;
+            }
+        }
+    }
+}
+
+.main-wrapper {
+    margin-top: 50px;
+    padding: 30px 50px 0 50px;
+    min-height: 500px;
+}
+
+@media (max-width: 768px) {
+    .spec-navbar {
+        a.brand {
+            display: none;
+        }
+    }
+    .sidebar-wrapper {
+        // display: none;
+    }
+    .main-wrapper {
+        // margin-left: 0px;
+    }
+}
+
+/* Header */
+.spec-navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    color: #FFF;
+    background-color: #FF6600;
+    z-index: 9999;
+
+    .spec-navbar-header {
+        width: 200px;
+        text-align: center;
+        a.spec-navbar-brand {
+            opacity: 1;
+            font-size: 28px;
+            padding: 15px 15px;
+        }
+    }
+    .spec-navbar-nav {
+        a {
+            padding: 15px 30px;
+            font-size: 14px;    
+        }
+        a:first-child {
+            padding-left: 50px;
+        }
+    }
+    a {
+        display: inline-block;
+        line-height: 20px;
+        color: #FFF;
+        opacity: .6;
+        &:hover {
+            color: #FFF;
+            opacity: 1;
+        }
+        &.active {
+            opacity: 1;
+        }
+    }
+}
+
+/* Footer */
+.footer {
+    padding: 40px 50px;
+    margin: 40px -50px;
+    color: #666;
+    text-align: center;
+    border-top: 1px solid #e6e6e6;
+}
+
+/* CSS */
+table.table-brand {
+    width: 100%;
+    td {
+        text-align: center;
+        padding: 10px;
+        white-space: nowrap;
+        .img-circle {
+            display: inline-block;
+        }
+    }
+}
+.demo-background-color-item,
+.demo-background-color-hover-item {
+    margin-bottom: 10px;
+    .content {
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 4px;
+        .up,
+        .down {
+            color: #FFF;
+            height: 48px;
+            line-height: 48px;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .up {
+            border-radius: 5px 5px 0 0;
+        }
+        .down {
+            border-radius: 0 0 5px 5px;
+        }
+    }
+}
+
+/* Components */
+.basics,
+.components {
+    .panel {
+        border: 1px solid #E5E5E5;
+        .panel-heading, .panel-footer {
+            background-color: #FAFAFA;
+        }
+        .panel-heading {
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            color: #666;
+            // font-weight: bold;
+            line-height: 20px;
+        }
+        .panel-footer {
+            white-space: nowrap;
+            overflow: hidden;
+            a {
+                color: #666;
+                margin-right: 10px;
+                &:hover {
+                    color: #333;
+                }
+            }
+        }
+    }
+}
+.basics {
+    .panel {
+        .panel-body {
+            height: 110px;
+            overflow: hidden;
+        }
+    }
+}
+.components {
+    .panel {
+        .panel-body {
+            height: 210px;
+            overflow: hidden;
+        }
+    }
+}
+
+.components {
+    img {
+        width: 100%;
+    }
+}
+
+/* Brand */
+
+@font-face {
+    font-family: 'brandfont';
+    src: url('//at.alicdn.com/t/font_1435906499_6216583.eot'); /* IE9*/
+    src: url('//at.alicdn.com/t/font_1435906499_6216583.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('//at.alicdn.com/t/font_1435906499_6216583.woff') format('woff'), /* chrome、firefox */
+    url('//at.alicdn.com/t/font_1435906499_6216583.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('//at.alicdn.com/t/font_1435906499_6216583.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.brandfont {
+    font-family: "brandfont" !important;
+    font-size: 48px;
+    font-style: normal;
+    color: #999;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+
+    &.brandfont-title {
+        font-size: 72px;
+        color: #333;
+    }
+}
+
+/* Readme */
+
+#main {
+    min-height: 500px;
+}
+body .bs-example {
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+
+    .content {
+        padding-top: 15px;
+    }
+    pre {
+        border-top: 1px solid #ddd;
+    }
+    &:after {
+        content: "";
+    }
+}
+
+/* Animation */
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ani-shake {
+  0%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.ani-shake {
+  -webkit-animation-name: ani-shake;
+  animation-name: ani-shake;
+}
+
+@keyframes ani-progressbar {
+    0%   { width: 0%;   }
+    80%  { border-radius: 4px; }
+    100% { width: 100%; border-radius: 4px; }
+}
+
+.ani-progressbar {
+    animation-duration: 2s;
+  -webkit-animation-name: ani-progressbar;
+  animation-name: ani-progressbar;
+}
+
+@keyframes ani-bounce {
+    0%   { margin-top: 0px; }
+    25%  { margin-top: -10px; }
+    50%  { margin-top: 0px; }
+    75%  { margin-top: 10px; }
+    100% { margin-top: 0px; }
+}
+
+.ani-bounce {
+    position: relative;
+    .one {
+        position: absolute;
+        animation-name: ani-bounce;
+        animation-duration: .6s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+    }
+}
+
+/* Checkbox */
+
+label {
+    font-weight: normal;
+    margin-right: 40px;
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin-right: 10px;
+    }
+    p.desc {
+        color: #999;
+        padding-left: 25px;
+        margin-bottom: 0px;
+    }
+}
+
+ul.checklist {
+    list-style: none;
+    padding-left: 25px;
+    > li {
+        margin-bottom: 10px;
+    }
+}
+.checklist-linkage {
+    ul {
+        display: inline-block;
+        list-style: none;
+        li {
+            float: left;
+            .title {
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+/* Just Test */
+
+// ----------------------------------------
+// https://github.com/seven-phases-max/less.curious
+.for(@i, @n) {.-each(@i)}
+.for(@n)     when (isnumber(@n)) {.for(1, @n)}
+.for(@i, @n) when not (@i = @n)  {
+    .for((@i + (@n - @i) / abs(@n - @i)), @n);
+}
+.for(@array)   when (default()) {.for-impl_(length(@array))}
+.for-impl_(@i) when (@i > 1)    {.for-impl_((@i - 1))}
+.for-impl_(@i) when (@i > 0)    {.-each(extract(@array, @i))}
+
+// https://gist.github.com/juanbrujo/7e4e17428dc8881d0e7e
+.randomColor() {
+  @randomColor: `(Math.random()*0xFFFFFF<<0).toString(16)`;
+  @colorHex: e(@randomColor);
+  @color: ~"#@{colorHex}";
+}
+
+.list {
+    .item {
+        height: 50px;
+        padding: 10px 10px;
+        line-height: 30px;
+        .item-content {
+            float: left;
+            width: 100%;
+        }
+        .item-actions {
+            float: right;
+            // position: absolute;
+            // right: 10px;
+            .item-actions-users {
+                position: relative;
+                .item-actions-user {
+                    position: absolute;
+                    right: 0;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    border: 2px solid white;
+                }
+                .item-actions-user {
+                    .for(1 2 3 4 5 6 7 8 9 10); .-each(@nth) {
+                        &:nth-child(@{nth}) {
+                            right: @nth * 10px;
+                            .randomColor();
+                            background-color: @color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .item:hover {
+        background-color: #FAF1ED;
+        .item-actions {
+            .item-actions-users {
+                .item-actions-user {
+                    .for(1 2 3 4 5 6 7 8 9 10); .-each(@nth) {
+                        &:nth-child(@{nth}) {
+                            right: @nth * 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

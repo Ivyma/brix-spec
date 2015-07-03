@@ -3,17 +3,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="favicon.png">
+
 <link href="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+<link href="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/highlightjs/styles/github.css" rel="stylesheet">
 <link href="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/brix-components/css-tool/mm.css" rel="stylesheet">
 <link href="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/brix-components/css-tool/browser.css" rel="stylesheet">
-<link href="./assets/spec.css" rel="stylesheet">
-<script src="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/require+config.js"></script>
-<script src="spec.components/config.js"></script>
+<link href="spec.components/spec.css" rel="stylesheet">
 
-<div bx-name="vteam/header"></div>
-
-<div class="container display-table">
-    <div id="indexMainWrapper" class="display-table-cell vertical-align-middle">
+<div bx-name="spec/header"></div>
+<div class="container ungrid-row">
+    <div id="indexMainWrapper" class="ungrid-col vertical-align-middle">
         <div class="browser">
             <div class="topbar">
                 <div class="circles">
@@ -37,9 +36,12 @@
     </div>
 </div>
 
-<div bx-name="vteam/footer"></div>
+<div bx-name="spec/footer"></div>
 
+<script src="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/require+config.js"></script>
+<script src="spec.components/config.js"></script>
 <script src="spec.components/boot.js"></script>
+
 <script>
     require(['jquery'], function($){
         $(function(){
@@ -47,10 +49,5 @@
                 $(window).height() - 50
             )
         })    
-    })
-    require(['brix/loader'], function(Loader) {
-        Loader.boot(function() {
-
-        })
     })
 </script>

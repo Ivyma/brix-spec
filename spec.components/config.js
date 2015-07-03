@@ -3,12 +3,14 @@ require.config({
     map: {
         '*': {
             // 扩展组件
-            'vteam/header': 'spec.components/header/header.js',
-            'vteam/footer': 'spec.components/footer/footer.js',
-            'vteam/css': 'spec.components/css/css.js',
-            'vteam/css/sidebar': 'spec.components/css/sidebar.js',
-            'vteam/components': 'spec.components/components/components.js',
-            'vteam/brand': 'spec.components/brand/brand.js',
+            'spec/header': 'spec.components/header/header.js',
+            'spec/footer': 'spec.components/footer/footer.js',
+            'spec/css': 'spec.components/css/css.js',
+            'spec/css/sidebar': 'spec.components/css/sidebar.js',
+            'spec/components': 'spec.components/components/components.js',
+            'spec/brand': 'spec.components/brand/brand.js',
+
+            'spec/button': 'spec.components/button/button.js',
         }
     }
 })

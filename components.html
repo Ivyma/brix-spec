@@ -3,21 +3,37 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="favicon.png">
+
 <link href="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+<link href="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/highlightjs/styles/github.css" rel="stylesheet">
 <link href="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/brix-components/css-tool/mm.css" rel="stylesheet">
-<link href="./assets/spec.css" rel="stylesheet">
+<link href="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/brix-components/css-tool/browser.css" rel="stylesheet">
+<link href="spec.components/spec.css" rel="stylesheet">
+
+<div bx-name="spec/header"></div>
+<div bx-name="spec/components"></div>
+
 <script src="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/require+config.js"></script>
 <script src="spec.components/config.js"></script>
-
-<div bx-name="vteam/header"></div>
-<div bx-name="vteam/components"></div>
-<div bx-name="vteam/footer"></div>
-
 <script src="spec.components/boot.js"></script>
+
 <script>
-    require(['brix/loader', 'spec.components/catalog'], function(Loader, Catalog) {
+    require(['jquery', 'brix/loader', 'spec.components/catalog'], function($, Loader, Catalog) {
         Loader.boot(function(){
-            Catalog('.sidebar', 'h1')   
+            var $headers = $(':header')
+            _.each($headers, function(header /*, index*/ ) {
+                var $header = $(header)
+                var text = $header.text()
+                $header.before(
+                    $('<a class="spec-anchor">').attr('name', text)
+                )
+            })
+
+            $('.sidebar').on('click', '.sidebar-item', function(event) {
+                $(event.currentTarget)
+                    .addClass('active')
+                    .siblings().removeClass('active')
+            })
         })
     })
 </script>

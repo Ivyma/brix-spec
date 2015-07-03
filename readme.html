@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<title>阿里妈妈产品设计规范</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="favicon.png">
+
+<link href="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+<link href="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/highlightjs/styles/github.css" rel="stylesheet">
+<link href="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/brix-components/css-tool/mm.css" rel="stylesheet">
+<link href="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/brix-components/css-tool/browser.css" rel="stylesheet">
+<link href="spec.components/spec.css" rel="stylesheet">
+
+<div bx-name="spec/header"></div>
+<div class="ungrid-row">
+    <div class="ungrid-col" style="width: 200px;">
+        <div class="sidebar-wrapper">
+            <div class="sidebar">
+                <div class="sidebar-item"><a href="components.html#引入 Install">引入 <small>Install</small></a></div>
+                <div class="sidebar-item"><a href="components.html#基础库 Basics">基础库 <small>Basics</small></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="ungrid-col">
+        <div class="main-wrapper">
+            <div id="main"></div>
+            <div bx-name="spec/footer"></div>
+        </div>
+    </div>
+</div>
+
+<script src="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/require+config.js"></script>
+<script src="spec.components/config.js"></script>
+<script src="spec.components/boot.js"></script>
+
+<script>
+    require(['jquery'], function($){
+        $('.sidebar-wrapper').css('min-height', $(window).height())
+    })
+    require([
+        'jquery', 'URIjs/URI', 'highlightjs',
+        'brix/loader', 
+        'spec.components/components/components',
+        'spec.components/catalog', 
+    ], function(
+        $, URI, hljs,
+        Loader, 
+        SpecComponents,
+        Catalog
+    ) {
+        // Loader.boot(function(){
+        //     Catalog('.sidebar', 'h1')   
+        // })
+        // 加载组件 components/readme
+        var uri = new URI(location.href)
+        var query = uri.query(true)
+        var name = query.name.toLowerCase()
+        var readme = 'spec.components/' + name + '/README.md'
+        Loader.load(
+            document.getElementById('main'), 
+            'components/readme', 
+            {
+                url: readme
+            },
+            function() {
+                setTimeout(function() {
+                    var tpl = '<div class="sidebar-item" data-resp="<%= resp || name %>"><a href="readme.html?name=<%= resp || name %>"><%= name %></a></div>'
+                    _.each(SpecComponents.COMPONENTS, function(item, index){
+                        $(_.template(tpl)(item)).appendTo('.sidebar')
+                    })
+                    // Catalog('.sidebar', 'h2')
+                    $(document.body).find('pre code').each(function(index, code) {
+                        hljs.highlightBlock(code)
+                    })
+                    $('[data-resp="' + query.name + '"]').addClass('active')
+                }, 400)
+            }
+        )
+    })
+</script>

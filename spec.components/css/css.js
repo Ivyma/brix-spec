@@ -1,13 +1,13 @@
 /* global define */
 define(
     [
-        'jquery', 'underscore', 'highlightjs', 'mock',
+        'jquery', 'underscore', 'highlightjs', /* 'mock', */
         'brix/base',
         './css.tpl.js',
         'css!./css.css'
     ],
     function(
-        $, _, hljs, Mock,
+        $, _, hljs, /* Mock, */
         Brix,
         template
     ) {
@@ -16,27 +16,20 @@ define(
         _.extend(CSS.prototype, Brix.prototype, {
             options: {},
             init: function() {
+                // #FA6419 #E65C17 #484340 #
                 this.data = {
-                    COLORS: ['#000000', '#333333', '#666666', '#999999', '#4D7FFF', '#9561F0', '#68499E', '#339966', '#56abe4', '#428BCA', '#ED4242', '#16C98D', '#2378FF', '#FF6600'],
-                    BACKGROUND_COLORS: ['#000000', '#333333', '#666666', '#999999', '#4D7FFF', '#9561F0', '#68499E', '#339966', '#56abe4', '#428BCA', '#ED4242', '#16C98D', '#2378FF', '#FF6600'],
-                    BACKGROUND_COLORS_HOVER: [
-                        ['#1ABC9C', '#16A085'],
-                        ['#2ECC71', '#21AE60'],
-                        ['#3498DB', '#2980B9'],
-                        ['#9B59B6', '#8E44AD']
+                    COLORS: [
+                        // 品牌色、品牌色 hover、侧导航、表格hover
+                        ['联盟', '#FA6419', '#E65C17', '#443F3C', '#FAF1ED'],
+                        ['直通车', '#F78400', '#E37900', '#42403C', '#FAF3EB'],
+                        ['Tanx', '#50B347', '#479E3F', '#3C433C', '#F0F6EF'],
+                        ['钻石展位', '#4A7BF7', '#4471E3', '#3C404A', '#F0F3FA'],
+                        ['易传媒', '#6363E6', '#5A5AD1', '#3F3F49', '#F1F1F9'],
+                        ['DMP', '#894FC4', '#7B46B0', '#48484E', '#F3F0F7'],
                     ],
                     FONT_SIZES: ['20px', '16px', '14px', '12px'],
                     FONT_FAMILIES: ["'Microsoft YaHei'", "'微软雅黑'", "'华文细黑'", "Georgi", "'Times New Roman'", "Aria", "sans-serif"]
                 }
-                this.data = Mock.mock({
-                    'COLORS|20': ['@color'],
-                    'BACKGROUND_COLORS|20': ['@color'],
-                    'BACKGROUND_COLORS_HOVER|20': [
-                        ['@color', '@color']
-                    ],
-                    FONT_SIZES: ['20px', '16px', '14px', '12px'],
-                    FONT_FAMILIES: ["'Microsoft YaHei'", "'微软雅黑'", "'华文细黑'", "Georgi", "'Times New Roman'", "Aria", "sans-serif"]
-                })
             },
             render: function() {
                 this.data = this.data || _.extend({}, this.options)

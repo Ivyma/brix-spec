@@ -1,0 +1,53 @@
+/* global define */
+define(
+    [
+        'jquery', 'underscore',
+        'brix/base',
+        './radio.tpl.js',
+        'css!./radio.css'
+    ],
+    function(
+        $, _,
+        Brix,
+        template
+    ) {
+        /*
+            ### 数据
+                {}
+            ### 选项
+                TODO
+            ### 属性
+                TODO
+            ### 方法
+                TODO
+            ### 事件
+                TODO
+            ===
+
+            ### 公共选项
+                data template css
+            ### 公共属性
+                element relatedElement 
+                moduleId clientId parentClientId childClientIds 
+                data template css
+            ### 公共方法
+                .render()
+            ### 公共事件
+                ready destroyed
+
+        */
+        function Radio () {}
+
+        _.extend( Radio.prototype, Brix.prototype, {
+            options: {},
+            init: function() {},
+            render: function() {
+                this.data = this.data || _.extend({}, this.options)
+                var html = _.template(template)(this.data)
+                $(this.element).append(html)
+            }
+        })
+
+        return Radio
+    }
+)
