@@ -11,13 +11,12 @@ define(
         Brix,
         template
     ) {
-        function Checkbox () {}
+        function Checkbox() {}
 
-        _.extend( Checkbox.prototype, Brix.prototype, {
+        _.extend(Checkbox.prototype, Brix.prototype, {
             options: {},
             init: function() {},
             render: function() {
-                this.data = this.data || _.extend({}, this.options)
                 var html = _.template(template)(this.data)
                 $(this.element).append(html)
             }

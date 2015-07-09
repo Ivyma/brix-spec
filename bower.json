@@ -1,0 +1,10 @@
+{
+  "name": "brix-spec",
+  "dependencies": {
+    "mockjs": "0.2.0-alpha1"
+  },
+  "devDependencies": {
+    "mockjs": "refactoring",
+    "zeroclipboard": "~2.2.0"
+  }
+}

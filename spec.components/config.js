@@ -12,5 +12,8 @@ require.config({
 
             'spec/button': 'spec.components/button/button.js',
         }
+    },
+    paths: {
+        mock: 'bower_components/mockjs/dist/mock',
     }
 })

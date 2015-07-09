@@ -1,6 +1,15 @@
 /* global define */
 define(['jquery', 'underscore'], function($, _) {
 	return function(sidebar, headers, subs) {
+
+		_.each($(':header'), function(header /*, index*/ ) {
+			var $header = $(header)
+			var text = $header.text()
+			$header.before(
+				$('<a class="spec-anchor">').attr('name', text)
+			)
+		})
+
 		var $sidebar = $(sidebar).empty()
 		var $headers = $(headers)
 
@@ -8,9 +17,7 @@ define(['jquery', 'underscore'], function($, _) {
 			var $header = $(header)
 			var html = $header.html()
 			var text = $header.text()
-			$header.before(
-				$('<a class="spec-anchor">').attr('name', text)
-			)
+			
 			var $item = $('<div class="sidebar-item">').appendTo($sidebar)
 			$('<a>').html(html).appendTo($item)
 				.attr('href', '#' + text)
@@ -22,9 +29,7 @@ define(['jquery', 'underscore'], function($, _) {
 					var $sub = $(sub)
 					var html = $sub.html()
 					var text = $sub.text()
-					$sub.before(
-						$('<a class="spec-anchor">').attr('name', text)
-					)
+					
 					var $item = $('<div class="sidebar-item-sub">').appendTo($sidebar)
 					$('<a class="ellipsis">').html(html).appendTo($item)
 						.attr('href', '#' + text)

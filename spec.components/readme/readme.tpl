@@ -1,6 +1,3 @@
-<ul>
-    <li>moduleId: <%= moduleId %></li>
-    <li>clientId: <%= clientId %></li>
-    <li>parentClientId: <%= parentClientId %></li>
-    <li>childClientIds: <%= childClientIds %></li>
-</ul>
+<div class="readme">
+	<div bx-name="components/spin" data-type="three-bounce" class="spin"></div>
+</div>

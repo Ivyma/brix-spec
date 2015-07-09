@@ -4,6 +4,7 @@ define(function() {
 <div class="spec-navbar">
 	<div class="pull-left spec-navbar-header">
 		<a href="index.html" class="spec-navbar-brand specfont">&#xe632;</a>
+		<a href="javascript:;"><span class="brixfont">&#xe623;</span></a>
     	<!-- <a href="index.html" class="spec-navbar-brand">MineCraft</a> -->
     </div>
     <div class="pull-left spec-navbar-nav">

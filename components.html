@@ -20,20 +20,7 @@
 <script>
     require(['jquery', 'brix/loader', 'spec.components/catalog'], function($, Loader, Catalog) {
         Loader.boot(function(){
-            var $headers = $(':header')
-            _.each($headers, function(header /*, index*/ ) {
-                var $header = $(header)
-                var text = $header.text()
-                $header.before(
-                    $('<a class="spec-anchor">').attr('name', text)
-                )
-            })
-
-            $('.sidebar').on('click', '.sidebar-item', function(event) {
-                $(event.currentTarget)
-                    .addClass('active')
-                    .siblings().removeClass('active')
-            })
+            
         })
     })
 </script>

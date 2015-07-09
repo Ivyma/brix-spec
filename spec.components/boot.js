@@ -1,5 +1,7 @@
 /* global require, console */
 require(['brix/loader'], function(Loader) {
+	window.Loader = Loader
+
 	/* jshint unused:false */
 	Loader.boot(function() {
 		console.log('done!')

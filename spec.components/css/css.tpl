@@ -27,7 +27,7 @@
         </div>
     </div>
 
-    <h2>这页放什么东西</h2>
+    <h2>这页放什么东西 <small>What</small></h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida 
     <table class="table-brand">
         <tbody>
@@ -79,9 +79,9 @@
     <div class="row">
         <% _.each(COLORS, function(item, index){ %>
         <div class="col-xs-4 mb10">
-            <div style="height: 42px; background-color: <%= item[1] %>;"></div>
+            <div style="height: 50px; background-color: <%= item[1] %>;"></div>
             <div class="ungrid-row">
-                <div class="ungrid-col" style="width: 50px; padding: 45px 30px; text-align: center; vertical-align: top; background-color: <%= item[3] %>;"></div>
+                <div class="ungrid-col" style="width: 50px; background-color: <%= item[3] %>;"></div>
                 <div class="ungrid-col" style="padding: 50px; background-color: #fafafa;">
                     <p class="flat-text small"></p>
                     <p class="flat-text full-width"></p>
@@ -125,7 +125,7 @@
     	<% }) %>
     </div>
 
-    <h2>字体大小 Font Sizes</h2>
+    <h2>字体大小 <small>Font Sizes</small></h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida 
     <div class="">
     	<% _.each(FONT_SIZES, function(item, index){ %>

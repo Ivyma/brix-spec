@@ -29,9 +29,6 @@
     require(['brix/loader', 'spec.components/catalog'], function(Loader, Catalog) {
         Loader.boot(function() {
             Catalog('.sidebar', 'h2')
-            $('.sidebar-wrapper').height(
-                $(window).height() - 50
-            )
         })
     })
 </script>

@@ -30,9 +30,10 @@
 <script src="spec.components/boot.js"></script>
 
 <script>
-    require(['jquery', 'brix/loader', 'spec.components/catalog'], function($, Loader, Catalog) {
+    require(['jquery', 'brix/loader', 'spec.components/catalog', 'spec.components/clipboard'], function($, Loader, Catalog, Clipboard) {
         Loader.boot(function(){
-            Catalog('.sidebar', 'h2')   
+            Catalog('.sidebar', 'h2')
+            Clipboard.init()
         })
     })
 </script>

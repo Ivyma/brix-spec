@@ -14,10 +14,7 @@
 <div class="ungrid-row">
     <div class="ungrid-col" style="width: 200px;">
         <div class="sidebar-wrapper">
-            <div class="sidebar">
-                <div class="sidebar-item"><a href="components.html#引入 Install">引入 <small>Install</small></a></div>
-                <div class="sidebar-item"><a href="components.html#基础库 Basics">基础库 <small>Basics</small></a></div>
-            </div>
+            <div class="sidebar"></div>
         </div>
     </div>
     <div class="ungrid-col">
@@ -39,13 +36,15 @@
     require([
         'jquery', 'URIjs/URI', 'highlightjs',
         'brix/loader', 
-        'spec.components/components/components',
-        'spec.components/catalog', 
+        'spec.components/constant',
+        'spec.components/catalog',
+        'spec.components/clipboard'
     ], function(
         $, URI, hljs,
         Loader, 
-        SpecComponents,
-        Catalog
+        Constant,
+        Catalog,
+        Clipboard
     ) {
         // Loader.boot(function(){
         //     Catalog('.sidebar', 'h1')   
@@ -57,22 +56,22 @@
         var readme = 'spec.components/' + name + '/README.md'
         Loader.load(
             document.getElementById('main'), 
-            'components/readme', 
+            'spec.components/readme/readme', // 'components/readme', 
             {
                 url: readme
             },
             function() {
-                setTimeout(function() {
-                    var tpl = '<div class="sidebar-item" data-resp="<%= resp || name %>"><a href="readme.html?name=<%= resp || name %>"><%= name %></a></div>'
-                    _.each(SpecComponents.COMPONENTS, function(item, index){
-                        $(_.template(tpl)(item)).appendTo('.sidebar')
-                    })
-                    // Catalog('.sidebar', 'h2')
-                    $(document.body).find('pre code').each(function(index, code) {
-                        hljs.highlightBlock(code)
-                    })
-                    $('[data-resp="' + query.name + '"]').addClass('active')
-                }, 400)
+                var tpl = '<div class="sidebar-item" data-resp="<%= resp || name %>"><a href="readme.html?name=<%= resp || name %>"><%= name %></a></div>'
+                _.each(Constant.COMPONENTS, function(item, index){
+                    $(_.template(tpl)(item)).appendTo('.sidebar')
+                })
+                // Catalog('.sidebar', 'h2')
+                $(document.body).find('pre code').each(function(index, code) {
+                    hljs.highlightBlock(code)
+                })
+                $('[data-resp="' + query.name + '"]').addClass('active')
+
+                Clipboard.init()
             }
         )
     })

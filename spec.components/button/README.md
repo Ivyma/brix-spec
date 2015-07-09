@@ -104,7 +104,7 @@
                     <thead>
                         <tr>
                             <th>字段1</th>
-                            <th>字段21</th>
+                            <th>字段2</th>
                             <th>字段3</th>
                             <th>字段4</th>
                             <th>字段5</th>
@@ -114,7 +114,7 @@
                         <tr><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
                         <tr><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
                     </tbody>
-                    </table>
+                </table>
             </div>
         </div>
     </div>
