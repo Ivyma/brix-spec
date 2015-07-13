@@ -681,11 +681,41 @@ define(function() {
     </div>
 </div>
 
-<div class="">
-    <h2>辅助形体 <small>Shapes</small></h2>
-    <div class="row">
-        <img class="col-sm-6 img-responsive" src="placeholder.jpg">
-        <img class="col-sm-6 img-responsive" src="placeholder.jpg">
+<div class="shapes">
+    <h2>辅助图形 <small>Shapes</small></h2>
+    <p>辅助图形可做为背景、图案纹理使用,也可以配合主 VI 使用。注意辅助图形并不是 Logo。</p>
+    <p>我们以“母体”为概念设计辅助图形，充满象征意义。预示着阿里妈妈品牌是充满张力的、包容的和开放的。</p>
+    <div class="ungrid-row">
+        <div class="ungrid-col" style="width: 50%;">
+            <div style="position: relative;">
+                <img class="img-responsive" src="assets/shapes/01辅形-面.svg">
+                <img class="img-responsive" src="assets/shapes/03辅形－单色logo.svg" style="
+                    position: absolute;
+                    left: 25%;
+                    width: 50%;
+                    top: 38%;
+                    margin-top: 0;">
+            </div>
+        </div>
+        <div class="ungrid-col" style="width: 50%;">
+            <img class="img-responsive" src="assets/shapes/02辅形-线.svg">
+        </div>
+    </div>
+    <div class="ungrid-row">
+        <div class="ungrid-col" style="width: 50%;">
+            <div style="position: relative;">
+                <img class="img-responsive" src="assets/shapes/04辅形－面.svg">
+                <img class="img-responsive" src="assets/shapes/03辅形－单色logo.svg" style="
+                    position: absolute;
+                    left: 23%;
+                    width: 50%;
+                    top: 35%;
+                    margin-top: 0;">
+            </div>
+        </div>
+        <div class="ungrid-col" style="width: 50%;">
+            <img class="img-responsive" src="assets/shapes/05辅形－线.svg">
+        </div>
     </div>
 </div>
 
