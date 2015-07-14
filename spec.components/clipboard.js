@@ -1,9 +1,18 @@
-define(['bower_components/zeroclipboard/dist/ZeroClipboard.js'], function(ZeroClipboard) {
+define(['bower_components/zeroclipboard/dist/ZeroClipboard.js', 'mock'], function(ZeroClipboard, Mock) {
+
+	var tpl = Mock.heredoc(function() {
+		/*!
+		<div class="zero-clipboard">
+			<span class="btn-clipboard btn-clipboard-hover">
+				Copy
+			</span>
+		</div>
+ 		*/
+	})
+
 	return {
 		init: function() {
-			$('pre').before(
-				'<div class="zero-clipboard"><span class="btn-clipboard btn-clipboard-hover">Copy</span></div>'
-			)
+			$('pre').before(tpl)
 
 			// https://github.com/zeroclipboard/zeroclipboard/blob/master/docs/instructions.md
 			_.each($('.btn-clipboard'), function(item, index) {

@@ -15,9 +15,7 @@ define(function() {
         <div class="main-wrapper">
 
             <div class="">
-                <div class="marginfix"></div>
-                <h1>组件 <small>Components</small></h1>
-                <hr>
+                <div class="fontsize-28 mb40">组件 <small>Components</small></div>
             </div>
 
             <div class="components">

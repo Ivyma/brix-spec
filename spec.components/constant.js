@@ -8,7 +8,7 @@ define(['mock'], function(Mock) {
 			['Tanx', '#50B347', '#479E3F', '#3C433C', '#F0F6EF'],
 			['钻石展位', '#4A7BF7', '#4471E3', '#3C404A', '#F0F3FA'],
 			['易传媒', '#6363E6', '#5A5AD1', '#3F3F49', '#F1F1F9'],
-			['DMP', '#894FC4', '#7B46B0', '#48484E', '#F3F0F7'],
+			['DMP', '#895AC7', '#7B50B3', '#47414E', '#F1EDF6'],
 		],
 		FONT_SIZES: ['20px', '16px', '14px', '12px'],
 		FONT_FAMILIES: ["'Microsoft YaHei'", "'微软雅黑'", "'华文细黑'", "Georgi", "'Times New Roman'", "Aria", "sans-serif"],

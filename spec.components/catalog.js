@@ -2,7 +2,7 @@
 define(['jquery', 'underscore'], function($, _) {
 	return function(sidebar, headers, subs) {
 
-		_.each($(':header'), function(header /*, index*/ ) {
+		_.each($(':header' + ',' + headers), function(header /*, index*/ ) {
 			var $header = $(header)
 			var text = $header.text()
 			$header.before(

@@ -1,3 +1,81 @@
+// ----------------------------------------
+// https://github.com/seven-phases-max/less.curious
+.for(@i, @n) {.-each(@i)}
+.for(@n)     when (isnumber(@n)) {.for(1, @n)}
+.for(@i, @n) when not (@i = @n)  {
+    .for((@i + (@n - @i) / abs(@n - @i)), @n);
+}
+.for(@array)   when (default()) {.for-impl_(length(@array))}
+.for-impl_(@i) when (@i > 1)    {.for-impl_((@i - 1))}
+.for-impl_(@i) when (@i > 0)    {.-each(extract(@array, @i))}
+
+// ----------------------------------------
+.fontsize- {
+    .for(12 14 16 18 20 24 28 32 36 40); .-each(@px) {
+        &@{px} {
+            font-size: @px * 1px;
+        }
+    }
+}
+// ----------------------------------------
+.ml {
+    .for(0 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
+        &@{px} {
+            margin-left: @px * 1px;
+        }
+    }
+}
+.mr {
+    .for(0 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
+        &@{px} {
+            margin-right: @px * 1px;
+        }
+    }
+}
+.mt {
+    .for(0 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
+        &@{px} {
+            margin-top: @px * 1px;
+        }
+    }
+}
+.mb {
+    .for(0 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
+        &@{px} {
+            margin-bottom: @px * 1px;
+        }
+    }
+}
+// ----------------------------------------
+.pl {
+    .for(0 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
+        &@{px} {
+            padding-left: @px * 1px;
+        }
+    }
+}
+.pr {
+    .for(0 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
+        &@{px} {
+            padding-right: @px * 1px;
+        }
+    }
+}
+.pt {
+    .for(0 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
+        &@{px} {
+            padding-top: @px * 1px;
+        }
+    }
+}
+.pb {
+    .for(0 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
+        &@{px} {
+            padding-bottom: @px * 1px;
+        }
+    }
+}
+
 /* */
 @font-face {
     font-family: 'specfont';
@@ -30,6 +108,10 @@ pre {
 
 hr {
     border-top: 1px solid #e6e6e6;
+}
+
+p {
+    line-height: 1.8;
 }
 
 body .table {
@@ -100,7 +182,7 @@ body .table {
 }
 
 * {
-    transition: all .15s ease-in-out, top 0, left 0;
+    transition: all .15s ease-in-out;
 }
 
 /* Clipboard */
@@ -198,6 +280,7 @@ body .btn {
 .spec-anchor {
     display: block;
     height: 50px;
+    width: 0px;
     margin-top: -50px;
 }
 
@@ -248,6 +331,7 @@ body .btn {
     margin-top: 50px;
     padding: 30px 40px 0 40px;
     min-height: 500px;
+    max-width: 1170px;
 }
 
 @media (max-width: 768px) {
@@ -429,6 +513,26 @@ table.table-brand {
     }
 }
 
+.brand-logo {
+    table.logo-color-and-background-color {
+        td, th {
+            text-align: center;
+            vertical-align: middle;
+        }
+        td:nth-child(2), td:nth-child(3) {
+            border-width: 0;
+        }
+        img {
+            max-height: 60px;
+        }
+    }
+    .logo-forbit-group {
+        img, embed {
+            height: 150px;
+        }
+    }
+}
+
 .brand-typography {
     img {
         &.cn {
@@ -442,8 +546,8 @@ table.table-brand {
 
 .brand {
     img.img-responsive {
-        margin-top: 20px;
-        margin-bottom: 40px;
+        // margin-top: 0px;
+        // margin-bottom: 40px;
     }
 }
 
@@ -868,17 +972,6 @@ table.table-pagination {
 }
 
 /* Just Test */
-
-// ----------------------------------------
-// https://github.com/seven-phases-max/less.curious
-.for(@i, @n) {.-each(@i)}
-.for(@n)     when (isnumber(@n)) {.for(1, @n)}
-.for(@i, @n) when not (@i = @n)  {
-    .for((@i + (@n - @i) / abs(@n - @i)), @n);
-}
-.for(@array)   when (default()) {.for-impl_(length(@array))}
-.for-impl_(@i) when (@i > 1)    {.for-impl_((@i - 1))}
-.for-impl_(@i) when (@i > 0)    {.-each(extract(@array, @i))}
 
 // https://gist.github.com/juanbrujo/7e4e17428dc8881d0e7e
 .randomColor() {
