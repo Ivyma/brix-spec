@@ -6,24 +6,24 @@
 <link href="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 <link href="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/brix-components/css-tool/mm.css" rel="stylesheet">
 <link href="spec.components/spec.css" rel="stylesheet">
-<script src="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/require+config.js"></script>
-<script src="spec.components/config.js"></script>
 
 <div bx-name="spec/header"></div>
 <div class="ungrid-row">
-    <div class="ungrid-col" style="width: 200px;">
+    <div class="sidebar-col">
         <div class="sidebar-wrapper">
             <div class="sidebar"></div>
         </div>
     </div><!-- col -->
-    <div class="ungrid-col">
+    <div class="main-col">
         <div class="main-wrapper">
-			<div bx-name="spec/brand"></div>
-			<div bx-name="spec/footer"></div>
-		</div>
+            <div bx-name="spec/brand"></div>
+            <div bx-name="spec/footer"></div>
+        </div>
     </div><!-- col -->
 </div><!-- row -->
 
+<script src="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/require+config.js"></script>
+<script src="spec.components/config.js"></script>
 <script src="spec.components/boot.js"></script>
 <script>
     require(['brix/loader', 'spec.components/catalog'], function(Loader, Catalog) {

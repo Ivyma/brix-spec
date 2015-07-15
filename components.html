@@ -7,20 +7,36 @@
 <link href="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 <link href="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/highlightjs/styles/github.css" rel="stylesheet">
 <link href="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/brix-components/css-tool/mm.css" rel="stylesheet">
-<link href="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/brix-components/css-tool/browser.css" rel="stylesheet">
 <link href="spec.components/spec.css" rel="stylesheet">
 
 <div bx-name="spec/header"></div>
-<div bx-name="spec/components"></div>
+<div class="ungrid-row">
+    <div class="sidebar-col">
+        <div class="sidebar-wrapper">
+            <div class="sidebar"></div>
+        </div>
+    </div><!-- col -->
+    <div class="main-col">
+        <div class="main-wrapper">
+            <div bx-name="spec/components"></div>
+            <div bx-name="spec/footer"></div>
+        </div>
+    </div><!-- col -->
+</div><!-- row -->
 
 <script src="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/require+config.js"></script>
 <script src="spec.components/config.js"></script>
 <script src="spec.components/boot.js"></script>
 
 <script>
-    require(['jquery', 'brix/loader', 'spec.components/catalog'], function($, Loader, Catalog) {
-        Loader.boot(function(){
-            
+    require(['jquery', 'underscore', 'brix/loader', 'spec.components/catalog', 'spec.components/constant'], function($, _, Loader, Catalog, Constant) {
+        Loader.boot(function() {
+            var $sidebar = $('.sidebar').empty()
+            var tpl = '<div class="sidebar-item"><a href="readme.html?name=<%= resp || name %>"><%= name %></a></div>'
+            tpl = _.template(tpl)
+            _.each(Constant.COMPONENTS, function(item, index) {
+                $(tpl(item)).appendTo($sidebar)
+            })
         })
     })
 </script>
