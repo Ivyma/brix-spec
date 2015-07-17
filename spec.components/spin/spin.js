@@ -3,17 +3,17 @@ define(
     [
         'jquery', 'underscore',
         'brix/base',
-        './animation.tpl.js',
-        'css!./animation.css'
+        './spin.tpl.js',
+        'css!./spin.css'
     ],
     function(
         $, _,
         Brix,
         template
     ) {
-        function Animation () {}
+        function Spin () {}
 
-        _.extend( Animation.prototype, Brix.prototype, {
+        _.extend( Spin.prototype, Brix.prototype, {
             options: {},
             init: function() {},
             render: function() {
@@ -23,6 +23,6 @@ define(
             }
         })
 
-        return Animation
+        return Spin
     }
 )

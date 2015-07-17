@@ -3,17 +3,17 @@ define(
     [
         'jquery', 'underscore',
         'brix/base',
-        './animation.tpl.js',
-        'css!./animation.css'
+        './dialog.tpl.js',
+        'css!./dialog.css'
     ],
     function(
         $, _,
         Brix,
         template
     ) {
-        function Animation () {}
+        function Dialog () {}
 
-        _.extend( Animation.prototype, Brix.prototype, {
+        _.extend( Dialog.prototype, Brix.prototype, {
             options: {},
             init: function() {},
             render: function() {
@@ -23,6 +23,6 @@ define(
             }
         })
 
-        return Animation
+        return Dialog
     }
 )

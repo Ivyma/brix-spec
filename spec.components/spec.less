@@ -19,28 +19,28 @@
 }
 // ----------------------------------------
 .ml {
-    .for(0 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
+    .for(0 2 3 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
         &@{px} {
             margin-left: @px * 1px;
         }
     }
 }
 .mr {
-    .for(0 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
+    .for(0 2 3 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
         &@{px} {
             margin-right: @px * 1px;
         }
     }
 }
 .mt {
-    .for(0 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
+    .for(0 2 3 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
         &@{px} {
             margin-top: @px * 1px;
         }
     }
 }
 .mb {
-    .for(0 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
+    .for(0 2 3 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
         &@{px} {
             margin-bottom: @px * 1px;
         }
@@ -48,28 +48,28 @@
 }
 // ----------------------------------------
 .pl {
-    .for(0 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
+    .for(0 2 3 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
         &@{px} {
             padding-left: @px * 1px;
         }
     }
 }
 .pr {
-    .for(0 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
+    .for(0 2 3 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
         &@{px} {
             padding-right: @px * 1px;
         }
     }
 }
 .pt {
-    .for(0 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
+    .for(0 2 3 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
         &@{px} {
             padding-top: @px * 1px;
         }
     }
 }
 .pb {
-    .for(0 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
+    .for(0 2 3 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
         &@{px} {
             padding-bottom: @px * 1px;
         }
@@ -84,6 +84,11 @@
 // 隐藏横向滚动条
 body {
     overflow-x: hidden;
+}
+
+/* SVG */
+tspan {
+    font-family: "Microsoft YaHei","微软雅黑",STXihei,"华文细黑",Georgia,"Times New Roman",Arial,sans-serif;
 }
 
 /* */
@@ -107,6 +112,25 @@ body {
 
 .icon-minecraft:before { content: "\e632"; }
 .icon-xialakuang:before { content: "\e623"; }
+
+/* */
+@font-face {
+    font-family: 'zsfont';
+    src: url('//at.alicdn.com/t/font_1436859315_9685595.eot'); /* IE9*/
+    src: url('//at.alicdn.com/t/font_1436859315_9685595.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('//at.alicdn.com/t/font_1436859315_9685595.woff') format('woff'), /* chrome、firefox */
+    url('//at.alicdn.com/t/font_1436859315_9685595.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('//at.alicdn.com/t/font_1436859315_9685595.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.zsfont {
+  font-family: "zsfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 /* 基础 */
 h1, .h1 { font-size: 20px; }
@@ -186,6 +210,17 @@ body .table {
 
 /* Grid */
 
+@media (min-width: 30em) {
+    .ungrid-row { 
+        width: 100%; 
+        display: table; 
+        table-layout: fixed; 
+    }
+    .ungrid-col { 
+        display: table-cell; 
+    }
+}
+
 .main-row { 
     overflow: hidden;
 }
@@ -210,8 +245,8 @@ body .table {
     .sidebar-col .sidebar-wrapper {
         width: 10em;
     }
-    .ungrid-row .main-col {
-         margin-left: 100px;
+    .main-col {
+        margin-left: 120px;
     }
     div.sidebar-wrapper .sidebar-item a,
     div.sidebar-wrapper .sidebar-item-sub a {
@@ -263,6 +298,35 @@ body .table {
 
 @brand: #FF6600;
 @brand-hover: #fc4218;
+@333: #333;
+@666: #666;
+@999: #999;
+@ccc: #ccc;
+@fafafa: #fafafa;
+@f0f0f0: #f0f0f0;
+@e6e6e6: #e6e6e6;
+@green: #51A300;
+@red: #A40100;
+
+.color-brand {
+    color: @brand;
+}
+.color-999 {
+    color: @999;
+}
+.color-green {
+    color: @green;
+}
+.color-red {
+    color: @red;
+}
+.bg-brand {
+    background-color: @brand;
+}
+.bg-red {
+    background-color: @red;
+}
+
 
 body .btn {
     border: 0;
@@ -572,7 +636,7 @@ table.table-brand {
             border-width: 0;
         }
         img {
-            max-height: 60px;
+            max-height: 50px;
         }
     }
     .logo-forbit-group {
@@ -610,6 +674,12 @@ table.table-brand {
         margin-bottom: 10px;
         text-align: center;
         padding: 46px 10px;
+        margin-bottom: 20px;
+    }
+    .huijiese {
+        .item {
+            padding: 59px 10px;
+        }
     }
 }
 
@@ -1020,6 +1090,68 @@ table.table-pagination {
     }
 }
 
+/* Dialog */
+.bs-example {
+    .dialog {
+        position: relative;
+        opacity: 1;
+        .dialog-close {
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            margin: 0;
+            .brixfont {
+                font-size: 24px;
+            }
+            &:hover, &:focus {}
+        }
+        .dialog-content {
+            .dialog-header, .dialog-body, .dialog-footer {
+                padding: 18px 40px;
+            }
+            .dialog-header {
+                border-bottom: 1px solid #e6e6e6;
+            }
+            .dialog-footer {
+                text-align: left;
+                border-top: 1px solid #e6e6e6;
+            }
+        }
+    }
+    .dialog-backdrop {
+        position: relative;
+        display: block;
+        opacity: 1;
+        background-color: #808080;
+        padding: 40px 50px;
+    }
+    .mm-tabs {
+        li:hover, li.active {
+            border-bottom-color: @brand;
+            a {
+                color: @brand;
+            }
+        }
+    }
+}
+
+/* Spin */
+body .bs-example {
+    .spin {
+        border-width: 0;
+    }
+    .rotating-plane, 
+    .double-bounce1, .double-bounce2, 
+    .rectangle-bounce div, 
+    .cube1, .cube2, 
+    .chasing-dots .dot1, .chasing-dots .dot2, 
+    .pulse, 
+    .three-bounce > div, 
+    .container1 > div, .container2 > div, .container3 > div {
+        background-color: @brand;
+    }
+}
+
 /* Just Test */
 
 // https://gist.github.com/juanbrujo/7e4e17428dc8881d0e7e
@@ -1112,6 +1244,16 @@ table.table-pagination {
 @media (min-width: 770px) {
     .navbar .navbar-nav {
         margin-left: 15px;
+        > li {
+            > a {
+                opacity: .6;
+            }
+            &:hover, &.active {
+                > a {
+                    opacity: 1;
+                }
+            }
+        }
     }
 }
 
@@ -1128,6 +1270,7 @@ table.table-pagination {
     .navbar-nav {
         .dropdown.open {
             ul.dropdown-menu {
+                padding-left: 20px;
                 > li.sidebar-item {
                     > a:hover {
                         color: #FFF;
@@ -1140,7 +1283,7 @@ table.table-pagination {
     .sidebar-col {
         display: none;
     }
-    .ungrid-row .main-col {
+    .main-col {
         margin-left: 0;
         width: 100%;
     }

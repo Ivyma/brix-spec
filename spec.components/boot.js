@@ -1,4 +1,4 @@
-/* global require, console */
+/* global window, require, console */
 require(['jquery', 'underscore', 'brix/loader'], function($, _, Loader) {
 	window.Loader = Loader
 

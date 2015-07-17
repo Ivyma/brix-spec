@@ -2,7 +2,7 @@
 define(function() {
     return (function(){/*
 <div class="">
-    <div class="fontsize-28 mb40">组件 <small>Components</small></div>
+    <div class="fontsize-28 mb40">组件 <small>Components ( <%= COMPONENTS.length %> 个 ) </small></div>
 </div>
 
 <div class="components">
@@ -11,7 +11,7 @@ define(function() {
         <div class="col-md-3">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <a href="readme.html?name=<%= item.resp || item.name %>"><%= $('<div>' + item.name + '</div>').text() %></a>
+                    <a href="readme.html?name=<%= item.resp %>"><%= item.name %> <%= item.resp %></a>
                 </div>
                 <div class="panel-body">
                     <img src="<%= item.preview %>" class="img-rounded">

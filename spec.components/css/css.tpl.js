@@ -1,7 +1,7 @@
 /* global define */
 define(function() {
     return (function(){/*
-<div class="">
+<div class="hide">
     <h1>样式 <small>CSS</small></h1>
     <hr>
 </div>
@@ -30,7 +30,72 @@ define(function() {
         </div>
     </div>
 
-    <h2>这页放什么东西 <small>What</small></h2>
+    <div>
+        <div class="fontsize-28 mb10">字体 <small>Font</small></div class="fontsize-28">
+        <p class="mb20">提高文字辨识性和页面易读性，并在视觉上达到统一和整体。</p>
+        <div class="mb40">
+            <div class="fontsize-18 mb10">标题 <small>Header</small></div>
+            <p>标题字号范围建议12-28号，都为2的整数倍，设备格式统一采用系统设备字体；图片格式标题文本统一采用阿里妈妈后台专用字体，样式为锐利SHARP，字号不做绝对限制。</p>
+            <p>日常使用推荐带橙点 12号、14号、16号、20号，使用时不可以加粗字体。</p>
+            <div>
+                <% var _recommend = [20, 16, 14, 12] %>
+                <% _.each([32, 30, 28, 26, 24, 22, 20, 18, 16, 14, 12], function(item, index){ %>
+                <div class="ungrid-row">
+                    <div class="ungrid-col" style="width: 140px;  height: 40px; text-align: right; padding-right: 30px;">
+                        <% if(_.indexOf(_recommend, item) !== -1) { %>
+                        <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background-color: #FF6600; margin-right: 20px;"></span>
+                        <% } %>
+                        <%= item %>px
+                    </div>
+                    <div class="ungrid-col"><span style="font-size: <%= item %>px;">标题字体</span></div>
+                </div>
+                <% }) %>
+            </div>
+        </div>
+        <div class="mb40">
+            <div class="fontsize-18 mb10">数字/英文 <small>Alphabet/Number</small></div>
+            <p>数字/英文字体样式为锐利SHARP，字号不做绝对限制。</p>
+            <p>日常使用推荐带橙点12号、14号、16号、20号、24号，使用时需要强调可以加粗字体。 </p>
+            <div>
+                <% var _recommend = [24, 20, 16, 14, 12] %>
+                <% _.each([32, 30, 28, 26, 24, 22, 20, 18, 16, 14, 12], function(item, index){ %>
+                <div class="ungrid-row">
+                    <div class="ungrid-col" style="width: 140px;  height: 40px; text-align: right; padding-right: 30px;">
+                        <% if(_.indexOf(_recommend, item) !== -1) { %>
+                        <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background-color: #FF6600; margin-right: 20px;"></span>
+                        <% } %>
+                        <%= item %>px
+                    </div>
+                    <div class="ungrid-col"><span style="font-size: <%= item %>px;">0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ</span></div>
+                </div>
+                <% }) %>
+            </div>
+        </div>
+        <div>
+            <div class="fontsize-18 mb10">系统设备字体 <small>Font Families</small></div>
+            <p>为了适配不同操作系统和游览器，所需文字均采用系统自带字体，以供不同系统设备做最佳适配陪。</p>
+            <div>
+                <p class="fontsize-14">中文</p>
+                <p>Windows优先使用（微软雅黑），如果没有则使用（中易宋体SimSun）。</p>
+                <p>OS X优先使用（冬青黑体简体Hiragino Sans GB），如果没有则使用默认（华文黑体）。</p>
+                <p>Linux优先使用（文泉驿微米黑）。</p>
+                <p class="fontsize-14">西文</p>
+                <p>Windows优先使用（Tahoma）。</p>
+                <p>OS X优先使用（Helvetica Neue）。 </p>
+            </div>
+        </div>
+        <div>
+            <pre><code>body {
+    font-size: 12px;
+    font-family: "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", Georgia, "Times New Roman", Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+}</code></pre>
+        </div>
+    </div>
+
+    <div class="fontsize-28 mb10">颜色 <small>Colors</small></div>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida 
     <table class="table-brand">
         <tbody>
@@ -94,8 +159,6 @@ define(function() {
         <% }) %>
     </div>
 
-    <h2>颜色 <small>Colors</small></h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida 
     <div class="row">
     	<% _.each(COLORS, function(item, index){ %>
         <div class="col-xs-4 mb10">
@@ -105,8 +168,6 @@ define(function() {
         <% }) %>
     </div>
 
-    <h2>背景色 <small>Background Colors</small></h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. </p>
     <div class="row">
     	<% _.each([], function(item, index){ %>
         <div class="col-sm-4 demo-background-color-item">
@@ -114,6 +175,7 @@ define(function() {
         </div>
         <% }) %>
     </div>
+
     <div class="row">
     	<% _.each(COLORS, function(item, index){ %>
         <div class="col-sm-4 demo-background-color-hover-item">
@@ -126,35 +188,6 @@ define(function() {
             </div>
         </div>
     	<% }) %>
-    </div>
-
-    <h2>字体大小 <small>Font Sizes</small></h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida 
-    <div class="">
-    	<% _.each(FONT_SIZES, function(item, index){ %>
-        <div class="mb10" style="font-size: <%= item %>;">字体大小 Font Size <%= item %></div>
-        <% }) %>
-    </div>
-
-    <h2>字体 <small>Font Families</small></h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida 
-    <div class="hide">
-    	<% _.each(FONT_FAMILIES, function(family, index){ %>
-        <div class="row mb10">
-        	<% _.each(FONT_SIZES, function(size, index){ %>
-            <span class="col-sm-3" style="font-size: <%= size %>; font-family: <%- family %>;"><%- family %> <%= size %></span>
-            <% }) %>
-        </div>
-        <% }) %>
-    </div>
-    <div>
-        <pre><code>body {
-    font-size: 12px;
-    font-family: "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", Georgia, "Times New Roman", Arial, sans-serif;
-    background-color: #fff;
-    color: #333;
-    -webkit-font-smoothing: antialiased;
-}</code></pre>
     </div>
 </div>
     */}).toString().split('\n').slice(1,-1).join('\n') + '\n'

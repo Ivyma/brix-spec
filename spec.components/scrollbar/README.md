@@ -1,4 +1,4 @@
-# Step
+# Scrollbar
 
 Lorem ipsum{ .lead }
 
@@ -6,7 +6,7 @@ Lorem ipsum{ .lead }
 
 <div class="bs-example">
     <div class="content">
-        <div>hello</div>
+        <div bx-name="components/scrollbar"></div>
     </div>
 </div>
 
@@ -24,7 +24,7 @@ Lorem ipsum
 
 ```js
 var Loader = require('loader')
-var instance = Loader.query('component/step')
+var instance = Loader.query('component/scrollbar')
 instance.method()
 ```
 

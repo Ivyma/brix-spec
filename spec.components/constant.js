@@ -38,68 +38,92 @@ define(['mock'], function(Mock) {
 			]
 		}],
 		COMPONENTS: [{
-			name: '按钮 <small>Button</small>',
+			name: '按钮',
 			resp: 'Button',
 			prev: Mock.Random.dataImage('128x128', '128x128')
 		}, {
-			name: '复选框 <small>Checkbox</small>',
-			resp: 'Checkbox',
-			prev: Mock.Random.dataImage('128x128', '128x128')
-		}, {
-			name: '单选按钮 <small>Radio</small>',
+			name: '单选按钮',
 			resp: 'Radio',
 			prev: Mock.Random.dataImage('128x128', '128x128')
 		}, {
-			name: '下拉框 <small>Dropdown</small>',
+			name: '复选框',
+			resp: 'Checkbox',
+			prev: Mock.Random.dataImage('128x128', '128x128')
+		}, {
+			name: '下拉框',
 			resp: 'Dropdown',
 			prev: Mock.Random.dataImage('128x128', '128x128')
 		}, {
-			name: '输入框 <small>Input</small>',
+			name: '输入框',
 			resp: 'Input',
 			prev: Mock.Random.dataImage('128x128', '128x128')
 		}, {
-			name: '文本框 <small>Textarea</small>',
+			name: '文本框',
 			resp: 'Textarea',
 			prev: Mock.Random.dataImage('128x128', '128x128')
 		}, {
-			name: '翻页器 <small>Pagination</small>',
-			resp: 'Pagination',
-			prev: Mock.Random.dataImage('128x128', '128x128')
-		}, {
-			name: '面包屑 <small>Breadcrumb</small>',
-			resp: 'Breadcrumb',
-			prev: Mock.Random.dataImage('128x128', '128x128')
-		}, {
-			name: '日历 <small>Calendar</small>',
+			name: '日历',
 			resp: 'Calendar',
 			prev: Mock.Random.dataImage('128x128', '128x128')
 		}, {
-			name: '搜索框 <small>SearchBox</small>',
+			name: '面包屑',
+			resp: 'Breadcrumb',
+			prev: Mock.Random.dataImage('128x128', '128x128')
+		}, {
+			name: '翻页器',
+			resp: 'Pagination',
+			prev: Mock.Random.dataImage('128x128', '128x128')
+		}, {
+			name: '搜索框',
 			resp: 'SearchBox',
 			prev: Mock.Random.dataImage('128x128', '128x128')
 		}, {
-			name: '就地编辑 <small>Editable</small>',
+			name: '就地编辑',
 			resp: 'Editable',
 			prev: Mock.Random.dataImage('128x128', '128x128')
 		}, {
-			name: '表格 <small>Table</small>',
+			name: '通用信息',
+			resp: 'Popover',
+			prev: Mock.Random.dataImage('128x128', '128x128')
+		}, {
+			name: '表格',
 			resp: 'Table',
 			prev: Mock.Random.dataImage('128x128', '128x128')
 		}, {
-			name: '进度条 <small>Progress</small>',
+			name: '页脚',
+			resp: 'Footer',
+			prev: Mock.Random.dataImage('128x128', '128x128')
+		}, {
+			name: '进度条',
 			resp: 'Progress',
 			prev: Mock.Random.dataImage('128x128', '128x128')
 		}, {
-			name: '字段控制器 <small>Field</small>',
+			name: '字段控制器',
 			resp: 'Field',
 			prev: Mock.Random.dataImage('128x128', '128x128')
 		}, {
-			name: '步骤条 <small>Step</small>',
+			name: '步骤条',
 			resp: 'Step',
 			prev: Mock.Random.dataImage('128x128', '128x128')
 		}, {
-			name: '浮出层 <small>Overlay</small>',
-			resp: 'Overlay',
+			name: '浮层',
+			resp: 'Dialog',
+			prev: Mock.Random.dataImage('128x128', '128x128')
+		}, {
+			name: '时间选择器',
+			resp: 'HourPicker',
+			prev: Mock.Random.dataImage('128x128', '128x128')
+		}, {
+			name: '标签切换',
+			resp: 'Tab',
+			prev: Mock.Random.dataImage('128x128', '128x128')
+		}, {
+			name: '滚动条',
+			resp: 'Scrollbar',
+			prev: Mock.Random.dataImage('128x128', '128x128')
+		}, {
+			name: '加载',
+			resp: 'Spin',
 			prev: Mock.Random.dataImage('128x128', '128x128')
 		}]
 	}

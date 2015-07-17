@@ -11,10 +11,10 @@
 
             <div class="navbar-logo">
                 <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        <span class="specfont icon-minecraft"></span>
-                        <span class="specfont icon-xialakuang"></span>
-                     </button>
+                    <div class="btn btn-default dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <a href="/"><span class="specfont icon-minecraft"></span></a>
+                        <span class="specfont icon-xialakuang" onclick-bak="$(this).closest('.dropdown').toggleClass('open')"></span>
+                     </div>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                         <li><a href="#"><span class="specfont icon-minecraft"></span></a></li>
                         <li><a href="#"><span class="specfont icon-minecraft"></span></a></li>
@@ -33,7 +33,7 @@
                         <a href="components.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">组件 <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <% _.each(COMPONENTS, function(item, index){ %>
-                            <li class="sidebar-item"><a href="readme.html?name=<%= item.resp || item.name %>"><%= item.name %></a></li>
+                            <li class="sidebar-item"><a href="readme.html?name=<%= item.resp %>"><%= item.name %> <small><%= item.resp %></small></a></li>
                             <% }) %>
                         </ul>
                     </div>

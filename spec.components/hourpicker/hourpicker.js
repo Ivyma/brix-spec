@@ -3,17 +3,17 @@ define(
     [
         'jquery', 'underscore',
         'brix/base',
-        './animation.tpl.js',
-        'css!./animation.css'
+        './hourpicker.tpl.js',
+        'css!./hourpicker.css'
     ],
     function(
         $, _,
         Brix,
         template
     ) {
-        function Animation () {}
+        function Hourpicker () {}
 
-        _.extend( Animation.prototype, Brix.prototype, {
+        _.extend( Hourpicker.prototype, Brix.prototype, {
             options: {},
             init: function() {},
             render: function() {
@@ -23,6 +23,6 @@ define(
             }
         })
 
-        return Animation
+        return Hourpicker
     }
 )

@@ -61,7 +61,7 @@
                 url: readme
             },
             function() {
-                var tpl = '<div class="sidebar-item" data-resp="<%= resp || name %>"><a href="readme.html?name=<%= resp || name %>"><%= name %></a></div>'
+                var tpl = '<div class="sidebar-item" data-resp="<%= resp || name %>"><a href="readme.html?name=<%= resp %>"><%= name %> <small><%= resp %></small></a></div>'
                 _.each(Constant.COMPONENTS, function(item, index){
                     $(_.template(tpl)(item)).appendTo('.sidebar')
                 })

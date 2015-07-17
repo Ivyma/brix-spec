@@ -1,4 +1,4 @@
-/* global define */
+/* global define, location */
 define(['jquery', 'underscore'], function($, _) {
 	return function(sidebar, headers, subs) {
 
@@ -9,6 +9,9 @@ define(['jquery', 'underscore'], function($, _) {
 				$('<a class="spec-anchor">').attr('name', text)
 			)
 		})
+		var hash = location.hash
+		location.hash = ''
+		location.hash = hash
 
 		var $sidebar = $(sidebar).empty()
 		var $headers = $(headers)

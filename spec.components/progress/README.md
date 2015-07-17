@@ -44,28 +44,3 @@ Lorem ipsum{ .lead }
 		</div>
     </div>
 </div>
-
-### 配置 <small>Options</small>
-
-Name | Type | Default | Description
-:--- | :--- | :------ | :----------
-- | - | - | -
-
-### 方法 <small>Methods</small>
-
-#### .method(args)
-
-Lorem ipsum
-
-```js
-var Loader = require('loader')
-var instance = Loader.query('component/progress')
-instance.method()
-```
-
-### 事件 <small>Events</small>
-
-Event Type | Description
-:--------- | :----------
-- | -
-
