@@ -19,28 +19,28 @@
 }
 // ----------------------------------------
 .ml {
-    .for(0 2 3 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
+    .for(0 2 3 4 5 6 7 8 10 15 20 25 30 35 40 60 80); .-each(@px) {
         &@{px} {
             margin-left: @px * 1px;
         }
     }
 }
 .mr {
-    .for(0 2 3 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
+    .for(0 2 3 4 5 6 7 8 10 15 20 25 30 35 40 60 80); .-each(@px) {
         &@{px} {
             margin-right: @px * 1px;
         }
     }
 }
 .mt {
-    .for(0 2 3 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
+    .for(0 2 3 4 5 6 7 8 10 15 20 25 30 35 40 60 80); .-each(@px) {
         &@{px} {
             margin-top: @px * 1px;
         }
     }
 }
 .mb {
-    .for(0 2 3 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
+    .for(0 2 3 4 5 6 7 8 10 15 20 25 30 35 40 60 80); .-each(@px) {
         &@{px} {
             margin-bottom: @px * 1px;
         }
@@ -48,28 +48,28 @@
 }
 // ----------------------------------------
 .pl {
-    .for(0 2 3 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
+    .for(0 2 3 4 5 6 7 8 10 15 20 25 30 35 40 60 80); .-each(@px) {
         &@{px} {
             padding-left: @px * 1px;
         }
     }
 }
 .pr {
-    .for(0 2 3 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
+    .for(0 2 3 4 5 6 7 8 10 15 20 25 30 35 40 60 80); .-each(@px) {
         &@{px} {
             padding-right: @px * 1px;
         }
     }
 }
 .pt {
-    .for(0 2 3 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
+    .for(0 2 3 4 5 6 7 8 10 15 20 25 30 35 40 60 80); .-each(@px) {
         &@{px} {
             padding-top: @px * 1px;
         }
     }
 }
 .pb {
-    .for(0 2 3 4 5 7 10  15 20 25 30 35 40 60 80); .-each(@px) {
+    .for(0 2 3 4 5 6 7 8 10 15 20 25 30 35 40 60 80); .-each(@px) {
         &@{px} {
             padding-bottom: @px * 1px;
         }
@@ -133,9 +133,10 @@ tspan {
 }
 
 /* 基础 */
-h1, .h1 { font-size: 20px; }
+h1, .h1 { font-size: 24px; }
 h2, .h2 { font-size: 16px; }
-h3, .h3 { font-size: 14px; }
+h3, .h3 { font-size: 12px; }
+h4, .h4 { font-size: 12px; }
 h4, .h4 { margin-top: 20px; margin-bottom: 10px; }
 
 small, .small { 
@@ -270,7 +271,7 @@ body .table {
     .btn-clipboard {
         position: absolute;
         top: 0;
-        right: 0;
+        right: -1px;
         z-index: 10;
         display: block;
         padding: 5px 8px;
@@ -279,7 +280,7 @@ body .table {
         cursor: pointer;
         background-color: #fff;
         border: 1px solid #e1e1e8;
-        border-radius: 0 4px 0 4px;
+        border-radius: 0 0 0 4px;
     }
 }
 
@@ -330,6 +331,7 @@ body .table {
 
 body .btn {
     border: 0;
+    padding: 6px 20px;
     &.btn-brand {
         border: 0;
         background-color: @brand;
@@ -442,7 +444,7 @@ body .btn {
 
 .main-wrapper {
     margin-top: 50px;
-    padding: 30px 40px 0 40px;
+    padding: 40px 40px 0 40px;
     min-height: 500px;
     max-width: 1170px;
 }
@@ -737,9 +739,33 @@ body .bs-example {
     background-color: #fff;
     border: 1px solid #e6e6e6;
     border-radius: 6px;
+    margin-bottom: 40px;
 
     .content {
-        padding-top: 15px;
+        position: relative;
+        padding: 0;
+        .content-header {
+            background-color: #FAFAFA;
+            margin: 0;
+            padding: 18px 40px;
+            border-bottom: 1px solid #E6E6E6;
+            border-radius: 6px 6px 0 0;
+            ol {
+                padding-left: 18px;
+                color: #999;
+                margin-bottom: 0px;
+                li {
+                    margin-top: 6px;
+                }
+            }
+        }
+        .content-body {
+            padding: 60px 20px 60px 120px;
+        }
+    }
+    .content-pre {
+        padding: 18px 40px;
+        border-radius: 0 0 6px 6px;
     }
     pre {
         border-top: 1px solid #ddd;
@@ -814,6 +840,13 @@ body .bs-example {
         animation-fill-mode: both;
         animation-iteration-count: infinite;
     }
+}
+
+/* Components */
+.flat-text, .flat-text.small {
+    height: 20px;
+    margin: 0;
+    background-color: #E6E6E6;
 }
 
 /* Checkbox */
@@ -1193,29 +1226,53 @@ body .bs-example {
         padding-left: 0;
         list-style: none;
         .step {
-            span {
+            span.circle {
                 display: inline-block;
-                width: 16px;
-                height: 16px;
+                width: 20px;
+                height: 20px;
                 border-radius: 50%;
                 background-color: #999;
                 color: #FFF;
                 text-align: center;
                 vertical-align: middle;
-                line-height: 16px;
+                line-height: 18px;
                 margin-right: 5px;
             }
             display: inline-block;
             margin-right: 20px;
             &.active {
-                span {
-                    width: 26px;
-                    height: 26px;
-                    line-height: 26px;
+                span.circle {
+                    width: 32px;
+                    height: 32px;
+                    line-height: 30px;
                     background-color: @brand;
+                    font-size: 16px;
                 }
             }
         }
+    }
+}
+body .bs-example2 {
+    .step1, .step2, .step3 {
+        position: relative;
+    }
+    span.circle {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 1px solid #E6E6E6;
+        line-height: 30px;
+        text-align: center;
+        font-size: 16px;
+        color: #999;
+    }
+    a.expand {
+        position: absolute;
+        right: 40px;
+        top: 40px;
+        height: 25px;
+        line-height: 25px;
     }
 }
 
@@ -1300,11 +1357,12 @@ body .bs-example {
 .navbar-logo {
     float: left;
     .specfont {
-        font-size: 30px;
+        font-size: 24px;
         color: #fff;
     }
     .icon-xialakuang {
-        font-size: 16px;
+        font-size: 12px;
+        margin-left: 10px;
     }
 }
 
@@ -1411,6 +1469,7 @@ body .bs-example {
                 height: auto;
                 padding: 15px 30px;
                 border: 0 none;
+                line-height: 36px;
             }
     }
 

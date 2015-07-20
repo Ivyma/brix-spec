@@ -5,7 +5,7 @@ define(function() {
     <ol class="steps clearfix">
         <% for( var i = 0, POOL='一二三四五六七八九'; i < total; i++ ) { %>
         <li class="step <%= i === cursor ? 'active' : '' %>">
-            <span><%= i+1 %></span>步骤<%= POOL[i] %>
+            <span class="circle"><%= i+1 %></span>步骤<%= POOL[i] %>
         </li>
         <% } %>
     </ol>

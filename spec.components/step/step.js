@@ -30,7 +30,7 @@ define(
 
                 this.move(undefined, 0)
             },
-            move: function(event, dir) {
+            move: function(event, dir) {/* jshint unused:false */
                 var cursor = this.options.cursor
                 var total = this.options.total
 
