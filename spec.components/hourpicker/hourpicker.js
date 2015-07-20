@@ -1,20 +1,29 @@
 /* global define */
 define(
     [
-        'jquery', 'underscore',
+        'jquery', 'underscore', 'moment',
         'brix/base',
         './hourpicker.tpl.js',
         'css!./hourpicker.css'
     ],
     function(
-        $, _,
+        $, _, moment,
         Brix,
         template
     ) {
         function Hourpicker () {}
 
         _.extend( Hourpicker.prototype, Brix.prototype, {
-            options: {},
+            options: {
+                utcOffset: function() {
+                    var utcOffset = moment().utcOffset() / 60
+                    var abs = Math.abs(utcOffset)
+                    var result = abs < 10 ? '0' + abs : abs
+                    result = utcOffset < 0 ? '-' + result : '+' + result
+                    result += ':00'
+                    return result
+                }()
+            },
             init: function() {},
             render: function() {
                 this.data = this.data || _.extend({}, this.options)

@@ -42,12 +42,12 @@ define(
                             var tables = $(that.element).find('table')
                             _.each(tables, function(item /*, index*/ ) {
                                 item = $(item)
-                                if (!item.hasClass('table')) item.addClass('table table-bordered')
+                                // if (!item.hasClass('table')) item.addClass('table table-bordered')
                             })
 
                             /* jshint unused:false */
                             $(that.element).find('pre code').each(function(index, code) {
-                                hljs.highlightBlock(code)
+                                // hljs.highlightBlock(code)
                             })
 
                             Loader.booting = false
@@ -75,6 +75,7 @@ define(
 
                 return $.ajax(this.options.url)
                     .done(function(response, status, xhr) {
+                        response = _.template(response)()
                         done(response, status, xhr)
                     })
             },

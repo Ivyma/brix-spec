@@ -1337,6 +1337,55 @@ body .bs-example .container2 > div,
 body .bs-example .container3 > div {
   background-color: #ff6600;
 }
+/* HourPicker */
+body .bs-example .hourpicker table.picker-days .picker-day .picker-hours .picker-hour .picker-hour-duration {
+  z-index: 1;
+}
+body .bs-example .hourpicker table.picker-days .picker-day .picker-hours .picker-hour.active .picker-hour-duration {
+  background-color: #ff6600;
+}
+body .bs-example .hourpicker table.picker-days .picker-day .picker-hours .picker-hour .picker-hour-start,
+body .bs-example .hourpicker table.picker-days .picker-day .picker-hours .picker-hour .picker-hour-end {
+  background-color: #ff6600;
+  z-index: 2;
+}
+body .bs-example .hourpicker table.picker-days .picker-day .picker-hours .picker-hour .bottom .picker-hour-arrow {
+  top: -3px;
+  border-bottom: 3px solid #ff6600;
+  margin-left: -3px;
+}
+body .bs-example .hourpicker table.picker-days .picker-day .picker-hours .picker-hour .top .picker-hour-arrow {
+  bottom: -3px;
+  border-top: 3px solid #ff6600;
+  margin-left: -3px;
+}
+/* Step */
+body .bs-example ol.steps {
+  padding-left: 0;
+  list-style: none;
+}
+body .bs-example ol.steps .step {
+  display: inline-block;
+  margin-right: 20px;
+}
+body .bs-example ol.steps .step span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #999;
+  color: #FFF;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 16px;
+  margin-right: 5px;
+}
+body .bs-example ol.steps .step.active span {
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  background-color: #ff6600;
+}
 /* Just Test */
 .list .item {
   height: 50px;
@@ -1363,43 +1412,43 @@ body .bs-example .container3 > div {
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 1) {
   right: 10px;
-  background-color: #69d206;
+  background-color: #68af5f;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 2) {
   right: 20px;
-  background-color: #70ad3e;
+  background-color: #bc1fee;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 3) {
   right: 30px;
-  background-color: #da9c87;
+  background-color: #b701d9;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 4) {
   right: 40px;
-  background-color: #43913a;
+  background-color: #939f6e;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 5) {
   right: 50px;
-  background-color: #a6bd3e;
+  background-color: #ac11d6;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 6) {
   right: 60px;
-  background-color: #4cb4a4;
+  background-color: #7b2c8f;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 7) {
   right: 70px;
-  background-color: #f1bc2b;
+  background-color: #92ae67;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 8) {
   right: 80px;
-  background-color: #5947fd;
+  background-color: #76ec9b;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 9) {
   right: 90px;
-  background-color: #39989b;
+  background-color: #d119cc;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 10) {
   right: 100px;
-  background-color: #ab443;
+  background-color: #c2695;
 }
 .list .item:hover {
   background-color: #FAF1ED;

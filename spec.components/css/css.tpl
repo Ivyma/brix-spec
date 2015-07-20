@@ -1,6 +1,3 @@
-/* global define */
-define(function() {
-    return (function(){/*
 <div class="hide">
     <h1>样式 <small>CSS</small></h1>
     <hr>
@@ -190,5 +187,3 @@ define(function() {
     	<% }) %>
     </div>
 </div>
-    */}).toString().split('\n').slice(1,-1).join('\n') + '\n'
-})

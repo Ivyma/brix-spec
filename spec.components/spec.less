@@ -1152,6 +1152,73 @@ body .bs-example {
     }
 }
 
+/* HourPicker */
+body .bs-example {
+    .hourpicker {
+        table.picker-days {
+            .picker-day {
+                .picker-hours {
+                    .picker-hour {
+                        .picker-hour-duration {
+                            z-index: 1;
+                        }
+                        &.active .picker-hour-duration {
+                            background-color: @brand;
+                        }
+                        .picker-hour-start, .picker-hour-end {
+                            background-color: @brand;
+                            z-index: 2;
+                        }
+                        .bottom .picker-hour-arrow {
+                            top: -3px;
+                            border-bottom: 3px solid @brand;
+                            margin-left: -3px;
+                        }
+                        .top .picker-hour-arrow {
+                            bottom: -3px;
+                            border-top: 3px solid @brand;
+                            margin-left: -3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Step */
+
+body .bs-example {
+    ol.steps {
+        padding-left: 0;
+        list-style: none;
+        .step {
+            span {
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background-color: #999;
+                color: #FFF;
+                text-align: center;
+                vertical-align: middle;
+                line-height: 16px;
+                margin-right: 5px;
+            }
+            display: inline-block;
+            margin-right: 20px;
+            &.active {
+                span {
+                    width: 26px;
+                    height: 26px;
+                    line-height: 26px;
+                    background-color: @brand;
+                }
+            }
+        }
+    }
+}
+
 /* Just Test */
 
 // https://gist.github.com/juanbrujo/7e4e17428dc8881d0e7e

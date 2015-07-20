@@ -775,7 +775,7 @@
     </div>
 </div>
 
-<div class="mb40">
+<div class="mb40 hide">
     <div class="fontsize-28 mb40">图像 <small>Imagery</small></div>
     <div class="row">
         <img class="col-sm-6 img-responsive" src="placeholder.jpg">

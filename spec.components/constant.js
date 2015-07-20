@@ -37,6 +37,8 @@ define(['mock'], function(Mock) {
 				['GitHub', 'https://github.com/nuysoft/brix-event']
 			]
 		}],
+		// √ 按钮 单选按钮 复选框 下拉框 输入框 文本框 面包屑 翻页器 搜索框 浮层 时间选择器
+		// X 日历 就地编辑 通用信息 表格 页脚 进度条 字段控制器 步骤条 标签切换 滚动条 加载
 		COMPONENTS: [{
 			name: '按钮',
 			resp: 'Button',
