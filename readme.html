@@ -54,6 +54,8 @@
         var query = uri.query(true)
         var name = query.name.toLowerCase()
         var readme = 'spec.components/' + name + '/README.md'
+        var css = 'spec.components/' + name + '/' + name + '.css'
+        require(['css!' + css])
         Loader.load(
             document.getElementById('main'), 
             'spec.components/readme/readme', // 'components/readme', 

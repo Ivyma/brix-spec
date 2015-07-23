@@ -9,8 +9,6 @@ require.config({
             'spec/components': 'spec.components/components/components.js',
             'spec/brand': 'spec.components/brand/brand.js',
             'spec/animation': 'spec.components/animation/animation.js',
-
-            'spec/button': 'spec.components/button/button.js',
         }
     },
     paths: {

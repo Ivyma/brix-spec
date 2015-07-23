@@ -8,8 +8,8 @@
     </ol>
     <div>
         <p class="flat-text small"></p>
-        <p class="flat-text full-width"></p>
-        <p class="flat-text full-width"></p>
+        <p class="flat-text full-width mt10"></p>
+        <p class="flat-text full-width mt10 mb10"></p>
     </div>
     <div>
         <button class="btn btn-brand mr10 btn-step-next" bx-click="next">下一步</button>

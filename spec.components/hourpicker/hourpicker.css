@@ -1,0 +1,21 @@
+body .example .hourpicker table.picker-days .picker-day .picker-hours .picker-hour .picker-hour-duration {
+  z-index: 1;
+}
+body .example .hourpicker table.picker-days .picker-day .picker-hours .picker-hour.active .picker-hour-duration {
+  background-color: #ff6600;
+}
+body .example .hourpicker table.picker-days .picker-day .picker-hours .picker-hour .picker-hour-start,
+body .example .hourpicker table.picker-days .picker-day .picker-hours .picker-hour .picker-hour-end {
+  background-color: #ff6600;
+  z-index: 2;
+}
+body .example .hourpicker table.picker-days .picker-day .picker-hours .picker-hour .bottom .picker-hour-arrow {
+  top: -3px;
+  border-bottom: 3px solid #ff6600;
+  margin-left: -3px;
+}
+body .example .hourpicker table.picker-days .picker-day .picker-hours .picker-hour .top .picker-hour-arrow {
+  bottom: -3px;
+  border-top: 3px solid #ff6600;
+  margin-left: -3px;
+}

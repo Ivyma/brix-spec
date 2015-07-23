@@ -28,7 +28,16 @@
 <script>
     require(['brix/loader', 'spec.components/catalog'], function(Loader, Catalog) {
         Loader.boot(function() {
-            Catalog('.sidebar', '.fontsize-28')
+            Catalog('.sidebar', '.fontsize-20')
+            if (localStorage.getItem('referer') === location.href) {
+                $(window).scrollTop(
+                    localStorage.getItem('scrollTop')
+                )
+            }
+            $(window).one('unload', function() {
+                localStorage.setItem('referer', location.href)
+                localStorage.setItem('scrollTop', $(window).scrollTop())
+            })
         })
     })
 </script>

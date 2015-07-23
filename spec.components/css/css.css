@@ -1,0 +1,39 @@
+table.table-brand {
+  width: 100%;
+}
+table.table-brand td {
+  text-align: center;
+  padding: 10px;
+  white-space: nowrap;
+}
+table.table-brand td .img-circle {
+  display: inline-block;
+}
+.demo-background-color-item,
+.demo-background-color-hover-item {
+  margin-bottom: 10px;
+}
+.demo-background-color-item .content,
+.demo-background-color-hover-item .content {
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+.demo-background-color-item .content .up,
+.demo-background-color-hover-item .content .up,
+.demo-background-color-item .content .down,
+.demo-background-color-hover-item .content .down {
+  color: #FFF;
+  height: 48px;
+  line-height: 48px;
+  vertical-align: middle;
+  text-align: center;
+}
+.demo-background-color-item .content .up,
+.demo-background-color-hover-item .content .up {
+  border-radius: 5px 5px 0 0;
+}
+.demo-background-color-item .content .down,
+.demo-background-color-hover-item .content .down {
+  border-radius: 0 0 5px 5px;
+}

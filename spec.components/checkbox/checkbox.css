@@ -1,0 +1,30 @@
+label {
+  font-weight: normal;
+  margin-right: 40px;
+}
+label input[type="radio"],
+label input[type="checkbox"] {
+  margin-right: 10px;
+}
+label p.desc {
+  color: #999;
+  padding-left: 25px;
+  margin-bottom: 0px;
+}
+ul.checklist {
+  list-style: none;
+  padding-left: 25px;
+}
+ul.checklist > li {
+  margin-bottom: 10px;
+}
+.checklist-linkage ul {
+  display: inline-block;
+  list-style: none;
+}
+.checklist-linkage ul li {
+  float: left;
+}
+.checklist-linkage ul li .title {
+  line-height: 26px;
+}

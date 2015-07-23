@@ -1,12 +1,17 @@
-# Scrollbar
+<div class="mb40">
+    <div class="fontsize-20">滚动条 <small>Scrollbar</small></div>
+    <div class="color-999 mt4">TODO</div>
+</div>
 
-Lorem ipsum{ .lead }
+<div class="fontsize-16 mb10">示例 <small>Examples</small></div>
 
-### 示例 <small>Examples</small>
 
-<div class="bs-example">
+<div class="example">
     <div class="content">
-        <div bx-name="components/scrollbar"></div>
+    	<div class="content-header">TODO</div>
+    	<div class="content-body">
+        	<div bx-name="components/scrollbar"></div>
+        </div>
     </div>
 </div>
 

@@ -1,0 +1,26 @@
+ol.breadcrumb {
+  list-style: none;
+  padding: 0px;
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+ol.breadcrumb > li > a {
+  color: #999;
+}
+ol.breadcrumb > li > a:hover {
+  color: #4776ed;
+}
+ol.breadcrumb > li + li:before {
+  padding: 0 5px 0 3px;
+  color: #999;
+  content: ">";
+}
+ol.breadcrumb > li .dropdown {
+  min-width: inherit;
+}
+ol.breadcrumb > li .dropdown .dropdown-toggle {
+  border-color: transparent;
+}
+ol.breadcrumb > li .dropdown .dropdown-toggle:hover {
+  border-color: #CCC;
+}

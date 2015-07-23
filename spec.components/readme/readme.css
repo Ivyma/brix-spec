@@ -6,32 +6,41 @@
 .readme .code {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
-.bs-example {
+.example {
   position: relative;
-  margin: 0 0 18px 0;
+  margin: 0 0 40px 0;
   background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
 }
-.bs-example:after {
-  content: "Example";
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  font-size: 12px;
-  font-weight: bold;
-  color: #bbb;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.example > .content {
+  position: relative;
+  padding: 0;
 }
-.bs-example > .content {
-  padding: 45px 15px 15px;
+.example > .content .content-header {
+  background-color: #FAFAFA;
+  margin: 0;
+  padding: 18px 40px;
+  border-bottom: 1px solid #E6E6E6;
+  border-radius: 6px 6px 0 0;
 }
-.bs-example pre {
+.example > .content .content-header > ol {
+  padding-left: 18px;
+  color: #999;
+  margin-bottom: 0px;
+}
+.example > .content .content-header > ol li {
+  margin-top: 6px;
+}
+.example > .content .content-body {
+  padding: 60px 40px 60px 120px;
+}
+.example pre {
   margin: 0;
   border: none;
-  border-radius: 0;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #e6e6e6;
+  padding: 18px 40px;
+  border-radius: 0 0 6px 6px;
 }
 .hljs {
   padding: 0;

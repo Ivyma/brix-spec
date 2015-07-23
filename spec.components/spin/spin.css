@@ -1,0 +1,18 @@
+body .example .spin {
+  border-width: 0;
+}
+body .example .rotating-plane,
+body .example .double-bounce1,
+body .example .double-bounce2,
+body .example .rectangle-bounce div,
+body .example .cube1,
+body .example .cube2,
+body .example .chasing-dots .dot1,
+body .example .chasing-dots .dot2,
+body .example .pulse,
+body .example .three-bounce > div,
+body .example .container1 > div,
+body .example .container2 > div,
+body .example .container3 > div {
+  background-color: #ff6600;
+}

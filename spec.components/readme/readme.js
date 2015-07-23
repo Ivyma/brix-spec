@@ -1,4 +1,4 @@
-/* global define */
+/* global define, require, window, localStorage, location */
 define(
     [
         'jquery', 'underscore', 'marked', 'highlightjs',
@@ -42,7 +42,7 @@ define(
                             var tables = $(that.element).find('table')
                             _.each(tables, function(item /*, index*/ ) {
                                 item = $(item)
-                                // if (!item.hasClass('table')) item.addClass('table table-bordered')
+                                    // if (!item.hasClass('table')) item.addClass('table table-bordered')
                             })
 
                             /* jshint unused:false */
@@ -53,6 +53,8 @@ define(
                             Loader.booting = false
                             Loader.boot(that.element, function() {
                                 defer.resolve()
+                                that.hold()
+                                that.recover()
                             })
                         })
                     })
@@ -104,6 +106,19 @@ define(
                         trimed = Loader.Util.trimPredefined(pre[0])
                         pre.text(trimed)
                     }
+                })
+            },
+            recover: function() {
+                if (localStorage.getItem('referer') === location.href) {
+                    $(window).scrollTop(
+                        localStorage.getItem('scrollTop')
+                    )
+                }
+            },
+            hold: function() {
+                $(window).one('unload', function() {
+                    localStorage.setItem('referer', location.href)
+                    localStorage.setItem('scrollTop', $(window).scrollTop())
                 })
             }
         })

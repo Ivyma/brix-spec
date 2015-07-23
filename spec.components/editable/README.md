@@ -1,14 +1,17 @@
-# 就地编辑 <small>Editable</small>
+<div class="mb40">
+    <div class="fontsize-20">就地编辑 <small>Editable</small></div>
+    <div class="color-999 mt4">用户可以就在当前页面内容所处的地方直接编辑该内容，而无须跳转到另一个新页面去编辑。</div>
+</div>
 
-用户可以就在当前页面内容所处的地方直接编辑该内容，而无须跳转到另一个新页面去编辑。
+<div class="fontsize-16 mb10">示例 <small>Examples</small></div>
 
-## 示例 <small>Examples</small>
-
-<div class="bs-example">
+<div class="example">
     <div class="content">
-        <h3 bx-name="components/editable">This is a editable title.</h3>
-        <p bx-name="components/editable">This is a editable paragraph. This is a editable paragraph. This is a editable paragraph. This is a editable paragraph. This is a editable paragraph. This is a editable paragraph.</p>
-        <pre bx-name="components/editable">This is a editable predefined.</pre>
+    	<div class="content-body">
+    		<h3 bx-name="components/editable">This is a editable title.</h3>
+        	<p bx-name="components/editable">This is a editable paragraph. This is a editable paragraph. This is a editable paragraph. This is a editable paragraph. This is a editable paragraph. This is a editable paragraph.</p>
+        	<pre bx-name="components/editable">This is a editable predefined.</pre>
+        </div>
     </div>
 </div>
 
