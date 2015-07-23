@@ -2,7 +2,7 @@
 define(function() {
     return (function(){/*
 <div class="">
-    <div class="fontsize-28 mb40">组件 <small>Components ( <%= COMPONENTS.length %> 个 ) </small></div>
+    <div class="fontsize-20 mb40">组件 <small>Components ( <%= COMPONENTS.length %> 个 ) </small></div>
 </div>
 
 <div class="components">

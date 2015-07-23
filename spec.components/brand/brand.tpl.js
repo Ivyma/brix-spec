@@ -1,13 +1,6 @@
 /* global define */
 define(function() {
     return (function(){/*
-
-    大块之间 60px
-    2级-3级 40px
-
-    图片 宽 50% 上 20 下 40
-        logo 50% 方格制图 75%
- -->
 <div class="brand">
 
 <div class="hide">
@@ -514,6 +507,81 @@ define(function() {
     </div>
 </div>
 
+<div class="brand-typography mb40">
+    <div class="fontsize-20 mb40">字体 <small>Typography</small></div>
+    <div>
+        <div class="fontsize-16 mb10">印刷字体</div>
+        <p>为了塑造品牌整体形象,所有传播媒体、刊物及平面印刷等,所需的文字均采用统一专用字体,以供不同场合使用。同时,为求运用方便,在刊物、媒体等内文说明的排版上,若无相同字体,请以形相近的字体取代使用。</p>
+        <div>
+            <div class="mb20">
+                <p>方正兰亭特黑简体(FZLTTHJW)</p>
+                <img class="img-responsive cn" src="assets/typography/01-方正兰亭特黑简体.svg">
+            </div>
+            <div class="mb20">
+                <p>方正兰亭粗黑简体(FZLTCHJW)</p>
+                <img class="img-responsive cn" src="assets/typography/02-方正兰亭粗黑简体.svg">
+            </div>
+            <div class="mb20">
+                <p>方正兰亭中黑简体(FZLTZHJW)</p>
+                <img class="img-responsive cn" src="assets/typography/03-方正兰亭中黑简体.svg">
+            </div>
+            <div class="mb20">
+                <p>方正兰亭黑简体(FZLTHJW)</p>
+                <img class="img-responsive cn" src="assets/typography/04-方正兰亭黑简体.svg">
+            </div>
+            <div class="mb20">
+                <p>方正兰亭纤黑简体(FZLTXHJW)</p>
+                <img class="img-responsive cn" src="assets/typography/05-方正兰亭纤黑简体.svg">
+            </div>
+
+            <div class="mb20">
+                <p>Helvetica Neue Bold</p>
+                <img class="img-responsive en" src="assets/typography/06-Helvetica Neue Bold.svg">
+            </div>
+            <div class="mb20">
+                <p>Helvetica Neue Medium</p>
+                <img class="img-responsive en" src="assets/typography/07-Helvetica Neue Medium.svg">
+            </div>
+            <div class="mb20">
+                <p>Helvetica Neue Regular</p>
+                <img class="img-responsive en" src="assets/typography/08-Helvetica Neue Regular.svg">
+            </div>
+            <div class="mb20">
+                <p>Helvetica Neue Light</p>
+                <img class="img-responsive en" src="assets/typography/09-Helvetica Neue Light.svg">
+            </div>
+            <div class="mb20">
+                <p>Helvetica Neue Thin</p>
+                <img class="img-responsive en" src="assets/typography/10-Helvetica Neue Thin.svg">
+            </div>
+            <div class="mb20">
+                <p>Helvetica Neue UltraLight</p>
+                <img class="img-responsive en" src="assets/typography/11-Helvetica Neue UltraLight.svg">
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="fontsize-16 mb10">系统设备字体</div>
+        <p>寻找跨平台最佳的 font-family，适配不同操作系统和浏览器。</p>
+        <div>
+            <p>中文：</p>
+            <ul>
+                <li>Windows 优先使用「微软雅黑」，如果没有则使用「中易宋体（SimSun）」。</li>
+                <li>OS X 优先使用「冬青黑体简体（Hiragino Sans GB）」，如果没有则使用默认的「华文黑体」。</li>
+                <li>Linux 优先使用「文泉驿微米黑」。</li>
+            </ul>
+            <p>西文：</p>
+            <ul>
+                <li>Windows 优先使用「Tahoma」，其他可用「Arial」、「Verdana」。</li>
+                <li>OS X 优先使用「Helvetica Neue」，其他可用「Arial」、「Verdana」。</li>
+            </ul>
+        </div>
+        <div>
+            <a href="css.html">详见样式</a>
+        </div>
+    </div>
+</div>
+
 <div class="brand-color-palettes">
     <div class="fontsize-20 mb40">色盘 <small>Color Palettes</small></div>
     <div class="mb40">
@@ -528,9 +596,9 @@ define(function() {
     <div class="mb40">
         <div class="fontsize-16 mb10">一级品牌色盘</div>
         <div class="mb40">
-            <p>我们的一级品牌色盘中设置12种辅助色彩，配合品牌色使用。辅助色不可用来替代品牌色。</p>
-            <p>RGB 和 HEX 色值运用于显示设备，包括 PC、平板、手机等。CMYK 和 Pantone 色值运用于印刷。</p>
-            <p>在实际运用中，无论从 RGB 到 CMYK 的转换，还是用其他任何复制方法，都要尽可能最大限度接近指南中的色标颜色。</p>
+            <p class="mb0">我们的一级品牌色盘中设置12种辅助色彩，配合品牌色使用。辅助色不可用来替代品牌色。</p>
+            <p class="mb0">RGB 和 HEX 色值运用于显示设备，包括 PC、平板、手机等。CMYK 和 Pantone 色值运用于印刷。</p>
+            <p class="mb0">在实际运用中，无论从 RGB 到 CMYK 的转换，还是用其他任何复制方法，都要尽可能最大限度接近指南中的色标颜色。</p>
         </div>
         <div class="row">
             <div class="col-sm-4" style="max-width: 226px;">
@@ -990,80 +1058,44 @@ define(function() {
     </div>
 </div>
 
-<div class="brand-typography mb40">
-    <div class="fontsize-20 mb40">字体 <small>Typography</small></div>
-    <div>
-        <div class="fontsize-16 mb10">印刷字体</div>
-        <p>为了塑造品牌整体形象,所有传播媒体、刊物及平面印刷等,所需的文字均采用统一专用字体,以供不同场合使用。同时,为求运用方便,在刊物、媒体等内文说明的排版上,若无相同字体,请以形相近的字体取代使用。</p>
-        <div>
-            <div class="mb20">
-                <p>方正兰亭特黑简体(FZLTTHJW)</p>
-                <img class="img-responsive cn" src="assets/typography/01-方正兰亭特黑简体.svg">
+<div class="">
+    <div class="fontsize-20 mb40">网格系统 <small>Grid systems</small></div>
+    <div class="mb40">
+        <div class="fontsize-16 mb10">Web 上的栅格</div>
+        <p class="mb20">品牌站点和各产品 Minisite 采用 12 栏流体栅格，可以根据版面需要分为通栏、两栏、三栏、四栏甚至六栏的形式。根据站点的特点和内容，在pc端可 以先采用一种固定的宽度，通过流体的方式适配平板。</p>
+        <div class="row mb40">
+            <div class="col-sm-4">
+                <p>PC 宽屏</p>
+                <img class="img-responsive" src="assets/grid-systems/01-PC宽屏.svg">
             </div>
-            <div class="mb20">
-                <p>方正兰亭粗黑简体(FZLTCHJW)</p>
-                <img class="img-responsive cn" src="assets/typography/02-方正兰亭粗黑简体.svg">
+            <div class="col-sm-4">
+                <p>PC 窄屏</p>
+                <img class="img-responsive" src="assets/grid-systems/02-PC窄屏.svg">
             </div>
-            <div class="mb20">
-                <p>方正兰亭中黑简体(FZLTZHJW)</p>
-                <img class="img-responsive cn" src="assets/typography/03-方正兰亭中黑简体.svg">
+            <div class="col-sm-4">
+                <p>iPAD 竖屏</p>
+                <img class="img-responsive" src="assets/grid-systems/03-iPAD竖屏.svg">
             </div>
-            <div class="mb20">
-                <p>方正兰亭黑简体(FZLTHJW)</p>
-                <img class="img-responsive cn" src="assets/typography/04-方正兰亭黑简体.svg">
-            </div>
-            <div class="mb20">
-                <p>方正兰亭纤黑简体(FZLTXHJW)</p>
-                <img class="img-responsive cn" src="assets/typography/05-方正兰亭纤黑简体.svg">
-            </div>
-
-            <div class="mb20">
-                <p>Helvetica Neue Bold</p>
-                <img class="img-responsive en" src="assets/typography/06-Helvetica Neue Bold.svg">
-            </div>
-            <div class="mb20">
-                <p>Helvetica Neue Medium</p>
-                <img class="img-responsive en" src="assets/typography/07-Helvetica Neue Medium.svg">
-            </div>
-            <div class="mb20">
-                <p>Helvetica Neue Regular</p>
-                <img class="img-responsive en" src="assets/typography/08-Helvetica Neue Regular.svg">
-            </div>
-            <div class="mb20">
-                <p>Helvetica Neue Light</p>
-                <img class="img-responsive en" src="assets/typography/09-Helvetica Neue Light.svg">
-            </div>
-            <div class="mb20">
-                <p>Helvetica Neue Thin</p>
-                <img class="img-responsive en" src="assets/typography/10-Helvetica Neue Thin.svg">
-            </div>
-            <div class="mb20">
-                <p>Helvetica Neue UltraLight</p>
-                <img class="img-responsive en" src="assets/typography/11-Helvetica Neue UltraLight.svg">
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <img class="img-responsive" src="assets/grid-systems/04-pc栅格.svg">
             </div>
         </div>
     </div>
-    <div>
-        <div class="fontsize-16 mb10">系统设备字体</div>
-        <p>寻找跨平台最佳的 font-family，适配不同操作系统和浏览器。</p>
-        <div>
-            <p>中文：</p>
-            <ul>
-                <li>Windows 优先使用「微软雅黑」，如果没有则使用「中易宋体（SimSun）」。</li>
-                <li>OS X 优先使用「冬青黑体简体（Hiragino Sans GB）」，如果没有则使用默认的「华文黑体」。</li>
-                <li>Linux 优先使用「文泉驿微米黑」。</li>
-            </ul>
-            <p>西文：</p>
-            <ul>
-                <li>Windows 优先使用「Tahoma」，其他可用「Arial」、「Verdana」。</li>
-                <li>OS X 优先使用「Helvetica Neue」，其他可用「Arial」、「Verdana」。</li>
-            </ul>
-        </div>
-        <div>
-            <a href="css.html">详见样式</a>
+    <div class="mb40">
+        <div class="fontsize-16 mb10">印刷上的栅格</div>
+        <p>平面印刷上优先采用12栏、12列的网格系统,以应对多种物料设计的需求，网格系统可根据实际应用尺寸按比例拉伸。我们的排版遵循标准的定义、动态布局。</p>
+        <div class="row">
+            <img class="col-sm-12 img-responsive mb40" src="assets/grid-systems/05-印刷12栅格.svg">
+            <img class="col-sm-6 img-responsive mb40" src="assets/grid-systems/06-书籍.svg">
+            <img class="col-sm-6 img-responsive mb40" src="assets/grid-systems/07-书籍栅格.svg">
+            <img class="col-sm-6 img-responsive mb40" src="assets/grid-systems/08-白色ppt.svg">
+            <img class="col-sm-6 img-responsive mb40" src="assets/grid-systems/09-白色ppt栅格.svg">
+            <img class="col-sm-6 img-responsive mb40" src="assets/grid-systems/10-黑色ppt.svg">
+            <img class="col-sm-6 img-responsive mb40" src="assets/grid-systems/11-黑色ppt栅格.svg">
         </div>
     </div>
-    
 </div>
 
 <div class="">
@@ -1107,46 +1139,6 @@ define(function() {
         <div class="row">
             <img class="col-sm-6 img-responsive" src="assets/examples/15-易拉宝1.svg">
             <img class="col-sm-6 img-responsive" src="assets/examples/16-易拉宝2.svg">
-        </div>
-    </div>
-</div>
-
-<div class="">
-    <div class="fontsize-20 mb40">网格系统 <small>Grid systems</small></div>
-    <div class="mb40">
-        <div class="fontsize-16 mb10">Web 上的栅格</div>
-        <p class="mb20">品牌站点和各产品 Minisite 采用 12 栏流体栅格，可以根据版面需要分为通栏、两栏、三栏、四栏甚至六栏的形式。根据站点的特点和内容，在pc端可 以先采用一种固定的宽度，通过流体的方式适配平板。</p>
-        <div class="row mb40">
-            <div class="col-sm-4">
-                <p>PC 宽屏</p>
-                <img class="img-responsive" src="assets/grid-systems/01-PC宽屏.svg">
-            </div>
-            <div class="col-sm-4">
-                <p>PC 窄屏</p>
-                <img class="img-responsive" src="assets/grid-systems/02-PC窄屏.svg">
-            </div>
-            <div class="col-sm-4">
-                <p>iPAD 竖屏</p>
-                <img class="img-responsive" src="assets/grid-systems/03-iPAD竖屏.svg">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <img class="img-responsive" src="assets/grid-systems/04-pc栅格.svg">
-            </div>
-        </div>
-    </div>
-    <div class="mb40">
-        <div class="fontsize-16 mb10">印刷上的栅格</div>
-        <p>平面印刷上优先采用12栏、12列的网格系统,以应对多种物料设计的需求，网格系统可根据实际应用尺寸按比例拉伸。我们的排版遵循标准的定义、动态布局。</p>
-        <div class="row">
-            <img class="col-sm-12 img-responsive mb40" src="assets/grid-systems/05-印刷12栅格.svg">
-            <img class="col-sm-6 img-responsive mb40" src="assets/grid-systems/06-书籍.svg">
-            <img class="col-sm-6 img-responsive mb40" src="assets/grid-systems/07-书籍栅格.svg">
-            <img class="col-sm-6 img-responsive mb40" src="assets/grid-systems/08-白色ppt.svg">
-            <img class="col-sm-6 img-responsive mb40" src="assets/grid-systems/09-白色ppt栅格.svg">
-            <img class="col-sm-6 img-responsive mb40" src="assets/grid-systems/10-黑色ppt.svg">
-            <img class="col-sm-6 img-responsive mb40" src="assets/grid-systems/11-黑色ppt栅格.svg">
         </div>
     </div>
 </div>

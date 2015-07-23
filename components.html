@@ -29,14 +29,26 @@
 <script src="spec.components/boot.js"></script>
 
 <script>
-    require(['jquery', 'underscore', 'brix/loader', 'spec.components/catalog', 'spec.components/constant'], function($, _, Loader, Catalog, Constant) {
+    require(['jquery', 'underscore', 'brix/loader', 'spec.components/catalog', 'spec.components/constant', 'spec.components/holder'], function($, _, Loader, Catalog, Constant, Holder) {
         Loader.boot(function() {
             var $sidebar = $('.sidebar').empty()
-            var tpl = '<div class="sidebar-item"><a href="readme.html?name=<%= resp %>"><%= name %> <small><%= resp %></small></a></div>'
+            var tpl = '<div class="sidebar-item" data-resp="<%= resp || name %>"><a href="<%= href %>"><%= name %> <small><%= resp %></small></a></div>'
             tpl = _.template(tpl)
+            $(tpl({
+                href: 'components.html',
+                name: '所有',
+                resp: 'All'
+            })).appendTo($sidebar)
             _.each(Constant.COMPONENTS, function(item, index) {
-                $(tpl(item)).appendTo($sidebar)
+                $(tpl({
+                    href: 'readme.html?name=' + item.resp,
+                    name: item.name,
+                    resp: item.resp
+                })).appendTo($sidebar)
             })
+            $('[data-resp="All"]').addClass('active')
+
+            Holder.recover().hold()
         })
     })
 </script>

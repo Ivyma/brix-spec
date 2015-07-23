@@ -63,9 +63,20 @@
                 url: readme
             },
             function() {
-                var tpl = '<div class="sidebar-item" data-resp="<%= resp || name %>"><a href="readme.html?name=<%= resp %>"><%= name %> <small><%= resp %></small></a></div>'
-                _.each(Constant.COMPONENTS, function(item, index){
-                    $(_.template(tpl)(item)).appendTo('.sidebar')
+                var $sidebar = $('.sidebar').empty()
+                var tpl = '<div class="sidebar-item" data-resp="<%= resp || name %>"><a href="<%= href %>"><%= name %> <small><%= resp %></small></a></div>'
+                tpl = _.template(tpl)
+                $(tpl({
+                    href: 'components.html',
+                    name: '所有',
+                    resp: 'All'
+                })).appendTo($sidebar)
+                _.each(Constant.COMPONENTS, function(item, index) {
+                    $(tpl({
+                        href: 'readme.html?name=' + item.resp,
+                        name: item.name,
+                        resp: item.resp
+                    })).appendTo($sidebar)
                 })
                 // Catalog('.sidebar', 'h2')
                 $(document.body).find('pre code').each(function(index, code) {

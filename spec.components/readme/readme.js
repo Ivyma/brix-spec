@@ -2,13 +2,13 @@
 define(
     [
         'jquery', 'underscore', 'marked', 'highlightjs',
-        'brix/loader', 'brix/base',
+        'brix/loader', 'brix/base', '../holder.js',
         './readme.tpl.js',
         'css!./readme.css'
     ],
     function(
         $, _, marked, hljs,
-        Loader, Brix,
+        Loader, Brix, Holder,
         template
     ) {
         function Readme() {}
@@ -53,8 +53,7 @@ define(
                             Loader.booting = false
                             Loader.boot(that.element, function() {
                                 defer.resolve()
-                                that.hold()
-                                that.recover()
+                                Holder.hold().recover()
                             })
                         })
                     })
@@ -106,19 +105,6 @@ define(
                         trimed = Loader.Util.trimPredefined(pre[0])
                         pre.text(trimed)
                     }
-                })
-            },
-            recover: function() {
-                if (localStorage.getItem('referer') === location.href) {
-                    $(window).scrollTop(
-                        localStorage.getItem('scrollTop')
-                    )
-                }
-            },
-            hold: function() {
-                $(window).one('unload', function() {
-                    localStorage.setItem('referer', location.href)
-                    localStorage.setItem('scrollTop', $(window).scrollTop())
                 })
             }
         })

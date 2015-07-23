@@ -26,18 +26,10 @@
 <script src="spec.components/config.js"></script>
 <script src="spec.components/boot.js"></script>
 <script>
-    require(['brix/loader', 'spec.components/catalog'], function(Loader, Catalog) {
+    require(['brix/loader', 'spec.components/catalog', 'spec.components/holder'], function(Loader, Catalog, Holder) {
         Loader.boot(function() {
             Catalog('.sidebar', '.fontsize-20')
-            if (localStorage.getItem('referer') === location.href) {
-                $(window).scrollTop(
-                    localStorage.getItem('scrollTop')
-                )
-            }
-            $(window).one('unload', function() {
-                localStorage.setItem('referer', location.href)
-                localStorage.setItem('scrollTop', $(window).scrollTop())
-            })
+            Holder.recover().hold()
         })
     })
 </script>

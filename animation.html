@@ -26,9 +26,10 @@
 <script src="spec.components/config.js"></script>
 <script src="spec.components/boot.js"></script>
 <script>
-    require(['brix/loader', 'spec.components/catalog'], function(Loader, Catalog) {
+    require(['brix/loader', 'spec.components/catalog', 'spec.components/holder'], function(Loader, Catalog, Holder) {
         Loader.boot(function() {
-            Catalog('.sidebar', '.fontsize-28')
+            Catalog('.sidebar', '.fontsize-20')
+            Holder.recover().hold()
         })
     })
 </script>
