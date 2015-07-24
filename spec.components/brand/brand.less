@@ -48,10 +48,12 @@
     .brand-typography {
         img {
             &.cn {
-                height: 50px;
+                // height: 50px;
+                max-width: 328px;
             }
             &.en {
-                height: 30px;
+                // height: 30px;
+                max-width: 480px;
             }
         }
     }
@@ -181,6 +183,18 @@
                 }
             }
         }
+    }
+
+    .brand-grid {
+        .web {
+            max-width: 260 * 3px;
+        }
+        .print {
+            max-width: 260 * 3px;
+        }
+    }
+    .brand-examples {
+        max-width: 260 * 3px;
     }
 
 }

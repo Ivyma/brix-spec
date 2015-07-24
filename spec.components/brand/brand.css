@@ -37,10 +37,10 @@
   height: 150px;
 }
 .brand .brand-typography img.cn {
-  height: 50px;
+  max-width: 328px;
 }
 .brand .brand-typography img.en {
-  height: 30px;
+  max-width: 480px;
 }
 .brand .brand-color-palettes .item {
   color: #FFF;
@@ -132,4 +132,13 @@
 }
 .brand .brand-icon .shili-2 .col-sm-3 img {
   max-width: 100px;
+}
+.brand .brand-grid .web {
+  max-width: 780px;
+}
+.brand .brand-grid .print {
+  max-width: 780px;
+}
+.brand .brand-examples {
+  max-width: 780px;
 }

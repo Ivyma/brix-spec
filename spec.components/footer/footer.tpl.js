@@ -8,10 +8,14 @@ define(function() {
     <div class="">
         <div class="row">
             <div class="col-sm-6">
-                <a href="">TODO</a>
+                <p class="flat-text small"></p>
+                <p class="flat-text full-width mt10"></p>
+                <p class="flat-text full-width mt10"></p>
             </div>
             <div class="col-sm-6">
-                <a href="">TODO</a>
+                <p class="flat-text small"></p>
+                <p class="flat-text full-width mt10"></p>
+                <p class="flat-text full-width mt10"></p>
             </div>
         </div>
     </div>

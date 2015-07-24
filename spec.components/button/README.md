@@ -46,8 +46,8 @@
                 </div>
                 <div class="ungrid-col" style="padding: 40px; background-color: #fafafa;">
                     <p class="flat-text small"></p>
-                    <p class="flat-text full-width mt20"></p>
-                    <p class="flat-text full-width mt20"></p>
+                    <p class="flat-text full-width mt10"></p>
+                    <p class="flat-text full-width mt10"></p>
                 </div>
             </div>
         </div>
@@ -74,7 +74,7 @@
                 </div>
                 <div style="padding: 18px 40px;">
                     <p class="flat-text full-width"></p>
-                    <p class="flat-text full-width mt20"></p>
+                    <p class="flat-text full-width mt10"></p>
                 </div>
                 <div style="padding: 18px 40px; border-top: 1px solid #e6e6e6;">
                     <button class="btn btn-brand mr10">确定</button>
@@ -149,7 +149,7 @@
                 </div>
                 <div style="padding: 18px 40px;">
                     <p class="flat-text full-width"></p>
-                    <p class="flat-text full-width mt20"></p>
+                    <p class="flat-text full-width mt10"></p>
                 </div>
                 <div style="padding: 18px 40px; border-top: 1px solid #e6e6e6;">
                     <button class="btn btn-brand mr10 animated infinite ani-shake">确定</button>
