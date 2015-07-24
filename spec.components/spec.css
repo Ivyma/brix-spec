@@ -836,43 +836,43 @@ body .textarea.form-control {
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 1) {
   right: 10px;
-  background-color: #4e489b;
+  background-color: #701b50;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 2) {
   right: 20px;
-  background-color: #cfec9c;
+  background-color: #b246a0;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 3) {
   right: 30px;
-  background-color: #376f61;
+  background-color: #ba7d19;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 4) {
   right: 40px;
-  background-color: #5c1bea;
+  background-color: #652c15;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 5) {
   right: 50px;
-  background-color: #568f58;
+  background-color: #88270a;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 6) {
   right: 60px;
-  background-color: #efcea9;
+  background-color: #bea8e6;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 7) {
   right: 70px;
-  background-color: #b0f31f;
+  background-color: #f774ad;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 8) {
   right: 80px;
-  background-color: #ca13ae;
+  background-color: #3c4e38;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 9) {
   right: 90px;
-  background-color: #48157b;
+  background-color: #e26f80;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 10) {
   right: 100px;
-  background-color: #161b04;
+  background-color: #79bb65;
 }
 .list .item:hover {
   background-color: #FAF1ED;

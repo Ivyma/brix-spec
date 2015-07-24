@@ -37,3 +37,10 @@ table.table-brand td .img-circle {
 .demo-background-color-hover-item .content .down {
   border-radius: 0 0 5px 5px;
 }
+.demo-background-color-item .content {
+  height: 50px;
+  line-height: 48px;
+}
+.demo-background-color-item .desc {
+  text-align: center;
+}
