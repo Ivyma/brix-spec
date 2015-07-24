@@ -87,6 +87,7 @@
 // 隐藏横向滚动条
 body {
     overflow-x: hidden;
+    -webkit-font-smoothing: auto; //重置字体渲染
 }
 
 /* Font */
@@ -218,17 +219,17 @@ body .table {
 /* Table Grid */
 
 @media (min-width: 30em) {
-    .ungrid-row { 
-        width: 100%; 
-        display: table; 
-        table-layout: fixed; 
+    .ungrid-row {
+        width: 100%;
+        display: table;
+        table-layout: fixed;
     }
-    .ungrid-col { 
-        display: table-cell; 
+    .ungrid-col {
+        display: table-cell;
     }
 }
 
-.main-row { 
+.main-row {
     overflow: hidden;
 }
 .sidebar-col, .main-col {
@@ -244,6 +245,9 @@ body .table {
     margin-left: 200px;
 }
 
+/* @Media
+ * http://demo.alibaba-inc.com/system/ids_extracted/b8/27/95/89/fad08ae2f1c3bec0ae72575a/index.html
+ */
 // pad < media < pc
 @media (max-width: 991px) {
     .sidebar-item small {
@@ -261,9 +265,30 @@ body .table {
     }
 }
 
-// phone < media < pad
-@media (max-width: 415px) {
+// 320 < pad2 <= 768
+@media (min-width: 319px) and (max-width: 769px) {
 
+}
+
+// 768 < pad <= 1024
+@media (min-width: 767px) and (max-width: 1025px) {
+
+}
+
+// 1024 < PC <= 1280
+@media (min-width: 1023px) and (max-width: 1281px) {
+
+}
+
+// PC+ >1280
+@media (min-width: 1280px) {
+    body .main-col {
+        width: 88%;
+    }
+    body .main-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* Clipboard */
@@ -290,16 +315,6 @@ body .table {
     }
 }
 
-/* Media */
-@media (min-width: 768px) {
-
-}
-@media (min-width: 992px) {
-
-}
-@media (min-width: 1200px) {
-
-}
 
 /* mm.css */
 
@@ -354,8 +369,8 @@ body .btn {
     &.btn-brand {
         border: 0;
         background-color: @brand;
-        &:hover, &.hover, 
-        &:focus, &.focus, 
+        &:hover, &.hover,
+        &:focus, &.focus,
         &:active, &.active {
             border: 0;
             color: #fff;
@@ -429,7 +444,7 @@ body .btn {
 
     .sidebar {
         padding-bottom: 40px;
-     }   
+     }
     .sidebar-item,
     .sidebar-item-sub {
         a {

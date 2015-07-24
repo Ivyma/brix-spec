@@ -22,7 +22,7 @@
   font-size: 12px;
   margin-left: 10px;
 }
-@media (min-width: 770px) {
+@media (min-width: 1024px) {
   .navbar .navbar-nav {
     margin-left: 15px;
   }
@@ -34,14 +34,15 @@
     opacity: 1;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 1025px) {
   .navbar-logo {
     position: absolute;
     width: 180px;
     left: 50%;
     margin-left: -90px;
   }
-  .navbar-toggle {
+  body .navbar-toggle {
+    display: block;
     float: left;
   }
   .navbar-nav .dropdown.open ul.dropdown-menu {
@@ -81,9 +82,6 @@
 }
 .navbar-spec li > a:hover {
   background: none;
-}
-.navbar-spec .navbar-header {
-  position: relative;
 }
 .navbar-spec .dropdown {
   width: 100%;

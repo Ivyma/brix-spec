@@ -441,6 +441,7 @@
 }
 body {
   overflow-x: hidden;
+  -webkit-font-smoothing: auto;
 }
 /* Font */
 @font-face {
@@ -589,6 +590,9 @@ body .table.table-bordered thead tr th {
   width: 78.3%;
   margin-left: 200px;
 }
+/* @Media
+ * http://demo.alibaba-inc.com/system/ids_extracted/b8/27/95/89/fad08ae2f1c3bec0ae72575a/index.html
+ */
 @media (max-width: 991px) {
   .sidebar-item small {
     display: none;
@@ -602,6 +606,15 @@ body .table.table-bordered thead tr th {
   div.sidebar-wrapper .sidebar-item a,
   div.sidebar-wrapper .sidebar-item-sub a {
     padding: 10px;
+  }
+}
+@media (min-width: 1280px) {
+  body .main-col {
+    width: 88%;
+  }
+  body .main-wrapper {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /* Clipboard */
@@ -627,7 +640,6 @@ body .table.table-bordered thead tr th {
   border-color: #ff6600;
   background-color: #ff6600;
 }
-/* Media */
 /* mm.css */
 .color-brand {
   color: #ff6600;
@@ -824,43 +836,43 @@ body .textarea.form-control {
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 1) {
   right: 10px;
-  background-color: #d012ee;
+  background-color: #cdee81;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 2) {
   right: 20px;
-  background-color: #63307a;
+  background-color: #2107ee;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 3) {
   right: 30px;
-  background-color: #837ff9;
+  background-color: #ceff93;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 4) {
   right: 40px;
-  background-color: #44c1d2;
+  background-color: #fb9fa;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 5) {
   right: 50px;
-  background-color: #b365d8;
+  background-color: #abe5a4;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 6) {
   right: 60px;
-  background-color: #c84e8e;
+  background-color: #660e29;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 7) {
   right: 70px;
-  background-color: #2d7690;
+  background-color: #381492;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 8) {
   right: 80px;
-  background-color: #a403c7;
+  background-color: #9b8a76;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 9) {
   right: 90px;
-  background-color: #904701;
+  background-color: #4e1b82;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 10) {
   right: 100px;
-  background-color: #bba2ae;
+  background-color: #caada6;
 }
 .list .item:hover {
   background-color: #FAF1ED;
