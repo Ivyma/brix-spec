@@ -448,7 +448,7 @@ body {
   font-family: 'specfont';
   src: url('//at.alicdn.com/t/font_1435834666_5790358.eot');
   src: url('//at.alicdn.com/t/font_1435834666_5790358.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/font_1435834666_5790358.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/font_1435834666_5790358.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/font_1435834666_5790358.svg#iconfont') format('svg');
-
+  
   /* IE9*/
   /* iOS 4.1- */
 }
@@ -472,7 +472,7 @@ body {
   font-family: 'zsfont';
   src: url('//at.alicdn.com/t/font_1436859315_9685595.eot');
   src: url('//at.alicdn.com/t/font_1436859315_9685595.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/font_1436859315_9685595.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/font_1436859315_9685595.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/font_1436859315_9685595.svg#iconfont') format('svg');
-
+  
   /* IE9*/
   /* iOS 4.1- */
 }
@@ -810,100 +810,4 @@ body .textarea,
 body textarea.form-control,
 body .textarea.form-control {
   height: auto;
-}
-.list .item {
-  height: 50px;
-  padding: 10px 10px;
-  line-height: 30px;
-}
-.list .item .item-content {
-  float: left;
-  width: 100%;
-}
-.list .item .item-actions {
-  float: right;
-}
-.list .item .item-actions .item-actions-users {
-  position: relative;
-}
-.list .item .item-actions .item-actions-users .item-actions-user {
-  position: absolute;
-  right: 0;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 2px solid white;
-}
-.list .item .item-actions .item-actions-users .item-actions-user:nth-child( 1) {
-  right: 10px;
-  background-color: #701b50;
-}
-.list .item .item-actions .item-actions-users .item-actions-user:nth-child( 2) {
-  right: 20px;
-  background-color: #b246a0;
-}
-.list .item .item-actions .item-actions-users .item-actions-user:nth-child( 3) {
-  right: 30px;
-  background-color: #ba7d19;
-}
-.list .item .item-actions .item-actions-users .item-actions-user:nth-child( 4) {
-  right: 40px;
-  background-color: #652c15;
-}
-.list .item .item-actions .item-actions-users .item-actions-user:nth-child( 5) {
-  right: 50px;
-  background-color: #88270a;
-}
-.list .item .item-actions .item-actions-users .item-actions-user:nth-child( 6) {
-  right: 60px;
-  background-color: #bea8e6;
-}
-.list .item .item-actions .item-actions-users .item-actions-user:nth-child( 7) {
-  right: 70px;
-  background-color: #f774ad;
-}
-.list .item .item-actions .item-actions-users .item-actions-user:nth-child( 8) {
-  right: 80px;
-  background-color: #3c4e38;
-}
-.list .item .item-actions .item-actions-users .item-actions-user:nth-child( 9) {
-  right: 90px;
-  background-color: #e26f80;
-}
-.list .item .item-actions .item-actions-users .item-actions-user:nth-child( 10) {
-  right: 100px;
-  background-color: #79bb65;
-}
-.list .item:hover {
-  background-color: #FAF1ED;
-}
-.list .item:hover .item-actions .item-actions-users .item-actions-user:nth-child( 1) {
-  right: 35px;
-}
-.list .item:hover .item-actions .item-actions-users .item-actions-user:nth-child( 2) {
-  right: 70px;
-}
-.list .item:hover .item-actions .item-actions-users .item-actions-user:nth-child( 3) {
-  right: 105px;
-}
-.list .item:hover .item-actions .item-actions-users .item-actions-user:nth-child( 4) {
-  right: 140px;
-}
-.list .item:hover .item-actions .item-actions-users .item-actions-user:nth-child( 5) {
-  right: 175px;
-}
-.list .item:hover .item-actions .item-actions-users .item-actions-user:nth-child( 6) {
-  right: 210px;
-}
-.list .item:hover .item-actions .item-actions-users .item-actions-user:nth-child( 7) {
-  right: 245px;
-}
-.list .item:hover .item-actions .item-actions-users .item-actions-user:nth-child( 8) {
-  right: 280px;
-}
-.list .item:hover .item-actions .item-actions-users .item-actions-user:nth-child( 9) {
-  right: 315px;
-}
-.list .item:hover .item-actions .item-actions-users .item-actions-user:nth-child( 10) {
-  right: 350px;
 }
