@@ -283,19 +283,19 @@
     <div class="mb40 logo-forbit-group">
         <div class="fontsize-16 mb10">标志与子品牌禁用组合</div>
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6 mb20">
                 <img class="img-responsive" src="assets/logo/17-阿里妈妈标志与子品牌禁用组合.svg">
                 <p>组合没有子品牌logo标志</p>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 mb20">
                 <img class="img-responsive" src="assets/logo/17-阿里妈妈标志与子品牌禁用组合-1.svg">
                 <p>阿里妈妈logo标志须在子品牌前面</p>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 mb20">
                 <img class="img-responsive" src="assets/logo/17-阿里妈妈标志与子品牌禁用组合-2.svg">
                 <p>没有此类上下组合</p>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 mb20">
                 <img class="img-responsive" src="assets/logo/17-阿里妈妈标志与子品牌禁用组合-3.svg">
                 <p>组合样式大小不对称且没有分割线</p>
             </div>
@@ -304,23 +304,23 @@
     <div class="mb40 logo-forbit-group">
         <div class="fontsize-16 mb10">标志禁用其他案例</div>
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6 mb20">
                 <embed class="img-responsive" src="assets/logo/logo31.svg"></embed>
                 <p>阿里妈妈logo标志没有此类色彩搭配和字体</p>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 mb20">
                 <embed class="img-responsive" src="assets/logo/18-阿里妈妈标志禁用其他案例.svg"></embed>
                 <p>不是阿里妈妈logo</p>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 mb20">
                 <embed class="img-responsive" src="assets/logo/18-阿里妈妈标志禁用其他案例-1.svg"></embed>
                 <p>没有此种灰色组合,小字正确是阿里妈妈旗下产品</p>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 mb20">
                 <embed class="img-responsive" src="assets/logo/18-阿里妈妈标志禁用其他案例-2.svg"></embed>
                 <p>不是阿里妈妈logo</p>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 mb20">
                 <embed class="img-responsive" src="assets/logo/18-阿里妈妈标志禁用其他案例-3.svg"></embed>
                 <p>不是阿里妈妈logo</p>
             </div>
@@ -509,50 +509,50 @@
     <div>
         <div class="fontsize-16 mb10">印刷字体</div>
         <p>为了塑造品牌整体形象,所有传播媒体、刊物及平面印刷等,所需的文字均采用统一专用字体,以供不同场合使用。同时,为求运用方便,在刊物、媒体等内文说明的排版上,若无相同字体,请以形相近的字体取代使用。</p>
-        <div>
+        <div class="mt20 mb40">
             <div class="mb20">
-                <p>方正兰亭特黑简体(FZLTTHJW)</p>
+                <div class="mb6">方正兰亭特黑简体(FZLTTHJW)</div>
                 <img class="img-responsive cn" src="assets/typography/01-方正兰亭特黑简体.svg">
             </div>
             <div class="mb20">
-                <p>方正兰亭粗黑简体(FZLTCHJW)</p>
+                <div class="mb6">方正兰亭粗黑简体(FZLTCHJW)</div>
                 <img class="img-responsive cn" src="assets/typography/02-方正兰亭粗黑简体.svg">
             </div>
             <div class="mb20">
-                <p>方正兰亭中黑简体(FZLTZHJW)</p>
+                <div class="mb6">方正兰亭中黑简体(FZLTZHJW)</div>
                 <img class="img-responsive cn" src="assets/typography/03-方正兰亭中黑简体.svg">
             </div>
             <div class="mb20">
-                <p>方正兰亭黑简体(FZLTHJW)</p>
+                <div class="mb6">方正兰亭黑简体(FZLTHJW)</div>
                 <img class="img-responsive cn" src="assets/typography/04-方正兰亭黑简体.svg">
             </div>
-            <div class="mb20">
-                <p>方正兰亭纤黑简体(FZLTXHJW)</p>
+            <div class="mb40">
+                <div class="mb6">方正兰亭纤黑简体(FZLTXHJW)</div>
                 <img class="img-responsive cn" src="assets/typography/05-方正兰亭纤黑简体.svg">
             </div>
 
             <div class="mb20">
-                <p>Helvetica Neue Bold</p>
+                <div class="mb6">Helvetica Neue Bold</div>
                 <img class="img-responsive en" src="assets/typography/06-Helvetica Neue Bold.svg">
             </div>
             <div class="mb20">
-                <p>Helvetica Neue Medium</p>
+                <div class="mb6">Helvetica Neue Medium</div>
                 <img class="img-responsive en" src="assets/typography/07-Helvetica Neue Medium.svg">
             </div>
             <div class="mb20">
-                <p>Helvetica Neue Regular</p>
+                <div class="mb6">Helvetica Neue Regular</div>
                 <img class="img-responsive en" src="assets/typography/08-Helvetica Neue Regular.svg">
             </div>
             <div class="mb20">
-                <p>Helvetica Neue Light</p>
+                <div class="mb6">Helvetica Neue Light</div>
                 <img class="img-responsive en" src="assets/typography/09-Helvetica Neue Light.svg">
             </div>
             <div class="mb20">
-                <p>Helvetica Neue Thin</p>
+                <div class="mb6">Helvetica Neue Thin</div>
                 <img class="img-responsive en" src="assets/typography/10-Helvetica Neue Thin.svg">
             </div>
             <div class="mb20">
-                <p>Helvetica Neue UltraLight</p>
+                <div class="mb6">Helvetica Neue UltraLight</div>
                 <img class="img-responsive en" src="assets/typography/11-Helvetica Neue UltraLight.svg">
             </div>
         </div>
@@ -561,14 +561,14 @@
         <div class="fontsize-16 mb10">系统设备字体</div>
         <p>寻找跨平台最佳的 font-family，适配不同操作系统和浏览器。</p>
         <div>
-            <p>中文：</p>
-            <ul>
+            <p class="mb4">中文：</p>
+            <ul style="padding-left: 18px;">
                 <li>Windows 优先使用「微软雅黑」，如果没有则使用「中易宋体（SimSun）」。</li>
                 <li>OS X 优先使用「冬青黑体简体（Hiragino Sans GB）」，如果没有则使用默认的「华文黑体」。</li>
                 <li>Linux 优先使用「文泉驿微米黑」。</li>
             </ul>
-            <p>西文：</p>
-            <ul>
+            <p class="mb4 mt20">西文：</p>
+            <ul style="padding-left: 18px;">
                 <li>Windows 优先使用「Tahoma」，其他可用「Arial」、「Verdana」。</li>
                 <li>OS X 优先使用「Helvetica Neue」，其他可用「Arial」、「Verdana」。</li>
             </ul>
@@ -582,7 +582,7 @@
 <div class="brand-color-palettes">
     <div class="fontsize-20 mb40">色盘 <small>Color Palettes</small></div>
     <div class="mb40">
-        <div class="fontsize-16 mb10">品牌标准色</div>
+        <div class="fontsize-16 mb20">品牌标准色</div>
         <div style="width: 220px; height: 220px; color: #FFF; background-color: #FF6600; border-radius: 50%; display: table-cell; vertical-align: middle; padding-left: 60px;">
             <p>1585</p>
             <p>C:0 M:74 Y:100 K:0</p>
@@ -823,8 +823,8 @@
 <div class="shapes mb40">
     <div class="fontsize-20 mb20">辅助图形 <small>Shapes</small></div>
     <div class="mb40">
-        <p>辅助图形可做为背景、图案纹理使用,也可以配合主 VI 使用。注意辅助图形并不是 Logo。</p>
-        <p>我们以“母体”为概念设计辅助图形，充满象征意义。预示着阿里妈妈品牌是充满张力的、包容的和开放的。</p>
+        <p class="mb0">辅助图形可做为背景、图案纹理使用,也可以配合主 VI 使用。注意辅助图形并不是 Logo。</p>
+        <p class="mb0">我们以“母体”为概念设计辅助图形，充满象征意义。预示着阿里妈妈品牌是充满张力的、包容的和开放的。</p>
     </div>
     <div class="row mb60">
         <div class="col-sm-4" style="max-width: 340px;">
@@ -1055,12 +1055,12 @@
     </div>
 </div>
 
-<div class="">
+<div class="brand-grid">
     <div class="fontsize-20 mb40">网格系统 <small>Grid systems</small></div>
-    <div class="mb40">
+    <div class="web mb40">
         <div class="fontsize-16 mb10">Web 上的栅格</div>
         <p class="mb20">品牌站点和各产品 Minisite 采用 12 栏流体栅格，可以根据版面需要分为通栏、两栏、三栏、四栏甚至六栏的形式。根据站点的特点和内容，在pc端可 以先采用一种固定的宽度，通过流体的方式适配平板。</p>
-        <div class="row mb40">
+        <div class="row mb20">
             <div class="col-sm-4">
                 <p>PC 宽屏</p>
                 <img class="img-responsive" src="assets/grid-systems/01-PC宽屏.svg">
@@ -1080,22 +1080,22 @@
             </div>
         </div>
     </div>
-    <div class="mb40">
+    <div class="print mb40">
         <div class="fontsize-16 mb10">印刷上的栅格</div>
         <p>平面印刷上优先采用12栏、12列的网格系统,以应对多种物料设计的需求，网格系统可根据实际应用尺寸按比例拉伸。我们的排版遵循标准的定义、动态布局。</p>
         <div class="row">
-            <img class="col-sm-12 img-responsive mb40" src="assets/grid-systems/05-印刷12栅格.svg">
-            <img class="col-sm-6 img-responsive mb40" src="assets/grid-systems/06-书籍.svg">
-            <img class="col-sm-6 img-responsive mb40" src="assets/grid-systems/07-书籍栅格.svg">
-            <img class="col-sm-6 img-responsive mb40" src="assets/grid-systems/08-白色ppt.svg">
-            <img class="col-sm-6 img-responsive mb40" src="assets/grid-systems/09-白色ppt栅格.svg">
-            <img class="col-sm-6 img-responsive mb40" src="assets/grid-systems/10-黑色ppt.svg">
-            <img class="col-sm-6 img-responsive mb40" src="assets/grid-systems/11-黑色ppt栅格.svg">
+            <img class="col-sm-12 img-responsive mb20" src="assets/grid-systems/05-印刷12栅格.svg">
+            <img class="col-sm-6 img-responsive mb20" src="assets/grid-systems/06-书籍.svg">
+            <img class="col-sm-6 img-responsive mb20" src="assets/grid-systems/07-书籍栅格.svg">
+            <img class="col-sm-6 img-responsive mb20" src="assets/grid-systems/08-白色ppt.svg">
+            <img class="col-sm-6 img-responsive mb20" src="assets/grid-systems/09-白色ppt栅格.svg">
+            <img class="col-sm-6 img-responsive mb20" src="assets/grid-systems/10-黑色ppt.svg">
+            <img class="col-sm-6 img-responsive mb20" src="assets/grid-systems/11-黑色ppt栅格.svg">
         </div>
     </div>
 </div>
 
-<div class="">
+<div class="brand-examples">
     <div class="fontsize-20 mb40">案例 <small>Examples</small></div>
     <div class="mb40">
         <div class="fontsize-16 mb10">名片</div>
@@ -1106,16 +1106,16 @@
         </div>
     </div>
     <div class="mb40">
-        <div class="fontsize-16 mb20">PPT模版</div>
+        <div class="fontsize-16 mb10">PPT模版</div>
         <div class="row">
-            <img class="col-sm-6 img-responsive mb40" src="assets/examples/04-白色ppt封面.svg">
-            <img class="col-sm-6 img-responsive mb40" src="assets/examples/05-白色ppt封底.svg">
+            <img class="col-sm-6 img-responsive mb20" src="assets/examples/04-白色ppt封面.svg">
+            <img class="col-sm-6 img-responsive mb20" src="assets/examples/05-白色ppt封底.svg">
             <img class="col-sm-6 img-responsive" src="assets/examples/06-黑色ppt封面.svg">
             <img class="col-sm-6 img-responsive" src="assets/examples/07-黑色ppt封底.svg">
         </div>
     </div>
     <div class="mb40">
-        <div class="fontsize-16 mb20">包装袋</div>
+        <div class="fontsize-16 mb10">包装袋</div>
         <div class="row">
             <img class="col-sm-12 img-responsive mb40" src="assets/examples/08-袋子1.svg">
             <img class="col-sm-12 img-responsive mb40" src="assets/examples/09-袋子2.svg">
@@ -1125,14 +1125,14 @@
         </div>
     </div>
     <div class="mb40">
-        <div class="fontsize-16 mb20">书籍</div>
+        <div class="fontsize-16 mb10">书籍</div>
         <div class="row">
-            <img class="col-sm-12 img-responsive mb40" src="assets/examples/13-书籍1.svg">
+            <img class="col-sm-12 img-responsive mb20" src="assets/examples/13-书籍1.svg">
             <img class="col-sm-12 img-responsive" src="assets/examples/14-书籍2.svg">
         </div>
     </div>
     <div class="mb40">
-        <div class="fontsize-16 mb20">易拉宝</div>
+        <div class="fontsize-16 mb10">易拉宝</div>
         <div class="row">
             <img class="col-sm-6 img-responsive" src="assets/examples/15-易拉宝1.svg">
             <img class="col-sm-6 img-responsive" src="assets/examples/16-易拉宝2.svg">

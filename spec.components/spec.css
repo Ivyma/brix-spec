@@ -448,7 +448,7 @@ body {
   font-family: 'specfont';
   src: url('//at.alicdn.com/t/font_1435834666_5790358.eot');
   src: url('//at.alicdn.com/t/font_1435834666_5790358.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/font_1435834666_5790358.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/font_1435834666_5790358.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/font_1435834666_5790358.svg#iconfont') format('svg');
-  
+
   /* IE9*/
   /* iOS 4.1- */
 }
@@ -472,7 +472,7 @@ body {
   font-family: 'zsfont';
   src: url('//at.alicdn.com/t/font_1436859315_9685595.eot');
   src: url('//at.alicdn.com/t/font_1436859315_9685595.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/font_1436859315_9685595.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/font_1436859315_9685595.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/font_1436859315_9685595.svg#iconfont') format('svg');
-  
+
   /* IE9*/
   /* iOS 4.1- */
 }
@@ -836,43 +836,43 @@ body .textarea.form-control {
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 1) {
   right: 10px;
-  background-color: #cdee81;
+  background-color: #4e489b;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 2) {
   right: 20px;
-  background-color: #2107ee;
+  background-color: #cfec9c;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 3) {
   right: 30px;
-  background-color: #ceff93;
+  background-color: #376f61;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 4) {
   right: 40px;
-  background-color: #fb9fa;
+  background-color: #5c1bea;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 5) {
   right: 50px;
-  background-color: #abe5a4;
+  background-color: #568f58;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 6) {
   right: 60px;
-  background-color: #660e29;
+  background-color: #efcea9;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 7) {
   right: 70px;
-  background-color: #381492;
+  background-color: #b0f31f;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 8) {
   right: 80px;
-  background-color: #9b8a76;
+  background-color: #ca13ae;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 9) {
   right: 90px;
-  background-color: #4e1b82;
+  background-color: #48157b;
 }
 .list .item .item-actions .item-actions-users .item-actions-user:nth-child( 10) {
   right: 100px;
-  background-color: #caada6;
+  background-color: #161b04;
 }
 .list .item:hover {
   background-color: #FAF1ED;

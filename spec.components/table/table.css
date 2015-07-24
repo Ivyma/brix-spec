@@ -1,0 +1,11 @@
+.example .mm-tabs li:hover,
+.example .mm-tabs li.active {
+  border-bottom-color: #ff6600;
+}
+.example .mm-tabs li:hover a,
+.example .mm-tabs li.active a {
+  color: #ff6600;
+}
+.example .column-scroll-arrow {
+  background-color: #ff6600;
+}
