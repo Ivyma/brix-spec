@@ -748,9 +748,9 @@ body .btn.btn-bounce .three {
 /* */
 .spec-anchor {
   display: block;
-  height: 50px;
+  height: 80px;
   width: 0px;
-  margin-top: -50px;
+  margin-top: -80px;
 }
 .sidebar-wrapper {
   position: fixed;
