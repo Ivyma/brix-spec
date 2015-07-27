@@ -69,7 +69,7 @@
         </div>
     </div>
     <div class="mb40">
-        <div class="fontsize-16 mb10">直通车 <small></small></div>
+        <div class="fontsize-16 mb10">直通车 <span class="productfont ml5" style="color: #F78400;">&#xe602;</span></div>
         <div class="row">
             <% 
                 var colors = [ // border background color content
@@ -88,7 +88,7 @@
         </div>
     </div>
     <div class="mb40">
-        <div class="fontsize-16 mb10">Tanx <small></small></div>
+        <div class="fontsize-16 mb10">Tanx <span class="productfont ml5" style="color: #50B347;">&#xe601;</span></div>
         <div class="row">
             <% 
                 var colors = [ // border background color content
@@ -107,7 +107,7 @@
         </div>
     </div>
     <div class="mb40">
-        <div class="fontsize-16 mb10">钻石展位 <small></small></div>
+        <div class="fontsize-16 mb10">钻石展位 <span class="productfont ml5" style="color: #4A7BF7;">&#xe603;</span></div>
         <div class="row">
             <% 
                 var colors = [ // border background color content
@@ -126,7 +126,7 @@
         </div>
     </div>
     <div class="mb40">
-        <div class="fontsize-16 mb10">易传媒 <small></small></div>
+        <div class="fontsize-16 mb10">易传媒 <span class="productfont ml5" style="color: #6363E6;">&#xe607;</span></div>
         <div class="row">
             <% 
                 var colors = [ // border background color content
@@ -145,7 +145,7 @@
         </div>
     </div>
     <div class="mb40">
-        <div class="fontsize-16 mb10">DMP <small></small></div>
+        <div class="fontsize-16 mb10">DMP <span class="productfont ml5" style="color: #894FC4;">&#xe600;</span></div>
         <div class="row">
             <% 
                 var colors = [ // border background color content
