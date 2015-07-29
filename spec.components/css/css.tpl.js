@@ -53,7 +53,7 @@ define(function() {
         </div>
     </div>
     <div class="mb40">
-        <div class="fontsize-16 mb10">淘宝联盟 <small></small></div>
+        <div class="fontsize-16 mb10">淘宝联盟 <span class="productfont ml5" style="color: #FA6419;">&#xe604;</span></div>
         <div class="row">
             <% 
                 var colors = [ // border background color content
@@ -129,7 +129,7 @@ define(function() {
         </div>
     </div>
     <div class="mb40">
-        <div class="fontsize-16 mb10">易传媒 <span class="productfont ml5" style="color: #6363E6;">&#xe607;</span></div>
+        <div class="fontsize-16 mb10">易传媒 <span class="productfont ml5" style="color: #6363E6;">&#58888;</span></div>
         <div class="row">
             <% 
                 var colors = [ // border background color content

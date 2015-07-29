@@ -488,8 +488,8 @@ body {
 /* Font */
 @font-face {
   font-family: 'productfont';
-  src: url('//at.alicdn.com/t/font_1437963799_8145447.eot');
-  src: url('//at.alicdn.com/t/font_1437963799_8145447.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/font_1437963799_8145447.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/font_1437963799_8145447.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/font_1437963799_8145447.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_1438074361_570762.eot');
+  src: url('//at.alicdn.com/t/font_1438074361_570762.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/font_1438074361_570762.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/font_1438074361_570762.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/font_1438074361_570762.svg#iconfont') format('svg');
   
   /* IE9*/
   /* iOS 4.1- */
