@@ -15,7 +15,9 @@ define(
 
         _.extend(Footer.prototype, Brix.prototype, {
             options: {},
-            init: function() {},
+            init: function() {
+                $(this.element).append('<hr class="footer-top-border">')
+            },
             render: function() {
                 var that = this
                 $.ajax({

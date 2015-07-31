@@ -29,7 +29,19 @@
     require(['brix/loader', 'spec.components/catalog', 'spec.components/holder'], function(Loader, Catalog, Holder) {
         Loader.boot(function() {
             Catalog('.sidebar', '.fontsize-20')
+
+            window.onhashchange = function(event){
+                console.log(new Date(), event.type)
+                $('a[name="' + location.hash.slice(1) + '"]')
+                    .parent().parent().show()
+                    .siblings().hide()
+            }
+            if(!location.hash)location.hash= '#品牌故事 Brand Story'
+
             Holder.recover().hold()
+
+        }, function () {
+            console.log(new Date(), arguments)
         })
     })
 </script>

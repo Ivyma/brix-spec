@@ -5,7 +5,7 @@
 
 <div class="mb40">
     <div class="mb40">
-        <div class="fontsize-28 mb10">颜色 <small>Colors</small></div>
+        <div class="fontsize-20 mb10">颜色 <small>Colors</small></div>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     </div>
 
@@ -190,7 +190,7 @@
 
 <div class="mb40">
     <div class="mb40">
-        <div class="fontsize-28 mb10">字体 <small>Font</small></div class="fontsize-28">
+        <div class="fontsize-20 mb10">字体 <small>Font</small></div class="fontsize-28">
         <p class="mb20">提高文字辨识性和页面易读性，并在视觉上达到统一和整体。</p>
     </div>
     <div class="mb40">

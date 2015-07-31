@@ -20,6 +20,9 @@
   font-size: 120px;
   color: #333;
 }
+.brand {
+  min-height: 500px;
+}
 .brand .brand-logo table.logo-color-and-background-color td,
 .brand .brand-logo table.logo-color-and-background-color th {
   text-align: center;
@@ -37,7 +40,7 @@
   height: 150px;
 }
 .brand .brand-typography img.cn {
-  max-width: 328px;
+  max-width: 380px;
 }
 .brand .brand-typography img.en {
   max-width: 480px;
@@ -89,9 +92,15 @@
   border: 1px solid #FF6600;
   border-radius: 50%;
 }
+.brand .brand-character .biaoqing img {
+  width: 120px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
 .brand .brand-character .sanshitu .item {
-  float: left;
+  display: inline-block;
   width: 100px;
+  text-align: left;
 }
 .brand .brand-character .sanshitu .item .circle {
   float: left;
@@ -125,13 +134,15 @@
   max-width: 240px;
 }
 .brand .brand-icon .shili-1 .col-sm-4 img {
-  max-width: 200px;
+  max-width: 160px;
+  margin: 0 auto;
 }
 .brand .brand-icon .shili-2 .col-sm-3 {
   max-width: 140px;
 }
 .brand .brand-icon .shili-2 .col-sm-3 img {
-  max-width: 100px;
+  max-width: 80px;
+  margin: 0 auto;
 }
 .brand .brand-grid .web {
   max-width: 780px;
@@ -141,4 +152,37 @@
 }
 .brand .brand-examples {
   max-width: 780px;
+}
+.brand ul.download-list {
+  display: none;
+  position: absolute;
+  margin-top: 10px;
+  list-style: none;
+  padding: 10px 0;
+  border: 1px solid #d9d9d9;
+  border-top: none;
+  box-shadow: 0 0 11px rgba(0, 0, 0, 0.2);
+  background-color: #FFF;
+  z-index: 1;
+}
+.brand ul.download-list li {
+  display: block;
+  padding: 10px 14px;
+  white-space: nowrap;
+  line-height: 1;
+}
+.brand ul.download-list li span {
+  float: left;
+  margin-right: 20px;
+}
+.brand ul.download-list li a {
+  visibility: hidden;
+  float: right;
+  color: #333;
+}
+.brand ul.download-list li:hover {
+  background: #F5F5F5;
+}
+.brand ul.download-list li:hover a {
+  visibility: visible;
 }

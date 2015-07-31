@@ -1,42 +1,62 @@
 /* global define */
 define(function() {
     return (function(){/*
+<% var RE_FILENAME = /.+\/([^\/]+)/ %>
+<% var list = [] %>
+
 <div class="brand">
 
 <div class="hide">
     <div class="">阿里妈妈品牌规范 <small>Brand Guidelines</small></div>
 </div>
 
-<div class="mb40">
-    <div class="fontsize-20 mb40">品牌故事 <small>Brand Story</small></div>
+<div class="brand-story mb40">
+    <div class="clearfix"> 
+        <div class="pull-left fontsize-20 mb40">品牌故事 <small>Brand Story</small></div>
+        <div class="pull-right"></div>
+    </div>
     <div class="row">
-        <div class="col-sm-4">
-            <div class="fontsize-16 mb10">生活化 <small>Life-oriented</small></div>
-            <p>我们通过成功的案例证明我们的商业价值。我们品牌的外在风格带有真实感受，创意来源于生活中的场景、人物、物品等元素。我们不需要过度包装。</p>
+        <div class="col-sm-12 mb40">
+            <div class="fontsize-16">生活化 <small>Life-oriented</small></div>
+            <p class="color-999 mt4 mb0">我们通过成功的案例证明我们的商业价值。我们品牌的外在风格带有真实感受，创意来源于生活中的场景、人物、物品等元素。我们不需要过度包装。</p>
         </div>
-        <div class="col-sm-4">
-            <div class="fontsize-16 mb10">温情 <small>Warm</small></div>
-            <p>我们关心客户，并给他们带来长久的信心。我们塑造温和的、带有情感的形象；我们品牌的外在风格会带有一些温情的元素，如柔和的线条、形态和配色，温暖和细腻的纹理等。</p>
+        <div class="col-sm-12 mb40">
+            <div class="fontsize-16">温情 <small>Warm</small></div>
+            <p class="color-999 mt4 mb0">我们关心客户，并给他们带来长久的信心。我们塑造温和的、带有情感的形象；我们品牌的外在风格会带有一些温情的元素，如柔和的线条、形态和配色，温暖和细腻的纹理等。</p>
         </div>
-        <div class="col-sm-4">
-            <div class="fontsize-16 mb10">活力 <small>Vitality</small></div>
-            <p>阿里妈妈的潜力是无限的。我们为此在朴实的基调中注入活力和乐观的情绪；融入一些朝气和感染力。我们把握配色、构图、排版中的节奏感；我们关注动效在品牌中的合理运用。</p>
+        <div class="col-sm-12 mb40">
+            <div class="fontsize-16">活力 <small>Vitality</small></div>
+            <p class="color-999 mt4 mb0">阿里妈妈的潜力是无限的。我们为此在朴实的基调中注入活力和乐观的情绪；融入一些朝气和感染力。我们把握配色、构图、排版中的节奏感；我们关注动效在品牌中的合理运用。</p>
         </div>
     </div>
 </div>
 
 <div class="brand-logo">
-    <div class="fontsize-20 mb40">标志 <small>Logo</small></div>
-    <div class="mb40">
-        <div class="fontsize-16 mb10">标志中文基本形</div>
-        <p>在公司传播的各种应用中，标志的应用范围非常广泛，在公司传播的各种应用中，标志的应用范围非常广泛，可以运用不同的复制技巧放大或缩小成各种尺寸，统一标准地展开设计标志是必要的。标志的字形格式，轻重比例和空间布局不得随意变更。标志的复制与再现必须根据本手册所设定的复制规范进行制作。</p>
+    <div class="clearfix"> 
+        <div class="pull-left fontsize-20 mb40">标志 <small>Logo</small></div>
+        <div class="pull-right">
+            <a on-click="download" class="btn btn-brand" href="javascript:;"><span class="specfont">&#xe633;</span> 下载附件</a>
+            <% list = ['标志/阿里妈妈品牌规范-标志.ai', '标志/阿里妈妈品牌规范-标志.pdf'] %>
+            <ul class="download-list">
+                <% for( var i = 0; i < list.length; i++ ) { %>
+                <li class="clearfix">
+                    <span><%= RE_FILENAME.exec(list[i])[1] %></span>
+                    <a href="download/<%= list[i] %>" download="" class="specfont">&#xe633;</a>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+    <div class="mb60">
+        <div class="fontsize-16">标志中文基本形</div>
+        <p class="color-999 mt4">在公司传播的各种应用中，标志的应用范围非常广泛，在公司传播的各种应用中，标志的应用范围非常广泛，可以运用不同的复制技巧放大或缩小成各种尺寸，统一标准地展开设计标志是必要的。标志的字形格式，轻重比例和空间布局不得随意变更。标志的复制与再现必须根据本手册所设定的复制规范进行制作。</p>
         <div class="row">
             <div class="col-sm-12">
                 <img class="img-responsive" style="max-width: 216px;" src="assets/logo/01-阿里妈妈标志中文基本型.svg">
             </div>
         </div>
     </div>
-    <div class="mb40">
+    <div class="mb60">
         <div class="fontsize-16 mb10">标志英文基本形</div>
         <div class="row">
             <div class="col-sm-12">
@@ -44,46 +64,46 @@ define(function() {
             </div>
         </div>
     </div>
-    <div class="mb40">
-        <div class="fontsize-16 mb10">标志中文标准字基本形再生方格制图</div>
-        <p>标志因使用场景各有不同，需要放大不同比例使用时，可依方格图法，得以制作出正确比例尺寸得标志。</p>
+    <div class="mb60">
+        <div class="fontsize-16">标志中文标准字基本形再生方格制图</div>
+        <p class="color-999 mt4">标志因使用场景各有不同，需要放大不同比例使用时，可依方格图法，得以制作出正确比例尺寸得标志。</p>
         <div class="row">
-            <div class="col-sm-8 mb10">
+            <div class="col-sm-7 mb10">
                 <img class="img-responsive" src="assets/logo/03-阿里妈妈标志中文标准字基本形再生方格制图.svg">
             </div>
-            <div class="col-sm-8">
+            <div class="col-sm-7">
                 <div class="ungrid-row">
                     <div class="ungrid-col" style="width: 70px;">
                         <img class="img-responsive" src="assets/logo/04-阿里妈妈标志英文标准字基本形再生方格制图-1.svg">
                     </div>
                     <div class="ungrid-col pl10 vertical-align-middle">
                         <p class="mb4">基本型最小使用值</p>
-                        <p>最小使用值得设定是为了保证标志得完整性，当标志缩小至12mm以下时，标志特点不够明显，所以将其设定为标志基本型的使用最小限度。</p>
+                        <p class="color-999">最小使用值得设定是为了保证标志得完整性，当标志缩小至12mm以下时，标志特点不够明显，所以将其设定为标志基本型的使用最小限度。</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="mb40">
+    <div class="mb60">
         <div class="fontsize-16 mb10">标志英文标准字基本形再生方格制图</div>
         <div class="row">
-            <div class="col-sm-8 mb10">
+            <div class="col-sm-7 mb10">
                 <img class="img-responsive" src="assets/logo/04-阿里妈妈标志英文标准字基本形再生方格制图.svg">
             </div>
-            <div class="col-sm-8">
+            <div class="col-sm-7">
                 <div class="ungrid-row">
                     <div class="ungrid-col" style="width: 70px;">
                         <img class="img-responsive" src="assets/logo/04-阿里妈妈标志英文标准字基本形再生方格制图-1.svg">
                     </div>
                     <div class="ungrid-col pl10 vertical-align-middle">
                         <p class="mb4">基本型最小使用值</p>
-                        <p>最小使用值得设定是为了保证标志得完整性，当标志缩小至12mm以下时，标志特点不够明显，所以将其设定为标志基本型的使用最小限度。</p>
+                        <p class="color-999">最小使用值得设定是为了保证标志得完整性，当标志缩小至12mm以下时，标志特点不够明显，所以将其设定为标志基本型的使用最小限度。</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="mb40">
+    <div class="mb60">
         <div class="fontsize-16 mb10">标志中英文组合基本形</div>
         <div class="row">
             <div class="col-sm-12">
@@ -91,38 +111,38 @@ define(function() {
             </div>
         </div>
     </div>
-    <div class="mb40">
+    <div class="mb60">
         <div class="fontsize-16 mb10">标志中英文组合标准字基本形再生方格制图</div>
         <div class="row">
-            <div class="col-sm-8 mb10">
+            <div class="col-sm-7 mb10">
                 <img class="img-responsive" src="assets/logo/06-阿里妈妈标志中英文组合标准字基本形再生方格制图.svg">
             </div>
-            <div class="col-sm-8">
+            <div class="col-sm-7">
                 <div class="ungrid-row">
                     <div class="ungrid-col" style="width: 70px;">
                         <img class="img-responsive" src="assets/logo/06-阿里妈妈标志中英文组合标准字基本形再生方格制图-1.svg">
                     </div>
                     <div class="ungrid-col pl10 vertical-align-middle">
                         <p class="mb4">基本型最小使用值</p>
-                        <p>最小使用值得设定是为了保证标志得完整性，当标志缩小至12mm以下时，标志特点不够明显，所以将其设定为标志基本型的使用最小限度。</p>
+                        <p class="color-999">最小使用值得设定是为了保证标志得完整性，当标志缩小至12mm以下时，标志特点不够明显，所以将其设定为标志基本型的使用最小限度。</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="mb40">
+    <div class="mb60">
         <div class="fontsize-16 mb10">标志中英文组合标准字基本形保护区域</div>
         <div class="row">
-            <div class="col-sm-8">
+            <div class="col-sm-7">
                 <img class="img-responsive" src="assets/logo/07-阿里妈妈标志中英文组合标准字基本形保护区域.svg">
             </div>
         </div>
     </div>
     
-    <div class="mb40">
+    <div class="mb60">
         <div class="mb40">
-            <div class="fontsize-16 mb10">标志与子品牌组合</div>
-            <p>基本元素组合规范是将基本元素依照应用设计项目的需要而预先规划直排、横列、大小、方向等不同的组合单元，主要是为了保证基本元素组合之后的平衡关系。在对外宣传时，如果阿里妈妈标志和旗下平台标志同时使用时，必须参照此组合规范。如果只需要强调子品牌时，公司标志的使用可根据实际情况而定。</p>
+            <div class="fontsize-16">标志与子品牌组合</div>
+            <p class="color-999 mt4">基本元素组合规范是将基本元素依照应用设计项目的需要而预先规划直排、横列、大小、方向等不同的组合单元，主要是为了保证基本元素组合之后的平衡关系。在对外宣传时，如果阿里妈妈标志和旗下平台标志同时使用时，必须参照此组合规范。如果只需要强调子品牌时，公司标志的使用可根据实际情况而定。</p>
         </div>
         <div class="row">
             <div class="col-sm-12">
@@ -150,7 +170,7 @@ define(function() {
             </div>
         </div>
     </div>
-    <div class="mb40">
+    <div class="mb60">
         <div class="fontsize-16 mb10">标志与子品牌组合再生方格制图</div>
         <div class="row">
             <div class="col-sm-8 mb10">
@@ -163,7 +183,7 @@ define(function() {
                     </div>
                     <div class="ungrid-col pl10 vertical-align-middle">
                         <p class="mb4">基本型最小使用值</p>
-                        <p>最小使用值得设定是为了保证标志得完整性，当标志缩小至12mm以下时，标志特点不够明显，所以将其设定为标志基本型的使用最小限度。</p>
+                        <p class="color-999">最小使用值得设定是为了保证标志得完整性，当标志缩小至12mm以下时，标志特点不够明显，所以将其设定为标志基本型的使用最小限度。</p>
                     </div>
                 </div>
             </div>
@@ -179,13 +199,13 @@ define(function() {
                     </div>
                     <div class="ungrid-col pl10 vertical-align-middle">
                         <p class="mb4">基本型最小使用值</p>
-                        <p>最小使用值得设定是为了保证标志得完整性，当标志缩小至12mm以下时，标志特点不够明显，所以将其设定为标志基本型的使用最小限度。</p>
+                        <p class="color-999">最小使用值得设定是为了保证标志得完整性，当标志缩小至12mm以下时，标志特点不够明显，所以将其设定为标志基本型的使用最小限度。</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="mb40">
+    <div class="mb60">
         <div class="fontsize-16 mb10">标志与子品牌组合保护区域</div>
         <div class="row">
             <div class="col-sm-8">
@@ -196,10 +216,10 @@ define(function() {
             </div>
         </div>
     </div>
-    <div class="mb40">
-        <div class="fontsize-16 mb10">标志标准色</div>
-        <p>为了加强商标的个性及延伸性，设定橙色和灰色为标志的标准色。表示商标时的颜色，只能使用已经规定颜色。无论用什么样的复制方法，都要尽可能使用最大限度接近手册中所附色标的颜色。</p>
-        <div class="clearfix">
+    <div class="mb60">
+        <div class="fontsize-16">标志标准色</div>
+        <p class="color-999 mt4">为了加强商标的个性及延伸性，设定橙色和灰色为标志的标准色。表示商标时的颜色，只能使用已经规定颜色。无论用什么样的复制方法，都要尽可能使用最大限度接近手册中所附色标的颜色。</p>
+        <div class="mt20 clearfix">
             <div style="float: left; margin-right: 100px;">
                 <div style="width: 160px; height: 160px; border-radius: 50%; text-align: center; line-height: 160px; vertical-align: middle; color: white; background-color: #FF6600;">#FF6600</div>
                 <div class="mt20 pl20">
@@ -220,9 +240,9 @@ define(function() {
             </div>
         </div>
     </div>
-    <div class="mb40">
-        <div class="fontsize-16 mb10">标志色彩运用和标准色和背景色的关系</div>
-        <p>标志在实际应用中，标准色根据不同背景色的变化，其表现形式也随着改变。如果背景色的色彩明度和标准色难以区分的情况下，标志必须采用反白表示。本页规范了在不同深浅背景色中的表示关系。</p>
+    <div class="mb60">
+        <div class="fontsize-16">标志色彩运用和标准色和背景色的关系</div>
+        <p class="color-999 mt4">标志在实际应用中，标准色根据不同背景色的变化，其表现形式也随着改变。如果背景色的色彩明度和标准色难以区分的情况下，标志必须采用反白表示。本页规范了在不同深浅背景色中的表示关系。</p>
 
         <table class="table logo-color-and-background-color" style="width: 75%;">
             <thead>
@@ -261,69 +281,69 @@ define(function() {
             </tbody>
         </table>
     </div>
-    <div class="mb40 logo-forbit-group">
-        <div class="fontsize-16 mb10">标志禁用组合</div>
-        <p>为了确保标志与相应的标志组合的视觉传达中的统一性，特规范以下组合，在实际应用时禁止使用的组合。</p>
+    <div class="mb60 logo-forbit-group">
+        <div class="fontsize-16">标志禁用组合</div>
+        <p class="color-999 mt4">为了确保标志与相应的标志组合的视觉传达中的统一性，特规范以下组合，在实际应用时禁止使用的组合。</p>
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-5 mb10">
                 <img class="img-responsive" src="assets/logo/16-阿里妈妈标志禁用组合.svg">
                 <p>组合规范中没有此类中文字体组合</p>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-5 mb10">
                 <img class="img-responsive" src="assets/logo/16-阿里妈妈标志禁用组合-1.svg">
                 <p>阿里妈妈logo标志没有此种颜色组合</p>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-5 mb10">
                 <img class="img-responsive" src="assets/logo/16-阿里妈妈标志禁用组合-2.svg">
                 <p>组合中英文字体过小</p>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-5 mb10">
                 <img class="img-responsive" src="assets/logo/16-阿里妈妈标志禁用组合-3.svg">
                 <p>没有此类中英文横排组合</p>
             </div>
         </div>
     </div>
-    <div class="mb40 logo-forbit-group">
+    <div class="mb60 logo-forbit-group">
         <div class="fontsize-16 mb10">标志与子品牌禁用组合</div>
         <div class="row">
-            <div class="col-sm-6 mb20">
+            <div class="col-sm-5 mb20">
                 <img class="img-responsive" src="assets/logo/17-阿里妈妈标志与子品牌禁用组合.svg">
                 <p>组合没有子品牌logo标志</p>
             </div>
-            <div class="col-sm-6 mb20">
+            <div class="col-sm-5 mb20">
                 <img class="img-responsive" src="assets/logo/17-阿里妈妈标志与子品牌禁用组合-1.svg">
                 <p>阿里妈妈logo标志须在子品牌前面</p>
             </div>
-            <div class="col-sm-6 mb20">
+            <div class="col-sm-5 mb20">
                 <img class="img-responsive" src="assets/logo/17-阿里妈妈标志与子品牌禁用组合-2.svg">
                 <p>没有此类上下组合</p>
             </div>
-            <div class="col-sm-6 mb20">
+            <div class="col-sm-5 mb20">
                 <img class="img-responsive" src="assets/logo/17-阿里妈妈标志与子品牌禁用组合-3.svg">
                 <p>组合样式大小不对称且没有分割线</p>
             </div>
         </div>
     </div>
-    <div class="mb40 logo-forbit-group">
+    <div class="mb60 logo-forbit-group">
         <div class="fontsize-16 mb10">标志禁用其他案例</div>
         <div class="row">
-            <div class="col-sm-6 mb20">
+            <div class="col-sm-5 mb20">
                 <embed class="img-responsive" src="assets/logo/logo31.svg"></embed>
                 <p>阿里妈妈logo标志没有此类色彩搭配和字体</p>
             </div>
-            <div class="col-sm-6 mb20">
+            <div class="col-sm-5 mb20">
                 <embed class="img-responsive" src="assets/logo/18-阿里妈妈标志禁用其他案例.svg"></embed>
                 <p>不是阿里妈妈logo</p>
             </div>
-            <div class="col-sm-6 mb20">
+            <div class="col-sm-5 mb20">
                 <embed class="img-responsive" src="assets/logo/18-阿里妈妈标志禁用其他案例-1.svg"></embed>
                 <p>没有此种灰色组合,小字正确是阿里妈妈旗下产品</p>
             </div>
-            <div class="col-sm-6 mb20">
+            <div class="col-sm-5 mb20">
                 <embed class="img-responsive" src="assets/logo/18-阿里妈妈标志禁用其他案例-2.svg"></embed>
                 <p>不是阿里妈妈logo</p>
             </div>
-            <div class="col-sm-6 mb20">
+            <div class="col-sm-5 mb20">
                 <embed class="img-responsive" src="assets/logo/18-阿里妈妈标志禁用其他案例-3.svg"></embed>
                 <p>不是阿里妈妈logo</p>
             </div>
@@ -332,12 +352,28 @@ define(function() {
 </div>
 
 <div class="brand-character">
-    <div class="fontsize-20 mb40">吉祥物 <small>Character</small></div>
-    <div class="mb40">
+    <div class="clearfix"> 
+        <div class="pull-left fontsize-20 mb40">吉祥物 <small>Character</small></div>
+        <div class="pull-right">
+            <a on-click="download" class="btn btn-brand" href="javascript:;"><span class="specfont">&#xe633;</span> 下载附件</a>
+            <% list = ['吉祥物/阿里妈妈品牌规范-吉祥物（校正）.ai', '吉祥物/阿里妈妈品牌规范-吉祥物（校正）.pdf'] %>
+            <ul class="download-list">
+                <% for( var i = 0; i < list.length; i++ ) { %>
+                <li class="clearfix">
+                    <span><%= RE_FILENAME.exec(list[i])[1] %></span>
+                    <a href="download/<%= list[i] %>" download="" class="specfont">&#xe633;</a>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+    <div class="mb60">
         <div class="ungrid-row mb40">
-            <div class="ungrid-col text-align-center vertical-align-middle" style="width: 33%; padding-right: 3%;"><img class="img-responsive" src="assets/character/1 袋妈.svg"></div>
+            <div class="ungrid-col text-align-center vertical-align-middle" style="width: 27%; padding-right: 3%;">
+                <img class="img-responsive" src="assets/character/1 袋妈.svg">
+            </div>
             <div class="ungrid-col vertical-align-middle" style="width: 50%">
-                <p style="font-size: 40px;">阿袋妈</p>
+                <p style="font-size: 28px;">阿袋妈</p>
                 <p>口头禅：“放着我来”</p>
                 <p>星座：金牛座</p>
                 <p>喜欢的食物：沙拉</p>
@@ -349,9 +385,10 @@ define(function() {
             </div>
         </div>
         <div class="ungrid-row">
-            <div class="ungrid-col text-align-center vertical-align-middle" style="width: 33%; padding-right: 3%;"><img class="img-responsive" src="assets/character/2 小袋.svg" style="width: 60%; margin: 0 auto;"></div>
+            <div class="ungrid-col text-align-center vertical-align-middle" style="width: 27%; padding-right: 3%;">
+                <img class="img-responsive" src="assets/character/2 小袋.svg" style="width: 60%; margin: 0 auto;"></div>
             <div class="ungrid-col vertical-align-middle" style="width: 50%">
-                <p style="font-size: 40px;">小袋</p>
+                <p style="font-size: 28px;">小袋</p>
                 <p>口头禅：“妈妈我饿了”、“妈妈我困了”</p>
                 <p>星座：水平座</p>
                 <p>喜欢的食物：所有食物</p>
@@ -362,52 +399,60 @@ define(function() {
             </div>
         </div>
     </div>
-    <div class="waixingtezheng mb40">
-        <div class="fontsize-16 mb10">外形特征</div>
-        <div class="row mb60">
-            <div class="col-sm-12">
-                <embed src="assets/character/3 特征.svg" style="max-width: 600px;"></embed>
+    <div class="waixingtezheng mb60">
+        <div class="fontsize-16 mb20">外形特征</div>
+        <div class="row mb40">
+            <div class="col-sm-6">
+                <embed src="assets/character/3 特征.svg" style="max-width: 520px;"></embed>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12">
-                <img src="assets/character/4 特征.svg" style="max-width: 600px;">
+            <div class="col-sm-6">
+                <img src="assets/character/4 特征.svg" style="max-width: 520px;">
             </div>
         </div>
     </div>
-    <div class="xinggetezheng mb40">
+    <div class="xinggetezheng mb60">
         <div class="fontsize-16 mb10">性格特征</div>
         <div class="row">
             <div class="col-sm-3">
-                <embed src="assets/character/5.1 性格.svg" class="img-responsive"></embed>
+                <embed src="assets/character/5.1 性格.svg" class="img-responsive" style="max-width: 120px; margin: 0 auto;"></embed>
                 <div class="fontsize-16 mb10 text-align-center">乐观</div>
-                <p>非常乐观的、能够带来充足信心。还能利用各种神器精打细算。</p>
+                <p class="color-999">非常乐观的、能够带来充足信心。还能利用各种神器精打细算。</p>
             </div>
             <div class="col-sm-3">
-                <img src="assets/character/5.2 性格.svg" class="img-responsive">
+                <img src="assets/character/5.2 性格.svg" class="img-responsive" style="max-width: 120px; margin: 0 auto;">
                 <div class="fontsize-16 mb10 text-align-center">助人</div>
-                <p>我很忙，不是难题不出手。效率超高，别问我怎么做到的。只要是难题都能解决，就是那么较真。</p>
+                <p class="color-999">我很忙，不是难题不出手。效率超高，别问我怎么做到的。只要是难题都能解决，就是那么较真。</p>
             </div>
             <div class="col-sm-3">
-                <img src="assets/character/5.3 性格.svg" class="img-responsive">
+                <img src="assets/character/5.3 性格.svg" class="img-responsive" style="max-width: 120px; margin: 0 auto;">
                 <div class="fontsize-16 mb10 text-align-center">聪明</div>
-                <p>我很聪明，不但在生活方面具备丰富经验值;情商也很高哦!</p>
+                <p class="color-999">我很聪明，不但在生活方面具备丰富经验值;情商也很高哦!</p>
             </div>
         </div>
     </div>
-    <div class="mb40">
+    <div class="mb60">
         <div class="fontsize-16 mb10">动作和场景/对话</div>
         <div class="row">
-            <img class="col-sm-4 img-responsive" src="assets/character/6.4 场景.svg">
-            <img class="col-sm-4 img-responsive" src="assets/character/6.5 场景.svg">
-            <img class="col-sm-4 img-responsive" src="assets/character/6.6 场景.svg">
+            <div class="col-sm-4">
+                <embed class="img-responsive" src="assets/character/6.4 场景.svg"></embed>
+                <embed class="img-responsive" src="assets/character/6.4 场景.svg"></embed>
+                <!-- 右 7.2 场景.svg 左 7.3 场景.svg -->
+            </div>
+            <div class="col-sm-4">
+                <embed class="img-responsive" src="assets/character/6.5 场景.svg"></embed>
+            </div>
+            <div class="col-sm-4">
+                <embed class="img-responsive" src="assets/character/6.6 场景.svg"></embed>
+            </div>
         </div>
         <div class="row">
             <img class="col-sm-4 img-responsive" src="assets/character/7.1 场景.svg">
             <img class="col-sm-4 img-responsive" src="assets/character/7.4 场景.svg">
         </div>
     </div>
-    <div class="mb40">
+    <div class="biaoqing mb60">
         <div class="fontsize-16 mb10">表情/袋妈</div>
         <div class="row">
             <div class="col-sm-10">
@@ -428,7 +473,7 @@ define(function() {
             </div>
         </div>
     </div>
-    <div class="mb40">
+    <div class="biaoqing mb60">
         <div class="fontsize-16 mb10">表情/小袋</div>
         <div class="row">
             <div class="col-sm-10">
@@ -440,9 +485,9 @@ define(function() {
             </div>
         </div>
     </div>
-    <div class="sanshitu mb40">
+    <div class="sanshitu mb60">
         <div class="fontsize-16 mb20">三视图/色指定</div>
-        <div class="mb40">
+        <div class="mb60">
             <div class="row mb20">
                 <div class="col-sm-10">
                     <img class="col-sm-4 img-responsive" src="assets/character/10.1 三视图.svg">
@@ -450,57 +495,63 @@ define(function() {
                     <img class="col-sm-4 img-responsive" src="assets/character/10.3 三视图.svg">
                 </div>
             </div>
-            <div class="clearfix pl15">
-                <div class="item">
-                    <div class="circle mr5" style="background-color: #FFA083;"></div>
-                    <span class="ml5">#FFA083</span>
-                </div>
-                <div class="item">
-                    <div class="circle mr5" style="background-color: #FFBF80;"></div>
-                    <span class="ml5">#FFBF80</span>
-                </div>
-                <div class="item">
-                    <div class="circle mr5" style="background-color: #66361F;"></div>
-                    <span class="ml5">#66361F</span>
-                </div>
-                <div class="item">
-                    <div class="circle mr5" style="background-color: #E23C30;"></div>
-                    <span class="ml5">#E23C30</span>
-                </div>
-                <div class="item">
-                    <div class="circle mr5" style="background-color: #FF9B48;"></div>
-                    <span class="ml5">#FF9B48</span>
-                </div>
-                <div class="item">
-                    <div class="circle mr5" style="background-color: #512A15;"></div>
-                    <span class="ml5">#512A15</span>
+            <div class="row mb20">
+                <div class="col-sm-10 text-center">
+                    <div class="item">
+                        <div class="circle mr5" style="background-color: #FFA083;"></div>
+                        <span class="ml5">#FFA083</span>
+                    </div>
+                    <div class="item">
+                        <div class="circle mr5" style="background-color: #FFBF80;"></div>
+                        <span class="ml5">#FFBF80</span>
+                    </div>
+                    <div class="item">
+                        <div class="circle mr5" style="background-color: #66361F;"></div>
+                        <span class="ml5">#66361F</span>
+                    </div>
+                    <div class="item">
+                        <div class="circle mr5" style="background-color: #E23C30;"></div>
+                        <span class="ml5">#E23C30</span>
+                    </div>
+                    <div class="item">
+                        <div class="circle mr5" style="background-color: #FF9B48;"></div>
+                        <span class="ml5">#FF9B48</span>
+                    </div>
+                    <div class="item">
+                        <div class="circle mr5" style="background-color: #512A15;"></div>
+                        <span class="ml5">#512A15</span>
+                    </div>
                 </div>
             </div>
         </div>
         <div>
             <div class="row mb20">
                 <div class="col-sm-10">
+                    <div class="col-sm-3"></div>
                     <img class="col-sm-2 img-responsive" src="assets/character/11.1 三视图.svg">
                     <img class="col-sm-2 img-responsive" src="assets/character/11.2 三视图.svg">
                     <img class="col-sm-2 img-responsive" src="assets/character/11.3 三视图.svg">
+                    <div class="col-sm-3"></div>
                 </div>
             </div>
-            <div class="clearfix pl15">
-                <div class="item">
-                    <div class="circle mr5" style="background-color: #FCEBCE;"></div>
-                    <span>#FCEBCE</span>
-                </div>
-                <div class="item">
-                    <div class="circle mr5" style="background-color: #FFBD99;"></div>
-                    <span>#FFBD99</span>
-                </div>
-                <div class="item">
-                    <div class="circle mr5" style="background-color: #FFDECC;"></div>
-                    <span>#FFDECC</span>
-                </div>
-                <div class="item">
-                    <div class="circle mr5" style="background-color: #552F19;"></div>
-                    <span>#552F19</span>
+            <div class="row mb20">
+                <div class="col-sm-10 text-center">
+                    <div class="item">
+                        <div class="circle mr5" style="background-color: #FCEBCE;"></div>
+                        <span>#FCEBCE</span>
+                    </div>
+                    <div class="item">
+                        <div class="circle mr5" style="background-color: #FFBD99;"></div>
+                        <span>#FFBD99</span>
+                    </div>
+                    <div class="item">
+                        <div class="circle mr5" style="background-color: #FFDECC;"></div>
+                        <span>#FFDECC</span>
+                    </div>
+                    <div class="item">
+                        <div class="circle mr5" style="background-color: #552F19;"></div>
+                        <span>#552F19</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -508,62 +559,76 @@ define(function() {
 </div>
 
 <div class="brand-typography mb40">
-    <div class="fontsize-20 mb40">字体 <small>Typography</small></div>
-    <div>
-        <div class="fontsize-16 mb10">印刷字体</div>
-        <p>为了塑造品牌整体形象,所有传播媒体、刊物及平面印刷等,所需的文字均采用统一专用字体,以供不同场合使用。同时,为求运用方便,在刊物、媒体等内文说明的排版上,若无相同字体,请以形相近的字体取代使用。</p>
+    <div class="clearfix"> 
+        <div class="pull-left fontsize-20 mb40">字体 <small>Typography</small></div>
+        <div class="pull-right">
+            <a on-click="download" class="btn btn-brand" href="javascript:;"><span class="specfont">&#xe633;</span> 下载附件</a>
+            <% list = ['字体/阿里妈妈品牌规范-字体.ai', '字体/阿里妈妈品牌规范-字体.pdf', '字体/阿里妈妈品牌规范-字体.zip'] %>
+            <ul class="download-list">
+                <% for( var i = 0; i < list.length; i++ ) { %>
+                <li class="clearfix">
+                    <span><%= RE_FILENAME.exec(list[i])[1] %></span>
+                    <a href="download/<%= list[i] %>" download="" class="specfont">&#xe633;</a>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+    <div class="mb60">
+        <div class="fontsize-16">印刷字体</div>
+        <p class="color-999 mt4">为了塑造品牌整体形象,所有传播媒体、刊物及平面印刷等,所需的文字均采用统一专用字体,以供不同场合使用。同时,为求运用方便,在刊物、媒体等内文说明的排版上,若无相同字体,请以形相近的字体取代使用。</p>
         <div class="mt20 mb40">
             <div class="mb20">
-                <div class="mb6">方正兰亭特黑简体(FZLTTHJW)</div>
+                <div class="color-999 mb6">方正兰亭特黑简体(FZLTTHJW)</div>
                 <img class="img-responsive cn" src="assets/typography/01-方正兰亭特黑简体.svg">
             </div>
             <div class="mb20">
-                <div class="mb6">方正兰亭粗黑简体(FZLTCHJW)</div>
+                <div class="color-999 mb6">方正兰亭粗黑简体(FZLTCHJW)</div>
                 <img class="img-responsive cn" src="assets/typography/02-方正兰亭粗黑简体.svg">
             </div>
             <div class="mb20">
-                <div class="mb6">方正兰亭中黑简体(FZLTZHJW)</div>
+                <div class="color-999 mb6">方正兰亭中黑简体(FZLTZHJW)</div>
                 <img class="img-responsive cn" src="assets/typography/03-方正兰亭中黑简体.svg">
             </div>
             <div class="mb20">
-                <div class="mb6">方正兰亭黑简体(FZLTHJW)</div>
+                <div class="color-999 mb6">方正兰亭黑简体(FZLTHJW)</div>
                 <img class="img-responsive cn" src="assets/typography/04-方正兰亭黑简体.svg">
             </div>
             <div class="mb40">
-                <div class="mb6">方正兰亭纤黑简体(FZLTXHJW)</div>
+                <div class="color-999 mb6">方正兰亭纤黑简体(FZLTXHJW)</div>
                 <img class="img-responsive cn" src="assets/typography/05-方正兰亭纤黑简体.svg">
             </div>
 
             <div class="mb20">
-                <div class="mb6">Helvetica Neue Bold</div>
+                <div class="color-999 mb6">Helvetica Neue Bold</div>
                 <img class="img-responsive en" src="assets/typography/06-Helvetica Neue Bold.svg">
             </div>
             <div class="mb20">
-                <div class="mb6">Helvetica Neue Medium</div>
+                <div class="color-999 mb6">Helvetica Neue Medium</div>
                 <img class="img-responsive en" src="assets/typography/07-Helvetica Neue Medium.svg">
             </div>
             <div class="mb20">
-                <div class="mb6">Helvetica Neue Regular</div>
+                <div class="color-999 mb6">Helvetica Neue Regular</div>
                 <img class="img-responsive en" src="assets/typography/08-Helvetica Neue Regular.svg">
             </div>
             <div class="mb20">
-                <div class="mb6">Helvetica Neue Light</div>
+                <div class="color-999 mb6">Helvetica Neue Light</div>
                 <img class="img-responsive en" src="assets/typography/09-Helvetica Neue Light.svg">
             </div>
             <div class="mb20">
-                <div class="mb6">Helvetica Neue Thin</div>
+                <div class="color-999 mb6">Helvetica Neue Thin</div>
                 <img class="img-responsive en" src="assets/typography/10-Helvetica Neue Thin.svg">
             </div>
             <div class="mb20">
-                <div class="mb6">Helvetica Neue UltraLight</div>
+                <div class="color-999 mb6">Helvetica Neue UltraLight</div>
                 <img class="img-responsive en" src="assets/typography/11-Helvetica Neue UltraLight.svg">
             </div>
         </div>
     </div>
     <div>
-        <div class="fontsize-16 mb10">系统设备字体</div>
-        <p>寻找跨平台最佳的 font-family，适配不同操作系统和浏览器。</p>
-        <div>
+        <div class="fontsize-16">系统设备字体</div>
+        <p class="color-999 mt4">寻找跨平台最佳的 font-family，适配不同操作系统和浏览器。</p>
+        <div class="mb20">
             <p class="mb4">中文：</p>
             <ul style="padding-left: 18px;">
                 <li>Windows 优先使用「微软雅黑」，如果没有则使用「中易宋体（SimSun）」。</li>
@@ -583,8 +648,22 @@ define(function() {
 </div>
 
 <div class="brand-color-palettes">
-    <div class="fontsize-20 mb40">色盘 <small>Color Palettes</small></div>
-    <div class="mb40">
+    <div class="clearfix">
+        <div class="pull-left fontsize-20 mb40">色盘 <small>Color Palettes</small></div>
+        <div class="pull-right">
+            <a on-click="download" class="btn btn-brand" href="javascript:;"><span class="specfont">&#xe633;</span> 下载附件</a>
+            <% list = ['色盘/阿里妈妈品牌规范－色盘.ai', '色盘/阿里妈妈品牌规范－色盘.pdf'] %>
+            <ul class="download-list">
+                <% for( var i = 0; i < list.length; i++ ) { %>
+                <li class="clearfix">
+                    <span><%= RE_FILENAME.exec(list[i])[1] %></span>
+                    <a href="download/<%= list[i] %>" download="" class="specfont">&#xe633;</a>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+    <div class="mb60">
         <div class="fontsize-16 mb20">品牌标准色</div>
         <div style="width: 220px; height: 220px; color: #FFF; background-color: #FF6600; border-radius: 50%; display: table-cell; vertical-align: middle; padding-left: 60px;">
             <p>1585</p>
@@ -593,12 +672,12 @@ define(function() {
             <p>#FF6600</p>
         </div>
     </div>
-    <div class="mb40">
-        <div class="fontsize-16 mb10">一级品牌色盘</div>
-        <div class="mb40">
-            <p class="mb0">我们的一级品牌色盘中设置12种辅助色彩，配合品牌色使用。辅助色不可用来替代品牌色。</p>
-            <p class="mb0">RGB 和 HEX 色值运用于显示设备，包括 PC、平板、手机等。CMYK 和 Pantone 色值运用于印刷。</p>
-            <p class="mb0">在实际运用中，无论从 RGB 到 CMYK 的转换，还是用其他任何复制方法，都要尽可能最大限度接近指南中的色标颜色。</p>
+    <div class="mb60">
+        <div class="fontsize-16">一级品牌色盘</div>
+        <div class="mb40 mt4">
+            <p class="color-999 mb0">我们的一级品牌色盘中设置12种辅助色彩，配合品牌色使用。辅助色不可用来替代品牌色。</p>
+            <p class="color-999 mb0">RGB 和 HEX 色值运用于显示设备，包括 PC、平板、手机等。CMYK 和 Pantone 色值运用于印刷。</p>
+            <p class="color-999 mb0">在实际运用中，无论从 RGB 到 CMYK 的转换，还是用其他任何复制方法，都要尽可能最大限度接近指南中的色标颜色。</p>
         </div>
         <div class="row">
             <div class="col-sm-4" style="max-width: 226px;">
@@ -681,11 +760,9 @@ define(function() {
             </div>
         </div>
     </div>
-    <div class="mb40">
-        <div class="fontsize-16 mb10">二级品牌色盘</div>
-        <div class="mb40">
-            <p>为了在品牌传达中有更好的扩展,我们在一级品牌色盘的基础上增加种二级品牌色。在实际运用种作为二级辅色配合品牌色和一级辅色使用。</p>
-        </div>
+    <div class="mb60">
+        <div class="fontsize-16">二级品牌色盘</div>
+        <p class="color-999 mt4 mb40">为了在品牌传达中有更好的扩展,我们在一级品牌色盘的基础上增加种二级品牌色。在实际运用种作为二级辅色配合品牌色和一级辅色使用。</p>
         <div class="row">
             <div class="col-sm-4" style="max-width: 226px;">
                 <div class="item" style="background-color: #BAB1BA;">
@@ -767,20 +844,22 @@ define(function() {
             </div>
         </div>
     </div>
-    <div class="mb40">
-        <div class="fontsize-16 mb10">色彩搭配</div>
-        <p>在设定品牌色盘之外,色彩应用中最重要的环节就是色彩搭配。</p>
-        <p>为了符合生活化、温情的风格定义，我们建议配色选色上控制在基准色-对比色的范围内；避免基准色与互补色的直接对比和搭配。</p>
+    <div class="mb60">
+        <div class="fontsize-16">色彩搭配</div>
+        <div class="mb40 mt4">
+            <p class="color-999 mb0">在设定品牌色盘之外,色彩应用中最重要的环节就是色彩搭配。</p>
+            <p class="color-999 mb0">为了符合生活化、温情的风格定义，我们建议配色选色上控制在基准色-对比色的范围内；避免基准色与互补色的直接对比和搭配。</p>
+        </div>
         <div style="width: 80%; max-width: 640px;">
             <embed class="img-responsive" src="assets/color-palettes/01色带-有字体.svg"></embed>
         </div>
     </div>
-    <div class="mb40 huijiese">
-        <div class="fontsize-16 mb10">灰阶色</div>
-        <div class="mb40">
-            <p>整体按照黑色 #000000 的透明度百分比进行设置。以下为在白色 #FFFFFF 背景下的色值。
-            <p>文字色值：按照 #000000 透明度 100%、80%、60%、40%、20% 取值，保持 20% 的递减梯度。</p>
-            <p>分隔线色值：按照 #000000 透明度 16%、8%、4%、2% 取值，保持除 2 的递减梯度。</p>
+    <div class="mb60 huijiese">
+        <div class="fontsize-16">灰阶色</div>
+        <div class="mb40 mt4">
+            <p class="color-999 mb0">整体按照黑色 #000000 的透明度百分比进行设置。以下为在白色 #FFFFFF 背景下的色值。
+            <p class="color-999 mb0">文字色值：按照 #000000 透明度 100%、80%、60%、40%、20% 取值，保持 20% 的递减梯度。</p>
+            <p class="color-999 mb0">分隔线色值：按照 #000000 透明度 16%、8%、4%、2% 取值，保持除 2 的递减梯度。</p>
         </div>
         <div class="row">
             <div class="col-sm-4" style="max-width: 226px;">
@@ -824,10 +903,24 @@ define(function() {
 </div>
 
 <div class="shapes mb40">
-    <div class="fontsize-20 mb20">辅助图形 <small>Shapes</small></div>
-    <div class="mb40">
-        <p class="mb0">辅助图形可做为背景、图案纹理使用,也可以配合主 VI 使用。注意辅助图形并不是 Logo。</p>
-        <p class="mb0">我们以“母体”为概念设计辅助图形，充满象征意义。预示着阿里妈妈品牌是充满张力的、包容的和开放的。</p>
+    <div class="clearfix">
+        <div class="pull-left fontsize-20 mb40">辅助图形 <small>Shapes</small></div>
+        <div class="pull-right">
+            <a on-click="download" class="btn btn-brand" href="javascript:;"><span class="specfont">&#xe633;</span> 下载附件</a>
+            <% list = ['辅助形体/阿里妈妈品牌规范-案例辅助形体.ai', '辅助形体/阿里妈妈品牌规范-案例辅助形体.pdf'] %>
+            <ul class="download-list">
+                <% for( var i = 0; i < list.length; i++ ) { %>
+                <li class="clearfix">
+                    <span><%= RE_FILENAME.exec(list[i])[1] %></span>
+                    <a href="download/<%= list[i] %>" download="" class="specfont">&#xe633;</a>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+    <div class="mb40 mt4">
+        <p class="color-999 mb0">辅助图形可做为背景、图案纹理使用,也可以配合主 VI 使用。注意辅助图形并不是 Logo。</p>
+        <p class="color-999 mb0">我们以“母体”为概念设计辅助图形，充满象征意义。预示着阿里妈妈品牌是充满张力的、包容的和开放的。</p>
     </div>
     <div class="row mb60">
         <div class="col-sm-4" style="max-width: 340px;">
@@ -868,7 +961,7 @@ define(function() {
 </div>
 
 <div class="mb40 hide">
-    <div class="fontsize-20 mb40">图像 <small>Imagery</small></div>
+    <div class="mb40">图像 <small>Imagery</small></div><!-- fontsize-20 -->
     <div class="row">
         <img class="col-sm-6 img-responsive" src="placeholder.jpg">
         <img class="col-sm-6 img-responsive" src="placeholder.jpg">
@@ -876,14 +969,28 @@ define(function() {
 </div>
 
 <div class="brand-icon mb40">
-    <div class="fontsize-20 mb10">图标 <small>Icon</small></div>
-    <ol class="" style="padding-left: 18px;">
+    <div class="clearfix">
+        <div class="pull-left fontsize-20 mb40">图标 <small>Icon</small></div>
+        <div class="pull-right">
+            <a on-click="download" class="btn btn-brand" href="javascript:;"><span class="specfont">&#xe633;</span> 下载附件</a>
+            <% list = ['图标/阿里妈妈品牌规范-图标.ai', '图标/阿里妈妈品牌规范-图标.pdf'] %>
+            <ul class="download-list">
+                <% for( var i = 0; i < list.length; i++ ) { %>
+                <li class="clearfix">
+                    <span><%= RE_FILENAME.exec(list[i])[1] %></span>
+                    <a href="download/<%= list[i] %>" download="" class="specfont">&#xe633;</a>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+    <ol class="color-999 mt4" style="padding-left: 18px;">
         <li><p class="mb0">图标设计采用线性的形式,注意线条的比例,言简意赅、表意到位。</p></li>
         <li><p class="mb0">适当增加个性细节,整体图标个性细节统一。</p></li>
         <li><p class="mb0">图标线上实现采用字体图标的形式,目前可在iconfont平台调用合适的图标。 </p></li>
         <li><p class="mb0">若遇到平台中没有的图标,可根据通用风格设计新的矢量图标,并上传到平台。</p></li>
     </ol>
-    <div class="row bgicons ">
+    <div class="row bgicons mb20">
         <div class="col-sm-4">
             <span class="brandfont brandfont-title">&#xe605;</span>
         </div>
@@ -921,7 +1028,7 @@ define(function() {
         <div class="col-sm-2 text-center"><span class="brandfont">&#xe613;</span></div>
         <div class="col-sm-2 text-center"><span class="brandfont">&#xe614;</span></div>
     </div>
-    <div class="row smicons mb40">
+    <div class="row smicons mb60">
         <div class="col-sm-2 text-center"><span class="brandfont">&#xe615;</span></div>
         <div class="col-sm-2 text-center"><span class="brandfont">&#xe616;</span></div>
         <div class="col-sm-2 text-center"><span class="brandfont">&#xe617;</span></div>
@@ -930,8 +1037,9 @@ define(function() {
         <div class="col-sm-2 text-center"><span class="brandfont">&#xe61a;</span></div>
         <div class="col-sm-2 text-center"><span class="brandfont">&#xe600;</span></div>
     </div>
-    <div class="fangge mb40">
-        <p class="mb20">制定网格比例与标准,不同形态的图标可以按照圆形、正方、竖矩形、横矩形标准框绘制。图标的整体大小、重量感保持平衡。</p>
+    <div class="fangge mb60">
+        <div class="fontsize-16">图标网格比例</div>
+        <p class="color-999 mt4 mb20">制定网格比例与标准,不同形态的图标可以按照圆形、正方、竖矩形、横矩形标准框绘制。图标的整体大小、重量感保持平衡。</p>
         <div class="row mb20">
             <div class="col-sm-3">
                 <img class="img-responsive" src="assets/icon/01-64方格.svg">
@@ -961,8 +1069,8 @@ define(function() {
             </div>
         </div>
     </div>
-    <div class="fangge mb40">
-        <p class="mb20">保持简洁而优美的弧度,推荐用正圆相切,矩形的导角保持统一。并根据不同曲率分出几档弧度层次。</p>
+    <div class="fangge mb60">
+        <p class="color-999 mb20">保持简洁而优美的弧度,推荐用正圆相切,矩形的导角保持统一。并根据不同曲率分出几档弧度层次。</p>
         <div class="row">
             <div class="col-sm-3">
                 <img class="img-responsive" src="assets/icon/07-方形图标案例.svg">
@@ -978,8 +1086,8 @@ define(function() {
             </div>
         </div>
     </div>
-    <div class="biaochi mb40">
-        <p>统一图标的线条粗细,分为主体形态和细节线条两个层次。</p>
+    <div class="biaochi mb60">
+        <p class="color-999 mb20">统一图标的线条粗细,分为主体形态和细节线条两个层次。</p>
         <div class="row">
             <div class="col-sm-3">
                 <img class="img-responsive" src="assets/icon/10-方形图标线标尺.svg">
@@ -989,7 +1097,7 @@ define(function() {
             </div>
         </div>
     </div>
-    <div class="shili-1 mb40">
+    <div class="shili-1 mb60">
         <div class="fontsize-16 mb20">示例 1</div>
         <div class="row">
             <div class="col-sm-4">
@@ -1009,7 +1117,7 @@ define(function() {
             </div>
         </div>
     </div>
-    <div class="shili-2 mb40">
+    <div class="shili-2 mb60">
         <div class="fontsize-16 mb20">示例 2</div>
         <div class="row mb20">
             <div class="col-sm-3">
@@ -1059,10 +1167,24 @@ define(function() {
 </div>
 
 <div class="brand-grid">
-    <div class="fontsize-20 mb40">网格系统 <small>Grid systems</small></div>
-    <div class="web mb40">
-        <div class="fontsize-16 mb10">Web 上的栅格</div>
-        <p class="mb20">品牌站点和各产品 Minisite 采用 12 栏流体栅格，可以根据版面需要分为通栏、两栏、三栏、四栏甚至六栏的形式。根据站点的特点和内容，在pc端可 以先采用一种固定的宽度，通过流体的方式适配平板。</p>
+    <div class="clearfix">
+        <div class="pull-left fontsize-20 mb40">网格系统 <small>Grid Systems</small></div>
+        <div class="pull-right">
+            <a on-click="download" class="btn btn-brand" href="javascript:;"><span class="specfont">&#xe633;</span> 下载附件</a>
+            <% list = ['系统网格/阿里妈妈品牌规范-系统网格.ai', '系统网格/阿里妈妈品牌规范-系统网格.pdf'] %>
+            <ul class="download-list">
+                <% for( var i = 0; i < list.length; i++ ) { %>
+                <li class="clearfix">
+                    <span><%= RE_FILENAME.exec(list[i])[1] %></span>
+                    <a href="download/<%= list[i] %>" download="" class="specfont">&#xe633;</a>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+    <div class="web mb60">
+        <div class="fontsize-16">Web 上的栅格</div>
+        <p class="color-999 mt4 mb20">品牌站点和各产品 Minisite 采用 12 栏流体栅格，可以根据版面需要分为通栏、两栏、三栏、四栏甚至六栏的形式。根据站点的特点和内容，在pc端可 以先采用一种固定的宽度，通过流体的方式适配平板。</p>
         <div class="row mb20">
             <div class="col-sm-4">
                 <p>PC 宽屏</p>
@@ -1083,24 +1205,38 @@ define(function() {
             </div>
         </div>
     </div>
-    <div class="print mb40">
+    <div class="print mb60">
         <div class="fontsize-16 mb10">印刷上的栅格</div>
-        <p>平面印刷上优先采用12栏、12列的网格系统,以应对多种物料设计的需求，网格系统可根据实际应用尺寸按比例拉伸。我们的排版遵循标准的定义、动态布局。</p>
+        <p class="color-999 mt4 mb20">平面印刷上优先采用12栏、12列的网格系统,以应对多种物料设计的需求，网格系统可根据实际应用尺寸按比例拉伸。我们的排版遵循标准的定义、动态布局。</p>
         <div class="row">
-            <img class="col-sm-12 img-responsive mb20" src="assets/grid-systems/05-印刷12栅格.svg">
-            <img class="col-sm-6 img-responsive mb20" src="assets/grid-systems/06-书籍.svg">
-            <img class="col-sm-6 img-responsive mb20" src="assets/grid-systems/07-书籍栅格.svg">
-            <img class="col-sm-6 img-responsive mb20" src="assets/grid-systems/08-白色ppt.svg">
-            <img class="col-sm-6 img-responsive mb20" src="assets/grid-systems/09-白色ppt栅格.svg">
-            <img class="col-sm-6 img-responsive mb20" src="assets/grid-systems/10-黑色ppt.svg">
-            <img class="col-sm-6 img-responsive mb20" src="assets/grid-systems/11-黑色ppt栅格.svg">
+            <img class="col-sm-12 img-responsive mb40" src="assets/grid-systems/05-印刷12栅格.svg">
+            <img class="col-sm-6 img-responsive mb40" src="assets/grid-systems/06-书籍.svg">
+            <img class="col-sm-6 img-responsive mb40" src="assets/grid-systems/07-书籍栅格.svg">
+            <img class="col-sm-6 img-responsive mb40" src="assets/grid-systems/08-白色ppt.svg">
+            <img class="col-sm-6 img-responsive mb40" src="assets/grid-systems/09-白色ppt栅格.svg">
+            <img class="col-sm-6 img-responsive mb40" src="assets/grid-systems/10-黑色ppt.svg">
+            <img class="col-sm-6 img-responsive mb40" src="assets/grid-systems/11-黑色ppt栅格.svg">
         </div>
     </div>
 </div>
 
 <div class="brand-examples">
-    <div class="fontsize-20 mb40">案例 <small>Examples</small></div>
-    <div class="mb40">
+    <div class="clearfix">
+        <div class="pull-left fontsize-20 mb40">案例 <small>Examples</small></div>
+        <div class="pull-right">
+            <a on-click="download" class="btn btn-brand" href="javascript:;"><span class="specfont">&#xe633;</span> 下载附件</a>
+            <% list = ['案例/阿里妈妈名片模版CMYK格式.ai', '案例/阿里妈妈名片模版RGB格式.ai', '案例/阿里妈妈品牌规范-案例.ai', '案例/阿里妈妈品牌规范-案例.pdf', '案例/PPT模板.zip'] %>
+            <ul class="download-list">
+                <% for( var i = 0; i < list.length; i++ ) { %>
+                <li class="clearfix">
+                    <span><%= RE_FILENAME.exec(list[i])[1] %></span>
+                    <a href="download/<%= list[i] %>" download="" class="specfont">&#xe633;</a>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+    <div class="mb60">
         <div class="fontsize-16 mb10">名片</div>
         <div class="row">
             <img class="col-sm-4 img-responsive" src="assets/examples/01-名片1.svg">
@@ -1108,37 +1244,37 @@ define(function() {
             <img class="col-sm-4 img-responsive" src="assets/examples/03-名片3.svg">
         </div>
     </div>
-    <div class="mb40">
+    <div class="mb60">
         <div class="fontsize-16 mb10">PPT模版</div>
         <div class="row">
-            <img class="col-sm-6 img-responsive mb20" src="assets/examples/04-白色ppt封面.svg">
-            <img class="col-sm-6 img-responsive mb20" src="assets/examples/05-白色ppt封底.svg">
-            <img class="col-sm-6 img-responsive" src="assets/examples/06-黑色ppt封面.svg">
-            <img class="col-sm-6 img-responsive" src="assets/examples/07-黑色ppt封底.svg">
+            <img class="col-sm-6 img-responsive mb40" src="assets/examples/04-白色ppt封面.svg">
+            <img class="col-sm-6 img-responsive mb40" src="assets/examples/05-白色ppt封底.svg">
+            <img class="col-sm-6 img-responsive mb40" src="assets/examples/06-黑色ppt封面.svg">
+            <img class="col-sm-6 img-responsive mb40" src="assets/examples/07-黑色ppt封底.svg">
         </div>
     </div>
-    <div class="mb40">
+    <div class="mb60">
         <div class="fontsize-16 mb10">包装袋</div>
         <div class="row">
             <img class="col-sm-12 img-responsive mb40" src="assets/examples/08-袋子1.svg">
             <img class="col-sm-12 img-responsive mb40" src="assets/examples/09-袋子2.svg">
             <img class="col-sm-12 img-responsive mb40" src="assets/examples/10-袋子3.svg">
             <img class="col-sm-12 img-responsive mb40" src="assets/examples/11-袋子4.svg">
-            <img class="col-sm-12 img-responsive" src="assets/examples/12-袋子5.svg">
+            <img class="col-sm-12 img-responsive mb40" src="assets/examples/12-袋子5.svg">
         </div>
     </div>
-    <div class="mb40">
+    <div class="mb60">
         <div class="fontsize-16 mb10">书籍</div>
         <div class="row">
-            <img class="col-sm-12 img-responsive mb20" src="assets/examples/13-书籍1.svg">
-            <img class="col-sm-12 img-responsive" src="assets/examples/14-书籍2.svg">
+            <img class="col-sm-12 img-responsive mb40" src="assets/examples/13-书籍1.svg">
+            <img class="col-sm-12 img-responsive mb40" src="assets/examples/14-书籍2.svg">
         </div>
     </div>
-    <div class="mb40">
+    <div class="mb60">
         <div class="fontsize-16 mb10">易拉宝</div>
         <div class="row">
-            <img class="col-sm-6 img-responsive" src="assets/examples/15-易拉宝1.svg">
-            <img class="col-sm-6 img-responsive" src="assets/examples/16-易拉宝2.svg">
+            <img class="col-sm-6 img-responsive mb40" src="assets/examples/15-易拉宝1.svg">
+            <img class="col-sm-6 img-responsive mb40" src="assets/examples/16-易拉宝2.svg">
         </div>
     </div>
 </div>
