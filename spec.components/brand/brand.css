@@ -92,6 +92,12 @@
   border: 1px solid #FF6600;
   border-radius: 50%;
 }
+.brand .brand-character .changjing .changjing-1 text {
+  font-size: 24px;
+}
+.brand .brand-character .changjing .changjing-3 text {
+  font-size: 20px;
+}
 .brand .brand-character .biaoqing img {
   width: 120px;
   margin: 0 auto;
@@ -167,22 +173,26 @@
 }
 .brand ul.download-list li {
   display: block;
-  padding: 14px 18px;
+  position: relative;
   white-space: nowrap;
   line-height: 1;
-}
-.brand ul.download-list li span {
-  float: left;
-  margin-right: 20px;
-}
-.brand ul.download-list li a {
-  visibility: hidden;
-  float: right;
-  color: #333;
 }
 .brand ul.download-list li:hover {
   background: #F5F5F5;
 }
-.brand ul.download-list li:hover a {
-  visibility: visible;
+.brand ul.download-list li:hover .specfont {
+  display: inline-block;
+}
+.brand ul.download-list li a {
+  display: block;
+  color: #333;
+  padding: 14px 18px;
+}
+.brand ul.download-list li a .name {
+  margin-right: 40px;
+}
+.brand ul.download-list li a .specfont {
+  position: absolute;
+  right: 18px;
+  display: none;
 }

@@ -122,6 +122,21 @@
                 }
             }
         }
+        .changjing {
+            .changjing-1 {
+                text {
+                    font-size: 24px;
+                }
+            }
+            .changjing-2 {}
+            .changjing-3 {
+                text {
+                    font-size: 20px;
+                }
+            }
+            .changjing-4 {}
+            .changjing-5 {}
+        }
         .biaoqing {
             img {
                 width: 120px;
@@ -220,22 +235,26 @@
         z-index: 1;
         li {
             display: block;
-            padding: 14px 18px;
+            position: relative;
             white-space: nowrap;
             line-height: 1;
-            span {
-                float: left;
-                margin-right: 20px;
-            }
-            a {
-                visibility: hidden;
-                float: right;
-                color: #333;
-            }
             &:hover {
                 background: #F5F5F5;
-                a {
-                    visibility: visible;
+                .specfont {
+                    display: inline-block;
+                }
+            }
+            a {
+                display: block;
+                color: #333;
+                padding: 14px 18px;
+                .name {
+                    margin-right: 40px;
+                }
+                .specfont {
+                    position: absolute;
+                    right: 18px;
+                    display: none;
                 }
             }
         }

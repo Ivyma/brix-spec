@@ -31,14 +31,21 @@
 <div class="brand-logo">
     <div class="clearfix"> 
         <div class="pull-left fontsize-20 mb40">标志 <small>Logo</small></div>
-        <div class="pull-right">
-            <a on-click="download" class="btn btn-brand" href="javascript:;"><span class="specfont">&#xe633;</span> 下载附件</a>
+        <div class="pull-right" style="position: relative;">
+            <a class="btn btn-brand" href="javascript:;"
+                on-mouseenter="download" 
+                on-click="download">
+                <span class="specfont">&#xe633;</span>
+                <span>下载附件</span>
+            </a>
             <% list = ['标志/阿里妈妈品牌规范-标志.ai', '标志/阿里妈妈品牌规范-标志.pdf'] %>
             <ul class="download-list">
                 <% for( var i = 0; i < list.length; i++ ) { %>
                 <li class="clearfix">
-                    <span><%= RE_FILENAME.exec(list[i])[1] %></span>
-                    <a href="download/<%= list[i] %>" download="" class="specfont">&#xe633;</a>
+                    <a href="download/<%= list[i] %>" download="">
+                        <span class="name"><%= RE_FILENAME.exec(list[i])[1] %></span>
+                        <span class="specfont">&#xe633;</span>
+                    </a>
                 </li>
                 <% } %>
             </ul>
@@ -352,13 +359,20 @@
     <div class="clearfix"> 
         <div class="pull-left fontsize-20 mb40">吉祥物 <small>Character</small></div>
         <div class="pull-right">
-            <a on-click="download" class="btn btn-brand" href="javascript:;"><span class="specfont">&#xe633;</span> 下载附件</a>
+            <a class="btn btn-brand" href="javascript:;"
+                on-mouseenter="download" 
+                on-click="download">
+                <span class="specfont">&#xe633;</span>
+                <span>下载附件</span>
+            </a>
             <% list = ['吉祥物/阿里妈妈品牌规范-吉祥物（校正）.ai', '吉祥物/阿里妈妈品牌规范-吉祥物（校正）.pdf'] %>
             <ul class="download-list">
                 <% for( var i = 0; i < list.length; i++ ) { %>
                 <li class="clearfix">
-                    <span><%= RE_FILENAME.exec(list[i])[1] %></span>
-                    <a href="download/<%= list[i] %>" download="" class="specfont">&#xe633;</a>
+                    <a href="download/<%= list[i] %>" download="">
+                        <span class="name"><%= RE_FILENAME.exec(list[i])[1] %></span>
+                        <span class="specfont">&#xe633;</span>
+                    </a>
                 </li>
                 <% } %>
             </ul>
@@ -429,24 +443,28 @@
             </div>
         </div>
     </div>
-    <div class="mb60">
+    <div class="changjing mb60">
         <div class="fontsize-16 mb10">动作和场景/对话</div>
-        <div class="row">
-            <div class="col-sm-4">
-                <embed class="img-responsive" src="assets/character/6.4 场景.svg"></embed>
-                <embed class="img-responsive" src="assets/character/6.4 场景.svg"></embed>
+        <div class="ungrid-row mb40" style="max-width: 840px;">
+            <div class="ungrid-col" style="width: 20%;">
+                <embed class="img-responsive changjing-1" src="assets/character/6.1 场景.svg"></embed>
                 <!-- 右 7.2 场景.svg 左 7.3 场景.svg -->
             </div>
-            <div class="col-sm-4">
-                <embed class="img-responsive" src="assets/character/6.5 场景.svg"></embed>
+            <div class="ungrid-col" style="width: 40%; padding-right: 20px;">
+                <embed class="img-responsive changjing-2" src="assets/character/6.2 场景.svg"></embed>
             </div>
-            <div class="col-sm-4">
-                <embed class="img-responsive" src="assets/character/6.6 场景.svg"></embed>
+            <div class="ungrid-col" style="width: 20%;">
+                <embed class="img-responsive changjing-3" src="assets/character/6.3 场景.svg"></embed>
             </div>
         </div>
-        <div class="row">
-            <img class="col-sm-4 img-responsive" src="assets/character/7.1 场景.svg">
-            <img class="col-sm-4 img-responsive" src="assets/character/7.4 场景.svg">
+        <div class="ungrid-row mb40" style="max-width: 840px;">
+            <div class="ungrid-col" style="width: 56%;">
+                <embed class="img-responsive changjing-4" src="assets/character/7.1 场景.svg"></embed>
+                <!-- 右 7.2 场景.svg 左 7.3 场景.svg -->
+            </div>
+            <div class="ungrid-col" style="width: 40%;">
+                <embed class="img-responsive changjing-5" src="assets/character/7.2 场景.svg"></embed>
+            </div>
         </div>
     </div>
     <div class="biaoqing mb60">
@@ -559,13 +577,20 @@
     <div class="clearfix"> 
         <div class="pull-left fontsize-20 mb40">字体 <small>Typography</small></div>
         <div class="pull-right">
-            <a on-click="download" class="btn btn-brand" href="javascript:;"><span class="specfont">&#xe633;</span> 下载附件</a>
+            <a class="btn btn-brand" href="javascript:;"
+                on-mouseenter="download" 
+                on-click="download">
+                <span class="specfont">&#xe633;</span>
+                <span>下载附件</span>
+            </a>
             <% list = ['字体/阿里妈妈品牌规范-字体.ai', '字体/阿里妈妈品牌规范-字体.pdf', '字体/阿里妈妈品牌规范-字体.zip'] %>
             <ul class="download-list">
                 <% for( var i = 0; i < list.length; i++ ) { %>
                 <li class="clearfix">
-                    <span><%= RE_FILENAME.exec(list[i])[1] %></span>
-                    <a href="download/<%= list[i] %>" download="" class="specfont">&#xe633;</a>
+                    <a href="download/<%= list[i] %>" download="">
+                        <span class="name"><%= RE_FILENAME.exec(list[i])[1] %></span>
+                        <span class="specfont">&#xe633;</span>
+                    </a>
                 </li>
                 <% } %>
             </ul>
@@ -648,13 +673,20 @@
     <div class="clearfix">
         <div class="pull-left fontsize-20 mb40">色盘 <small>Color Palettes</small></div>
         <div class="pull-right">
-            <a on-click="download" class="btn btn-brand" href="javascript:;"><span class="specfont">&#xe633;</span> 下载附件</a>
+            <a class="btn btn-brand" href="javascript:;"
+                on-mouseenter="download" 
+                on-click="download">
+                <span class="specfont">&#xe633;</span>
+                <span>下载附件</span>
+            </a>
             <% list = ['色盘/阿里妈妈品牌规范－色盘.ai', '色盘/阿里妈妈品牌规范－色盘.pdf'] %>
             <ul class="download-list">
                 <% for( var i = 0; i < list.length; i++ ) { %>
                 <li class="clearfix">
-                    <span><%= RE_FILENAME.exec(list[i])[1] %></span>
-                    <a href="download/<%= list[i] %>" download="" class="specfont">&#xe633;</a>
+                    <a href="download/<%= list[i] %>" download="">
+                        <span class="name"><%= RE_FILENAME.exec(list[i])[1] %></span>
+                        <span class="specfont">&#xe633;</span>
+                    </a>
                 </li>
                 <% } %>
             </ul>
@@ -903,13 +935,20 @@
     <div class="clearfix">
         <div class="pull-left fontsize-20 mb40">辅助图形 <small>Shapes</small></div>
         <div class="pull-right">
-            <a on-click="download" class="btn btn-brand" href="javascript:;"><span class="specfont">&#xe633;</span> 下载附件</a>
+            <a class="btn btn-brand" href="javascript:;"
+                on-mouseenter="download" 
+                on-click="download">
+                <span class="specfont">&#xe633;</span>
+                <span>下载附件</span>
+            </a>
             <% list = ['辅助形体/阿里妈妈品牌规范-案例辅助形体.ai', '辅助形体/阿里妈妈品牌规范-案例辅助形体.pdf'] %>
             <ul class="download-list">
                 <% for( var i = 0; i < list.length; i++ ) { %>
                 <li class="clearfix">
-                    <span><%= RE_FILENAME.exec(list[i])[1] %></span>
-                    <a href="download/<%= list[i] %>" download="" class="specfont">&#xe633;</a>
+                    <a href="download/<%= list[i] %>" download="">
+                        <span class="name"><%= RE_FILENAME.exec(list[i])[1] %></span>
+                        <span class="specfont">&#xe633;</span>
+                    </a>
                 </li>
                 <% } %>
             </ul>
@@ -969,13 +1008,20 @@
     <div class="clearfix">
         <div class="pull-left fontsize-20 mb40">图标 <small>Icon</small></div>
         <div class="pull-right">
-            <a on-click="download" class="btn btn-brand" href="javascript:;"><span class="specfont">&#xe633;</span> 下载附件</a>
+            <a class="btn btn-brand" href="javascript:;"
+                on-mouseenter="download" 
+                on-click="download">
+                <span class="specfont">&#xe633;</span>
+                <span>下载附件</span>
+            </a>
             <% list = ['图标/阿里妈妈品牌规范-图标.ai', '图标/阿里妈妈品牌规范-图标.pdf'] %>
             <ul class="download-list">
                 <% for( var i = 0; i < list.length; i++ ) { %>
                 <li class="clearfix">
-                    <span><%= RE_FILENAME.exec(list[i])[1] %></span>
-                    <a href="download/<%= list[i] %>" download="" class="specfont">&#xe633;</a>
+                    <a href="download/<%= list[i] %>" download="">
+                        <span class="name"><%= RE_FILENAME.exec(list[i])[1] %></span>
+                        <span class="specfont">&#xe633;</span>
+                    </a>
                 </li>
                 <% } %>
             </ul>
@@ -1167,13 +1213,20 @@
     <div class="clearfix">
         <div class="pull-left fontsize-20 mb40">网格系统 <small>Grid Systems</small></div>
         <div class="pull-right">
-            <a on-click="download" class="btn btn-brand" href="javascript:;"><span class="specfont">&#xe633;</span> 下载附件</a>
+            <a class="btn btn-brand" href="javascript:;"
+                on-mouseenter="download" 
+                on-click="download">
+                <span class="specfont">&#xe633;</span>
+                <span>下载附件</span>
+            </a>
             <% list = ['系统网格/阿里妈妈品牌规范-系统网格.ai', '系统网格/阿里妈妈品牌规范-系统网格.pdf'] %>
             <ul class="download-list">
                 <% for( var i = 0; i < list.length; i++ ) { %>
                 <li class="clearfix">
-                    <span><%= RE_FILENAME.exec(list[i])[1] %></span>
-                    <a href="download/<%= list[i] %>" download="" class="specfont">&#xe633;</a>
+                    <a href="download/<%= list[i] %>" download="">
+                        <span class="name"><%= RE_FILENAME.exec(list[i])[1] %></span>
+                        <span class="specfont">&#xe633;</span>
+                    </a>
                 </li>
                 <% } %>
             </ul>
@@ -1221,13 +1274,20 @@
     <div class="clearfix">
         <div class="pull-left fontsize-20 mb40">案例 <small>Examples</small></div>
         <div class="pull-right">
-            <a on-click="download" class="btn btn-brand" href="javascript:;"><span class="specfont">&#xe633;</span> 下载附件</a>
+            <a class="btn btn-brand" href="javascript:;"
+                on-mouseenter="download" 
+                on-click="download">
+                <span class="specfont">&#xe633;</span>
+                <span>下载附件</span>
+            </a>
             <% list = ['案例/阿里妈妈名片模版CMYK格式.ai', '案例/阿里妈妈名片模版RGB格式.ai', '案例/阿里妈妈品牌规范-案例.ai', '案例/阿里妈妈品牌规范-案例.pdf', '案例/PPT模板.zip'] %>
             <ul class="download-list">
                 <% for( var i = 0; i < list.length; i++ ) { %>
                 <li class="clearfix">
-                    <span><%= RE_FILENAME.exec(list[i])[1] %></span>
-                    <a href="download/<%= list[i] %>" download="" class="specfont">&#xe633;</a>
+                    <a href="download/<%= list[i] %>" download="">
+                        <span class="name"><%= RE_FILENAME.exec(list[i])[1] %></span>
+                        <span class="specfont">&#xe633;</span>
+                    </a>
                 </li>
                 <% } %>
             </ul>
