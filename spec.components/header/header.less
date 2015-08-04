@@ -50,7 +50,8 @@
     .navbar-logo {
         position: absolute;
         width: 180px;
-        left: 50%;
+        // left: 50%;
+        right: 0;
         margin-left: -90px;
     }
     body .navbar-toggle {
@@ -67,7 +68,7 @@
     .navbar-nav {
         .dropdown.open {
             ul.dropdown-menu {
-                padding-left: 20px;
+                // padding-left: 20px;
                 > li.sidebar-item {
                     > a:hover {
                         color: #FFF;
@@ -100,15 +101,17 @@
 
 .navbar-spec {
     background-color: #F60;
-    li {
-      > a {
-          color: #fff;
-          padding: 15px 30px;
-          font-size: 14px;
-          &:hover {
-              background: none;
+    .nav {
+        > li {
+          > a {
+              color: #fff;
+              padding: 15px 30px;
+              font-size: 14px;
+              &:hover {
+                  background: none;
+              }
           }
-      }
+        }
     }
     .navbar-header {
         // position: relative;
@@ -116,6 +119,7 @@
     .dropdown {
         // display: none;
         width: 100%;
+        min-width: inherit;
     }
 
     .nav .open > a,
@@ -139,7 +143,7 @@
             color: #fff;
             border-radius: 0;
             height: auto;
-            padding: 15px 30px;
+            // padding: 15px 30px;
             border: 0 none;
             line-height: 36px;
         }
@@ -167,7 +171,8 @@
                 > a {
                     display: inline-block;
                     width: 180px;
-                    padding: 6px 12px;
+                    height: 50px;
+                    padding: 8px 24px;
                     &:hover {
                         border-radius: 0;
                     }
