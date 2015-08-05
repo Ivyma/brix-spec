@@ -1,0 +1,11 @@
+@media (max-width: 1025px) {
+  .sidebar-col {
+    display: none;
+  }
+}
+@media (max-width: 1025px) {
+  .main-col {
+    margin-left: 0;
+    width: 100%;
+  }
+}

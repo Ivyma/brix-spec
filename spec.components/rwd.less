@@ -42,7 +42,7 @@
 						li.sidebar-item {
 							a {
 								small {
-									
+
 								}
 							}
 						}
@@ -54,6 +54,9 @@
 }
 
 .sidebar-col {
+	@media (max-width: 1025px) {
+		display: none;
+	}
 	.sidebar-wrapper {
 		.sidebar {
 			.sidebar-item {
@@ -68,6 +71,10 @@
 }
 
 .main-col {
+	@media (max-width: 1025px) {
+		margin-left: 0;
+		width: 100%;
+	}
 	.main-wrapper {
 		// readme.html
 		#main {
