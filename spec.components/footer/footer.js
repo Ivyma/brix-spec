@@ -3,13 +3,13 @@ define(
     [
         'jquery', 'underscore',
         'brix/base',
-        './footer.tpl.js',
+        // './footer.tpl.js',
         'css!./footer.css'
     ],
     function(
         $, _,
-        Brix,
-        template
+        Brix
+        // , template
     ) {
         function Footer() {}
 
@@ -24,7 +24,7 @@ define(
                     url: 'http://www.taobao.com/go/rgn/mm/footer.php',
                     dataType: 'jsonp',
                     jsonp: 'callback',
-                    success: function(resp, status, xhr) {
+                    success: function(resp /*, status, xhr*/ ) {
                         $(that.element).append(
                             $('<textarea />').html(resp).val()
                         )

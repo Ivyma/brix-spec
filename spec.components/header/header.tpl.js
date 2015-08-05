@@ -15,13 +15,31 @@ define(function() {
             <div class="navbar-logo">
                 <div class="dropdown">
                     <div class="btn btn-default dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        <a href="/"><span class="specfont icon-minecraft"></span></a>
+                        <a href="/">
+                            <span class="specfont icon-minecraft"></span>
+                            <span class="bu-name">阿里妈妈</span>
+                        </a>
                         <span class="specfont icon-xialakuang" onclick-bak="$(this).closest('.dropdown').toggleClass('open')"></span>
                      </div>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#"><span class="specfont icon-minecraft"></span></a></li>
-                        <li><a href="#"><span class="specfont icon-minecraft"></span></a></li>
-                        <li><a href="#"><span class="specfont icon-minecraft"></span></a></li>
+                        <li>
+                            <a href="#">
+                                <span class="specfont">&#xe61b;</span>
+                                <span class="bu-name">淘宝商家</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="specfont">&#xe61b;</span>
+                                <span class="bu-name">天猫商家</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="specfont">&#xe61b;</span>
+                                <span class="bu-name">聚划算商家</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>

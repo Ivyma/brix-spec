@@ -9,93 +9,44 @@
     height: 50px;
     border-width: 0;
 
-    .navbar-toggle {
-        // float: left;
-        .icon-bar {
-            background-color: #fff;
+    .navbar-header {
+        .navbar-toggle {
+            .icon-bar {
+                background-color: #fff;
+            }
         }
     }
-
     .navbar-logo {
         float: left;
-        .specfont {
-            font-size: 24px;
-            color: #fff;
-        }
-        .icon-xialakuang {
-            font-size: 12px;
-            margin-left: 10px;
-        }
-    }
-}
-
-// > 770px
-@media (min-width: 1024px) {
-    .navbar .navbar-nav {
-        margin-left: 15px;
-        > li {
-            > a {
-                opacity: .6;
-            }
-            &:hover, &.active {
-                > a {
-                    opacity: 1;
+        div.dropdown {
+            div.dropdown-toggle {
+                text-align: left;
+                padding: 8px 24px;
+                .specfont {}
+                .bu-name {}
+                .icon-xialakuang {
+                    font-size: 12px;
+                    margin-left: 10px;
                 }
             }
-        }
-    }
-}
-
-@media (max-width: 1025px) {
-    .navbar-logo {
-        position: absolute;
-        width: 180px;
-        // left: 50%;
-        right: 0;
-        margin-left: -90px;
-    }
-    body .navbar-toggle {
-        display: block;
-        float: left;
-    }
-    #bs-example-navbar-collapse-1 {
-        // display: none !important;
-    }
-    body .navbar-collapse {
-        // display: none !important;
-    }
-
-    .navbar-nav {
-        .dropdown.open {
             ul.dropdown-menu {
-                // padding-left: 20px;
-                > li.sidebar-item {
-                    > a:hover {
-                        color: #FFF;
-                        background-color: #FF933A;
+                li {
+                    a {
+                        .specfont {}
+                        .bu-name {}
                     }
                 }
             }
         }
-    }
-    .sidebar-col {
-        display: none;
-    }
-    .main-col {
-        margin-left: 0;
-        width: 100%;
-    }
-    .navbar-nav .hasmore {
-        display: none;
-    }
-    .navbar-nav >li >a.active {
-        display: none;
-    }
-    .navbar-spec .dropdown {
-        display: block !important;
-    }
-    .main-wrapper {
-        padding: 15px 20px;
+        .specfont {
+            font-size: 24px;
+            color: #fff;
+        }
+        .bu-name {
+            font-size: 16px;
+            color: #FFF;
+            margin-left: 5px;
+        }
     }
 }
 

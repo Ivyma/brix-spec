@@ -1,13 +1,13 @@
-/* global define, require, window, localStorage, location */
+/* global define */
 define(
     [
-        'jquery', 'underscore', 'marked', 'highlightjs',
+        'jquery', 'underscore', 'marked', /*'highlightjs',*/
         'brix/loader', 'brix/base', '../holder.js',
         './readme.tpl.js',
         'css!./readme.css'
     ],
     function(
-        $, _, marked, hljs,
+        $, _, marked, /*hljs,*/
         Loader, Brix, Holder,
         template
     ) {

@@ -1,19 +1,19 @@
 /* global define */
 define(
     [
-        'jquery', 'underscore', 'mock',
+        'jquery', 'underscore', /*'mock',*/
         'brix/base',
         './table.tpl.js',
         'css!./table.css'
     ],
     function(
-        $, _, Mock,
+        $, _, /*Mock,*/
         Brix,
         template
     ) {
-        function Table () {}
+        function Table() {}
 
-        _.extend( Table.prototype, Brix.prototype, {
+        _.extend(Table.prototype, Brix.prototype, {
             options: {},
             init: function() {},
             render: function() {

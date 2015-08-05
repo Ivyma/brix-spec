@@ -1,15 +1,7 @@
 @import "./variables.less";
-
-// ----------------------------------------
-// https://github.com/seven-phases-max/less.curious
-.for(@i, @n) {.-each(@i)}
-.for(@n)     when (isnumber(@n)) {.for(1, @n)}
-.for(@i, @n) when not (@i = @n)  {
-    .for((@i + (@n - @i) / abs(@n - @i)), @n);
-}
-.for(@array)   when (default()) {.for-impl_(length(@array))}
-.for-impl_(@i) when (@i > 1)    {.for-impl_((@i - 1))}
-.for-impl_(@i) when (@i > 0)    {.-each(extract(@array, @i))}
+@import "./for.less";
+@import "./font.less";
+// @import "./rwd.less";
 
 // ----------------------------------------
 .fontsize- {
@@ -87,66 +79,6 @@
 // 隐藏横向滚动条
 body {
     overflow-x: hidden;
-}
-
-/* Font */
-@font-face {
-    font-family: 'specfont';
-    src: url('//at.alicdn.com/t/font_1438244124_9732695.eot'); /* IE9*/
-    src: url('//at.alicdn.com/t/font_1438244124_9732695.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('//at.alicdn.com/t/font_1438244124_9732695.woff') format('woff'), /* chrome、firefox */
-    url('//at.alicdn.com/t/font_1438244124_9732695.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url('//at.alicdn.com/t/font_1438244124_9732695.svg#iconfont') format('svg'); /* iOS 4.1- */
-}
-.specfont {
-    font-family: "specfont" !important;
-    font-size: 16px;
-    font-style: normal;
-    display: inline-block;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-stroke-width: 0.2px;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-minecraft:before { content: "\e632"; }
-.icon-xialakuang:before { content: "\e623"; }
-
-/* Font */
-@font-face {
-    font-family: 'zsfont';
-    src: url('//at.alicdn.com/t/font_1436859315_9685595.eot'); /* IE9*/
-    src: url('//at.alicdn.com/t/font_1436859315_9685595.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('//at.alicdn.com/t/font_1436859315_9685595.woff') format('woff'), /* chrome、firefox */
-    url('//at.alicdn.com/t/font_1436859315_9685595.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url('//at.alicdn.com/t/font_1436859315_9685595.svg#iconfont') format('svg'); /* iOS 4.1- */
-}
-.zsfont {
-  font-family: "zsfont" !important;
-  font-size: 16px;
-  font-style: normal;
-  display: inline-block;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* Font */
-@font-face {
-  font-family: 'productfont';
-  src: url('//at.alicdn.com/t/font_1438074361_570762.eot'); /* IE9*/
-  src: url('//at.alicdn.com/t/font_1438074361_570762.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('//at.alicdn.com/t/font_1438074361_570762.woff') format('woff'), /* chrome、firefox */
-  url('//at.alicdn.com/t/font_1438074361_570762.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url('//at.alicdn.com/t/font_1438074361_570762.svg#iconfont') format('svg'); /* iOS 4.1- */
-}
-.productfont {
-  font-family: "productfont" !important;
-  font-size: 16px;
-  font-style: normal;
-  display: inline-block;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 /* SVG */
@@ -248,68 +180,6 @@ body .table {
     }
 }
 
-.main-row {
-    overflow: hidden;
-}
-.sidebar-col, .main-col {
-    float: left;
-    position: relative;
-    min-height: 1px;
-}
-.sidebar-col {
-    // width: 200px;
-}
-.main-col {
-    width: 78.3%;
-    margin-left: 200px;
-}
-
-/* @Media
- * http://demo.alibaba-inc.com/system/ids_extracted/b8/27/95/89/fad08ae2f1c3bec0ae72575a/index.html
- */
-// pad < media < pc
-@media (max-width: 991px) {
-    .sidebar-item small {
-        display: none;
-    }
-    .sidebar-col .sidebar-wrapper {
-        width: 10em;
-    }
-    .main-col {
-        margin-left: 120px;
-    }
-    div.sidebar-wrapper .sidebar-item a,
-    div.sidebar-wrapper .sidebar-item-sub a {
-        padding: 10px;
-    }
-}
-
-// 320 < pad2 <= 768
-@media (min-width: 319px) and (max-width: 769px) {
-
-}
-
-// 768 < pad <= 1024
-@media (min-width: 767px) and (max-width: 1025px) {
-
-}
-
-// 1024 < PC <= 1280
-@media (min-width: 1023px) and (max-width: 1281px) {
-
-}
-
-// PC+ >1280
-@media (min-width: 1280px) {
-    body .main-col {
-        width: 88%;
-    }
-    body .main-wrapper {
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
 /* Clipboard */
 .zero-clipboard {
     position: relative;
@@ -336,51 +206,6 @@ body .table {
 
 
 /* mm.css */
-
-@brand: #FF6600;
-@brand-hover: #fc4218;
-@333: #333;
-@666: #666;
-@999: #999;
-@ccc: #ccc;
-@fafafa: #fafafa;
-@f0f0f0: #f0f0f0;
-@e6e6e6: #e6e6e6;
-@green: #51A300;
-@red: #A40100;
-@backdrop: #474747;
-
-.color-brand {
-    color: @brand;
-}
-.color-green {
-    color: @green;
-}
-.color-red {
-    color: @red;
-}
-.color-333 {
-    color: @333;
-}
-.color-666 {
-    color: @666;
-}
-.color-999 {
-    color: @999;
-}
-.color-ccc {
-    color: @ccc;
-}
-
-.bg-brand {
-    background-color: @brand;
-}
-.bg-red {
-    background-color: @red;
-}
-.bg-backdrop {
-    background-color: @backdrop;
-}
 
 body .btn {
     border: 0;
@@ -447,70 +272,6 @@ body .btn {
     margin-top: -80px;
 }
 
-.sidebar-wrapper {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 10;
-    width: 200px;
-    height: 100%;
-    // min-height: 500px;
-    padding: 90px 0px 25px 0px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    overflow-y: scroll;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-    -webkit-overflow-scrolling: touch;
-
-    .sidebar {
-        padding-bottom: 40px;
-     }
-    .sidebar-item,
-    .sidebar-item-sub {
-        a {
-            color: #666;
-            display: block;
-            padding: 10px 20px;
-            white-space: nowrap;
-            word-wrap: normal;
-            &:hover {
-                background-color: #F8F8F8;
-            }
-            small {
-                color: #999;
-                font-size: 65%;
-            }
-        }
-        &.active a {
-            background-color: #FF6600;
-            &, small {
-                color: #FFF;
-            }
-        }
-    }
-    .sidebar-item-sub {
-        a {
-            padding: 5px 10px 5px 40px;
-        }
-    }
-
-}
-
-.main-wrapper {
-    margin-top: 50px;
-    padding: 40px 40px 0 40px;
-    min-height: 500px;
-    max-width: 1170px;
-}
-
-@media (max-width: 768px) {
-    .sidebar-wrapper {
-        // display: none;
-    }
-    .main-wrapper {
-        // margin-left: 0px;
-    }
-}
-
 /* Readme */
 
 #main {
@@ -538,5 +299,73 @@ body {
     textarea, .textarea,
     textarea.form-control, .textarea.form-control {
         height: auto;
+    }
+}
+
+/* 响应式 */
+
+.sidebar-col, .main-col {
+    float: left;
+    position: relative;
+    min-height: 1px;
+}
+.sidebar-col {
+    .sidebar-wrapper {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        width: 200px;
+        height: 100%;
+        // min-height: 500px;
+        padding: 90px 0px 25px 0px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        overflow-y: scroll;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        -webkit-overflow-scrolling: touch;
+
+        .sidebar {
+            padding-bottom: 40px;
+         }
+        .sidebar-item,
+        .sidebar-item-sub {
+            a {
+                color: #666;
+                display: block;
+                padding: 10px 20px;
+                white-space: nowrap;
+                word-wrap: normal;
+                &:hover {
+                    background-color: #F8F8F8;
+                }
+                small {
+                    color: #999;
+                    font-size: 65%;
+                }
+            }
+            &.active a {
+                background-color: #FF6600;
+                &, small {
+                    color: #FFF;
+                }
+            }
+        }
+        .sidebar-item-sub {
+            a {
+                padding: 5px 10px 5px 40px;
+            }
+        }
+
+    }
+}
+.main-col {
+    width: 78.3%;
+    margin-left: 200px;
+
+    .main-wrapper {
+        margin-top: 50px;
+        padding: 40px 40px 0 40px;
+        min-height: 500px;
+        max-width: 1170px;
     }
 }
