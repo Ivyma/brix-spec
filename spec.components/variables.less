@@ -1,3 +1,7 @@
+@import "./for.less";
+
+/* Color */
+
 @brand: #FF6600;
 @brand-hover: #fc4218;
 @333: #333;
@@ -10,3 +14,129 @@
 @green: #51A300;
 @red: #A40100;
 @backdrop: #474747;
+
+.color-brand {
+    color: @brand;
+}
+.color-green {
+    color: @green;
+}
+.color-red {
+    color: @red;
+}
+.color-333 {
+    color: @333;
+}
+.color-666 {
+    color: @666;
+}
+.color-999 {
+    color: @999;
+}
+.color-ccc {
+    color: @ccc;
+}
+
+.bg-brand {
+    background-color: @brand;
+}
+.bg-red {
+    background-color: @red;
+}
+.bg-backdrop {
+    background-color: @backdrop;
+}
+
+// ----------------------------------------
+.fontsize- {
+    .for(12 14 16 18 20 24 28 32 36 40); .-each(@px) {
+        &@{px} {
+            font-size: @px * 1px;
+        }
+    }
+}
+// ----------------------------------------
+.ml {
+    .for(0 2 3 4 5 6 7 8 10 15 20 25 30 35 40 60 80); .-each(@px) {
+        &@{px} {
+            margin-left: @px * 1px;
+        }
+    }
+}
+.mr {
+    .for(0 2 3 4 5 6 7 8 10 15 20 25 30 35 40 60 80); .-each(@px) {
+        &@{px} {
+            margin-right: @px * 1px;
+        }
+    }
+}
+.mt {
+    .for(0 2 3 4 5 6 7 8 10 15 20 25 30 35 40 60 80); .-each(@px) {
+        &@{px} {
+            margin-top: @px * 1px;
+        }
+    }
+}
+.mb {
+    .for(0 2 3 4 5 6 7 8 10 15 20 25 30 35 40 60 80); .-each(@px) {
+        &@{px} {
+            margin-bottom: @px * 1px;
+        }
+    }
+}
+// ----------------------------------------
+.pl {
+    .for(0 2 3 4 5 6 7 8 10 15 20 25 30 35 40 60 80); .-each(@px) {
+        &@{px} {
+            padding-left: @px * 1px;
+        }
+    }
+}
+.pr {
+    .for(0 2 3 4 5 6 7 8 10 15 20 25 30 35 40 60 80); .-each(@px) {
+        &@{px} {
+            padding-right: @px * 1px;
+        }
+    }
+}
+.pt {
+    .for(0 2 3 4 5 6 7 8 10 15 20 25 30 35 40 60 80); .-each(@px) {
+        &@{px} {
+            padding-top: @px * 1px;
+        }
+    }
+}
+.pb {
+    .for(0 2 3 4 5 6 7 8 10 15 20 25 30 35 40 60 80); .-each(@px) {
+        &@{px} {
+            padding-bottom: @px * 1px;
+        }
+    }
+}
+
+// ----------------------------------------
+// Media queries
+// ----------------------------------------
+
+// Extra small screen
+@screen-xs:			320px;
+@screen-xs-min: 	@screen-xs;
+// Small screen
+@screen-sm: 		768px;
+@screen-sm-min: 	@screen-sm;
+// Medium screen
+@screen-md: 		1024px;
+@screen-md-min: 	@screen-md;
+// Large screen
+@screen-lg: 		1280px;
+@screen-lg-min: 	@screen-lg;
+// maximum
+@screen-xs-max:		(@screen-sm-min - 1);
+@screen-sm-max:		(@screen-md-min - 1);
+@screen-md-max:		(@screen-lg-min - 1);
+
+// device: phone tablet desktop desktop-lg
+@device-phone:         ~"only screen and (max-width: 767px)";
+@device-tablet:        ~"only screen and (min-width: 768px) and (max-width: 1023px)";
+@device-desktop:       ~"only screen and (min-width: 1024px) and (max-width: 1279px)";
+@device-desktop-lg:    ~"only screen and (min-width: 1280px)";

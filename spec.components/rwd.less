@@ -1,9 +1,22 @@
+@import "./variables.less";
+
+// @device-tablet
 .navbar {
 	.navbar-header {
 		.navbar-toggle {
-
+			@media @device-phone {
+				display: block;
+				float: left;
+			}
 		}
 		.navbar-logo {
+			@media @device-phone {
+				position: absolute;
+		        width: 180px;
+		        left: 50%;
+		        right: 0;
+		        margin-left: -90px;
+			}
 			.dropdown {
 				.dropdown-toggle {
 					a {
@@ -31,20 +44,50 @@
 		}
 	}
 	.navbar-collapse {
-		.navbar-nav {
-			li {
-				a {}
-				.dropdown {
-					.dropdown-toggle {
+		ul.navbar-nav {
+			> li {
+				> a {
+					opacity: .6;
+					&.hasmore {
+	            		@media @device-phone {
+							display: none;
+						}
+	            	}
+				}
+				&:hover, &.active {
+	                > a {
+	                    opacity: 1;
+	                }
+	            }
 
+				> .dropdown {
+					@media @device-phone {
+						display: block;
 					}
-					.dropdown-menu {
-						li.sidebar-item {
-							a {
-								small {
-
+					padding-left: 18px;
+					> .dropdown-toggle {
+						padding: 7px 12px;
+					}
+					> ul.dropdown-menu {
+						margin: 0;
+						padding: 0;
+						border: none;
+						background-color: @brand;
+						border-radius: 0;
+						> li.sidebar-item {
+							padding: 0;
+							> a {
+								color: white;
+                        		padding: 8px 24px;
+								> small {
+									color: white;
 								}
 							}
+							> a:hover {
+		                        color: white;
+		                        background-color: #FF933A;
+		                        border-radius: 0;
+		                    }
 						}
 					}
 				}
@@ -54,15 +97,21 @@
 }
 
 .sidebar-col {
-	@media (max-width: 1025px) {
+	@media @device-phone {
 		display: none;
 	}
 	.sidebar-wrapper {
+		width: 200px;
+		@media @device-tablet {
+			width: 120px;
+		}
 		.sidebar {
 			.sidebar-item {
 				a {
 					small {
-
+						@media @device-tablet {
+							display: none;
+						}
 					}
 				}
 			}
@@ -71,11 +120,23 @@
 }
 
 .main-col {
-	@media (max-width: 1025px) {
+  	margin-left: 200px;
+  	@media @device-tablet {
+		margin-left: 120px;
+	}
+	@media @device-phone {
 		margin-left: 0;
 		width: 100%;
 	}
+	@media @device-desktop-lg {
+		width: 88%;
+	}
 	.main-wrapper {
+		@media @device-desktop-lg {
+			margin-left: auto;
+        	margin-right: auto;
+		}
+
 		// readme.html
 		#main {
 

@@ -1,3 +1,19 @@
+@import "../variables.less";
+
+body {
+
 .dropdown {
-    
+    .dropdown-menu {
+        > li {
+            &.active {
+                a,
+                a:hover,
+                a:focus {
+                    background-color: @brand;
+                }
+            }
+        }
+    }
+}
+
 }

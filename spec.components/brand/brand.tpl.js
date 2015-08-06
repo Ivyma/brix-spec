@@ -13,7 +13,25 @@ define(function() {
 <div class="brand-story mb40">
     <div class="clearfix"> 
         <div class="pull-left fontsize-20 mb40">品牌故事 <small>Brand Story</small></div>
-        <div class="pull-right"></div>
+        <div class="pull-right" style="position: relative;">
+            <a class="btn btn-brand" href="javascript:;"
+                on-mouseenter="download" 
+                on-click="download">
+                <span class="specfont">&#xe633;</span>
+                <span>下载附件</span>
+            </a>
+            <% list = ['品牌故事/Alimama品牌指南第一版.pdf'] %>
+            <ul class="download-list">
+                <% for( var i = 0; i < list.length; i++ ) { %>
+                <li class="clearfix">
+                    <a href="download/<%= list[i] %>" download="">
+                        <span class="name"><%= RE_FILENAME.exec(list[i])[1] %></span>
+                        <span class="specfont">&#xe633;</span>
+                    </a>
+                </li>
+                <% } %>
+            </ul>
+        </div>
     </div>
     <div class="row">
         <div class="col-sm-12 mb40">
@@ -41,7 +59,7 @@ define(function() {
                 <span class="specfont">&#xe633;</span>
                 <span>下载附件</span>
             </a>
-            <% list = ['标志/阿里妈妈品牌规范-标志.ai', '标志/阿里妈妈品牌规范-标志.pdf'] %>
+            <% list = ['标志/阿里妈妈品牌规范-标志.ai', '标志/阿里妈妈品牌规范-标志.pdf', '标志/阿里妈妈旗下产品标志设计规范.ai', '标志/阿里妈妈旗下产品标志设计规范.pdf'] %>
             <ul class="download-list">
                 <% for( var i = 0; i < list.length; i++ ) { %>
                 <li class="clearfix">

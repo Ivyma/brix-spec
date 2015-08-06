@@ -123,7 +123,7 @@
         </div>
         <div class="content-body">
             <div class="dialog dialog-singleton" style="position: relative;">
-                <button bx-click="close" type="button" class="dialog-close"><span class="brixfont">&#xe62d;</span></button>
+                <!-- <button bx-click="close" type="button" class="dialog-close"><span class="brixfont">&#xe62d;</span></button> -->
                 <div class="dialog-content">
                     <div class="dialog-body" style="padding: 10px 70px 10px 20px;">
                         <span class="fontsize-14 mr10">充值金额</span>

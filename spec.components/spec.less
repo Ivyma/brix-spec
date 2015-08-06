@@ -2,73 +2,6 @@
 @import "./for.less";
 @import "./font.less";
 
-// ----------------------------------------
-.fontsize- {
-    .for(12 14 16 18 20 24 28 32 36 40); .-each(@px) {
-        &@{px} {
-            font-size: @px * 1px;
-        }
-    }
-}
-// ----------------------------------------
-.ml {
-    .for(0 2 3 4 5 6 7 8 10 15 20 25 30 35 40 60 80); .-each(@px) {
-        &@{px} {
-            margin-left: @px * 1px;
-        }
-    }
-}
-.mr {
-    .for(0 2 3 4 5 6 7 8 10 15 20 25 30 35 40 60 80); .-each(@px) {
-        &@{px} {
-            margin-right: @px * 1px;
-        }
-    }
-}
-.mt {
-    .for(0 2 3 4 5 6 7 8 10 15 20 25 30 35 40 60 80); .-each(@px) {
-        &@{px} {
-            margin-top: @px * 1px;
-        }
-    }
-}
-.mb {
-    .for(0 2 3 4 5 6 7 8 10 15 20 25 30 35 40 60 80); .-each(@px) {
-        &@{px} {
-            margin-bottom: @px * 1px;
-        }
-    }
-}
-// ----------------------------------------
-.pl {
-    .for(0 2 3 4 5 6 7 8 10 15 20 25 30 35 40 60 80); .-each(@px) {
-        &@{px} {
-            padding-left: @px * 1px;
-        }
-    }
-}
-.pr {
-    .for(0 2 3 4 5 6 7 8 10 15 20 25 30 35 40 60 80); .-each(@px) {
-        &@{px} {
-            padding-right: @px * 1px;
-        }
-    }
-}
-.pt {
-    .for(0 2 3 4 5 6 7 8 10 15 20 25 30 35 40 60 80); .-each(@px) {
-        &@{px} {
-            padding-top: @px * 1px;
-        }
-    }
-}
-.pb {
-    .for(0 2 3 4 5 6 7 8 10 15 20 25 30 35 40 60 80); .-each(@px) {
-        &@{px} {
-            padding-bottom: @px * 1px;
-        }
-    }
-}
-
 // 重新定义字体渲染为默认，需要删除 mm.css 中的定义
 * {
     // -webkit-font-smoothing: auto;
@@ -131,10 +64,10 @@ body .table {
         max-height: 90px;
         color: #333;
         border-top: none;
-        border-bottom: 1px solid #ebebeb;
+        border-bottom: 1px solid #e6e6e6;
     }
     tbody tr:hover {
-        background-color: #f4f8ff;
+        background-color: #FAF3EB;
     }
 
     &.table-bordered {
@@ -201,6 +134,9 @@ body .table {
             background-color: @brand;
         }
     }
+    .popover-content {
+        text-align: center;
+    }
 }
 
 
@@ -223,6 +159,7 @@ body .btn {
     &.btn-disabled {
         border: 0;
         cursor: not-allowed;
+        color: @ccc;
     }
     &.btn-progress {
         position: relative;
@@ -358,7 +295,6 @@ body {
     }
 }
 .main-col {
-    width: 78.3%;
     margin-left: 200px;
 
     .main-wrapper {

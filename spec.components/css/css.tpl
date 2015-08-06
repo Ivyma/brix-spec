@@ -193,23 +193,31 @@
         <div class="fontsize-20 mb10">字体 <small>Font</small></div class="fontsize-28">
         <p class="mb20">提高文字辨识性和页面易读性，并在视觉上达到统一和整体。</p>
     </div>
+
+    <% var _recommend = [20, 16, 14, 12] %>
+    <% var _sizes = [32, 30, 28, 26, 24, 22, 20, 18, 16, 14, 12] %>
+
     <div class="mb40">
         <div class="fontsize-18 mb10">标题 <small>Header</small></div>
         <p class="mb0">标题字号范围建议12-28号，都为2的整数倍，设备格式统一采用系统设备字体；图片格式标题文本统一采用阿里妈妈后台专用字体，样式为锐利SHARP，字号不做绝对限制。</p>
         <p class="mb0">日常使用推荐带橙点 12号、14号、16号、20号，使用时不可以加粗字体。</p>
         <div class="mt20">
-            <% var _recommend = [20, 16, 14, 12] %>
-            <% _.each([32, 30, 28, 26, 24, 22, 20, 18, 16, 14, 12], function(item, index){ %>
-            <div class="ungrid-row">
-                <div class="ungrid-col" style="width: 140px;  height: 40px; text-align: right; padding-right: 30px;">
-                    <% if(_.indexOf(_recommend, item) !== -1) { %>
-                    <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background-color: #FF6600; margin-right: 20px;"></span>
-                    <% } %>
-                    <%= item %>px
-                </div>
-                <div class="ungrid-col"><span style="font-size: <%= item %>px;">标题字体</span></div>
-            </div>
-            <% }) %>
+            <table style="width: 100%; table-layout: fixed; overflow: hidden;">
+                <tbody>
+                    <% _.each(_sizes, function(item, index){ %>
+                    <tr>
+                        <td style="width: 140px;  height: 40px; text-align: right; padding-right: 30px;">
+                            <% if(_.indexOf(_recommend, item) !== -1) { %>
+                            <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background-color: #FF6600; margin-right: 20px;"></span>
+                            <% } %>
+                            <%= item %>px
+                        </td>
+                        <td><span style="font-size: <%= item %>px;">标题字体</span></td>
+                    </tr>
+                    <% }) %>
+                    
+                </tbody>
+            </table>
         </div>
     </div>
     <div class="mb40">
@@ -217,18 +225,23 @@
         <p class="mb0">数字/英文字体样式为锐利SHARP，字号不做绝对限制。</p>
         <p class="mb0">日常使用推荐带橙点 12号、14号、16号、20号、24号，使用时需要强调可以加粗字体。 </p>
         <div class="mt20">
-            <% var _recommend = [24, 20, 16, 14, 12] %>
-            <% _.each([32, 30, 28, 26, 24, 22, 20, 18, 16, 14, 12], function(item, index){ %>
-            <div class="ungrid-row">
-                <div class="ungrid-col" style="width: 140px;  height: 40px; text-align: right; padding-right: 30px;">
-                    <% if(_.indexOf(_recommend, item) !== -1) { %>
-                    <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background-color: #FF6600; margin-right: 20px;"></span>
-                    <% } %>
-                    <%= item %>px
-                </div>
-                <div class="ungrid-col"><span style="font-size: <%= item %>px;">0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ</span></div>
-            </div>
-            <% }) %>
+            <table style="width: 100%; table-layout: fixed; overflow: hidden;">
+                <tbody>
+                    <% _recommend.push(24) %>
+                    <% _.each(_sizes, function(item, index){ %>
+                    <tr>
+                        <td style="width: 140px;  height: 40px; text-align: right; padding-right: 30px;">
+                            <% if(_.indexOf(_recommend, item) !== -1) { %>
+                            <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background-color: #FF6600; margin-right: 20px;"></span>
+                            <% } %>
+                            <%= item %>px
+                        </td>
+                        <td><span style="font-size: <%= item %>px;">0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ</span></td>
+                    </tr>
+                    <% }) %>
+                    
+                </tbody>
+            </table>
         </div>
     </div>
     <div class="mb20">
@@ -258,5 +271,39 @@
     color: #333;
     -webkit-font-smoothing: antialiased;
 }</code></pre>
+    </div>
+</div>
+
+<div class="mb40">
+    <div class="mb40">
+        <div class="fontsize-20 mb10">行距 <small>Line Height</small></div>
+    </div>
+    <div class="mb40">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>字体大小</th>
+                    <th>行距</th>
+                    <th>字距</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>正文类（12 ~ 16pt）</td>
+                    <td>150% ~ 200%</td>
+                    <td>默认</td>
+                </tr>
+                <tr>
+                    <td>标题（16 ~ 30pt）</td>
+                    <td>150% ~ 200%</td>
+                    <td>默认</td>
+                </tr>
+                <tr>
+                    <td>特殊字体组合</td>
+                    <td>实际效果定义</td>
+                    <td>默认</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>

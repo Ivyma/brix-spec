@@ -17,10 +17,14 @@
             </ol>
         </div>
         <div class="content-body">
-            <label><input type="checkbox"> 选项1</label>
-            <label><input type="checkbox"> 选项2</label>
-            <label><input type="checkbox"> 选项3</label>
-            <label><input type="checkbox"> 选项4</label>
+            <div>
+                <label><input type="checkbox"> 未选中</label>
+                <label><input type="checkbox" checked>已选中</label>
+            </div>
+            <div>
+                <label class="disabled"><input type="checkbox" disabled> 禁用/未选中</label>
+                <label class="disabled"><input type="checkbox" checked disabled>禁用/已选中</label>
+            </div>
         </div>
     </div>
     <pre><code class="hljs html">

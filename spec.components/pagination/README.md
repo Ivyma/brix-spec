@@ -110,14 +110,14 @@
             </div>
             <div class="clearfix" style="padding: 15px;">
                 <div class="pull-left"><a href="javascript:;">< 上一篇</a></div>
-                <div class="pull-right"><a href="javascript:;">上一篇 ></a></div>
+                <div class="pull-right"><a href="javascript:;">下一篇 ></a></div>
             </div>
         </div>
     </div>
     <pre><code class="hljs html">
         <div class="clearfix" style="padding: 15px;">
             <div class="pull-left"><a href="javascript:;">< 上一篇</a></div>
-            <div class="pull-right"><a href="javascript:;">上一篇 ></a></div>
+            <div class="pull-right"><a href="javascript:;">下一篇 ></a></div>
         </div>
     </code></pre>
 </div>

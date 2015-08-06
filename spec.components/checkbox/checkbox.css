@@ -11,6 +11,10 @@ label p.desc {
   padding-left: 25px;
   margin-bottom: 0px;
 }
+label.disabled {
+  color: #999;
+  cursor: not-allowed;
+}
 ul.checklist {
   list-style: none;
   padding-left: 25px;

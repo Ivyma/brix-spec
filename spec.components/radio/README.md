@@ -21,8 +21,8 @@
                 <label><input type="radio" checked>已选中</label>
             </div>
             <div>
-                <label><input type="radio" disabled> 禁用/未选中</label>
-                <label><input type="radio" checked disabled>禁用/已选中</label>
+                <label class="disabled"><input type="radio" disabled> 禁用/未选中</label>
+                <label class="disabled"><input type="radio" checked disabled>禁用/已选中</label>
             </div>
         </div>
     </div>
@@ -41,15 +41,15 @@
             <div class="color-999 mt6">当选项间有多层级关系时使用竖向展示。</div>
         </div>
         <div class="content-body">
-            <ul class="checklist">
-                <li><label><input type="radio" name="sss"> 单选1</label></li>
-                <li><label><input type="radio" name="sss"> 单选2</label></li>
+            <ul class="checklist" id="case1">
+                <li><label><input type="radio" name="sss" data-linkage-name="all-1"> 单选1</label></li>
+                <li><label><input type="radio" name="sss" data-linkage-name="all-2"> 单选2</label></li>
                 <li>
-                    <label><input type="radio" name="sss"> 单选3</label>
+                    <label><input type="radio" name="sss" data-linkage-name="all"> 单选3</label>
                     <ul class="checklist">
-                        <li><label><input type="checkbox"> 多选1</label></li>
-                        <li><label><input type="checkbox"> 多选2</label></li>
-                        <li><label><input type="checkbox"> 多选3</label></li>
+                        <li><label><input type="checkbox" data-linkage-parent-name="all"> 多选1</label></li>
+                        <li><label><input type="checkbox" data-linkage-parent-name="all"> 多选2</label></li>
+                        <li><label><input type="checkbox" data-linkage-parent-name="all"> 多选3</label></li>
                     </ul>
                 </li>
             </ul>
@@ -81,19 +81,19 @@
             <ul class="checklist">
                 <li>
                     <label>
-                        <input type="radio" name="sss"> 多选1
+                        <input type="radio" name="sss"> 单选1
                         <p class="desc">此处为真此单选的一些注意说明</p>
                     </label>
                 </li>
                 <li>
                     <label>
-                        <input type="radio" name="sss"> 多选2
+                        <input type="radio" name="sss"> 单选2
                         <p class="desc">此处为真此单选的一些注意说明</p>
                     </label>
                 </li>
                 <li>
                     <label>
-                        <input type="radio" name="sss"> 多选3
+                        <input type="radio" name="sss"> 单选3
                         <p class="desc">此处为真此单选的一些注意说明</p>
                     </label>
                 </li>
@@ -104,22 +104,28 @@
         <ul class="checklist">
             <li>
                 <label>
-                    <input type="radio" name="sss"> 多选1
+                    <input type="radio" name="sss"> 单选1
                     <p class="desc">此处为真此单选的一些注意说明</p>
                 </label>
             </li>
             <li>
                 <label>
-                    <input type="radio" name="sss"> 多选2
+                    <input type="radio" name="sss"> 单选2
                     <p class="desc">此处为真此单选的一些注意说明</p>
                 </label>
             </li>
             <li>
                 <label>
-                    <input type="radio" name="sss"> 多选3
+                    <input type="radio" name="sss"> 单选3
                     <p class="desc">此处为真此单选的一些注意说明</p>
                 </label>
             </li>
         </ul>
     </code></pre>
 </div>
+
+<script type="text/javascript">
+    require(['spec.components/linkage'], function(Linkage) {
+        Linkage('#case1')
+    })
+</script>

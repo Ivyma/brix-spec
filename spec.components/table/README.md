@@ -241,8 +241,8 @@
                 <li><a href="javascript:;">单元列表</a></li>
                 <li><a href="javascript:;">人群列表</a></li>
                 <li><a href="javascript:;">资源位列表</a></li>
-                <li><a href="javascript:;">创意列表</a></li>
-                <li><a href="javascript:;">关键词列表</a></li>
+                <!-- <li><a href="javascript:;">创意列表</a></li> -->
+                <!-- <li><a href="javascript:;">关键词列表</a></li> -->
             </ul>
 
             <table bx-name="components/table" class="table table-hover table-fixed">
@@ -291,8 +291,8 @@
                 <li><a href="javascript:;">单元列表</a></li>
                 <li><a href="javascript:;">人群列表</a></li>
                 <li><a href="javascript:;">资源位列表</a></li>
-                <li><a href="javascript:;">创意列表</a></li>
-                <li><a href="javascript:;">关键词列表</a></li>
+                <!-- <li><a href="javascript:;">创意列表</a></li> -->
+                <!-- <li><a href="javascript:;">关键词列表</a></li> -->
             </ul>
             <table bx-name="components/table" class="table table-hover table-fixed" data-column-rwd-range="[1,-1]" data-column-rwd-limit="3" data-column-rwd-cursor="1">
                 <thead>

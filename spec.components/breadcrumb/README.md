@@ -15,7 +15,7 @@
             <ol class="breadcrumb">
                 <li><a href="javascript:;">一级类目</a></li>
                 <li><a href="javascript:;">二级类目</a></li>
-                <li class="active">三级类目</li>
+                <li class="active"><a href="javascript:;">三级类目</a></li>
             </ol>
         </div>
     </div>
@@ -23,7 +23,7 @@
         <ol class="breadcrumb">
             <li><a href="javascript:;">一级类目</a></li>
             <li><a href="javascript:;">二级类目</a></li>
-            <li class="active">三级类目</li>
+            <li class="active"><a href="javascript:;">三级类目</a></li>
         </ol>
     </code></pre>
 </div>
@@ -38,7 +38,7 @@
             <ol class="breadcrumb">
                 <li><a href="javascript:;">女装</a></li>
                 <li><a href="javascript:;">上衣</a></li>
-                <li class="active">运动 T 恤</li>
+                <li class="active"><a href="javascript:;">运动 T 恤</a></li>
             </ol>
         </div>
     </div>
@@ -46,7 +46,7 @@
         <ol class="breadcrumb">
             <li><a href="javascript:;">女装</a></li>
             <li><a href="javascript:;">上衣</a></li>
-            <li class="active">运动 T 恤</li>
+            <li class="active"><a href="javascript:;">运动 T 恤</a></li>
         </ol>
     </code></pre>
 </div>
@@ -67,7 +67,7 @@
                     </select>
                 </li>
                 <li><a href="javascript:;">宝贝名称</a></li>
-                <li class="active">宝贝关键词 1</li>
+                <li class="active"><a href="javascript:;">宝贝关键词 1</a></li>
             </ol>
         </div>
     </div>

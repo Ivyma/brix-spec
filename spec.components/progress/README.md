@@ -126,7 +126,7 @@
 <div class="example">
     <div class="content">
         <div class="content-header">
-            <div>场景 2 - 页面全局加载</div>
+            <div>场景 3 - 页面全局加载</div>
             <div class="color-999 mt6">当页面全局加载时，也可以在浏览器窗口下使用确定型进度条来显示页面进度。</div>
         </div>
         <div class="content-body" style="padding-right: 0; padding-bottom: 0;">
