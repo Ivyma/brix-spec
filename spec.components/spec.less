@@ -47,32 +47,85 @@ p {
 .bold {
     font-weight: bold;
 }
+.tahoma {
+  font-family: "Tahoma";
+}
 
 body .table {
-    thead tr th {
-        height: 60px;
-        padding: 0 8px;
-        background-color: #fafafa;
-        color: #999;
-        font-weight: normal;
-        vertical-align: middle;
-        border: none;
+    thead {
+        tr, tr.active {
+            th {
+                color: #999;
+                font-weight: normal;
+                height: 60px;
+                vertical-align: middle;
+                padding: 0 8px 0 14px;
+                white-space: nowrap;
+                background-color: #fafafa;
+                border: none;
+                &.stable {
+                    background-color: #f0f0f0;
+                }
+            }
+        }
     }
     tbody tr td {
-        padding: 28px 8px 16px;
-        line-height: 1em;
-        max-height: 90px;
         color: #333;
+        height: 60px;
+        max-height: 90px;
+        vertical-align: middle;
+        padding: 0 8px 0 14px;
         border-top: none;
         border-bottom: 1px solid #e6e6e6;
+    }
+    tbody tr.active td {
+        background-color: transparent;
     }
     tbody tr:hover {
         background-color: #FAF3EB;
     }
-
+    tbody tr.active:hover td {
+        background-color: #FAF3EB;
+    }
     &.table-bordered {
         thead tr th {
             border: 1px solid #e6e6e6;
+        }
+    }
+    tr:hover .operation {
+        visibility: hidden;
+    }
+    tr:hover > td > .operation {
+        visibility: visible;
+    }
+
+    tbody tr {
+        td.sub-toggle {
+            .brixfont {
+                cursor: pointer;
+                display: none;
+                &.plus {
+                    display: block;
+                }
+            }
+        }
+        td.sub-toggle.open {
+            .brixfont {
+                display: none;
+                &.minus {
+                    display: block;
+                }
+            }
+        }
+    }
+    tbody tr.sub {
+        display: none;
+        background-color: transparent!important;
+
+        > td {
+            table.table {
+                margin-bottom: -1px;
+            }
         }
     }
 }
@@ -220,6 +273,10 @@ body .btn {
     margin: 0;
     height: 20px;
     background-color: @e6e6e6;
+    padding-left: 8px;
+    padding-right: 8px;
+    overflow: hidden;
+    color: #999;
 }
 
 /* Input */
@@ -235,6 +292,16 @@ body {
     textarea, .textarea,
     textarea.form-control, .textarea.form-control {
         height: auto;
+    }
+    input:focus, .input:focus, input.focus,
+    textarea:focus, .textarea:focus, textarea.focus,
+    .form-control:focus, .form-control.focus {
+        border-color: @brand;
+    }
+    .input.error, input.error,
+    .textarea.error, textarea.error,
+    .form-control.error {
+        border-color: @red;
     }
 }
 
