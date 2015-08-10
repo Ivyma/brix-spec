@@ -8,6 +8,9 @@
 .color-red {
   color: #a40100;
 }
+.color-gray {
+  color: #999999;
+}
 .color-333 {
   color: #333333;
 }
@@ -83,6 +86,9 @@
 .ml8 {
   margin-left: 8px;
 }
+.ml9 {
+  margin-left: 9px;
+}
 .ml10 {
   margin-left: 10px;
 }
@@ -133,6 +139,9 @@
 }
 .mr8 {
   margin-right: 8px;
+}
+.mr9 {
+  margin-right: 9px;
 }
 .mr10 {
   margin-right: 10px;
@@ -185,6 +194,9 @@
 .mt8 {
   margin-top: 8px;
 }
+.mt9 {
+  margin-top: 9px;
+}
 .mt10 {
   margin-top: 10px;
 }
@@ -235,6 +247,9 @@
 }
 .mb8 {
   margin-bottom: 8px;
+}
+.mb9 {
+  margin-bottom: 9px;
 }
 .mb10 {
   margin-bottom: 10px;
@@ -287,6 +302,9 @@
 .pl8 {
   padding-left: 8px;
 }
+.pl9 {
+  padding-left: 9px;
+}
 .pl10 {
   padding-left: 10px;
 }
@@ -337,6 +355,9 @@
 }
 .pr8 {
   padding-right: 8px;
+}
+.pr9 {
+  padding-right: 9px;
 }
 .pr10 {
   padding-right: 10px;
@@ -389,6 +410,9 @@
 .pt8 {
   padding-top: 8px;
 }
+.pt9 {
+  padding-top: 9px;
+}
 .pt10 {
   padding-top: 10px;
 }
@@ -440,6 +464,9 @@
 .pb8 {
   padding-bottom: 8px;
 }
+.pb9 {
+  padding-bottom: 9px;
+}
 .pb10 {
   padding-bottom: 10px;
 }
@@ -467,6 +494,9 @@
 .pb80 {
   padding-bottom: 80px;
 }
+.example .mm-tabs li {
+  cursor: pointer;
+}
 .example .mm-tabs li:hover,
 .example .mm-tabs li.active {
   border-bottom-color: #ff6600;
@@ -476,5 +506,8 @@
   color: #ff6600;
 }
 .example .column-scroll-arrow {
+  background-color: #ff6600;
+}
+.example .column-scroll-arrow:hover {
   background-color: #ff6600;
 }
