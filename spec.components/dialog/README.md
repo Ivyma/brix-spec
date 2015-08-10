@@ -18,10 +18,7 @@
                     <div class="dialog-header">
                         <h4 class="dialog-title fontsize-16">店铺推荐标签</h4>
                     </div>
-                    <div class="dialog-body">
-                        <p class="flat-text full-width"></p>
-                        <p class="flat-text full-width mt10"></p>
-                    </div>
+                    <div class="dialog-body" style="height: 350px;"></div>
                     <div class="dialog-footer">
                         <button class="btn btn-brand mr10">确定</button>
                         <button class="btn mr10">取消</button>
@@ -43,10 +40,7 @@
                     <div class="dialog-header">
                         <h4 class="dialog-title fontsize-16">店铺推荐标签 <small class="ml3">您选择出来的用户数很少，建议增加资源位或扩展定向标签。</small></h4>
                     </div>
-                    <div class="dialog-body">
-                        <p class="flat-text full-width"></p>
-                        <p class="flat-text full-width mt10"></p>
-                    </div>
+                    <div class="dialog-body" style="height: 350px;"></div>
                     <div class="dialog-footer">
                         <button class="btn btn-brand mr10">确定</button>
                         <button class="btn mr10">取消</button>
@@ -69,10 +63,7 @@
                         <h4 class="pull-left dialog-title fontsize-16">店铺推荐标签</h4>
                         <div class="pull-right mt5"><span class="color-999">圈定人数：</span><strong class="color-brand">92,969,000</strong></div>
                     </div>
-                    <div class="dialog-body">
-                        <p class="flat-text full-width"></p>
-                        <p class="flat-text full-width mt10"></p>
-                    </div>
+                    <div class="dialog-body" style="height: 350px;"></div>
                     <div class="dialog-footer">
                         <button class="btn btn-brand mr10">确定</button>
                         <button class="btn mr10">取消</button>
@@ -98,10 +89,7 @@
                             <li><a href="javascript:;">全部标签</a></li>
                         </ul>
                     </div>
-                    <div class="dialog-body">
-                        <p class="flat-text full-width"></p>
-                        <p class="flat-text full-width mt10"></p>
-                    </div>
+                    <div class="dialog-body" style="height: 350px;"></div>
                     <div class="dialog-footer">
                         <button class="btn btn-brand mr10">确定</button>
                         <button class="btn mr10">取消</button>
@@ -122,16 +110,18 @@
             </ol>
         </div>
         <div class="content-body">
-            <div class="dialog dialog-singleton" style="position: relative;">
-                <!-- <button bx-click="close" type="button" class="dialog-close"><span class="brixfont">&#xe62d;</span></button> -->
-                <div class="dialog-content">
-                    <div class="dialog-body" style="padding: 10px 70px 10px 20px;">
-                        <span class="fontsize-14 mr10">充值金额</span>
-                        <input placeholder="请输入充值金额">
-                    </div>
-                    <div class="dialog-footer" style="padding: 10px 20px;">
-                        <button class="btn btn-brand mr10">立即充值</button>
-                        <button class="btn mr10">支付宝充值</button>
+            <div>
+                <div class="dialog dialog-singleton" style="position: relative; display: inline-block;">
+                    <!-- <button bx-click="close" type="button" class="dialog-close"><span class="brixfont">&#xe62d;</span></button> -->
+                    <div class="dialog-content">
+                        <div class="dialog-body" style="padding: 15px 30px;">
+                            <span class="fontsize-14 mr10">充值金额</span>
+                            <input placeholder="请输入充值金额">
+                        </div>
+                        <div class="dialog-footer" style="padding: 15px 30px;">
+                            <button class="btn btn-brand mr10">立即充值</button>
+                            <button class="btn mr10">支付宝充值</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -141,9 +131,9 @@
                 padding: 20px;
                 border-radius: 4px;
                 box-shadow: 0 0 10px rgba(0,0,0,.18);">
-                <li class="mb10"><span class="zsfont color-green">&#xe683;</span> 投放中</li>
-                <li class="mb10"><span class="zsfont color-red">&#xe683;</span> 暂停投放</li>
-                <li class=""><span class="zsfont color-999">&#xe683;</span> 等待投放</li>
+                <li class="mb10"><span class="zsfont color-green fontsize-18 mr5">&#xe683;</span> 投放中</li>
+                <li class="mb10"><span class="zsfont color-red fontsize-18 mr5">&#xe682;</span> 暂停投放</li>
+                <li class=""><span class="zsfont color-gray fontsize-18 mr5">&#xe680;</span> 等待投放</li>
             </ul>
         </div>
     </div>

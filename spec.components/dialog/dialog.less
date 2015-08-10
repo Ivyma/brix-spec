@@ -8,13 +8,15 @@
     .dialog {
         position: relative;
         opacity: 1;
+        z-index: 1;
         .dialog-close {
             position: absolute;
-            top: 20px;
+            top: 16px;
             right: 10px;
             margin: 0;
             .brixfont {
-                font-size: 24px;
+                font-size: 30px;
+                font-weight: normal;
             }
             &:hover, &:focus {}
         }
@@ -24,6 +26,7 @@
             }
             .dialog-header {
                 border-bottom: 1px solid #e6e6e6;
+                padding: 18px 45px 18px 40px;
             }
             .dialog-footer {
                 text-align: left;
