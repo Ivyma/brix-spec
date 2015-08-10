@@ -3,6 +3,60 @@
 .pagination {
     
 }
+
+body {
+    .paginationwrapper {
+        ul.pagination {
+            > li {
+                display: inline-block;
+                > a {
+                    color: #999;
+                    min-width: 32px;
+                    height: 32px;
+                    padding-left: initial;
+                    padding-right: initial;
+                    text-align: center;
+                    &:hover {
+                        background-color: @brand;
+                        color: white;
+                    }
+                }
+            }
+            > li.active {
+                > a, > a:hover {
+                    background-color: @brand;
+                    color: white;
+                }
+            }
+            > li.disabled {
+                > a {
+                    color: #CCC;
+                    &:hover {
+                        background-color: transparent;
+                        color: #CCC;
+                    }
+                }
+            }
+            > li.pagination-statistics-simplify {
+                > span {
+                    color: #333;
+                    letter-spacing: 3px;
+                    font-weight: bold;
+                    height: 32px;
+                    &:hover {
+                        color: #333;
+                    }
+                }
+            }
+            > li:first-child, >li:last-child {
+                > a {
+                    padding: 6px 10px;
+                }
+            }
+        }
+    }
+}
+
 table.table-pagination {
     tfoot {
         tr {
@@ -12,6 +66,7 @@ table.table-pagination {
         }
     }
 }
+
 .example-slider {
     position: relative;
     width: 100%;
@@ -35,16 +90,16 @@ table.table-pagination {
         bottom: 20px;
         li {
             display: inline-block;
-            width: 10px;
-            height: 10px;
+            width: 12px;
+            height: 12px;
             background-color: #CCC;
             border-radius: 50%;
             margin-right: 10px;
             cursor: pointer;
 
             &.active {
-                border: 1px solid #FF6600;
-                background-color: #FFF;
+                border: 1px solid @brand;
+                background-color: white;
             }
         }
     }
@@ -60,8 +115,9 @@ table.table-pagination {
             border-radius: 50%;
             text-align: center;
             cursor: pointer;
+            line-height: 40px;
             .brixfont {
-                font-size: 30px;
+                font-size: 24px;
             }
             &:hover {
                 background-color: @brand;

@@ -12,9 +12,11 @@
             <div class="color-999 mt6">翻页器最基本的元素为：当前页页码、总页码、上一页、下一页的按钮。默认显示第1页时，上一页置灰不可点击；最后一页时，下一页置灰不可点击。 </div>
         </div>
         <div class="content-body">
-            <div bx-name="components/pagination" data-total="100" data-cursor="1" data-limit="9" data-simplify="true"></div>    
+            <div bx-name="components/pagination" data-total="100" data-cursor="1" data-limit="9" data-simplify="true"></div>
         </div>
-        <pre><code class="hljs html"></code></pre>
+        <pre><code class="hljs html">
+            <div bx-name="components/pagination" data-total="100" data-cursor="1" data-limit="9" data-simplify="true"></div>
+        </code></pre>
     </div>
 </div>
 
@@ -35,7 +37,7 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="5">
+                        <td colspan="6">
                             <div bx-name="components/pagination" data-total="100" data-cursor="1" data-limit="9"></div>             
                         </td>
                     </tr>
@@ -102,15 +104,18 @@
             <div class="color-999 mt6">当用户阅读完一篇文章或消息时，可通过文章底部的上一篇，下一篇进行切换，继续阅读流程。</div>
         </div>
         <div class="content-body">
-            <div style="padding: 15px;">
+            <div>
                 <p class="flat-text small"></p>
                 <p class="flat-text full-width mt10"></p>
                 <p class="flat-text full-width mt10"></p>
                 <p class="flat-text full-width mt10"></p>
+                <p class="flat-text full-width mt10"></p>
+                <p class="flat-text full-width mt10"></p>
+                <p class="flat-text full-width mt10"></p>
             </div>
-            <div class="clearfix" style="padding: 15px;">
-                <div class="pull-left"><a href="javascript:;">< 上一篇</a></div>
-                <div class="pull-right"><a href="javascript:;">下一篇 ></a></div>
+            <div class="clearfix" style="padding: 20px;">
+                <div class="pull-left"><a href="javascript:;" class="color-gray">< 上一篇</a></div>
+                <div class="pull-right"><a href="javascript:;" class="color-gray">下一篇 ></a></div>
             </div>
         </div>
     </div>

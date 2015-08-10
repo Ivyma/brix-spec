@@ -16,7 +16,7 @@
             </ol>
         </div>
         <div class="content-body">
-            <div class="searchbox mb10">
+            <div class="searchbox mb10 mr40">
                 <span class="brixfont">&#xe61c;</span>
                 <input type="text" placeholder="请输入关键词搜索">
             </div>
@@ -122,12 +122,16 @@
     require(['brix/loader', 'underscore', 'mock'], function(Loader, _, Mock) {
         Loader.boot(function() {
             var data = Mock.mock({
-                'list|5-100': ['@NAME', '@NATURAL(1,1000000)', '@CWORD(5,10)']
+                'list|100': ['@NAME', '@NATURAL(1,1000000)', '@CWORD(5,10)']
             }).list
 
             var suggests = Loader.query('components/suggest')
             _.each(suggests, function(item, index){
                 item.on('change.suggest.input', function(event, value) {
+                    if (!$.trim(value)) {
+                        item.close()
+                        return
+                    }
                     item.data(
                         _.filter(data, function(item, index){
                             return ('' + item).toLowerCase().indexOf(value.toLowerCase()) !== -1
