@@ -56,7 +56,7 @@
                 <span class="specfont">&#xe633;</span>
                 <span>下载附件</span>
             </a>
-            <% list = ['标志/阿里妈妈品牌规范-标志.ai', '标志/阿里妈妈品牌规范-标志.pdf', '标志/阿里妈妈旗下产品标志设计规范.ai', '标志/阿里妈妈旗下产品标志设计规范.pdf'] %>
+            <% list = ['标志/阿里妈妈品牌规范-标志.ai', '标志/阿里妈妈品牌规范-标志.pdf', '标志/阿里妈妈旗下产品标志设计规范.ai', '标志/阿里妈妈旗下产品标志设计规范.pdf', '标志/阿里妈妈标志汇总.ai'] %>
             <ul class="download-list">
                 <% for( var i = 0; i < list.length; i++ ) { %>
                 <li class="clearfix">
