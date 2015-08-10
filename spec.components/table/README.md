@@ -58,23 +58,23 @@
             <table bx-name="components/table" class="table table-hover table-fixed mt40" data-column-rwd-range="[1,-1]" data-column-rwd-limit="3" data-column-rwd-cursor="1">
                 <thead>
                     <tr>
-                        <th class="nowrap">名称</th>
-                        <th class="nowrap">状态</th>
-                        <th class="nowrap">类型</th>
-                        <th class="nowrap">尺寸</th>
-                        <th class="nowrap">滚动列 1</th>
-                        <th class="nowrap">滚动列 2</th>
-                        <th class="nowrap">滚动列 3</th>
-                        <th class="nowrap">操作</th>
+                        <th class="stable">名称</th>
+                        <th class="">状态</th>
+                        <th class="">类型</th>
+                        <th class="">尺寸</th>
+                        <th class="">滚动列 1</th>
+                        <th class="">滚动列 2</th>
+                        <th class="">滚动列 3</th>
+                        <th class="stable">操作</th>
                     </tr>
                 </thead>
                 <tbody>
                     <% _.each(list, function(item){ %>
                     <tr>
-                        <td class="nowrap"><%= item.name %></td>
-                        <td class="nowrap"><%= item.status %></td>
-                        <td class="nowrap"><%= item.type %></td>
-                        <td class="nowrap"><%= item.size %></td>
+                        <td class=""><%= item.name %></td>
+                        <td class=""><%= item.status %></td>
+                        <td class=""><%= item.type %></td>
+                        <td class=""><%= item.size %></td>
                         <td><%= item.scroll1 %></td>
                         <td><%= item.scroll2 %></td>
                         <td><%= item.scroll3 %></td>
@@ -101,13 +101,13 @@
             <div class="color-999 mt6">TODO</div>
         </div>
         <div class="content-body">
-            <div class="mb20">
+            <div id="case1-toolbar" class="toolbar mb20" style="visibility: hidden;">
                 <button class="btn btn-brand mr10">批量删除</button>
             </div>
-            <table bx-name="components/table" class="table table-hover table-fixed">
+            <table id="case1" bx-name="components/table" class="table table-hover">
                 <thead>
                     <tr>
-                        <th><input type="checkbox" data-linkage-name="all"></th>
+                        <th width="40"><input type="checkbox" data-linkage-name="all"></th>
                         <th class="nowrap">名称</th>
                         <th class="nowrap">状态</th>
                         <th class="nowrap">类型</th>
@@ -118,7 +118,7 @@
                 <tbody>
                     <% _.each(list, function(item){ %>
                     <tr>
-                        <td><input type="checkbox" data-linkage-parent-name="all"></td>
+                        <td><input type="checkbox" value="<%= item.name %>" data-linkage-parent-name="all"></td>
                         <td class="nowrap"><%= item.name %></td>
                         <td class="nowrap"><%= item.status %></td>
                         <td class="nowrap"><%= item.type %></td>
@@ -146,29 +146,34 @@
             <div class="color-999 mt6">对当前表格进行管理。例如，当用户 hover 在当前表格上出现操作及更多选项、编辑、复制、设置、删除等。</div>
         </div>
         <div class="content-body">
-            <table bx-name="components/table" class="table table-hover table-fixed">
+            <table bx-name="components/table" class="table table-hover table-fixed mt40" data-column-rwd-range="[2,-1]" data-column-rwd-limit="3" data-column-rwd-cursor="1">
                 <thead>
                     <tr>
-                        <th><input type="checkbox" data-linkage-name="all"></th>
-                        <th class="nowrap">名称</th>
-                        <th class="nowrap">状态</th>
-                        <th class="nowrap">类型</th>
-                        <th class="nowrap">尺寸</th>
-                        <th class="nowrap">操作</th>
+                        <th class="stable" width="40"><input type="checkbox" data-linkage-name="all"></th>
+                        <th class="stable">名称</th>
+                        <th class="">状态</th>
+                        <th class="">类型</th>
+                        <th class="">尺寸</th>
+                        <th class="">滚动列 1</th>
+                        <th class="">滚动列 2</th>
+                        <th class="">滚动列 3</th>
+                        <th class="stable">操作</th>
                     </tr>
                 </thead>
                 <tbody>
                     <% _.each(list, function(item){ %>
                     <tr>
-                        <td><input type="checkbox" data-linkage-parent-name="all"></td>
-                        <td class="nowrap"><%= item.name %></td>
-                        <td class="nowrap"><%= item.status %></td>
-                        <td class="nowrap"><%= item.type %></td>
-                        <td class="nowrap"><%= item.size %></td>
+                        <td><input type="checkbox" value="<%= item.name %>" data-linkage-parent-name="all"></td>
+                        <td class=""><%= item.name %></td>
+                        <td class=""><%= item.status %></td>
+                        <td class=""><%= item.type %></td>
+                        <td class=""><%= item.size %></td>
+                        <td><%= item.scroll1 %></td>
+                        <td><%= item.scroll2 %></td>
+                        <td><%= item.scroll3 %></td>
                         <td>
                             <div class="operation">
                                 <a href="javascript: void(0);">详情</a>
-                                <a href="javascript: void(0);">编辑</a>
                             </div>
                         </td>
                     </tr>
@@ -192,7 +197,7 @@
             <table bx-name="components/table" class="table table-hover table-fixed">
                 <thead>
                     <tr>
-                        <th></th>
+                        <th width="40"></th>
                         <th class="nowrap">名称</th>
                         <th class="nowrap">状态</th>
                         <th class="nowrap">类型</th>
@@ -203,7 +208,10 @@
                 <tbody>
                     <% _.each(list, function(item){ %>
                     <tr>
-                        <td>+</td>
+                        <td class="sub-toggle">
+                            <span class="brixfont plus fontsize-20 color-ccc">&#xe61f;</span><!-- + -->
+                            <span class="brixfont minus fontsize-20 color-brand">&#xe620;</span><!-- - -->
+                        </td>
                         <td class="nowrap"><%= item.name %></td>
                         <td class="nowrap"><%= item.status %></td>
                         <td class="nowrap"><%= item.type %></td>
@@ -215,9 +223,36 @@
                             </div>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="sub">
                         <td></td>
-                        <td colspan="5">TODO</td>
+                        <td colspan="5">
+                            <table bx-name="components/table" class="table table-hover table-fixed">
+                                <thead>
+                                    <tr>
+                                        <th class="nowrap">名称</th>
+                                        <th class="nowrap">状态</th>
+                                        <th class="nowrap">类型</th>
+                                        <th class="nowrap">尺寸</th>
+                                        <th class="nowrap">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% _.each(list, function(item){ %>
+                                    <tr>
+                                        <td class="nowrap"><%= item.name %></td>
+                                        <td class="nowrap"><%= item.status %></td>
+                                        <td class="nowrap"><%= item.type %></td>
+                                        <td class="nowrap"><%= item.size %></td>
+                                        <td>
+                                            <div class="operation">
+                                                <a href="javascript: void(0);">子操作</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <% }) %>
+                                </tbody>
+                            </table>
+                        </td>
                     </tr>
                     <% }) %>
                 </tbody>
@@ -332,3 +367,21 @@
         TODO
     </code></pre>
 </div>
+
+<script type="text/javascript">
+    require(['jquery', 'brix/loader'], function($, Loader) {
+        Loader.boot(function(argument) {
+            Loader.query($('#case1')).on('toggle.table', function(event, values, target) {
+                $('#case1-toolbar').css(
+                    'visibility',
+                    values.length ? 'visible' : 'hidden'
+                )
+            })
+            $('.sub-toggle > .brixfont').on('click', function(event) {
+                $(event.currentTarget)
+                    .parents('td.sub-toggle').toggleClass('open')
+                    .parent('tr').next('tr.sub').toggle()
+            })
+        })
+    })
+</script>
