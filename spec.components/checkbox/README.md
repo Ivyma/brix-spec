@@ -57,15 +57,15 @@
             <div class="color-999 mt6">当选项间有多层级关系时使用竖向展示。</div>
         </div>
         <div class="content-body">
-            <ul class="checklist">
-                <li><label><input type="radio" name="sss"> 单选1</label></li>
-                <li><label><input type="radio" name="sss"> 单选2</label></li>
+            <ul class="checklist" id="case2">
+                <li><label><input type="radio" name="sss" data-linkage-name="all-1"> 单选1</label></li>
+                <li><label><input type="radio" name="sss" data-linkage-name="all-2"> 单选2</label></li>
                 <li>
-                    <label><input type="radio" name="sss"> 单选3</label>
+                    <label><input type="radio" name="sss" data-linkage-name="all"> 单选3</label>
                     <ul class="checklist">
-                        <li><label><input type="checkbox"> 多选1</label></li>
-                        <li><label><input type="checkbox"> 多选2</label></li>
-                        <li><label><input type="checkbox"> 多选3</label></li>
+                        <li><label><input type="checkbox" data-linkage-parent-name="all"> 多选1</label></li>
+                        <li><label><input type="checkbox" data-linkage-parent-name="all"> 多选2</label></li>
+                        <li><label><input type="checkbox" data-linkage-parent-name="all"> 多选3</label></li>
                     </ul>
                 </li>
             </ul>
@@ -147,7 +147,7 @@
             <div class="color-999 mt6">当一个选项应用于多个对象时，可以使用复选框来表示该选项应用于全部、部分还是不应用于任何对象。</div>
         </div>
         <div class="content-body">
-            <div id="linkagedCheckList" class="checklist-linkage">
+            <div class="checklist-linkage" id="case4">
                 <ul>
                     <li><label class="title">标题</li>
                     <li><label><input type="checkbox" data-linkage-name="all"> 全部</label></li>
@@ -172,7 +172,8 @@
 </div>
 
 <script type="text/javascript">
-    require(['components/table/linkage'], function(linkage) {
-        linkage('#linkagedCheckList')
+    require(['spec.components/linkage'], function(Linkage) {
+        Linkage('#case2')
+        Linkage('#case4')
     })
 </script>
