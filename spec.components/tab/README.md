@@ -40,15 +40,27 @@
             <div class="color-999 mt6">为防止鼠标滑过时误操作，需设定300ms的延迟时间。 </div>
         </div>
         <div class="content-body">
-            <ul class="mm-tabs clearfix mb20" style="">
+            <ul class="mm-tabs clearfix mb20" style="" data-content="#case1-content">
                 <li class="active"><a href="javascript:;">标题选项 1</a></li>
                 <li><a href="javascript:;">标题选项 2</a></li>
                 <li><a href="javascript:;">标题选项 3</a></li>
             </ul>
-            <div>
-                <p class="flat-text small"></p>
-                <p class="flat-text full-width mt10"></p>
-                <p class="flat-text full-width mt10"></p>
+            <div id="case1-content">
+                <div>
+                    <p class="flat-text small">内容 1</p>
+                    <p class="flat-text full-width mt10"><%= Mock.Random.cparagraph() %></p>
+                    <p class="flat-text full-width mt10"><%= Mock.Random.cparagraph() %></p>
+                </div>
+                <div class="hide">
+                    <p class="flat-text small">内容 2</p>
+                    <p class="flat-text full-width mt10"><%= Mock.Random.cparagraph() %></p>
+                    <p class="flat-text full-width mt10"><%= Mock.Random.cparagraph() %></p>
+                </div>
+                <div class="hide">
+                    <p class="flat-text small">内容 3</p>
+                    <p class="flat-text full-width mt10"><%= Mock.Random.cparagraph() %></p>
+                    <p class="flat-text full-width mt10"><%= Mock.Random.cparagraph() %></p>
+                </div>
             </div>
         </div>
     </div>
@@ -68,15 +80,27 @@
             <div class="color-999 mt6">除分组标题外，扩大点击的响应区域。 </div>
         </div>
         <div class="content-body">
-            <ul class="mm-tabs clearfix mb20" style="">
+            <ul class="mm-tabs clearfix mb20" style="" data-content="#case2-content">
                 <li class="active"><a href="javascript:;">标题选项 1</a></li>
                 <li><a href="javascript:;">标题选项 2</a></li>
                 <li><a href="javascript:;">标题选项 3</a></li>
             </ul>
-            <div>
-                <p class="flat-text small"></p>
-                <p class="flat-text full-width mt10"></p>
-                <p class="flat-text full-width mt10"></p>
+            <div id="case2-content">
+                <div>
+                    <p class="flat-text small">内容 1</p>
+                    <p class="flat-text full-width mt10"><%= Mock.Random.cparagraph() %></p>
+                    <p class="flat-text full-width mt10"><%= Mock.Random.cparagraph() %></p>
+                </div>
+                <div class="hide">
+                    <p class="flat-text small">内容 2</p>
+                    <p class="flat-text full-width mt10"><%= Mock.Random.cparagraph() %></p>
+                    <p class="flat-text full-width mt10"><%= Mock.Random.cparagraph() %></p>
+                </div>
+                <div class="hide">
+                    <p class="flat-text small">内容 3</p>
+                    <p class="flat-text full-width mt10"><%= Mock.Random.cparagraph() %></p>
+                    <p class="flat-text full-width mt10"><%= Mock.Random.cparagraph() %></p>
+                </div>
             </div>
         </div>
     </div>
@@ -88,3 +112,19 @@
         </ul>
     </code></pre>
 </div>
+
+<script type="text/javascript">
+    require(['jquery', 'underscore'], function($, _) {
+        $('ul.mm-tabs').on('click', 'li', function(event) {
+            var contents = $(event.delegateTarget).attr('data-content')
+            if (contents) {
+                $(contents).children().hide()
+                    .eq(
+                        $(event.currentTarget).index()
+                    ).removeClass('hide').show()
+            }
+            $(event.currentTarget).addClass('active')
+                .siblings().removeClass('active')
+        })
+    })
+</script>
