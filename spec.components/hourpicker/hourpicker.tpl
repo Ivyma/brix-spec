@@ -14,7 +14,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr class="picker-day" data-value="1">
+            <tr class="picker-day" data-value="12345">
                 <td class="picker-label">
                     <span bx-click="toggle(1)">工作日</span>
                 </td>

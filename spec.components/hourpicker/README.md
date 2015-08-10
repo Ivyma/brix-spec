@@ -27,3 +27,12 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    require(['brix/loader'], function(Loader) {
+        Loader.boot(function() {
+            var instance = Loader.query('components/hourpicker')[0]
+            instance.shortcut('0123456')
+        })
+    })
+</script>

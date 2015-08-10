@@ -6,10 +6,32 @@
 
 body .example {
     .hourpicker {
+        div.shortcuts {
+            label {
+                font-weight: normal;
+                color: #CCC;
+            }
+        }
+        div.apply-dialog {
+            .apply-dialog-body {
+                margin-bottom: 10px;
+                label {
+                    margin-bottom: 0;
+                    font-weight: normal;
+                }
+            }
+            .apply-dialog-footer {
+                .btn.submit {
+                    background-color: @brand;
+                    color: white;
+                }
+            }
+        }
         table.picker-days {
             .picker-day {
                 .picker-hours {
                     .picker-hour {
+                        float: left;
                         .picker-hour-duration {
                             z-index: 1;
                         }

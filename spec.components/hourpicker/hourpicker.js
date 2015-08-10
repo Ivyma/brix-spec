@@ -3,17 +3,19 @@ define(
     [
         'jquery', 'underscore', 'moment',
         'brix/base',
+        'components/hourpicker',
         './hourpicker.tpl.js',
         'css!./hourpicker.css'
     ],
     function(
         $, _, moment,
         Brix,
+        HourPickerBase,
         template
     ) {
-        function Hourpicker () {}
+        function Hourpicker() {}
 
-        _.extend( Hourpicker.prototype, Brix.prototype, {
+        _.extend(Hourpicker.prototype, Brix.prototype, HourPickerBase.prototype, {
             options: {
                 utcOffset: function() {
                     var utcOffset = moment().utcOffset() / 60
@@ -24,11 +26,23 @@ define(
                     return result
                 }()
             },
-            init: function() {},
+            init: function() {
+                this.$element = $(this.element)
+            },
             render: function() {
                 this.data = this.data || _.extend({}, this.options)
                 var html = _.template(template)(this.data)
                 $(this.element).append(html)
+
+                var hours = _.range(0, 24)
+                var mapped = {
+                    12345: hours,
+                    60: hours
+                }
+                this.val(mapped)
+            },
+            _syncShortcut: function() {
+
             }
         })
 
