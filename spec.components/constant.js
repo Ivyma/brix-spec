@@ -85,7 +85,7 @@ define(['mock'], function(Mock) {
 			prev: Mock.Random.dataImage('128x128', '128x128')
 		}, {
 			name: '通用信息',
-			resp: 'Popover',
+			resp: 'Tooltip',
 			prev: Mock.Random.dataImage('128x128', '128x128')
 		}, {
 			name: '表格',
@@ -105,7 +105,7 @@ define(['mock'], function(Mock) {
 			prev: Mock.Random.dataImage('128x128', '128x128')
 		}, {
 			name: '步骤条',
-			resp: 'Step',
+			resp: 'Wizard',
 			prev: Mock.Random.dataImage('128x128', '128x128')
 		}, {
 			name: '浮层',
