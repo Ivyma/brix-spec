@@ -1,4 +1,7 @@
 /* global define */
+/*
+    https://github.com/amoffat/bootstrap-application-wizard
+ */
 define(
     [
         'jquery', 'underscore',
