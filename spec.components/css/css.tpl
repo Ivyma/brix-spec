@@ -318,10 +318,10 @@
             <thead>
                 <tr>
                     <th></th>
-                    <th>超小屏幕设备 手机(&lt;768px)</th>
-                    <th>小屏幕设备 平板(≥768px)</th>
-                    <th>中等屏幕设备 桌面(≥992px)</th>
-                    <th>大屏幕设备 桌面(≥1200px)</th>
+                    <th>超小屏幕设备<br>手机 &lt;768px</th>
+                    <th>小屏幕设备<br>平板 ≥768px</th>
+                    <th>中等屏幕设备<br>桌面 ≥992px</th>
+                    <th>大屏幕设备<br>桌面 ≥1200px</th>
                 </tr>
             </thead>
             <tbody>
@@ -344,13 +344,11 @@
     </div>
     <div class="mb40">
         <div class="fontsize-16 mb10">用法 <small></small></div>
-        <pre><code>
-&lt;div class="row"&gt;
+        <pre><code class="hljs html">&lt;div class="mm-row"&gt;
   &lt;div class="col col-1"&gt;...&lt;/div&gt;
   &lt;div class="col col-2"&gt;...&lt;/div&gt;
   &lt;div class="col col-2"&gt;...&lt;/div&gt;
-&lt;/div&gt;
-        </code></pre>
+&lt;/div&gt;</code></pre>
     </div>
     <div class="mb40">
         <div class="fontsize-16 mb10">64列栅格 <small></small></div>
