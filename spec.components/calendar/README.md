@@ -7,38 +7,112 @@
 
 <div class="example">
     <div class="content">
-    	<div class="content-body">
-        	<div bx-name="components/datepicker" data-type="date"></div>
+        <div class="content-header">
+            <div>基础用法</div>
+            <ol>
+                <li>更换当前日期，切换至其它日期。 提供年、月的快速切换。</li>
+                <li>更换当前日期范围，切换至其它日期范围，需判断日期的先后关系。提供年、月的快速切换。</li>
+            </ol>
+        </div>
+        <div class="content-body">
+            <input bx-name="components/datepickerwrapper" type="text" class="form-control w100 mr40">
+            <div bx-name="components/datepickerwrapper" 
+                data-dates="['2015-1-1', '2015-1-2']" 
+                data-shortcuts="false" 
+                class="form-control datepickerwrapper-trigger">
+                <span data-index="0">2015-1-1</span> 至 <span data-index="1">2015-1-2</span>
+                <i class="brixfont pull-right ml5 down"></i>
+                <i class="brixfont pull-right ml5 up"></i>
+            </div>
         </div>
     </div>
-    <pre><code class="hljs html">
-    	<div bx-name="components/datepicker" data-type="date"></div>
+    <pre class="example-pre"><code class="hljs html">
+        TODO
     </code></pre>
 </div>
 
-<div class="fontsize-16 mb10">配置 <small>Options</small></div>
 
-<!-- ## 配置 <small>Options</small> -->
+<div class="example">
+    <div class="content">
+        <div class="content-header">
+            <div>场景 1 - 快捷日历</div>
+            <div class="color-999 mt6">根据用户使用的情况，设置常用的日期选项，通过快捷日期，提高选择效率。日期上下联动显示。如表格中，日历作为时间筛选器存在，默认显示最近7天，用户可快速切换至最近30天。</div>
+        </div>
+        <div class="content-body">
+            <div bx-name="components/datepickerwrapper" 
+                data-dates="['2015-1-1', '2015-1-2']" 
+                class="form-control datepickerwrapper-trigger">
+                <span data-index="0">2015-1-1</span> 至 <span data-index="1">2015-1-2</span>
+                <i class="brixfont pull-right ml5 down"></i>
+                <i class="brixfont pull-right ml5 up"></i>
+            </div>
+        </div>
+    </div>
+    <pre class="example-pre"><code class="hljs html">
+        TODO
+    </code></pre>
+</div>
 
-Name | Type | Default | Description
-:--- | :--- | :------ | :----------
-- | - | - | -
+<div class="example">
+    <div class="content">
+        <div class="content-header">
+            <div>场景 2 - 名称待定</div>
+            <div class="color-999 mt6">图表默认显示某一时间范围的效果统计，若需再指定一个日期或日期范围进行对比时，需要保证所选的天数一致。</div>
+        </div>
+        <div class="content-body">
+            <div bx-name="components/datepickerwrapper" 
+                data-dates="['2015-1-1', '2015-1-2']" 
+                class="form-control datepickerwrapper-trigger">
+                <span data-index="0">2015-1-1</span> 至 <span data-index="1">2015-1-2</span>
+                <i class="brixfont pull-right ml5 down"></i>
+                <i class="brixfont pull-right ml5 up"></i>
+            </div>
+        </div>
+    </div>
+    <pre class="example-pre"><code class="hljs html">
+        TODO
+    </code></pre>
+</div>
 
-## 方法 <small>Methods</small>
+<div class="example">
+    <div class="content">
+        <div class="content-header">
+            <div>场景 3 - 名称待定</div>
+            <div class="color-999 mt6">当日期组件控制整个页面或模块统计的时间范围，则以标题形式展现。</div>
+        </div>
+        <div class="content-body">
+            <span bx-name="components/datepickerwrapper" class="fontsize-16">请选择日期</span>
+        </div>
+    </div>
+    <pre class="example-pre"><code class="hljs html">
+        TODO
+    </code></pre>
+</div>
 
-### .method(args)
-
-Lorem ipsum
-
-```js
-var Loader = require('loader')
-var instance = Loader.query('component/calendar')
-instance.method()
-```
-
-## 事件 <small>Events</small>
-
-Event Type | Description
-:--------- | :----------
-- | -
-
+<div class="example">
+    <div class="content">
+        <div class="content-header">
+            <div>场景 4 - 名称待定</div>
+            <div class="color-999 mt6">当需要明确表达起止时间时（如在创建计划时），可使用拆分日历组件。</div>
+        </div>
+        <div class="content-body">
+            <div class="mr40" style="display: inline-block;">
+                <div class="pl9 mb10 color-999">开始日期</div>
+                <div style="position: relative;">
+                    <input bx-name="components/datepickerwrapper" type="text" class="form-control">
+                    <span class="brixfont color-c" style="position: absolute; right: 9px; top: 6px;">&#xe615;</span>
+                </div>
+            </div>
+            <div style="position: relative; display: inline-block;">
+                <div class="pl9 mb10 color-999">结束日期</div>
+                <div style="position: relative;">
+                    <input bx-name="components/datepickerwrapper" type="text" class="form-control">
+                    <span class="brixfont color-c" style="position: absolute; right: 9px; top: 6px;">&#xe615;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <pre class="example-pre"><code class="hljs html">
+        TODO
+    </code></pre>
+</div>
