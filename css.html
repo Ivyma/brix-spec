@@ -34,6 +34,18 @@
         Loader.boot(function(){
             Catalog('.sidebar', '.fontsize-20')
             Clipboard.init()
+
+            window.onhashchange = function(event){
+                console.log(new Date(), event.type)
+                $('a[name="' + location.hash.slice(1) + '"]')
+                    .parent().parent().show()
+                    .siblings().hide()
+            }
+            if(!location.hash)location.hash= '#颜色 Colors'
+            $('.sidebar').find(
+                'a[href="' + location.hash + '"]'
+            ).parent().addClass('active')
+
             Holder.recover().hold()
         })
     })

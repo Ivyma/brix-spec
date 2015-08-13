@@ -37,6 +37,9 @@
                     .siblings().hide()
             }
             if(!location.hash)location.hash= '#品牌故事 Brand Story'
+            $('.sidebar').find(
+                'a[href="' + location.hash + '"]'
+            ).parent().addClass('active')
 
             Holder.recover().hold()
 
