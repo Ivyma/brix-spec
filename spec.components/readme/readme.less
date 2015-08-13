@@ -8,6 +8,22 @@
         font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
     }
 }
+
+.usage {
+    background-color: #FAFAFA;
+    padding: 18px 40px;
+    border: 1px solid #E6E6E6;
+    border-radius: 6px;
+    > ol {
+        padding-left: 18px;
+        color: #999;
+        margin-bottom: 0px;
+        li {
+            margin-top: 6px;
+        }
+    }
+}
+
 .example {
     position: relative;
     margin: 0 0 40px 0;
@@ -19,19 +35,11 @@
         position: relative;
         padding: 0;
         .content-header {
-            background-color: #FAFAFA;
+            .usage();
             margin: 0;
-            padding: 18px 40px;
-            border-bottom: 1px solid #E6E6E6;
             border-radius: 6px 6px 0 0;
-            > ol {
-                padding-left: 18px;
-                color: #999;
-                margin-bottom: 0px;
-                li {
-                    margin-top: 6px;
-                }
-            }
+            border: none;
+            border-bottom: 1px solid #E6E6E6;
         }
         .content-body {
             padding: 60px 40px 60px 120px;

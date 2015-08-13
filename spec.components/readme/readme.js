@@ -47,7 +47,7 @@ define(
 
                             /* jshint unused:false */
                             $(that.element).find('pre code').each(function(index, code) {
-                                // hljs.highlightBlock(code)
+                                hljs.highlightBlock(code)
                             })
 
                             // Loader.booting = false
