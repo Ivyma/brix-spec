@@ -23,7 +23,7 @@ define(
 
                 var defer = $.Deferred()
                 this.loadDoc(function(response /*, status, xhr*/ ) {
-                    Loader.booting = false
+                    // Loader.booting = false
                     Loader.boot(that.element, function() {
                         var spin = Loader.query('components/spin', that.element)
                         Loader.destroy(spin, function() {
@@ -50,7 +50,7 @@ define(
                                 // hljs.highlightBlock(code)
                             })
 
-                            Loader.booting = false
+                            // Loader.booting = false
                             Loader.boot(that.element, function() {
                                 defer.resolve()
                                 Holder.hold().recover()
@@ -59,7 +59,7 @@ define(
                     })
                 })
 
-                return defer.promise()
+                // return defer.promise()
             },
             loadDoc: function(done) {
                 // 模拟延时加载

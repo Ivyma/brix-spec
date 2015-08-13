@@ -1,0 +1,10 @@
+.suggestwrapper {
+  display: inline-block;
+  position: relative;
+}
+.suggestwrapper .suggest.dropdown {
+  width: 100%;
+}
+.suggestwrapper .suggest.dropdown .dropdown-menu {
+  width: 100%;
+}

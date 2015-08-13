@@ -11,9 +11,9 @@ define(
         Brix,
         template
     ) {
-        function Editable () {}
+        function Editable() {}
 
-        _.extend( Editable.prototype, Brix.prototype, {
+        _.extend(Editable.prototype, Brix.prototype, {
             options: {},
             init: function() {},
             render: function() {
