@@ -38,7 +38,7 @@
                 <tfoot>
                     <tr>
                         <td colspan="6">
-                            <div bx-name="components/pagination" data-total="100" data-cursor="1" data-limit="9"></div>             
+                            <div bx-name="components/pagination" data-total="100" data-cursor="1" data-limit="10"></div>             
                         </td>
                     </tr>
                 </tfoot>

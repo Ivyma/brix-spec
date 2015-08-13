@@ -56,7 +56,7 @@
 <div class="example">
     <div class="content">
         <div class="content-header">
-            <div>场景 2 - 名称待定</div>
+            <div>场景 2 - 对比日历</div>
             <div class="color-999 mt6">图表默认显示某一时间范围的效果统计，若需再指定一个日期或日期范围进行对比时，需要保证所选的天数一致。</div>
         </div>
         <div class="content-body">
@@ -77,7 +77,7 @@
 <div class="example">
     <div class="content">
         <div class="content-header">
-            <div>场景 3 - 名称待定</div>
+            <div>场景 3 - 标题式日历</div>
             <div class="color-999 mt6">当日期组件控制整个页面或模块统计的时间范围，则以标题形式展现。</div>
         </div>
         <div class="content-body">
@@ -92,7 +92,7 @@
 <div class="example">
     <div class="content">
         <div class="content-header">
-            <div>场景 4 - 名称待定</div>
+            <div>场景 4 - 起止分段式日历</div>
             <div class="color-999 mt6">当需要明确表达起止时间时（如在创建计划时），可使用拆分日历组件。</div>
         </div>
         <div class="content-body">

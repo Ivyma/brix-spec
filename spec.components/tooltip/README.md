@@ -220,7 +220,7 @@
         <div class="content-header">
             <div>场景 2 - 系统反馈</div>
             <div class="color-999 mt6">404、500 页面错误，提供用户反馈或上一页的快捷入口。</div>
-            <ol>
+            <ol class="hide">
                 <li>警告：提醒用户将来可能导致产生问题，出现于页面的上方，在页面导航下方。如余额不足时，不充值将会停止投放。</li>
             </ol>
         </div>

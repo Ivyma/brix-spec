@@ -6,6 +6,26 @@
 
 body {
     .paginationwrapper {
+        > .col-md-6 {
+            width: inherit;
+            &:first-child {
+                float: left;
+            }
+            &:last-child {
+                float: right;
+            }
+        }
+        > .pagination-statistics {
+            > .dropdown {
+                > ul.dropdown-menu {
+                    > li.active {
+                        > a {
+                            background-color: @brand;
+                        }
+                    }
+                }
+            }
+        }
         ul.pagination {
             > li {
                 display: inline-block;

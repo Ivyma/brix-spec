@@ -31,7 +31,7 @@
 <div class="example">
     <div class="content">
         <div class="content-header">
-            <div>场景 1 - 标题待定</div>
+            <div>场景 1 - 下拉搜索</div>
             <div class="color-999 mt6">当下拉框展开的项过多且同质化时，提供搜索功能，方便用户快速定位到要选择的项。</div>
         </div>
         <div class="content-body">
@@ -45,7 +45,7 @@
 <div class="example">
     <div class="content">
         <div class="content-header">
-            <div>场景 2 - 标题待定</div>
+            <div>场景 2 - 自适应缩减</div>
             <div class="color-999 mt6">当下拉框的项内容长度过长时，需要对内容进行截断，以“…”结尾，鼠标放置在上面时显示该项的全部内容。</div>
         </div>
         <div class="content-body">
@@ -59,7 +59,7 @@
 <div class="example">
     <div class="content">
         <div class="content-header">
-            <div>场景 3 - 标题待定</div>
+            <div>场景 3 - 下拉分组</div>
             <div class="color-999 mt6">当下拉框中的项有某些明显规律时，可对各项进行分组，方便用户查找。</div>
         </div>
         <div class="content-body">

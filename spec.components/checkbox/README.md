@@ -38,7 +38,7 @@
 <div class="example">
     <div class="content">
         <div class="content-header">
-            <div>场景 1 - 标题待定</div>
+            <div>场景 1 - 二元选择</div>
             <div class="color-999 mt6">使用单个复选框来表示二元的是或否选项，如同意产品协议时。</div>
         </div>
         <div class="content-body">
@@ -143,7 +143,7 @@
 <div class="example">
     <div class="content">
         <div class="content-header">
-            <div>场景 4 - 标题待定</div>
+            <div>场景 4 - 互斥式复选框（包含与被包含关系） </div>
             <div class="color-999 mt6">当一个选项应用于多个对象时，可以使用复选框来表示该选项应用于全部、部分还是不应用于任何对象。</div>
         </div>
         <div class="content-body">

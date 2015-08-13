@@ -494,6 +494,18 @@
 .pb80 {
   padding-bottom: 80px;
 }
+body .paginationwrapper > .col-md-6 {
+  width: inherit;
+}
+body .paginationwrapper > .col-md-6:first-child {
+  float: left;
+}
+body .paginationwrapper > .col-md-6:last-child {
+  float: right;
+}
+body .paginationwrapper > .pagination-statistics > .dropdown > ul.dropdown-menu > li.active > a {
+  background-color: #ff6600;
+}
 body .paginationwrapper ul.pagination > li {
   display: inline-block;
 }

@@ -36,7 +36,7 @@
 <div class="example">
     <div class="content">
         <div class="content-header">
-            <div>场景 1 - 名称待定</div>
+            <div>场景 1 - 输入限定提示</div>
             <div class="color-999 mt6">当输入信息有限定时，需在接收用户的输入时，进行实时编辑检查。例如，当输入的字数有限制时，需要随着输入动态变化，倒数计数来提醒用户。</div>
         </div>
         <div class="content-body">
