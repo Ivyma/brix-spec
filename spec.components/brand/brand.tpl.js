@@ -875,7 +875,7 @@ define(function() {
                 </div>
                 <div class="item" style="background-color: #5B6235;">
                     <p>PANTONE 5753 EC</p>
-                    <p>C42 M16 Y80 K62</p>
+                    <p>C21 M0 Y80 K69</p>
                     <p>R91 G98 B53</p>
                     <p>HEX #5B6235</p>
                 </div>
