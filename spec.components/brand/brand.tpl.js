@@ -715,7 +715,7 @@ define(function() {
     </div>
     <div class="mb60">
         <div class="fontsize-16 mb20">品牌标准色</div>
-        <div style="width: 220px; height: 220px; color: #FFF; background-color: #FF6600; border-radius: 50%; display: table-cell; vertical-align: middle; padding-left: 60px;">
+        <div class="brand-color-standard" style="width: 220px; height: 220px; color: #FFF; background-color: #FF6600; border-radius: 50%; display: table-cell; vertical-align: middle; padding-left: 60px;">
             <p>1585</p>
             <p>C:0 M:74 Y:100 K:0</p>
             <p>R:255 G:102 B:0</p>
