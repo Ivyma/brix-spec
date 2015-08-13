@@ -2,7 +2,7 @@
 require(['jquery', 'underscore', 'brix/loader'], function($, _, Loader) {
     window.Loader = Loader
 
-    require(['http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/bootstrap/dist/js/bootstrap.js'])
+    require(['http://g-assets.daily.taobao.net/thx/brix-release/0.0.23/bootstrap/dist/js/bootstrap.js'])
 
     /* jshint unused:false */
     Loader.boot(function() {
