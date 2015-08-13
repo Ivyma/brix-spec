@@ -32,6 +32,7 @@
 
             window.onhashchange = function(event){
                 console.log(new Date(), event.type)
+                debugger
                 $('a[name="' + location.hash.slice(1) + '"]')
                     .parent().parent().show()
                     .siblings().hide()

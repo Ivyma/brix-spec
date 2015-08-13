@@ -1280,6 +1280,8 @@ body .form-control.error {
   padding: 10px 20px;
   white-space: nowrap;
   word-wrap: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .sidebar-col .sidebar-wrapper .sidebar-item a:hover,
 .sidebar-col .sidebar-wrapper .sidebar-item-sub a:hover {
