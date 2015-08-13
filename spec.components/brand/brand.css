@@ -45,10 +45,6 @@
 .brand .brand-typography img.en {
   max-width: 480px;
 }
-.brand .brand-color-palettes .brand-color-standard {
-  font-weight: bold;
-  font-family: "helvetica neue";
-}
 .brand .brand-color-palettes .item {
   color: #FFF;
   width: 176px;
@@ -62,8 +58,6 @@
 }
 .brand .brand-color-palettes .item p {
   margin-bottom: 0px;
-  font-weight: bold;
-  font-family: "helvetica neue";
 }
 .brand .brand-color-palettes .huijiese .item {
   padding: 59px 10px;

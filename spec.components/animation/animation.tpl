@@ -1,5 +1,5 @@
 <div class="mb40">
-    <div class="fontsize-20 mb40">动效规范 <small class="color-999 fontsize-12">todo</small></div class="fontsize-28">
+    <div class="fontsize-20 mb40">动效规范 <small class="color-999 fontsize-12"></small></div class="fontsize-28">
 
     <div class="fontsize-16 mb10">后台产品动效基本规范</div>
 

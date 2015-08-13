@@ -351,7 +351,7 @@
 &lt;/div&gt;</code></pre>
     </div>
     <div class="mb40">
-        <div class="fontsize-16 mb10">64列栅格 <small></small></div>
+        <div class="fontsize-16 mb10">64 列栅格 <small></small></div>
         <div>
             <div class="mm-row">
                 <div class="col col-10"> 10n </div>
