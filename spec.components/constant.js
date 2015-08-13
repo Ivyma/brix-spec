@@ -42,91 +42,91 @@ define(['mock'], function(Mock) {
 		COMPONENTS: [{
 			name: '按钮',
 			resp: 'Button',
-			prev: Mock.Random.dataImage('128x128', '128x128')
+			prev: 'assets/components/按钮.png'
 		}, {
 			name: '单选按钮',
 			resp: 'Radio',
-			prev: Mock.Random.dataImage('128x128', '128x128')
+			prev: 'assets/components/单选.png'
 		}, {
 			name: '复选框',
 			resp: 'Checkbox',
-			prev: Mock.Random.dataImage('128x128', '128x128')
+			prev: 'assets/components/多选.png'
 		}, {
 			name: '下拉框',
 			resp: 'Dropdown',
-			prev: Mock.Random.dataImage('128x128', '128x128')
+			prev: 'assets/components/下拉框.png'
 		}, {
 			name: '输入框',
 			resp: 'Input',
-			prev: Mock.Random.dataImage('128x128', '128x128')
+			prev: 'assets/components/输入框.png'
 		}, {
 			name: '文本框',
 			resp: 'Textarea',
-			prev: Mock.Random.dataImage('128x128', '128x128')
+			prev: 'assets/components/文本框.png'
 		}, {
 			name: '日历',
 			resp: 'Calendar',
-			prev: Mock.Random.dataImage('128x128', '128x128')
+			prev: 'assets/components/日历.png'
 		}, {
 			name: '面包屑',
 			resp: 'Breadcrumb',
-			prev: Mock.Random.dataImage('128x128', '128x128')
+			prev: 'assets/components/面包屑.png'
 		}, {
 			name: '翻页器',
 			resp: 'Pagination',
-			prev: Mock.Random.dataImage('128x128', '128x128')
+			prev: 'assets/components/翻页器.png'
 		}, {
 			name: '搜索框',
 			resp: 'SearchBox',
-			prev: Mock.Random.dataImage('128x128', '128x128')
+			prev: 'assets/components/搜索框.png'
 		}, {
 			name: '就地编辑',
 			resp: 'Editable',
-			prev: Mock.Random.dataImage('128x128', '128x128')
+			prev: 'assets/components/就地编辑.png'
 		}, {
 			name: '通用信息',
 			resp: 'Tooltip',
-			prev: Mock.Random.dataImage('128x128', '128x128')
+			prev: 'assets/components/通用说明.png'
 		}, {
 			name: '表格',
 			resp: 'Table',
-			prev: Mock.Random.dataImage('128x128', '128x128')
+			prev: 'assets/components/表格.png'
 		}, {
 			name: '页脚',
 			resp: 'Footer',
-			prev: Mock.Random.dataImage('128x128', '128x128')
+			prev: 'assets/components/页底.png'
 		}, {
 			name: '进度条',
 			resp: 'Progress',
-			prev: Mock.Random.dataImage('128x128', '128x128')
+			prev: 'assets/components/进度条.png'
 		}, {
 			name: '字段控制器',
 			resp: 'Field',
-			prev: Mock.Random.dataImage('128x128', '128x128')
+			prev: 'assets/components/字段控制.png'
 		}, {
 			name: '步骤条',
 			resp: 'Wizard',
-			prev: Mock.Random.dataImage('128x128', '128x128')
+			prev: 'assets/components/步骤条.png'
 		}, {
 			name: '浮层',
 			resp: 'Dialog',
-			prev: Mock.Random.dataImage('128x128', '128x128')
+			prev: 'assets/components/浮层.png'
 		}, {
 			name: '时间选择器',
 			resp: 'HourPicker',
-			prev: Mock.Random.dataImage('128x128', '128x128')
+			prev: 'assets/components/时间选择器.png'
 		}, {
 			name: '标签切换',
 			resp: 'Tab',
-			prev: Mock.Random.dataImage('128x128', '128x128')
+			prev: 'assets/components/Tab切换.png'
 		}, {
 			name: '滚动条',
 			resp: 'Scrollbar',
-			prev: Mock.Random.dataImage('128x128', '128x128')
+			prev: 'assets/components/滚动条.png'
 		}, {
 			name: '加载',
 			resp: 'Spin',
-			prev: Mock.Random.dataImage('128x128', '128x128')
+			prev: 'assets/components/加载.png'
 		}]
 	}
 })

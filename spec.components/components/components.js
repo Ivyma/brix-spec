@@ -25,7 +25,7 @@ define(
                     COMPONENTS: Constant.COMPONENTS
                 }
                 _.each(this.data.COMPONENTS, function(item /*, index*/ ) {
-                    item.preview = Mock.Random.dataImage('128x128', '')
+                    if(!item.preview) item.preview = item.prev || Mock.Random.dataImage('128x128', '')
                 })
                 console.log(this.data)
             },

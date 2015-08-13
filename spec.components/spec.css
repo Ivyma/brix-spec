@@ -978,6 +978,10 @@
 body {
   overflow-x: hidden;
 }
+::selection {
+  background-color: #ff6600;
+  color: white;
+}
 /* SVG */
 tspan {
   font-family: "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", Georgia, "Times New Roman", Arial, sans-serif;

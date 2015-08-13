@@ -143,7 +143,7 @@
 <div class="example">
     <div class="content">
         <div class="content-header">
-            <div>场景 4 - 互斥式复选框（包含与被包含关系） </div>
+            <div>场景 4 - 互斥式复选框（包含与被包含关系）</div>
             <div class="color-999 mt6">当一个选项应用于多个对象时，可以使用复选框来表示该选项应用于全部、部分还是不应用于任何对象。</div>
         </div>
         <div class="content-body">

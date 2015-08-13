@@ -36,6 +36,9 @@
 .components .panel .panel-body {
   height: 210px;
   overflow: hidden;
+  line-height: 180px;
+  text-align: center;
+  vertical-align: middle;
 }
 .components img {
   width: 100%;
