@@ -38,7 +38,7 @@
                 <tfoot>
                     <tr>
                         <td colspan="6">
-                            <div bx-name="components/pagination" data-total="100" data-cursor="1" data-limit="10"></div>             
+                            <div bx-name="components/pagination" data-total="1000" data-cursor="1" data-limit="10" bx-options="{ step: 4 }"></div>
                         </td>
                     </tr>
                 </tfoot>
@@ -65,7 +65,22 @@
                 <tfoot>
                     <tr>
                         <td colspan="5">
-                            <div bx-name="components/pagination" data-total="100" data-cursor="1" data-limit="9" data-simplify="true"></div>             
+                            <div class="row paginationwrapper">
+                                <div class="col-md-12" style="text-align: right;">
+                                    <ul class="pagination" style="text-align: right;">
+                                        <li class="disabled"><a href="javascript: void(0);" bx-click="moveTo(0)"><span class="brixfont"></span></a></li><!-- Previous -->
+                                        <li class="pagination-statistics-simplify"><span>1/12</span></li>
+                                        <li class=""><a href="javascript: void(0);" bx-click="moveTo(2)"><span class="brixfont"></span></a></li><!-- Next -->
+                                        <li class="pagination-statistics-simplify" style="vertical-align: top;">
+                                            <span style="display: inline-block; padding-right: 5px; font-weight: normal;">向第</span>
+                                            <input style="width: 36px; float: left; text-align: center;" value="1">
+                                            <span style="display: inline-block; padding-left:  5px; font-weight: normal;">页</span>
+                                            <button class="btn" style="padding: 6px 9px;">跳转</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- <div bx-name="components/pagination" data-total="100" data-cursor="1" data-limit="9" data-simplify="true"></div>              -->
                         </td>
                     </tr>
                 </tfoot>
