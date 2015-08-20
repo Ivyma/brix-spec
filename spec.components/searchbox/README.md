@@ -17,12 +17,16 @@
         </div>
         <div class="content-body">
             <div class="searchbox mb10 mr40">
-                <span class="brixfont">&#xe61c;</span>
-                <input type="text" placeholder="请输入关键词搜索">
+                <label>
+                    <span class="brixfont">&#xe61c;</span>
+                    <input type="text" placeholder="请输入关键词搜索">
+                </label>
             </div>
             <div class="searchbox mb10">
-                <span class="brixfont">&#xe61c;</span>
-                <input type="text" bx-name="components/suggest" placeholder="请输入关键词搜索">
+                <label>
+                    <span class="brixfont">&#xe61c;</span>
+                    <input type="text" bx-name="components/suggest" placeholder="请输入关键词搜索">
+                </label>
             </div>
             <div class="input-group">
                 <input type="text" class="form-control" bx-name="components/suggest" placeholder="请输入关键词搜索">
@@ -85,8 +89,10 @@
         </div>
         <div class="content-body">
             <div class="searchbox searchbox-simplify mb10">
-                <span class="brixfont">&#xe61c;</span>
-                <input type="text" placeholder="请输入关键词搜索" style="transition: inherit;">
+                <label>
+                    <span class="brixfont">&#xe61c;</span>
+                    <input id="case2" type="text" placeholder="请输入关键词搜索" style="transition: inherit;">
+                </label>
             </div>
         </div>
     </div>

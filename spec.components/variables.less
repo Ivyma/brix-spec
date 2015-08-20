@@ -14,7 +14,8 @@
 @green: #51A300;
 @red: #A40100;
 @backdrop: #474747;
-
+@gray: @999;
+// 
 .color-brand {
     color: @brand;
 }
@@ -27,7 +28,23 @@
 .color-gray {
     color: @999;
 }
-
+// 
+.color-primary {
+    color: @brand;
+}
+.color-success {
+    color: @green;
+}
+.color-info {
+    color: @f0f0f0;
+}
+.color-warning {
+    color: @red;
+}
+.color-danger {
+    color: @red;
+}
+// 
 .color-333 {
     color: @333;
 }
@@ -40,7 +57,7 @@
 .color-ccc {
     color: @ccc;
 }
-
+// 
 .bg-brand {
     background-color: @brand;
 }
@@ -49,6 +66,28 @@
 }
 .bg-backdrop {
     background-color: @backdrop;
+}
+// 
+.bg-primary {
+    background-color: @brand;
+}
+.bg-success {
+    background-color: @green;
+}
+.bg-info {
+    background-color: @f0f0f0;
+}
+.bg-warning {
+    background-color: @red;
+}
+.bg-danger {
+    background-color: @red;
+}
+// 
+.color-hover-brand {
+    &:hover {
+        color: @brand;
+    }
 }
 
 // ----------------------------------------

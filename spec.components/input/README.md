@@ -57,6 +57,7 @@
 
 <script type="text/javascript">
     require(['jquery', 'parsley'], function($, Parsley) {
+        require(['dependencies/parsleyjs/src/i18n/zh_cn'])
         $('form').parsley()
     })
 </script>

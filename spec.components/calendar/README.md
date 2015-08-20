@@ -60,8 +60,9 @@
             <div class="color-999 mt6">图表默认显示某一时间范围的效果统计，若需再指定一个日期或日期范围进行对比时，需要保证所选的天数一致。</div>
         </div>
         <div class="content-body">
-            <div bx-name="components/datepickerwrapper" 
+            <div id="case2" bx-name="components/datepickerwrapper" 
                 data-dates="['2015-1-1', '2015-1-2']" 
+                data-shortcuts="false" 
                 class="form-control datepickerwrapper-trigger">
                 <span data-index="0">2015-1-1</span> 至 <span data-index="1">2015-1-2</span>
                 <i class="brixfont pull-right ml5 down"></i>
@@ -116,3 +117,22 @@
         TODO
     </code></pre>
 </div>
+
+<script type="text/javascript">
+    require(['jquery', 'moment', 'brix/loader'], function($, moment, Loader) {
+        Loader.boot(function(){
+            var case2 = Loader.query($('#case2'))[0]
+            var pickers = Loader.query('components/datepicker', case2.$relatedElement)
+            pickers[0].on('change.datepicker', function(event, date, type){
+                pickers[1].val(
+                    moment(date).add(1, 'month')
+                )
+            })
+            pickers[1].on('change.datepicker', function(event, date, type){
+                pickers[0].val(
+                    moment(date).add(-1, 'month')
+                )
+            })
+        })
+    })
+</script>

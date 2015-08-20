@@ -40,24 +40,33 @@
 
 .searchbox {
     display: inline-block;
+    label {
+        font-weight: normal;
+    }
     span.brixfont {
         color: #CCC;
     }
     &.searchbox-simplify {
         input {
-            padding-left: 20px;
+            padding-left: 22px;
             width: 0;
-            &:hover, &:focus {
+            &:focus {
                 padding-left: 30px;
                 width: auto;
             }
         }
-        &:hover {
+        &.open {
             input {
                 padding-left: 30px;
                 width: auto;
             }
         }
+        // &:hover {
+        //     input {
+        //         padding-left: 30px;
+        //         width: auto;
+        //     }
+        // }
     }
 }
 .bs-example-searchbox-1 {

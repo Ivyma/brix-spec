@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import "http://g.assets.daily.taobao.net/thx/minecraft-animation/0.0.1/css/animate-min.css";
 /* Color */
 .color-brand {
   color: #ff6600;
@@ -11,6 +12,21 @@
 }
 .color-gray {
   color: #999999;
+}
+.color-primary {
+  color: #ff6600;
+}
+.color-success {
+  color: #51a300;
+}
+.color-info {
+  color: #f0f0f0;
+}
+.color-warning {
+  color: #a40100;
+}
+.color-danger {
+  color: #a40100;
 }
 .color-333 {
   color: #333333;
@@ -32,6 +48,24 @@
 }
 .bg-backdrop {
   background-color: #474747;
+}
+.bg-primary {
+  background-color: #ff6600;
+}
+.bg-success {
+  background-color: #51a300;
+}
+.bg-info {
+  background-color: #f0f0f0;
+}
+.bg-warning {
+  background-color: #a40100;
+}
+.bg-danger {
+  background-color: #a40100;
+}
+.color-hover-brand:hover {
+  color: #ff6600;
 }
 .fontsize-12 {
   font-size: 12px;
@@ -973,7 +1007,7 @@
   margin-left: 100%;
 }
 * {
-  transition: width .15s, padding .15s, margin .15s;
+  transition: width .15s, padding .15s, margin .15s, opacity .15s;
 }
 body {
   overflow-x: hidden;
@@ -1017,11 +1051,30 @@ hr {
 p {
   line-height: 1.8;
 }
+blockquote {
+  font-size: 14px;
+}
 .bold {
   font-weight: bold;
 }
 .tahoma {
   font-family: "Tahoma";
+}
+body a {
+  color: #ff6600;
+  text-decoration: none;
+}
+body a:hover,
+body a:focus {
+  color: #fc4218;
+}
+body a,
+body a:hover,
+body a:focus,
+body a:active,
+body a:visited {
+  outline: 0;
+  text-decoration: none;
 }
 body .table thead tr th,
 body .table thead tr.active th {
@@ -1224,11 +1277,15 @@ body .btn.btn-bounce .three {
   color: #999;
 }
 /* Input */
-.parsley-errors-list {
-  padding-left: 20px;
-  color: #B94A48;
-  margin-top: 10px;
-  margin-bottom: 10px;
+body .parsley-errors-list {
+  list-style: none;
+  padding-left: 9px;
+  color: #999;
+  margin-top: 9px;
+  margin-bottom: 5px;
+}
+body .parsley-errors-list + .parsley-errors-list {
+  margin-top: 5px;
 }
 /* Textarea */
 body textarea,
@@ -1317,6 +1374,13 @@ body .form-control.error {
   padding: 40px 40px 0 40px;
   min-height: 500px;
   max-width: 1170px;
+}
+input[type=checkbox]:checked:after {
+  background-color: #ff6600;
+  top: 1px;
+}
+input[type=radio]:checked:after {
+  background-color: #ff6600;
 }
 @media only screen and (max-width: 767px) {
   .navbar .navbar-header .navbar-toggle {

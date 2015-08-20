@@ -9,7 +9,7 @@ define(function() {
 <div class="mb40">
     <div class="mb40">
         <div class="fontsize-20 mb10">颜色 <small>Colors</small></div>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>在SHB中降低S值-10°到-30°，B值-20°到-10°去区分色环自然产生的颜色模糊区域，再整体降低10°饱和度和去除亮度最高的疲劳色来适应用户长时间使用。在剩下的颜色中按照七色原则选取区分最大的7种颜色，最大程度的区分各个产品。</p>
     </div>
 
     <div class="mb40">

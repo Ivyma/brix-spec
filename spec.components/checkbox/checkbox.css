@@ -1,10 +1,19 @@
 label {
   font-weight: normal;
   margin-right: 40px;
+  padding: 9px 0;
 }
 label input[type="radio"],
 label input[type="checkbox"] {
   margin-right: 10px;
+}
+label input[type="radio"]:checked:after,
+label input[type="checkbox"]:checked:after {
+  background-color: #FF6600;
+}
+label input[type="radio"][disabled]:hover,
+label input[type="checkbox"][disabled]:hover {
+  border-color: #E6E6E6;
 }
 label p.desc {
   color: #999;

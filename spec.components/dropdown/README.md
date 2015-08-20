@@ -20,9 +20,9 @@
         </div>
         <div class="content-body">
             <select bx-name="components/dropdown">
-                <option value="1">Action</option>
-                <option value="2">Another action</option>
-                <option value="3">Something else here</option>
+                <% _.each(_.range(100), function(item, index){ %>
+                <option value="<%= index %>">选项 <%= index + 1 %></option>
+                <% }) %>
             </select>
         </div>
     </div>
@@ -35,8 +35,29 @@
             <div class="color-999 mt6">当下拉框展开的项过多且同质化时，提供搜索功能，方便用户快速定位到要选择的项。</div>
         </div>
         <div class="content-body">
-            <div>
-                TODO
+            <div id="case-1" class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" value="0" bx-click="toggle()">
+                    <span class="dropdown-toggle-label">选项 1</span>
+                    <span class="caret_custom caret_brixfont"><!-- 保留 caret_brixfont 是为了向后兼容，在下个版本中移除  -->
+                        <span class="brixfont down">&#xe623;</span><!-- 向下 -->
+                        <span class="brixfont up">&#xe62e;</span><!-- 向上 -->
+                    </span>
+                </button>
+                <div class="dropdown-menu-wrapper">
+                    <div class="searchbox">
+                        <label>
+                            <span class="brixfont">&#xe61c;</span>
+                            <input type="text" placeholder="搜索关键词">
+                        </label>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <% _.each(_.range(100), function(item, index){ %>
+                        <li class="<%= index === 0 ? 'active' : '' %>">
+                            <a href="javascript: void(0);" value="1">选项 <%= index + 1 %></a>
+                        </li>
+                        <% }) %>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -49,8 +70,35 @@
             <div class="color-999 mt6">当下拉框的项内容长度过长时，需要对内容进行截断，以“…”结尾，鼠标放置在上面时显示该项的全部内容。</div>
         </div>
         <div class="content-body">
-            <div>
-                TODO
+            <div id="case-2" class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" value="0" bx-click="toggle()">
+                    <span class="dropdown-toggle-label">选项 1</span>
+                    <span class="caret_custom caret_brixfont"><!-- 保留 caret_brixfont 是为了向后兼容，在下个版本中移除  -->
+                        <span class="brixfont down">&#xe623;</span><!-- 向下 -->
+                        <span class="brixfont up">&#xe62e;</span><!-- 向上 -->
+                    </span>
+                </button>
+                <div class="dropdown-menu-wrapper">
+                    <div class="searchbox">
+                        <label>
+                            <span class="brixfont">&#xe61c;</span>
+                            <input type="text" placeholder="搜索关键词">
+                        </label>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <% _.each(_.range(100), function(item, index){ %>
+                        <%  item = Mock.Random.cparagraph() %>
+                        <li class="<%= index === 0 ? 'active' : '' %>">
+                            <a bx-name="components/popover"
+                                data-content="<%= index + 1 %> <%= item %>" 
+                                data-width="200"
+                                href="javascript: void(0);">
+                                <span><%= index + 1 %> <%= item %></span>
+                            </a>
+                        </li>
+                        <% }) %>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -64,15 +112,11 @@
         </div>
         <div class="content-body">
             <select bx-name="components/dropdown">
-                <optgroup label="optgroup 1">
-                    <option value="1">Action</option>
+                <% _.each(_.range(100), function(item, index){ %>
+                <optgroup label="小组 <%= index + 1 %>">
+                    <option value="<%= index + 1 %>">子选项 <%= index + 1 %></option>
                 </optgroup>
-                <optgroup label="optgroup 2">
-                    <option value="2">Another action</option>
-                </optgroup>
-                <optgroup label="optgroup 3">
-                    <option value="3" selected="">Something else here</option>
-                </optgroup>
+                <% }) %>
             </select>
         </div>
     </div>
@@ -90,3 +134,12 @@
         </select>
     </code></pre>
 </div>
+
+<script type="text/javascript">
+    $('#case-1').on('click', function(){
+        $(this).toggleClass('open')
+    })
+    $('#case-2').on('click', function(){
+        $(this).toggleClass('open')
+    })
+</script>

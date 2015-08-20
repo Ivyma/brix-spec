@@ -11,6 +11,21 @@
 .color-gray {
   color: #999999;
 }
+.color-primary {
+  color: #ff6600;
+}
+.color-success {
+  color: #51a300;
+}
+.color-info {
+  color: #f0f0f0;
+}
+.color-warning {
+  color: #a40100;
+}
+.color-danger {
+  color: #a40100;
+}
 .color-333 {
   color: #333333;
 }
@@ -31,6 +46,24 @@
 }
 .bg-backdrop {
   background-color: #474747;
+}
+.bg-primary {
+  background-color: #ff6600;
+}
+.bg-success {
+  background-color: #51a300;
+}
+.bg-info {
+  background-color: #f0f0f0;
+}
+.bg-warning {
+  background-color: #a40100;
+}
+.bg-danger {
+  background-color: #a40100;
+}
+.color-hover-brand:hover {
+  color: #ff6600;
 }
 .fontsize-12 {
   font-size: 12px;
@@ -494,10 +527,61 @@
 .pb80 {
   padding-bottom: 80px;
 }
-body .dropdown .dropdown-menu > li.active a,
-body .dropdown .dropdown-menu > li.active a:hover,
-body .dropdown .dropdown-menu > li.active a:focus {
+body .dropdown {
+  min-width: 190px;
+}
+body .dropdown ul.dropdown-menu {
+  width: 100%;
+  padding-right: 10px;
+}
+body .dropdown ul.dropdown-menu > li > a {
+  position: relative;
+  padding: 4px 10px;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+body .dropdown ul.dropdown-menu > li.active > a,
+body .dropdown ul.dropdown-menu > li.active > a:hover,
+body .dropdown ul.dropdown-menu > li.active > a:focus {
   background-color: #ff6600;
+}
+body .dropdown ul.dropdown-menu > li.dropdown-header {
+  color: #999;
+  padding-left: 20px;
+}
+body .dropdown ul.dropdown-menu > li.dropdown-header + li > a {
+  padding-left: 20px;
+}
+body .dropdown > .dropdown-menu-wrapper {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border: 1px solid #e6e6e6;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: white;
+  z-index: 1001;
+  display: none;
+}
+body .dropdown > .dropdown-menu-wrapper > .searchbox label {
+  margin-bottom: 0px;
+}
+body .dropdown > .dropdown-menu-wrapper > ul.dropdown-menu {
+  display: block;
+  position: static;
+  margin-top: 10px;
+  padding-top: 0px;
+  border: none;
+}
+body .dropdown > .dropdown-menu-wrapper > ul.dropdown-menu > li {
+  padding: 4px 10px 4px 0;
+}
+body .dropdown.open > .dropdown-menu-wrapper {
+  display: block;
 }
 .suggest.dropdown {
   width: 100%;
@@ -519,19 +603,21 @@ body .dropdown .dropdown-menu > li.active a:focus {
 .searchbox {
   display: inline-block;
 }
+.searchbox label {
+  font-weight: normal;
+}
 .searchbox span.brixfont {
   color: #CCC;
 }
 .searchbox.searchbox-simplify input {
-  padding-left: 20px;
+  padding-left: 22px;
   width: 0;
 }
-.searchbox.searchbox-simplify input:hover,
 .searchbox.searchbox-simplify input:focus {
   padding-left: 30px;
   width: auto;
 }
-.searchbox.searchbox-simplify:hover input {
+.searchbox.searchbox-simplify.open input {
   padding-left: 30px;
   width: auto;
 }

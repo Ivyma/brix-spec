@@ -31,13 +31,11 @@
             Catalog('.sidebar', '.fontsize-20')
 
             window.onhashchange = function(event){
-                console.log(new Date(), event.type)
-                debugger
                 $('a[name="' + location.hash.slice(1) + '"]')
-                    .parent().parent().show()
+                    .parent().parent().parent().show()
                     .siblings().hide()
             }
-            if(!location.hash)location.hash= '#动效规范'
+            if (!location.hash) location.hash = '#动效规范'
             $('.sidebar').find(
                 'a[href="' + location.hash + '"]'
             ).parent().addClass('active')

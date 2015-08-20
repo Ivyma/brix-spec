@@ -12,7 +12,7 @@
 .components .panel .panel-heading {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  color: #666;
+  color: #333;
   line-height: 20px;
 }
 .basics .panel .panel-footer,
@@ -34,12 +34,14 @@
   overflow: hidden;
 }
 .components .panel .panel-body {
+  padding: 10px 15px;
   height: 210px;
   overflow: hidden;
-  line-height: 180px;
+  line-height: 190px;
   text-align: center;
   vertical-align: middle;
 }
 .components img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }

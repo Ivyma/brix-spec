@@ -15,33 +15,26 @@
             </ol>
         </div>
         <div class="content-body">
-            <div bx-name="spec.components/wizard/wizard" class="wizard wizard-horizontal">
+            <div bx-name="spec.components/wizard/wizard" data-total="4" data-cursor="0" class="wizard wizard-horizontal">
+                <% var total = 4, cursor = 0, POOL='一二三四五六七八九' %>
                 <ol class="wizard-nav clearfix">
-                    <% for( var i = 0, cursor = 0, total = 3, POOL='一二三四五六七八九'; i < total; i++ ) { %>
-                    <li class="item  <%= i === cursor ? 'active' : '' %>">
-                        <span class="circle"><%= i+1 %></span>步骤<%= POOL[i] %>
+                    <% for( var i = 0; i < total; i++ ) { %>
+                    <li class="item  <%= i === cursor ? 'active bx-trans-steps-on' : '' %>" data-index="<%= i %>">
+                        <span class="circle bx-trans-steps-circle">
+                            <span class="counter"><%= i + 1 %></span>
+                            <span class="state zsfont">&#xf00b2;</span>
+                        </span>
+                        <span class="bx-trans-steps-text">步骤<%= POOL[i] %></span>
                     </li>
                     <% } %>
                 </ol>
                 <div class="wizard-cards">
-                    <div class="wizard-card">
-                        <p class="flat-text small"><%= Mock.Random.cparagraph() %></p>
+                    <% for( var i = 0; i < total; i++ ) { %>
+                    <div class="wizard-card" data-index="<%= i %>">
+                        <p class="flat-text small"><%= POOL[i] %> <%= Mock.Random.cparagraph() %></p>
                         <p class="flat-text full-width mt10"><%= Mock.Random.cparagraph() %></p>
                         <p class="flat-text full-width mt10"><%= Mock.Random.cparagraph() %></p>
-                    </div>
-                    <div class="wizard-card">
-                        <p class="flat-text small"><%= Mock.Random.cparagraph() %></p>
-                        <p class="flat-text full-width mt10"><%= Mock.Random.cparagraph() %></p>
-                        <p class="flat-text full-width mt10"><%= Mock.Random.cparagraph() %></p>
-                        <p class="flat-text full-width mt10"><%= Mock.Random.cparagraph() %></p>
-                    </div>
-                    <div class="wizard-card">
-                        <p class="flat-text small"><%= Mock.Random.cparagraph() %></p>
-                        <p class="flat-text full-width mt10"><%= Mock.Random.cparagraph() %></p>
-                        <p class="flat-text full-width mt10"><%= Mock.Random.cparagraph() %></p>
-                        <p class="flat-text full-width mt10"><%= Mock.Random.cparagraph() %></p>
-                        <p class="flat-text full-width mt10"><%= Mock.Random.cparagraph() %></p>
-                    </div>
+                    </div><% } %>
                 </div>
                 <div class="wizard-footer">
                     <button class="btn btn-brand mr10 wizard-next" bx-click="next">下一步</button>
@@ -61,11 +54,15 @@
         <div class="content-body">
             <div bx-name="spec.components/wizard/wizard" class="wizard wizard-vertical">
                 <div class="wizard-cards">
-                    <% for( var i = 0, cursor = 0, total = 4, POOL='一二三四五六七八九'; i < total; i++ ) { %>
-                    <div class="wizard-card <%= i === cursor ? 'open' : '' %>">
+                    <% var total = 4, cursor = 0, POOL='一二三四五六七八九' %>
+                    <% for( var i = 0; i < total; i++ ) { %>
+                    <div class="wizard-card <%= i === cursor ? 'active bx-trans-steps-on' : '' %>">
                         <div class="ungrid-row">
                             <div class="ungrid-col" style="width: 50px; vertical-align: top; padding-top: 20px;">
-                                <span class="circle"><%= i+1 %></span>
+                                <span class="circle bx-trans-steps-circle">
+                                    <span class="counter"><%= i + 1 %></span>
+                                    <span class="state zsfont">&#xf00b2;</span>
+                                </span>
                             </div>
                             <div class="ungrid-col" style="background-color: #FFF; border-radius: 6px;">
                                 <div class="wizard-card-header">
@@ -74,13 +71,13 @@
                                     <a class="expand" href="javascript:;" bx-click="expand">展开</a>
                                 </div>
                                 <div class="wizard-card-body">
-                                    <p class="flat-text small"><%= Mock.Random.cparagraph() %></p>
+                                    <p class="flat-text small"><%= POOL[i] %> <%= Mock.Random.cparagraph() %></p>
                                     <p class="flat-text full-width mt10"><%= Mock.Random.cparagraph() %></p>
                                     <p class="flat-text full-width mt10"><%= Mock.Random.cparagraph() %></p>
                                 </div>
-                                <div class="wizard-card-footer">
+                                <div class="wizard-card-footer <%= i === total - 1 ? 'hide' : '' %>">
                                     <button class="btn btn-brand mr10 btn-step-next" bx-click="next">
-                                        <%= i < total - 1 ? '保存并继续' : '完成' %>
+                                        <%= i < total - 2 ? '保存并继续' : '完成' %>
                                     </button>
                                 </div>
                             </div>

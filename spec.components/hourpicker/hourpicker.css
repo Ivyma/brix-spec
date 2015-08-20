@@ -11,6 +11,21 @@
 .color-gray {
   color: #999999;
 }
+.color-primary {
+  color: #ff6600;
+}
+.color-success {
+  color: #51a300;
+}
+.color-info {
+  color: #f0f0f0;
+}
+.color-warning {
+  color: #a40100;
+}
+.color-danger {
+  color: #a40100;
+}
 .color-333 {
   color: #333333;
 }
@@ -31,6 +46,24 @@
 }
 .bg-backdrop {
   background-color: #474747;
+}
+.bg-primary {
+  background-color: #ff6600;
+}
+.bg-success {
+  background-color: #51a300;
+}
+.bg-info {
+  background-color: #f0f0f0;
+}
+.bg-warning {
+  background-color: #a40100;
+}
+.bg-danger {
+  background-color: #a40100;
+}
+.color-hover-brand:hover {
+  color: #ff6600;
 }
 .fontsize-12 {
   font-size: 12px;
@@ -494,15 +527,58 @@
 .pb80 {
   padding-bottom: 80px;
 }
-body .example .hourpicker div.shortcuts label {
+label {
   font-weight: normal;
-  color: #CCC;
+  margin-right: 40px;
+  padding: 9px 0;
 }
-body .example .hourpicker div.apply-dialog .apply-dialog-body {
+label input[type="radio"],
+label input[type="checkbox"] {
+  margin-right: 10px;
+}
+label input[type="radio"]:checked:after,
+label input[type="checkbox"]:checked:after {
+  background-color: #FF6600;
+}
+label input[type="radio"][disabled]:hover,
+label input[type="checkbox"][disabled]:hover {
+  border-color: #E6E6E6;
+}
+label p.desc {
+  color: #999;
+  padding-left: 25px;
+  margin-bottom: 0px;
+}
+label.disabled {
+  color: #999;
+  cursor: not-allowed;
+}
+ul.checklist {
+  list-style: none;
+  padding-left: 25px;
+}
+ul.checklist > li {
   margin-bottom: 10px;
 }
+.checklist-linkage ul {
+  display: inline-block;
+  list-style: none;
+}
+.checklist-linkage ul li {
+  float: left;
+}
+.checklist-linkage ul li .title {
+  line-height: 26px;
+}
+body .example .hourpicker div.shortcuts label {
+  font-weight: normal;
+  color: #333;
+}
+body .example .hourpicker div.apply-dialog .apply-dialog-body {
+  margin-bottom: 20px;
+}
 body .example .hourpicker div.apply-dialog .apply-dialog-body label {
-  margin-bottom: 0;
+  margin-bottom: 10px;
   font-weight: normal;
 }
 body .example .hourpicker div.apply-dialog .apply-dialog-footer .btn.submit {

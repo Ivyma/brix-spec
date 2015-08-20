@@ -14,9 +14,11 @@
         <div class="content-body">
             <!-- <span bx-name="components/editable">文字内容</span> -->
             <div id="case-base">
-                <span>文字内容</span>
-                <a href="javascript:;" class="brixfont color-ccc">&#xe604;</a>
-                <input value="文字内容" style="display: none;">
+                <div class="editable">
+                    <span class="editable-content">文字内容</span>
+                    <a href="javascript:;" class="editable-toggle brixfont color-ccc">&#xe604;</a>
+                    <input value="文字内容" class="editable-input" style="display: none;">
+                </div>
             </div>
         </div>
     </div>
@@ -49,27 +51,32 @@
             <table bx-name="components/table" class="table table-hover table-fixed ">
                 <thead>
                     <tr>
-                        <th class="nowrap">名称</th>
+                        <th class="nowrap" width="40%">名称</th>
                         <th class="nowrap">状态</th>
                         <th class="nowrap">类型</th>
                         <th class="nowrap">尺寸</th>
                         <th class="nowrap">操作</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="case-1">
                     <% _.each(list, function(item){ %>
                     <tr>
                         <td class="nowrap ellipsis">
-                            <span bx-name="components/editable"><%= item.name %></span>
+                            <div class="editable">
+                                <span class="editable-content"><%= item.name %></span>
+                                <a href="javascript:;" class="editable-toggle brixfont color-ccc">&#xe604;</a>
+                                <input value="<%= item.name %>" class="editable-input" style="display: none;">
+                            </div>
                         </td>
                         <td class="nowrap ellipsis">
-                            <span bx-name="components/editable"><%= item.status %></span>
+                            <!-- <span bx-name="components/editable"><%= item.name %></span> -->
+                            <%= item.status %>
                         </td>
                         <td class="nowrap ellipsis">
-                            <span bx-name="components/editable"><%= item.type %></span>
+                            <%= item.type %>
                         </td>
                         <td class="nowrap ellipsis">
-                            <span bx-name="components/editable"><%= item.size %></span>
+                            <%= item.size %>
                         </td>
                         <td>
                             <div class="operation">
@@ -94,10 +101,12 @@
         </div>
         <div class="content-body">
             <div id="case-2">
-                <span>文字内容</span>
-                <a href="javascript:;" class="brixfont color-ccc">&#xe604;</a>
-                <div class="suggestwrapper" style="display: none;">
-                    <input bx-name="components/suggest" value="文字内容">
+                <div class="editable">
+                    <span class="editable-content">文字内容</span>
+                    <a href="javascript:;" class="editable-toggle brixfont color-ccc">&#xe604;</a>
+                    <div class="suggestwrapper" style="display: none;">
+                        <input bx-name="components/suggest" value="文字内容">
+                    </div>
                 </div>
             </div>
         </div>
@@ -128,6 +137,31 @@
                     }
                     span.text(input.val())
                 })
+        })();
+        (function(argument) {
+            var wrapper = $('#case-1')
+            var editable = wrapper.find('.editable')
+            _.each(editable,  function(item, index){
+                item = $(item)
+                var content = item.find('.editable-content')
+                var toggle = item.find('.editable-toggle')
+                var input = item.find('.editable-input')
+                toggle.on('click', function(){
+                    toggle.hide(), content.hide(), input.show().focus()
+                })
+                input
+                    .on('blur', function() {
+                        content.show(), input.hide()
+                        toggle.css('display', '')
+                    })
+                    .on('keydown', function(event) {
+                        if (event.which === 13 || event.which === 27) {
+                            content.show(), input.hide()
+                            toggle.css('display', '')
+                        }
+                        content.text(input.val())
+                    })
+            })
         })();
         (function(argument) {
             var wrapper = $('#case-2')

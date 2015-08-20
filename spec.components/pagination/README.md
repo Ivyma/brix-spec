@@ -114,15 +114,15 @@
                 <p class="flat-text full-width mt10"></p>
             </div>
             <div class="clearfix" style="padding: 20px;">
-                <div class="pull-left"><a href="javascript:;" class="color-gray">< 上一篇</a></div>
-                <div class="pull-right"><a href="javascript:;" class="color-gray">下一篇 ></a></div>
+                <div class="pull-left"><a href="javascript:;" class="color-gray color-hover-brand">&lt; 上一篇</a></div>
+                <div class="pull-right"><a href="javascript:;" class="color-gray color-hover-brand">下一篇 &gt;</a></div>
             </div>
         </div>
     </div>
     <pre><code class="hljs html">
-        <div class="clearfix" style="padding: 15px;">
-            <div class="pull-left"><a href="javascript:;">< 上一篇</a></div>
-            <div class="pull-right"><a href="javascript:;">下一篇 ></a></div>
+        <div class="clearfix" style="padding: 20px;">
+            <div class="pull-left"><a href="javascript:;" class="color-gray color-hover-brand">&lt; 上一篇</a></div>
+            <div class="pull-right"><a href="javascript:;" class="color-gray color-hover-brand">下一篇 &gt;</a></div>
         </div>
     </code></pre>
 </div>

@@ -11,6 +11,21 @@
 .color-gray {
   color: #999999;
 }
+.color-primary {
+  color: #ff6600;
+}
+.color-success {
+  color: #51a300;
+}
+.color-info {
+  color: #f0f0f0;
+}
+.color-warning {
+  color: #a40100;
+}
+.color-danger {
+  color: #a40100;
+}
 .color-333 {
   color: #333333;
 }
@@ -31,6 +46,24 @@
 }
 .bg-backdrop {
   background-color: #474747;
+}
+.bg-primary {
+  background-color: #ff6600;
+}
+.bg-success {
+  background-color: #51a300;
+}
+.bg-info {
+  background-color: #f0f0f0;
+}
+.bg-warning {
+  background-color: #a40100;
+}
+.bg-danger {
+  background-color: #a40100;
+}
+.color-hover-brand:hover {
+  color: #ff6600;
 }
 .fontsize-12 {
   font-size: 12px;
@@ -494,16 +527,17 @@
 .pb80 {
   padding-bottom: 80px;
 }
-body .example .wizard.wizard-horizontal .wizard-nav {
+body .example .wizard.wizard-horizontal ol.wizard-nav {
   list-style: none;
   padding-left: 0;
   margin-bottom: 40px;
 }
-body .example .wizard.wizard-horizontal .wizard-nav .item {
+body .example .wizard.wizard-horizontal ol.wizard-nav li.item {
   display: inline-block;
   margin-right: 20px;
+  width: 100px;
 }
-body .example .wizard.wizard-horizontal .wizard-nav .item span.circle {
+body .example .wizard.wizard-horizontal ol.wizard-nav li.item span.circle {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -513,17 +547,33 @@ body .example .wizard.wizard-horizontal .wizard-nav .item span.circle {
   text-align: center;
   vertical-align: middle;
   line-height: 18px;
-  margin-right: 5px;
+  margin-right: 10px;
 }
-body .example .wizard.wizard-horizontal .wizard-nav .item.active span.circle {
-  width: 32px;
-  height: 32px;
-  line-height: 30px;
+body .example .wizard.wizard-horizontal ol.wizard-nav li.item span.circle span.counter {
+  font-size: 12px;
+  display: inline-block;
+}
+body .example .wizard.wizard-horizontal ol.wizard-nav li.item span.circle span.state {
+  font-size: 12px;
+  display: none;
+}
+body .example .wizard.wizard-horizontal ol.wizard-nav li.item.active span.circle {
   background-color: #ff6600;
-  font-size: 16px;
+}
+body .example .wizard.wizard-horizontal ol.wizard-nav li.item.resolved span.circle span.counter {
+  display: none;
+}
+body .example .wizard.wizard-horizontal ol.wizard-nav li.item.resolved span.circle span.state {
+  display: inline-block;
 }
 body .example .wizard.wizard-horizontal .wizard-cards {
+  position: relative;
   margin-bottom: 20px;
+}
+body .example .wizard.wizard-horizontal .wizard-cards .wizard-card.out {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 body .example .wizard.wizard-vertical {
   background-color: #FAFAFA;
@@ -542,13 +592,17 @@ body .example .wizard.wizard-vertical .wizard-cards .wizard-card span.circle {
   text-align: center;
   vertical-align: middle;
   line-height: 18px;
-  margin-right: 5px;
-  width: 32px;
-  height: 32px;
-  line-height: 30px;
+  margin-right: 10px;
   background-color: #ff6600;
-  font-size: 16px;
   background-color: #999;
+}
+body .example .wizard.wizard-vertical .wizard-cards .wizard-card span.circle span.counter {
+  font-size: 12px;
+  display: inline-block;
+}
+body .example .wizard.wizard-vertical .wizard-cards .wizard-card span.circle span.state {
+  font-size: 12px;
+  display: none;
 }
 body .example .wizard.wizard-vertical .wizard-cards .wizard-card .wizard-card-header {
   padding: 20px 40px 20px 95px;
@@ -564,6 +618,7 @@ body .example .wizard.wizard-vertical .wizard-cards .wizard-card .wizard-card-he
   overflow: hidden;
   vertical-align: text-top;
   color: #999;
+  opacity: 1;
 }
 body .example .wizard.wizard-vertical .wizard-cards .wizard-card .wizard-card-header .expand {
   position: absolute;
@@ -573,25 +628,45 @@ body .example .wizard.wizard-vertical .wizard-cards .wizard-card .wizard-card-he
   line-height: 25px;
 }
 body .example .wizard.wizard-vertical .wizard-cards .wizard-card .wizard-card-body {
-  display: none;
-  padding: 20px 40px;
+  height: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  overflow: hidden;
 }
 body .example .wizard.wizard-vertical .wizard-cards .wizard-card .wizard-card-footer {
-  display: none;
-  padding: 20px 40px;
-  border-top: 1px solid #E6E6E6;
+  height: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  overflow: hidden;
 }
-body .example .wizard.wizard-vertical .wizard-cards .wizard-card.open .wizard-card-header {
+body .example .wizard.wizard-vertical .wizard-cards .wizard-card.active span.circle {
+  background-color: #ff6600;
+}
+body .example .wizard.wizard-vertical .wizard-cards .wizard-card.resolved span.circle span.counter {
+  display: none;
+}
+body .example .wizard.wizard-vertical .wizard-cards .wizard-card.resolved span.circle span.state {
+  display: inline-block;
+}
+body .example .wizard.wizard-vertical .wizard-cards .wizard-card.active .wizard-card-header {
   border-bottom: 1px solid #E6E6E6;
 }
-body .example .wizard.wizard-vertical .wizard-cards .wizard-card.open .wizard-card-header .expand {
+body .example .wizard.wizard-vertical .wizard-cards .wizard-card.active .wizard-card-header .summary {
+  opacity: 0;
+}
+body .example .wizard.wizard-vertical .wizard-cards .wizard-card.active .wizard-card-header .expand {
   display: none;
 }
-body .example .wizard.wizard-vertical .wizard-cards .wizard-card.open .wizard-card-body {
+body .example .wizard.wizard-vertical .wizard-cards .wizard-card.active .wizard-card-body {
+  height: inherit;
   display: block;
+  padding: 20px 40px;
 }
-body .example .wizard.wizard-vertical .wizard-cards .wizard-card.open .wizard-card-footer {
+body .example .wizard.wizard-vertical .wizard-cards .wizard-card.active .wizard-card-footer {
+  height: inherit;
   display: block;
+  padding: 20px 40px;
+  border-top: 1px solid #E6E6E6;
 }
 body .bs-example2 .ungrid-row.summary {
   width: initial;

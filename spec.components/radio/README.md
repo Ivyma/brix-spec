@@ -17,8 +17,8 @@
         </div>
         <div class="content-body">
             <div>
-                <label><input type="radio"> 未选中</label>
-                <label><input type="radio" checked>已选中</label>
+                <label><input type="radio" name="case-base"> 未选中</label>
+                <label><input type="radio" name="case-base" checked>已选中</label>
             </div>
             <div>
                 <label class="disabled"><input type="radio" disabled> 禁用/未选中</label>
@@ -27,8 +27,8 @@
         </div>
     </div>
     <pre><code class="hljs html">
-        <label><input type="radio"> 未选中</label>
-        <label><input type="radio" checked>已选中</label>
+        <label><input type="radio" name="case-base"> 未选中</label>
+        <label><input type="radio" name="case-base" checked>已选中</label>
         <label><input type="radio" disabled> 禁用/未选中</label>
         <label><input type="radio" checked disabled>禁用/已选中</label>
     </code></pre>
@@ -42,10 +42,10 @@
         </div>
         <div class="content-body">
             <ul class="checklist" id="case1">
-                <li><label><input type="radio" name="sss" data-linkage-name="all-1"> 单选1</label></li>
-                <li><label><input type="radio" name="sss" data-linkage-name="all-2"> 单选2</label></li>
+                <li><label><input type="radio" name="case1" data-linkage-name="all-1"> 单选1</label></li>
+                <li><label><input type="radio" name="case1" data-linkage-name="all-2"> 单选2</label></li>
                 <li>
-                    <label><input type="radio" name="sss" data-linkage-name="all"> 单选3</label>
+                    <label><input type="radio" name="case1" data-linkage-name="all"> 单选3</label>
                     <ul class="checklist">
                         <li><label><input type="checkbox" data-linkage-parent-name="all"> 多选1</label></li>
                         <li><label><input type="checkbox" data-linkage-parent-name="all"> 多选2</label></li>
@@ -56,15 +56,15 @@
         </div>
     </div>
     <pre><code class="hljs html">
-        <ul class="checklist">
-            <li><label><input type="radio" name="sss"> 单选1</label></li>
-            <li><label><input type="radio" name="sss"> 单选2</label></li>
+        <ul class="checklist" id="case1">
+            <li><label><input type="radio" name="case1" data-linkage-name="all-1"> 单选1</label></li>
+            <li><label><input type="radio" name="case1" data-linkage-name="all-2"> 单选2</label></li>
             <li>
-                <label><input type="radio" name="sss"> 单选3</label>
+                <label><input type="radio" name="case1" data-linkage-name="all"> 单选3</label>
                 <ul class="checklist">
-                    <li><label><input type="checkbox"> 多选1</label></li>
-                    <li><label><input type="checkbox"> 多选2</label></li>
-                    <li><label><input type="checkbox"> 多选3</label></li>
+                    <li><label><input type="checkbox" data-linkage-parent-name="all"> 多选1</label></li>
+                    <li><label><input type="checkbox" data-linkage-parent-name="all"> 多选2</label></li>
+                    <li><label><input type="checkbox" data-linkage-parent-name="all"> 多选3</label></li>
                 </ul>
             </li>
         </ul>

@@ -3,7 +3,10 @@ define(function() {
     return (function(){/*
 <div class="mb40" style="display: none;">
     <div class="mb40">
-        <div class="fontsize-20">动效规范 <small class="color-999 fontsize-12"></small></div class="fontsize-28">
+        <div>
+            <span class="fontsize-20">动效规范</span>
+            <small class="color-999 fontsize-12"></small>
+        </div>
     </div>
     <div>
         <div class="fontsize-16 mb10">后台产品动效基本规范</div>
@@ -52,7 +55,10 @@ define(function() {
 </div>
 <div class="mb40">
     <div class="mb40">
-        <div class="fontsize-20">真实的动效 <small class="color-999 fontsize-12">符合⽤户的直觉和感知</small></div class="fontsize-28">
+        <div>
+            <span class="fontsize-20">真实的动效</span>
+            <small class="color-999 fontsize-12">符合⽤户的直觉和感知</small>
+        </div>
         <div class="color-999 mt4">动效在设计中不哈仅仅是形式美的存在，它蕴含着空间关系、功能性、系统的意图。并且满⾜⾃然的物理原则，不应动效增加⽤户的理解和认知成本。</div>
     </div>
     <div>
@@ -105,7 +111,10 @@ define(function() {
 </div>
 <div class="mb40">
     <div class="mb40">
-        <div class="fontsize-20">效率优先 <small class="color-999 fontsize-12">响应迅速，操作⾼效</small></div class="fontsize-28">
+        <div>
+            <span class="fontsize-20">效率优先</span>
+            <small class="color-999 fontsize-12">响应迅速，操作⾼效</small>
+        </div>
         <div class="color-999 mt4">效率优先关系到⽤户的每⼀次触发⾏为，因动效的增加影响⽤户的操作是动效设计的前提，强调⽤户的触发动作，弱化⽤户对响应时间的感知、告知⽤户加载的预计完成时间，来提升⽤户的操作信⼼和操作效率。</div>
     </div>
     <div>
@@ -147,7 +156,10 @@ define(function() {
 </div>
 <div class="mb40">
     <div class="mb40">
-        <div class="fontsize-20">遵循法则 <small class="color-999 fontsize-12">节奏统⼀，平滑流畅</small></div class="fontsize-28">
+        <div>
+            <span class="fontsize-20">遵循法则</span>
+            <small class="color-999 fontsize-12">节奏统⼀，平滑流畅</small>
+        </div>
         <div class="color-999 mt4">动效在设计中不哈仅仅是形式美的存在，它蕴含着空间关系、功能性、系统的意图。并且满⾜⾃然的物理原则，不应动效增加⽤户的理解和认知成本。</div>
     </div>
     <div>
@@ -155,7 +167,7 @@ define(function() {
             <div class="fontsize-16 mb10">曲线样式的统⼀</div>
             <p>基于真实的动效的层级梳理，在⼀致性的原则下，梳理出不同的曲线样式，对应在不同⽓氛中曲线规则按照下述适⽤场景划分，使得⽤户在产品曲线的感受是⼀致的，除此之外，这⾥的曲线还应⽤在界⾯间的专场、元素的出现和退出以及动态的反馈中。</p>
             <blockquote>
-                <p>已将函数 Ease and Wizz打包成组，在设计过程中可通过使⽤统⼀函数来获得⼀致体验。</p>
+                <p>已将函数 Ease and Wizz 打包成组，在设计过程中可通过使⽤统⼀函数来获得⼀致体验。</p>
             </blockquote>
             <div class="row">
                 <div class="col-sm-3"><img class="img-responsive" src="placeholder.jpg"></div>

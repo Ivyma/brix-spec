@@ -5,9 +5,17 @@
 label {
     font-weight: normal;
     margin-right: 40px;
+    padding: 9px 0;
+    // line-height: 32px;
     input[type="radio"],
     input[type="checkbox"] {
         margin-right: 10px;
+        &:checked:after {
+            background-color: #FF6600;
+        }
+        &[disabled]:hover {
+            border-color: #E6E6E6;
+        }
     }
     p.desc {
         color: #999;

@@ -1,5 +1,23 @@
-/* global define */
-define(['mock'], function(Mock) {
+/* global define, window */
+define(['mock'], function( /*Mock*/ ) {
+
+	// https://github.com/KyleAMathews/isRetina/blob/master/index.js
+	function isRetina() {
+		var mediaQuery;
+		if (typeof window !== "undefined" && window !== null) {
+			mediaQuery = "(-webkit-min-device-pixel-ratio: 1.25), (min--moz-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5/4), (min-resolution: 1.25dppx)";
+			if (window.devicePixelRatio > 1.25) {
+				return true;
+			}
+			if (window.matchMedia && window.matchMedia(mediaQuery).matches) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	var RETINA = isRetina()
+
 	return {
 		COLORS: [
 			// 品牌色、品牌色 hover、侧导航、表格hover
@@ -37,96 +55,94 @@ define(['mock'], function(Mock) {
 				['GitHub', 'https://github.com/nuysoft/brix-event']
 			]
 		}],
-		// √ 按钮 单选按钮 复选框 下拉框 输入框 文本框 面包屑 翻页器 搜索框 浮层 时间选择器
-		// X 日历 就地编辑 通用信息 表格 页脚 进度条 字段控制器 步骤条 标签切换 滚动条 加载
 		COMPONENTS: [{
 			name: '按钮',
 			resp: 'Button',
-			prev: 'assets/components/按钮.png'
+			prev: RETINA ? 'assets/components/按钮@2x.png' : 'assets/components/按钮.png'
 		}, {
 			name: '单选按钮',
 			resp: 'Radio',
-			prev: 'assets/components/单选.png'
+			prev: RETINA ? 'assets/components/单选@2x.png' : 'assets/components/单选.png'
 		}, {
 			name: '复选框',
 			resp: 'Checkbox',
-			prev: 'assets/components/多选.png'
+			prev: RETINA ? 'assets/components/多选@2x.png' : 'assets/components/多选.png'
 		}, {
 			name: '下拉框',
 			resp: 'Dropdown',
-			prev: 'assets/components/下拉框.png'
+			prev: RETINA ? 'assets/components/下拉框@2x.png' : 'assets/components/下拉框.png'
 		}, {
 			name: '输入框',
 			resp: 'Input',
-			prev: 'assets/components/输入框.png'
+			prev: RETINA ? 'assets/components/输入框@2x.png' : 'assets/components/输入框.png'
 		}, {
 			name: '文本框',
 			resp: 'Textarea',
-			prev: 'assets/components/文本框.png'
+			prev: RETINA ? 'assets/components/文本框@2x.png' : 'assets/components/文本框.png'
 		}, {
 			name: '日历',
 			resp: 'Calendar',
-			prev: 'assets/components/日历.png'
+			prev: RETINA ? 'assets/components/日历@2x.png' : 'assets/components/日历.png'
 		}, {
 			name: '面包屑',
 			resp: 'Breadcrumb',
-			prev: 'assets/components/面包屑.png'
+			prev: RETINA ? 'assets/components/面包屑@2x.png' : 'assets/components/面包屑.png'
 		}, {
 			name: '翻页器',
 			resp: 'Pagination',
-			prev: 'assets/components/翻页器.png'
+			prev: RETINA ? 'assets/components/翻页器@2x.png' : 'assets/components/翻页器.png'
 		}, {
 			name: '搜索框',
 			resp: 'SearchBox',
-			prev: 'assets/components/搜索框.png'
+			prev: RETINA ? 'assets/components/搜索框@2x.png' : 'assets/components/搜索框.png'
 		}, {
 			name: '就地编辑',
 			resp: 'Editable',
-			prev: 'assets/components/就地编辑.png'
+			prev: RETINA ? 'assets/components/就地编辑@2x.png' : 'assets/components/就地编辑.png'
 		}, {
 			name: '通用信息',
 			resp: 'Tooltip',
-			prev: 'assets/components/通用说明.png'
+			prev: RETINA ? 'assets/components/通用说明@2x.png' : 'assets/components/通用说明.png'
 		}, {
 			name: '表格',
 			resp: 'Table',
-			prev: 'assets/components/表格.png'
+			prev: RETINA ? 'assets/components/表格@2x.png' : 'assets/components/表格.png'
 		}, {
 			name: '页脚',
 			resp: 'Footer',
-			prev: 'assets/components/页底.png'
+			prev: RETINA ? 'assets/components/页底@2x.png' : 'assets/components/页底.png'
 		}, {
 			name: '进度条',
 			resp: 'Progress',
-			prev: 'assets/components/进度条.png'
+			prev: RETINA ? 'assets/components/进度条@2x.png' : 'assets/components/进度条.png'
 		}, {
 			name: '字段控制器',
 			resp: 'Field',
-			prev: 'assets/components/字段控制.png'
+			prev: RETINA ? 'assets/components/字段控制@2x.png' : 'assets/components/字段控制.png'
 		}, {
 			name: '步骤条',
 			resp: 'Wizard',
-			prev: 'assets/components/步骤条.png'
+			prev: RETINA ? 'assets/components/步骤条@2x.png' : 'assets/components/步骤条.png'
 		}, {
 			name: '浮层',
 			resp: 'Dialog',
-			prev: 'assets/components/浮层.png'
+			prev: RETINA ? 'assets/components/浮层@2x.png' : 'assets/components/浮层.png'
 		}, {
 			name: '时间选择器',
 			resp: 'HourPicker',
-			prev: 'assets/components/时间选择器.png'
+			prev: RETINA ? 'assets/components/时间选择器@2x.png' : 'assets/components/时间选择器.png'
 		}, {
 			name: '标签切换',
 			resp: 'Tab',
-			prev: 'assets/components/Tab切换.png'
+			prev: RETINA ? 'assets/components/Tab切换@2x.png' : 'assets/components/Tab切换.png'
 		}, {
 			name: '滚动条',
 			resp: 'Scrollbar',
-			prev: 'assets/components/滚动条.png'
+			prev: RETINA ? 'assets/components/滚动条@2x.png' : 'assets/components/滚动条.png'
 		}, {
 			name: '加载',
 			resp: 'Spin',
-			prev: 'assets/components/加载.png'
+			prev: RETINA ? 'assets/components/加载@2x.png' : 'assets/components/加载.png'
 		}]
 	}
 })

@@ -44,10 +44,9 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <textarea class="form-control" rows="3" placeholder="请输入描述信息" 
-                            onkeyup="$('#maxlength-tips').text(Math.max(0, 100 - this.value.length))" 
+                            onkeyup="$(this).next()[this.value.length ? 'show' : 'hide'](); $('#maxlength-tips').text(Math.max(0, 100 - this.value.length))" 
                             data-parsley-trigger="change keyup" data-parsley-maxlength="100"></textarea>
-                        <div></div>
-                        <ul class="parsley-errors-list filled">
+                        <ul class="parsley-errors-list filled" style="display: none;">
                             <li class="parsley-maxlength">还可输入 <span id="maxlength-tips">100</span> 个字</li>
                         </ul>
                     </div>

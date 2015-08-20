@@ -9,21 +9,23 @@ define(function() {
     <div class="row">
         <% _.each(COMPONENTS, function(item, index){ %>
         <div class="col-md-3">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <a href="readme.html?name=<%= item.resp %>"><%= item.name %> <%= item.resp %></a>
+            <a href="readme.html?name=<%= item.resp %>">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <%= item.name %> <%= item.resp %>
+                    </div>
+                    <div class="panel-body">
+                        <img src="<%= item.prev %>">
+                    </div>
+                    <div class="panel-footer hide">
+                        示例
+                        配置
+                        属性
+                        方法
+                        事件
+                    </div>
                 </div>
-                <div class="panel-body">
-                    <img src="<%= item.preview %>" class="img-rounded">
-                </div>
-                <div class="panel-footer">
-                    <a href="#示例">示例</a>
-                    <a href="#配置">配置</a>
-                    <a href="#属性">属性</a>
-                    <a href="#方法">方法</a>
-                    <a href="#事件">事件</a>
-                </div>
-            </div>
+            </a>
         </div>
         <% }) %>
     </div>

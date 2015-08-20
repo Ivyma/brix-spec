@@ -14,40 +14,64 @@
     text-align: center;
     vertical-align: middle;
     line-height: 18px;
-    margin-right: 5px;
+    margin-right: 10px;
+    span.counter {
+        font-size: 12px;
+        display: inline-block;
+    }
+    span.state {
+        font-size: 12px;
+        display: none;
+    }
 }
 
 .circle-active() {
-    width: 32px;
-    height: 32px;
-    line-height: 30px;
+    // width: 32px;
+    // height: 32px;
+    // line-height: 30px;
     background-color: @brand;
-    font-size: 16px;
+    // font-size: 16px;
 }
 
 body .example {
     .wizard.wizard-horizontal {
-        .wizard-nav {
+        ol.wizard-nav {
             list-style: none;
             padding-left: 0;
             margin-bottom: 40px;
-            .item {
+            li.item {
                 display: inline-block;
                 margin-right: 20px;
+                width: 100px;
                 span.circle {
-                    .circle()
+                    .circle();
                 }
                 &.active {
                     span.circle {
-                        .circle-active()
+                        .circle-active();
+                    }
+                }
+                &.resolved {
+                    span.circle {
+                        span.counter {
+                            display: none;
+                        }
+                        span.state {
+                            display: inline-block;
+                        }
                     }
                 }
             }
         }
         .wizard-cards {
+            position: relative;
             margin-bottom: 20px;
             .wizard-card {
-
+                &.out {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
             }
         }
         .wizard-footer {
@@ -79,6 +103,7 @@ body .example {
                         overflow: hidden;
                         vertical-align: text-top;
                         color: #999;
+                        opacity: 1;
                     }
                     .expand {
                         position: absolute;
@@ -89,27 +114,57 @@ body .example {
                     }
                 }
                 .wizard-card-body {
-                    display: none;
-                    padding: 20px 40px;
+                    // display: none;                    
+                    height: 0;
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    overflow: hidden;
                 }
                 .wizard-card-footer {
-                    display: none;
-                    padding: 20px 40px;
-                    border-top: 1px solid #E6E6E6;
+                    // display: none;
+                    height: 0;
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    overflow: hidden;
                 }
-
-                &.open {
+                // .wizard-card.active
+                &.active {
+                    span.circle {
+                        .circle-active();
+                    }
+                }
+                &.resolved {
+                    span.circle {
+                        span.counter {
+                            display: none;
+                        }
+                        span.state {
+                            display: inline-block;
+                        }
+                    }
+                }
+                &.active {
                     .wizard-card-header {
                         border-bottom: 1px solid #E6E6E6;
+
+                        .summary {
+                            // display: none;
+                            opacity: 0;
+                        }
                         .expand {
                             display: none;
                         }
                     }
                     .wizard-card-body {
+                        height: inherit;
                         display: block;
+                        padding: 20px 40px;
                     }
                     .wizard-card-footer {
+                        height: inherit;
                         display: block;
+                        padding: 20px 40px;
+                        border-top: 1px solid #E6E6E6;
                     }
                 }
             }
