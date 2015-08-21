@@ -538,7 +538,11 @@ label input[type="checkbox"] {
 }
 label input[type="radio"]:checked:after,
 label input[type="checkbox"]:checked:after {
-  background-color: #FF6600;
+  background-color: #ff6600;
+}
+label input[type="radio"][disabled]:after,
+label input[type="checkbox"][disabled]:after {
+  background-color: #ccc;
 }
 label input[type="radio"][disabled]:hover,
 label input[type="checkbox"][disabled]:hover {

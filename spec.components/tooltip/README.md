@@ -119,11 +119,11 @@
                 <div class="ungrid-col" style="width: 200px; padding: 60px 30px; text-align: center; vertical-align: top; background-color: #423f48;">
                 </div>
                 <div class="ungrid-col" style="padding: 40px; background-color: #fafafa; position: relative;">
-                    <div class="contextual-tootip bg-info mb20">
+                    <p class="flat-text small"></p>
+                    <div class="contextual-tootip bg-info mt10 mb10">
                         <span class="zsfont glyph color-warning">&#xf00b7;</span>
                         <span>您上传的创意中有个 1 个不符合当前的设置。</span>
                     </div>
-                    <p class="flat-text small"></p>
                     <p class="flat-text full-width mt10"></p>
                     <p class="flat-text full-width mt10"></p>
                 </div>

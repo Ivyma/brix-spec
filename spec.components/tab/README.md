@@ -40,7 +40,7 @@
             <div class="color-999 mt6">为防止鼠标滑过时误操作，需设定300ms的延迟时间。 </div>
         </div>
         <div class="content-body">
-            <ul class="mm-tabs clearfix mb20" style="" data-content="#case1-content">
+            <ul class="mm-tabs clearfix mb20" style="" data-event="mouseenter" data-delay="300" data-content="#case1-content">
                 <li class="active"><a href="javascript:;">标题选项 1</a></li>
                 <li><a href="javascript:;">标题选项 2</a></li>
                 <li><a href="javascript:;">标题选项 3</a></li>
@@ -115,16 +115,23 @@
 
 <script type="text/javascript">
     require(['jquery', 'underscore'], function($, _) {
-        $('ul.mm-tabs').on('click', 'li', function(event) {
-            var contents = $(event.delegateTarget).attr('data-content')
-            if (contents) {
-                $(contents).children().hide()
-                    .eq(
-                        $(event.currentTarget).index()
-                    ).removeClass('hide').show()
-            }
-            $(event.currentTarget).addClass('active')
-                .siblings().removeClass('active')
+        _.each($('ul.mm-tabs'), function(item, index){
+            item = $(item)
+            var type = item.attr('data-event') || 'click'
+            var delay = item.attr('data-delay') || 0
+            item.on(type, 'li', function(event) {
+                setTimeout(function() {
+                    var contents = $(event.delegateTarget).attr('data-content')
+                    if (contents) {
+                        $(contents).children().hide()
+                            .eq(
+                                $(event.currentTarget).index()
+                            ).removeClass('hide').show()
+                    }
+                    $(event.currentTarget).addClass('active')
+                        .siblings().removeClass('active')
+                }, delay)
+            })
         })
     })
 </script>

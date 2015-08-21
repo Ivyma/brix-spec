@@ -1,3 +1,5 @@
+@import "../variables.less";
+
 .radio {
     
 }
@@ -11,7 +13,10 @@ label {
     input[type="checkbox"] {
         margin-right: 10px;
         &:checked:after {
-            background-color: #FF6600;
+            background-color: @brand;
+        }
+        &[disabled]:after {
+            background-color: #ccc;
         }
         &[disabled]:hover {
             border-color: #E6E6E6;

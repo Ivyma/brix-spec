@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="800px" height="400px" viewBox="0 0 800 400" enable-background="new 0 0 800 400" xml:space="preserve">
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#FF6600" d="M387.166,43.917h28c5.522,0,10,4.478,10,10v6
+	c0,5.522-4.478,10-10,10h-28c-5.523,0-10-4.478-10-10v-6C377.166,48.395,381.643,43.917,387.166,43.917z"/>
+<rect x="388.667" y="50.25" fill-rule="evenodd" clip-rule="evenodd" fill="none" width="24.999" height="13.333"/>
+<text transform="matrix(1 0 0 1 388.667 60.5625)" fill="#FFFFFF" font-family="'FZLTHK--GBK1-0'" font-size="12">平滑</text>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#FF6600" d="M387.832,104.25h28c5.522,0,10,4.478,10,10v6
+	c0,5.522-4.478,10-10,10h-28c-5.523,0-10-4.478-10-10v-6C377.832,108.728,382.309,104.25,387.832,104.25z"/>
+<rect x="389.333" y="110.583" fill-rule="evenodd" clip-rule="evenodd" fill="none" width="24.417" height="13.333"/>
+<text transform="matrix(1 0 0 1 389.333 120.8955)" fill="#FFFFFF" font-family="'FZLTHK--GBK1-0'" font-size="12">阻尼</text>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#FF6600" d="M387.166,164.917h28c5.522,0,10,4.478,10,10v6
+	c0,5.522-4.478,10-10,10h-28c-5.523,0-10-4.478-10-10v-6C377.166,169.395,381.643,164.917,387.166,164.917z"/>
+<rect x="388.667" y="171.25" fill-rule="evenodd" clip-rule="evenodd" fill="none" width="24.999" height="13.333"/>
+<text transform="matrix(1 0 0 1 388.667 181.5625)" fill="#FFFFFF" font-family="'FZLTHK--GBK1-0'" font-size="12">渐快</text>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#FF6600" d="M387.832,224.25h28c5.522,0,10,4.478,10,10v6
+	c0,5.522-4.478,10-10,10h-28c-5.523,0-10-4.478-10-10v-6C377.832,228.728,382.309,224.25,387.832,224.25z"/>
+<rect x="389.333" y="230.583" fill-rule="evenodd" clip-rule="evenodd" fill="none" width="24.581" height="13.333"/>
+<text transform="matrix(1 0 0 1 389.333 240.8955)" fill="#FFFFFF" font-family="'FZLTHK--GBK1-0'" font-size="12">惯性</text>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#FF6600" d="M387.832,285.25h28c5.522,0,10,4.478,10,10v6
+	c0,5.522-4.478,10-10,10h-28c-5.523,0-10-4.478-10-10v-6C377.832,289.728,382.309,285.25,387.832,285.25z"/>
+<rect x="389.333" y="291.583" fill-rule="evenodd" clip-rule="evenodd" fill="none" width="24.999" height="13.333"/>
+<text transform="matrix(1 0 0 1 389.333 301.8955)" fill="#FFFFFF" font-family="'FZLTHK--GBK1-0'" font-size="12">弹力  </text>
+<rect x="347.668" y="22.667" fill-rule="evenodd" clip-rule="evenodd" fill="none" width="131.666" height="54.667"/>
+<text transform="matrix(1 0 0 1 347.668 32.98)" fill="#FF6600" font-family="'FZLTHK--GBK1-0'" font-size="12">舒缓</text>
+<rect x="348.002" y="355.668" fill-rule="evenodd" clip-rule="evenodd" fill="none" width="131.666" height="54.667"/>
+<text transform="matrix(1 0 0 1 348.002 365.9805)" fill="#FF6600" font-family="'FZLTHK--GBK1-0'" font-size="12">强烈</text>
+<rect x="625.336" y="355.668" fill-rule="evenodd" clip-rule="evenodd" fill="none" width="131.666" height="54.667"/>
+<text transform="matrix(1 0 0 1 625.3359 365.9805)" fill="#FF6600" font-family="'FZLTHK--GBK1-0'" font-size="12">舒缓</text>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="737" y1="221" x2="435.3162" y2="221" gradientTransform="matrix(-4.371139e-08 -1 1 -4.371139e-08 133 780.9995)">
+	<stop  offset="0" style="stop-color:#FFF1E8"/>
+	<stop  offset="0.0906" style="stop-color:#FFEBDF"/>
+	<stop  offset="0.2414" style="stop-color:#FFDCC5"/>
+	<stop  offset="0.4337" style="stop-color:#FFC39C"/>
+	<stop  offset="0.6601" style="stop-color:#FFA162"/>
+	<stop  offset="0.9124" style="stop-color:#FF7519"/>
+	<stop  offset="0.9944" style="stop-color:#FF6600"/>
+</linearGradient>
+<rect x="347" y="44" fill-rule="evenodd" clip-rule="evenodd" fill="url(#SVGID_1_)" width="14" height="302"/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="765" y1="407" x2="463.3172" y2="407" gradientTransform="matrix(1 0 0 1 -116 -68)">
+	<stop  offset="0" style="stop-color:#FFF1E8"/>
+	<stop  offset="0.0906" style="stop-color:#FFEBDF"/>
+	<stop  offset="0.2414" style="stop-color:#FFDCC5"/>
+	<stop  offset="0.4337" style="stop-color:#FFC39C"/>
+	<stop  offset="0.6601" style="stop-color:#FFA162"/>
+	<stop  offset="0.9124" style="stop-color:#FF7519"/>
+	<stop  offset="0.9944" style="stop-color:#FF6600"/>
+</linearGradient>
+<rect x="347" y="332" fill-rule="evenodd" clip-rule="evenodd" fill="url(#SVGID_2_)" width="302" height="14"/>
+<line fill="none" stroke="#B4B4B4" stroke-width="2" stroke-miterlimit="10" x1="328" y1="345" x2="69" y2="345"/>
+<line fill="none" stroke="#F0F0F0" stroke-width="2" stroke-miterlimit="10" x1="328" y1="285" x2="69" y2="285"/>
+<line fill="none" stroke="#B4B4B4" stroke-width="2" stroke-miterlimit="10" x1="328" y1="285" x2="256" y2="285"/>
+<rect x="213.5" y="355.5" fill="none" width="114.5" height="14.5"/>
+<text transform="matrix(1 0 0 1 213.5 365.7715)" fill="#666666" font-family="'MicrosoftYaHeiUILight'" font-size="12">底层页面    宽度1280</text>
+<rect x="213.5" y="295.5" fill="none" width="114.5" height="14.5"/>
+<text transform="matrix(1 0 0 1 309.1973 305.7715)" fill="#666666" font-family="'MicrosoftYaHeiUILight'" font-size="12">tips</text>
+<line fill="none" stroke="#F0F0F0" stroke-width="2" stroke-miterlimit="10" x1="328" y1="225" x2="69" y2="225"/>
+<line fill="none" stroke="#B4B4B4" stroke-width="2" stroke-miterlimit="10" x1="328" y1="225" x2="196" y2="225"/>
+<rect x="213.5" y="235.5" fill="none" width="114.5" height="14.5"/>
+<text transform="matrix(1 0 0 1 244 245.7715)" fill="#666666" font-family="'MicrosoftYaHeiUILight'" font-size="12">组件、跟随浮层</text>
+<line fill="none" stroke="#F0F0F0" stroke-width="2" stroke-miterlimit="10" x1="328" y1="165" x2="69" y2="165"/>
+<line fill="none" stroke="#B4B4B4" stroke-width="2" stroke-miterlimit="10" x1="328" y1="165" x2="69" y2="165"/>
+<rect x="213.5" y="175.5" fill="none" width="114.5" height="14.5"/>
+<text transform="matrix(1 0 0 1 268 185.7715)" fill="#666666" font-family="'MicrosoftYaHeiUILight'" font-size="12">投影遮罩层</text>
+<line fill="none" stroke="#F0F0F0" stroke-width="2" stroke-miterlimit="10" x1="328" y1="105" x2="69" y2="105"/>
+<line fill="none" stroke="#B4B4B4" stroke-width="2" stroke-miterlimit="10" x1="328" y1="105" x2="142" y2="105"/>
+<rect x="213.5" y="115.5" fill="none" width="114.5" height="14.5"/>
+<text transform="matrix(1 0 0 1 268 125.7715)" fill="#666666" font-family="'MicrosoftYaHeiUILight'" font-size="12">页面浮出层</text>
+<line fill="none" stroke="#F0F0F0" stroke-width="2" stroke-miterlimit="10" x1="328" y1="45" x2="69" y2="45"/>
+<line fill="none" stroke="#B4B4B4" stroke-width="2" stroke-miterlimit="10" x1="328" y1="45" x2="69" y2="45"/>
+<rect x="213.5" y="55.5" fill="none" width="114.5" height="14.5"/>
+<text transform="matrix(1 0 0 1 292 65.7715)" fill="#666666" font-family="'MicrosoftYaHeiUILight'" font-size="12">新页面</text>
+</svg>

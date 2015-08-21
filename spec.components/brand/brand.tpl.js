@@ -685,7 +685,7 @@ define(function() {
             </ul>
         </div>
         <div>
-            <a href="css.html">详见样式</a>
+            <a href="css.html#字体 Font">详见样式</a>
         </div>
     </div>
 </div>
