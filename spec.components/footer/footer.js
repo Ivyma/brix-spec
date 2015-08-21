@@ -38,9 +38,6 @@ define(
                                 '<style type="text/css" scoped>'
                             )
                         )
-
-                        require(['bower_components/jquery.scoped.js'])
-
                     }
                 })
             }

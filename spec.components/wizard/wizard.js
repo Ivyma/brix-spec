@@ -47,7 +47,7 @@ define(
                 if (this.options.horizontal) { // 水平
                     var cursor = this.options.cursor
                     var total = this.options.total
-                    newCursor = (cursor + dir) % this.options.total
+                    var newCursor = (cursor + dir) % this.options.total
 
                     // wizard-nav
                     var lis = $('ol.wizard-nav li.item', this.element)
