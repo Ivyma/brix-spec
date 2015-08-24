@@ -101,7 +101,7 @@ define(['mock'], function( /*Mock*/ ) {
 			prev: RETINA ? 'assets/components/就地编辑@2x.png' : 'assets/components/就地编辑.png'
 		}, {
 			name: '通用信息',
-			resp: 'Tooltip',
+			resp: 'Message',
 			prev: RETINA ? 'assets/components/通用说明@2x.png' : 'assets/components/通用说明.png'
 		}, {
 			name: '表格',
@@ -141,7 +141,7 @@ define(['mock'], function( /*Mock*/ ) {
 			prev: RETINA ? 'assets/components/滚动条@2x.png' : 'assets/components/滚动条.png'
 		}, {
 			name: '加载',
-			resp: 'Spin',
+			resp: 'Loading',
 			prev: RETINA ? 'assets/components/加载@2x.png' : 'assets/components/加载.png'
 		}]
 	}

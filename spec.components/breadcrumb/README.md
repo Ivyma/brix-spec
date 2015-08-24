@@ -3,13 +3,21 @@
     <div class="color-999 mt4">面包屑作为辅助和补充的导航方式，表达内容的归属层级关系。通常出现于主导航之下，内容之上，用于表明用户当前所在的位置，并提供给用户返回之前任何一个页面的链接。帮助表达内容归属层级关系，属于关联性导航。</div>
 </div>
 
+<div class="usage mb40">
+    <div>基本规范</div>
+    <ol>
+        <li>位置通常水平的出现在主导航的下方，内容区块的上方</li>
+        <li>最常见的样式是横向的文字链结，层级不宜过深，建议保持在三级以内，每一层都必须可点击</li>
+    </ol>
+</div>
+
 <div class="fontsize-16 mb10">示例 <small>Examples</small></div>
 
 <div class="example">
     <div class="content">
         <div class="content-header">
             <div>基础用法</div>
-            <div class="color-999 mt6">最常见的面包屑的样式是：横向的文字链接，由大于号“>”分开，这个符号暗示了它们的层级关系，每个层级的文字均可点击。</div>
+            <div class="color-999 mt6 hide"></div>
         </div>
         <div class="content-body">
             <ol class="breadcrumb">

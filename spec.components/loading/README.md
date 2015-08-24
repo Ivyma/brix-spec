@@ -4,7 +4,7 @@
 </div>
 
 <div class="usage mb40">
-    <div>基础用法</div>
+    <div>基本规范</div>
     <ol>
         <li>等待时间在 0.1 秒内：在用户感知中算是即时，不需要 loading 显示。</li>
         <li>等待时间为 0.1 ～ 1秒：用户即能感知延迟，需要 loading 显示。</li>

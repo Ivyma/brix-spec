@@ -82,6 +82,7 @@
                 $(document.body).find('pre code').each(function(index, code) {
                     hljs.highlightBlock(code)
                 })
+
                 $('[data-resp="' + query.name + '"]').addClass('active')
 
                 Clipboard.init()

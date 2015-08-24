@@ -3,13 +3,20 @@
     <div class="color-999 mt4">用户可以就在当前页面内容所处的地方直接编辑该内容，而无须跳转到另一个新页面去编辑。</div>
 </div>
 
+<div class="usage mb40">
+    <div>基本规范</div>
+    <ol>
+        <li>当用户移动到页面上的文字时，显示可编辑的图标，点击页面上的文字/图标时，该文字就会出现在一个编辑框中，用户对文字进行修改完成后点击确认按钮或点击编辑框外其余区域，新的文本将更新至服务器，然后编辑框消失，显示更新后的文本。</li>
+    </ol>
+</div>
+
 <div class="fontsize-16 mb10">示例 <small>Examples</small></div>
 
 <div class="example">
     <div class="content">
         <div class="content-header">
             <div>基础用法</div>
-            <div class="color-999 mt6">当用户移动到页面上的文字时，显示可编辑的图标，点击页面上的文字/图标时，该文字就会出现在一个编辑框中，用户对文字进行修改完成后点击确认按钮或点击编辑框外其余区域，新的文本将更新至服务器，然后编辑框消失，显示更新后的文本。</div>
+            <div class="color-999 mt6"></div>
         </div>
         <div class="content-body">
             <!-- <span bx-name="components/editable">文字内容</span> -->
@@ -22,9 +29,7 @@
             </div>
         </div>
     </div>
-    <pre class="example-pre"><code class="hljs html">
-        TODO
-    </code></pre>
+    <pre class="example-pre"><code class="hljs html"></code></pre>
 </div>
 
 <% 
@@ -89,9 +94,7 @@
             </table>
         </div>
     </div>
-    <pre class="example-pre"><code class="hljs html">
-        TODO
-    </code></pre>
+    <pre class="example-pre"><code class="hljs html"></code></pre>
 </div>
 <div class="example">
     <div class="content">
@@ -111,9 +114,7 @@
             </div>
         </div>
     </div>
-    <pre class="example-pre"><code class="hljs html">
-        TODO
-    </code></pre>
+    <pre class="example-pre"><code class="hljs html"></code></pre>
 </div>
 
 <script>

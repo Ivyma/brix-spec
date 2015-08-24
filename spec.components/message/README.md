@@ -1,7 +1,18 @@
 <!-- http://ademo.alicdn.com/private/system/vd_assets/assets/000/171/613/46/45/f2/06/ef3088875f35e401a53d6873/original/%E9%80%9A%E7%94%A8%E4%BF%A1%E6%81%AF2.png -->
 <div class="mb40">
-    <div class="fontsize-20">通用信息 <small></small></div>
+    <div class="fontsize-20">通用信息 <small>Message</small></div>
     <div class="color-999 mt4">任何一个产品，即使用户界面做的再好，也离不开用户引导和信息提示。当需要告诉用户要做什么，或将要了解的信息传递给用户时，最直接的方式是使用文字。</div>
+</div>
+
+<div class="usage mb40">
+    <div>基本规范</div>
+    <ol>
+        <li>资讯：用户知道即可的信息。例如：双11 资讯</li>
+        <li>疑问：用户需要做决定的信息。例如：XXX已邀请你，是否接受？</li>
+        <li>成功：用户操作已成功。例如：宝贝发布成功。</li>
+        <li>警告：需要用户知道并采取行动的事件。例如：宝贝即将过期。</li>
+        <li>错误：用户操作已失效或是需要马上采取行动的问题。例如：宝贝已经失效，提交失败</li>
+    </ol>
 </div>
 
 <div class="fontsize-16 mb10">示例 <small>Examples</small></div>
@@ -10,60 +21,60 @@
     <div class="content">
         <div class="content-header">
             <div>基础用法</div>
-            <div class="color-999 mt6">提示，诠释当前需要提示内容的信息，依附于所提示的内容显示。</div>
-            <ol>
+            <div class="color-999 mt6 hide">提示，诠释当前需要提示内容的信息，依附于所提示的内容显示。</div>
+            <ol class="hide">
                 <li>alt：图片的XHTML提示信息，主要为了SEO优化和低端环境下的提示；</li>
                 <li>title：文字、操作的解释，大多数情况下用于段落显示不全的提示信息；</li>
                 <li>tips：对信息的对话云式的提示，用作在当前区域的提示。</li>
             </ol>
         </div>
         <div class="content-body">
-            <div class="contextual-tootip bg-info mb40">
+            <div class="contextual-message bg-info mb40">
                 <span class="zsfont glyph" style="color: #CBCBCB;">&#xe642;</span>
                 <span>XXX 创意已经通过审核</span>
             </div>
-            <div class="contextual-tootip bg-info mb40">
+            <div class="contextual-message bg-info mb40">
                 <span class="zsfont glyph color-primary">&#xe629;</span>
                 <span>确定要删除这个创意吗？</span>
                 <a href="javascript:;" class="ml40">删除</a>
                 <a href="javascript:;" class="ml20 color-gray">取消</a>
             </div>
-            <div class="contextual-tootip bg-info mb40">
+            <div class="contextual-message bg-info mb40">
                 <span class="zsfont glyph color-success">&#xf0156;</span>
                 <span>恭喜，您的计划已经创建完成</span>
             </div>
-            <div class="contextual-tootip bg-info mb40">
+            <div class="contextual-message bg-info mb40">
                 <span class="zsfont glyph color-warning">&#xf00b7;</span>
                 <span>您的账户余额不足，请尽快充值。</span>
                 <a href="javascript;:" class="ml40">去充值</a>
             </div>
-            <div class="contextual-tootip bg-info">
+            <div class="contextual-message bg-info">
                 <span class="zsfont glyph color-warning">&#xf00b7;</span>
                 <span>对不起，当前的修改提交失败，请重试。</span>
             </div>
         </div>
     </div>
     <pre><code class="hljs html">
-        <div class="contextual-tootip bg-info">
+        <div class="contextual-message bg-info">
             <span class="zsfont glyph" style="color: #CBCBCB;">&#xe642;</span>
             <span>XXX 创意已经通过审核</span>
         </div>
-        <div class="contextual-tootip bg-info">
+        <div class="contextual-message bg-info">
             <span class="zsfont glyph color-primary">&#xe629;</span>
             <span>确定要删除这个创意吗？</span>
             <a href="javascript:;" class="ml40">删除</a>
             <a href="javascript:;" class="ml20 color-gray">取消</a>
         </div>
-        <div class="contextual-tootip bg-info">
+        <div class="contextual-message bg-info">
             <span class="zsfont glyph color-success">&#xf0156;</span>
             <span>恭喜，您的计划已经创建完成</span>
         </div>
-        <div class="contextual-tootip bg-info">
+        <div class="contextual-message bg-info">
             <span class="zsfont glyph color-warning">&#xf00b7;</span>
             <span>您的账户余额不足，请尽快充值。</span>
             <a href="javascript;:" class="ml40">去充值</a>
         </div>
-        <div class="contextual-tootip bg-info">
+        <div class="contextual-message bg-info">
             <span class="zsfont glyph color-warning">&#xf00b7;</span>
             <span>对不起，当前的修改提交失败，请重试。</span>
         </div>
@@ -120,7 +131,7 @@
                 </div>
                 <div class="ungrid-col" style="padding: 40px; background-color: #fafafa; position: relative;">
                     <p class="flat-text small"></p>
-                    <div class="contextual-tootip bg-info mt10 mb10">
+                    <div class="contextual-message bg-info mt10 mb10">
                         <span class="zsfont glyph color-warning">&#xf00b7;</span>
                         <span>您上传的创意中有个 1 个不符合当前的设置。</span>
                     </div>
@@ -151,7 +162,7 @@
                 <div class="ungrid-col" style="width: 200px; padding: 60px 30px; text-align: center; vertical-align: top; background-color: #423f48;">
                 </div>
                 <div class="ungrid-col" style="padding: 72px 40px 40px 40px; background-color: #fafafa; position: relative;">
-                    <div class="mm-tooltip-overlay">
+                    <div class="mm-message-overlay">
                         <span>您的账户余额不足，如不及时充值将会停止投放。</span>
                     </div>
                     <p class="flat-text small"></p>
@@ -174,7 +185,7 @@
         </div>
         <div class="content-body" style="padding-right: 0; padding-bottom: 0;">
             <div style="position: relative;">
-                <div class="mm-tooltip-top">
+                <div class="mm-message-top">
                     <span>您的账户被禁用，无法进行相关操作，如果有疑问请与客服联系。</span>
                 </div>
                 <div style="height: 50px; background-color: #FF6600;"></div>

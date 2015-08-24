@@ -3,13 +3,20 @@
     <div class="color-999 mt4">进度条用来显示载入内容的进度，不断的提醒用户当前正在处理运行时间较长的操作。确定性的进度随着时间呈线性递增，使用于已明确知晓所要载入内容数量的场景，可显示操作已完成部分的百分比。而非确定性的进度则表达目前的操作正在进行，常用于“加载”。</div>
 </div>
 
+<div class="usage mb40">
+    <div>基本规范</div>
+    <ol>
+        <li>有明确载入内容数量的进度条场景，需显示已完成部分的百分比并随着时间呈线性递增； 而非确定性的进度则表达目前的操作正在进行，常用于“加载”</li>
+    </ol>
+</div>
+
 <div class="fontsize-16 mb10">示例 <small>Examples</small></div>
 
 <div class="example">
     <div class="content">
         <div class="content-header">
             <div>基础用法</div>
-            <ol>
+            <ol class="hide">
                 <li>若时间持续2秒以上，10秒以下，则在进度条的上方显示任务的标题，由于发生的情况较明显，不用提供状态及进度百分比。任务完成后，隐藏 进度条，显示成功文案。</li>
                 <li>若时间持续10秒以上，则在进度条的下方显示进度状态，右上角显示进度百分比，同时为用户提供中止操作的入口。</li>
             </ol>
@@ -72,9 +79,7 @@
             </div>
         </div>
     </div>
-    <pre class="example-pre"><code class="hljs html">
-        TODO
-    </code></pre>
+    <pre class="example-pre"><code class="hljs html"></code></pre>
 </div>
 
 <div class="example">
@@ -118,9 +123,7 @@
             </div>
         </div>
     </div>
-    <pre class="example-pre"><code class="hljs html">
-        TODO
-    </code></pre>
+    <pre class="example-pre"><code class="hljs html"></code></pre>
 </div>
 
 <div class="example">
@@ -142,7 +145,5 @@
             </div>
         </div>
     </div>
-    <pre class="example-pre"><code class="hljs html">
-        TODO
-    </code></pre>
+    <pre class="example-pre"><code class="hljs html"></code></pre>
 </div>

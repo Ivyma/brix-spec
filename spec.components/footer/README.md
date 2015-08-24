@@ -3,6 +3,13 @@
     <!-- <div class="color-999 mt4">TODO</div> -->
 </div>
 
+<div class="usage mb40 hide">
+    <div>基本规范</div>
+    <ol>
+        
+    </ol>
+</div>
+
 <div class="fontsize-16 mb10">示例 <small>Examples</small></div>
 
 <div class="example">

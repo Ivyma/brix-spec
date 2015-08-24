@@ -3,13 +3,22 @@
     <div class="color-999 mt4">搜索框是帮助用户在海量内容中缩小范畴，快速获取信息的组件。只要用户开始输入，系统将会提供一组不断更新的查询建议或消除歧义的选项，帮助他们加快输入过程并编写有效的查询条件。</div>
 </div>
 
+<div class="usage mb40">
+    <div>基本规范</div>
+    <ol>
+        <li>搜索必须要有默认的搜索建议，如“请输入关键字搜索”</li>
+        <li>输入搜索建议 </li>
+        <li>搜索建议凸显为匹配的部分，与其他部分做区分 </li>
+    </ol>
+</div>
+
 <div class="fontsize-16 mb10">示例 <small>Examples</small></div>
 
 <div class="example">
     <div class="content">
         <div class="content-header">
             <div>基础用法</div>
-            <ol>
+            <ol class="hide">
                 <li>搜索必须要有默认的搜索建议 ，如“请输入关键词搜索”。</li>
                 <li>搜索的匹配方式 要根据实际结果自动完成搜索建议。</li>
                 <li>搜索建议中匹配的部分与其它文字区分开。</li>

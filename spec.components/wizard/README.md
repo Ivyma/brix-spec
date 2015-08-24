@@ -3,13 +3,22 @@
     <div class="color-999 mt4">步骤条可以帮助用户对操作流程长度和步骤有个预期，并且知道自己当前在哪个步骤。同时也可以对用户的任务完成度有明确的度量。</div>
 </div>
 
+<div class="usage mb40">
+    <div>基本规范</div>
+    <ol>
+        <li>适合使用于前后有依存 (dependencies) 的操作（例：第一步不完成无法做第二步）</li>
+        <li>Wizard 中的每一个步骤流程都必须要在页面上直观进行操作，不可使用弹窗代表步骤流程</li>
+        <li>非常长的操作（3步以上）, 建议不多于5步</li>
+    </ol>
+</div>
+
 <div class="fontsize-16 mb10">示例 <small>Examples</small></div>
 
 <div class="example">
     <div class="content">
         <div class="content-header">
             <div>基础用法</div>
-            <ol>
+            <ol class="hide">
                 <li>前后有依存的操作（例：第一步不完成无法做第二步）</li>
                 <li>非常长的操作（3步以上）, 建议不多于 5 步</li>
             </ol>

@@ -3,13 +3,21 @@
     <div class="color-999 mt4">TAB是通过折叠信息紧凑展示页面内容，避免在有限的显示区域内展示过多信息的一种方式。根据信息和内容本身的属性，以及用户任务，对所有的信息和内容进行分类，而不减少网页的信息容量。</div>
 </div>
 
+<div class="usage mb40">
+    <div>基本规范</div>
+    <ol>
+        <li>可以使用 tabs 来切换不同的表格，不可以在表格内使用 tabs。</li>
+        <li>避免超过 2 层的 Tabs。</li>
+    </ol>
+</div>
+
 <div class="fontsize-16 mb10">示例 <small>Examples</small></div>
 
 <div class="example">
     <div class="content">
         <div class="content-header">
             <div>基础用法</div>
-            <ol>
+            <ol class="hide">
                 <li>存在多个同一层级、并列关系的分组。</li>
                 <li>各分组对应不同的内容，不必同时展现。</li>
                 <li>分组的数量和内容不随TAB的切换而改变。</li>

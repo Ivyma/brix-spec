@@ -3,17 +3,17 @@ define(
     [
         'jquery', 'underscore',
         'brix/base',
-        './tooltip.tpl.js',
-        'css!./tooltip.css'
+        './message.tpl.js',
+        'css!./message.css'
     ],
     function(
         $, _,
         Brix,
         template
     ) {
-        function Tooltip() {}
+        function Message() {}
 
-        _.extend(Tooltip.prototype, Brix.prototype, {
+        _.extend(Message.prototype, Brix.prototype, {
             options: {},
             init: function() {},
             render: function() {
@@ -23,6 +23,6 @@ define(
             }
         })
 
-        return Tooltip
+        return Message
     }
 )

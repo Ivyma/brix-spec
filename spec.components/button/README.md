@@ -3,19 +3,21 @@
     <div class="color-999 mt4">按钮是为用户提供了触发即时操作的入口。</div>
 </div>
 
+<div class="usage mb40">
+    <div>基本规范</div>
+    <ol>
+        <li>每个按钮都有一个相对应的操作或流程；如果是导航到另一个页面窗口，请使用链接。</li>
+        <li>按钮有两种，主要和次要。主要按钮为页面上最重要操作，一个模块中(如浮层、表格、表单等)只能有一个主要按钮, 主引导用户的操作行为； 其他的操作皆为次要操作(同时包含禁用按钮与文字链接)。</li>
+        <li>主要按钮永远放在最左边</li>
+    </ol>
+</div>
+
 <div class="fontsize-16 mb10">示例 <small>Examples</small></div>
 
 <div class="example">
     <div class="content">
         <div class="content-header">
             <div>基础用法</div>
-            <ol>
-                <li>一个模块中（如浮层、表格等）只能有一个主要按钮，其余全为次要按钮（同时包含禁用按钮与文字链接）；</li>
-                <li>当操作是导航到另一个页面窗口时，不要使用按钮，而应改用链接；</li>
-                <li>对于向导导航，请使用标记为“上一步”和“下一步”的按钮；</li>
-                <li>使用简洁具体而又明白易懂的文本来描述点击按钮后 可以执行的操作。</li>
-                <li>主要按钮始终在左边停靠。</li>
-            </ol>
         </div>
         <div class="content-body">
             <button class="btn btn-brand mr60">主要按钮</button>

@@ -3,16 +3,21 @@
     <div class="color-999 mt4">日历提供了一种用于选择特定日期或日期范围的途径，默认显示选定的日期，点击下拉展开一个筛选界面，供用户进行日期选择。</div>
 </div>
 
+<div class="usage mb40">
+    <div>基本规范</div>
+    <ol>
+        <li>更换当前日期，切换至其它日期。 提供年、月的快速切换。</li>
+        <li>更换当前日期范围，切换至其它日期范围，需判断日期的先后关系。提供年、月的快速切换。</li>
+    </ol>
+</div>
+
 <div class="fontsize-16 mb10">示例 <small>Examples</small></div>
 
 <div class="example">
     <div class="content">
         <div class="content-header">
             <div>基础用法</div>
-            <ol>
-                <li>更换当前日期，切换至其它日期。 提供年、月的快速切换。</li>
-                <li>更换当前日期范围，切换至其它日期范围，需判断日期的先后关系。提供年、月的快速切换。</li>
-            </ol>
+            <div class="color-999 mt6 hide"></div>
         </div>
         <div class="content-body">
             <input bx-name="components/datepickerwrapper" type="text" class="form-control w100 mr40">
@@ -26,9 +31,7 @@
             </div>
         </div>
     </div>
-    <pre class="example-pre"><code class="hljs html">
-        TODO
-    </code></pre>
+    <pre class="example-pre"><code class="hljs html"></code></pre>
 </div>
 
 
@@ -48,9 +51,7 @@
             </div>
         </div>
     </div>
-    <pre class="example-pre"><code class="hljs html">
-        TODO
-    </code></pre>
+    <pre class="example-pre"><code class="hljs html"></code></pre>
 </div>
 
 <div class="example">
@@ -70,9 +71,7 @@
             </div>
         </div>
     </div>
-    <pre class="example-pre"><code class="hljs html">
-        TODO
-    </code></pre>
+    <pre class="example-pre"><code class="hljs html"></code></pre>
 </div>
 
 <div class="example">
@@ -85,9 +84,7 @@
             <span bx-name="components/datepickerwrapper" class="fontsize-16">请选择日期</span>
         </div>
     </div>
-    <pre class="example-pre"><code class="hljs html">
-        TODO
-    </code></pre>
+    <pre class="example-pre"><code class="hljs html"></code></pre>
 </div>
 
 <div class="example">
@@ -113,9 +110,7 @@
             </div>
         </div>
     </div>
-    <pre class="example-pre"><code class="hljs html">
-        TODO
-    </code></pre>
+    <pre class="example-pre"><code class="hljs html"></code></pre>
 </div>
 
 <script type="text/javascript">

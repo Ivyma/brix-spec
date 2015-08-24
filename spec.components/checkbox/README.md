@@ -3,13 +3,21 @@
     <div class="color-999 mt4">复选框为用户提供在两个独立且对立的选项之间表明选择的方法。在极少数情况下，复选框既不处于取消选中状态也不处于选中状态，它会处于所谓不确定的状态。</div>
 </div>
 
+<div class="usage mb40">
+    <div>基本规范</div>
+    <ol>
+        <li>默认情况下以横向排列展示。</li>
+        <li>当存在两个或多个选项，但用户只能选择一个选项时，请使用单选按钮。 </li>
+    </ol>
+</div>
+
 <div class="fontsize-16 mb10">示例 <small>Examples</small></div>
 
 <div class="example">
     <div class="content">
         <div class="content-header">
             <div>基础用法</div>
-            <ol>
+            <ol class="hide">
                 <li>当用户需要选择任何选项组合时创建一组复选框。</li>
                 <li>复选框用来选择一个或多个不相互排斥的选项或者混合选项。</li>
                 <li>当存在多个选项，但只能选择一个选项时，应使用单选按钮。</li>

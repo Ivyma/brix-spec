@@ -3,13 +3,20 @@
     <div class="color-999 mt4">在界面展示内容分为多页的情况下，翻页器为用户提供快速跳转到不同页面的功能。在后台系统中，当信息条目较多的时候，除了提供默认定义的显示行数外，还可以允许用户自定义每页的行数，以提高用户查看和检索信息的效率和灵活性。</div>
 </div>
 
+<div class="usage mb40">
+    <div>基本规范</div>
+    <ol>
+        <li>向用户显示他们在产品的哪一个页面，以及共有多少个页面，并提供跳转至上一页、、下一页的功能 </li>
+    </ol>
+</div>
+
 <div class="fontsize-16 mb10">示例 <small>Examples</small></div>
 
 <div class="example">
     <div class="content">
         <div class="content-header">
             <div>基础用法</div>
-            <div class="color-999 mt6">翻页器最基本的元素为：当前页页码、总页码、上一页、下一页的按钮。默认显示第1页时，上一页置灰不可点击；最后一页时，下一页置灰不可点击。 </div>
+            <div class="color-999 mt6 hide">翻页器最基本的元素为：当前页页码、总页码、上一页、下一页的按钮。默认显示第1页时，上一页置灰不可点击；最后一页时，下一页置灰不可点击。 </div>
         </div>
         <div class="content-body">
             <div bx-name="components/pagination" data-total="100" data-cursor="1" data-limit="9" data-simplify="true"></div>

@@ -527,21 +527,21 @@
 .pb80 {
   padding-bottom: 80px;
 }
-.contextual-tootip {
+.contextual-message {
   padding: 5px 15px;
   border-radius: 4px;
 }
-.contextual-tootip .glyph {
+.contextual-message .glyph {
   margin-right: 15px;
 }
-.mm-tooltip {
+.mm-message {
   margin-bottom: 20px;
   border-radius: 4px;
   border: 1px solid #ff6600;
   background-color: #FFEFE6;
   padding: 7px 14px;
 }
-.mm-tooltip-overlay {
+.mm-message-overlay {
   background-color: #FFEFE6;
   position: absolute;
   top: 0;
@@ -550,7 +550,7 @@
   padding: 7px 40px;
   color: #a40100;
 }
-.mm-tooltip-top {
+.mm-message-top {
   background-color: #FFEFE6;
   width: 100%;
   padding: 7px 40px;
