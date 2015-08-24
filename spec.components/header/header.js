@@ -28,7 +28,7 @@ define(
 
 
                 var uri = new URI(location.href)
-                var path = uri.path().slice(1)
+                var path = uri.filename()
                 path = {
                     'readme.html': 'components.html'
                 }[path] || path
