@@ -719,6 +719,21 @@ body .dropdown > .dropdown-menu-wrapper > ul.dropdown-menu > li {
 body .dropdown.open > .dropdown-menu-wrapper {
   display: block;
 }
+body .dropdown-case2 .dropdown {
+  width: 200px;
+}
+body .dropdown-case2 .dropdown .dropdown-toggle {
+  padding-right: 25px;
+}
+body .dropdown-case2 .dropdown .dropdown-toggle .dropdown-toggle-label {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body .dropdown-case2 .dropdown .dropdown-toggle .caret_custom {
+  position: absolute;
+  right: 12px;
+}
 .example .table tbody tr td .operation .btn {
   padding: 5px 11px;
   height: 26px;

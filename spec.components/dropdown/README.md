@@ -29,7 +29,7 @@
             </ol>
         </div>
         <div class="content-body">
-            <select bx-name="components/dropdown">
+            <select bx-name="spec.components/dropdown/dropdown">
                 <% _.each(_.range(100), function(item, index){ %>
                 <option value="<%= index %>">选项 <%= index + 1 %></option>
                 <% }) %>
@@ -46,28 +46,11 @@
         </div>
         <div class="content-body">
             <div id="case-1" class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" value="0" bx-click="toggle()">
-                    <span class="dropdown-toggle-label">选项 1</span>
-                    <span class="caret_custom caret_brixfont"><!-- 保留 caret_brixfont 是为了向后兼容，在下个版本中移除  -->
-                        <span class="brixfont down">&#xe623;</span><!-- 向下 -->
-                        <span class="brixfont up">&#xe62e;</span><!-- 向上 -->
-                    </span>
-                </button>
-                <div class="dropdown-menu-wrapper">
-                    <div class="searchbox">
-                        <label>
-                            <span class="brixfont">&#xe61c;</span>
-                            <input type="text" placeholder="搜索关键词">
-                        </label>
-                    </div>
-                    <ul class="dropdown-menu">
-                        <% _.each(_.range(100), function(item, index){ %>
-                        <li class="<%= index === 0 ? 'active' : '' %>">
-                            <a href="javascript: void(0);" value="1">选项 <%= index + 1 %></a>
-                        </li>
-                        <% }) %>
-                    </ul>
-                </div>
+                <select bx-name="spec.components/dropdown/dropdown" data-searchbox="true">
+                    <% _.each(_.range(100), function(item, index){ %>
+                    <option value="<%= index %>">选项 <%= index + 1 %></option>
+                    <% }) %>
+                </select>
             </div>
         </div>
     </div>
@@ -79,37 +62,13 @@
             <div>场景 2 - 自适应缩减</div>
             <div class="color-999 mt6">当下拉框的项内容长度过长时，需要对内容进行截断，以“…”结尾，鼠标放置在上面时显示该项的全部内容。</div>
         </div>
-        <div class="content-body">
-            <div id="case-2" class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" value="0" bx-click="toggle()">
-                    <span class="dropdown-toggle-label">选项 1</span>
-                    <span class="caret_custom caret_brixfont"><!-- 保留 caret_brixfont 是为了向后兼容，在下个版本中移除  -->
-                        <span class="brixfont down">&#xe623;</span><!-- 向下 -->
-                        <span class="brixfont up">&#xe62e;</span><!-- 向上 -->
-                    </span>
-                </button>
-                <div class="dropdown-menu-wrapper">
-                    <div class="searchbox">
-                        <label>
-                            <span class="brixfont">&#xe61c;</span>
-                            <input type="text" placeholder="搜索关键词">
-                        </label>
-                    </div>
-                    <ul class="dropdown-menu">
-                        <% _.each(_.range(100), function(item, index){ %>
-                        <%  item = Mock.Random.cparagraph() %>
-                        <li class="<%= index === 0 ? 'active' : '' %>">
-                            <a bx-name="components/popover"
-                                data-content="<%= index + 1 %> <%= item %>" 
-                                data-width="200"
-                                href="javascript: void(0);">
-                                <span><%= index + 1 %> <%= item %></span>
-                            </a>
-                        </li>
-                        <% }) %>
-                    </ul>
-                </div>
-            </div>
+        <div class="content-body dropdown-case2">
+            <select bx-name="spec.components/dropdown/dropdown" data-value="3" data-popover="true">
+                <% _.each(_.range(100), function(item, index){ %>
+                <%  item = Mock.Random.cparagraph() %>
+                <option value="<%= index %>"><%= index + 1 %> <%= item %></option>
+                <% }) %>
+            </select>
         </div>
     </div>
 </div>
@@ -121,17 +80,17 @@
             <div class="color-999 mt6">当下拉框中的项有某些明显规律时，可对各项进行分组，方便用户查找。</div>
         </div>
         <div class="content-body">
-            <select bx-name="components/dropdown">
+            <select bx-name="spec.components/dropdown/dropdown">
                 <% _.each(_.range(100), function(item, index){ %>
                 <optgroup label="小组 <%= index + 1 %>">
-                    <option value="<%= index + 1 %>">子选项 <%= index + 1 %></option>
+                    <option value="<%= index%>">子选项 <%= index + 1 %></option>
                 </optgroup>
                 <% }) %>
             </select>
         </div>
     </div>
     <pre><code class="hljs html">
-        <select bx-name="components/dropdown">
+        <select bx-name="spec.components/dropdown/dropdown">
             <optgroup label="optgroup 1">
                 <option value="1">Action</option>
             </optgroup>
@@ -145,11 +104,4 @@
     </code></pre>
 </div>
 
-<script type="text/javascript">
-    $('#case-1').on('click', function(){
-        $(this).toggleClass('open')
-    })
-    $('#case-2').on('click', function(){
-        $(this).toggleClass('open')
-    })
-</script>
+<script type="text/javascript"></script>
