@@ -12,8 +12,8 @@
         <div class="fontsize-20">品牌故事 <small>Brand Story</small></div>
     </div>
     <div class="row mb40">
-        <div class="col-sm-7"><img class="img-responsive" src="assets/story/branding landingpage字样2x.svg"></div>
-        <div class="col-sm-5"><img class="img-responsive" src="assets/story/brand笔记本2x.png"></div>
+        <div class="col-sm-7"><img class="img-responsive" src="assets/story/branding landingpage字样2x.svg" style="margin-bottom: 80px;"></div>
+        <div class="col-sm-5"><img class="img-responsive" src="assets/story/brand笔记本2x.png" style="margin-top: -40px;"></div>
     </div>
     <div class="clearfix"> 
         <div class="pull-left mb40" style="font-size: 20px;">品牌故事 <small>Brand Story</small></div>
