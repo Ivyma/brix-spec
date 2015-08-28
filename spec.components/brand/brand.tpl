@@ -8,8 +8,15 @@
 </div>
 
 <div class="brand-story mb40">
+    <div class="hide">
+        <div class="fontsize-20">品牌故事 <small>Brand Story</small></div>
+    </div>
+    <div class="row mb40">
+        <div class="col-sm-7"><img class="img-responsive" src="assets/story/branding landingpage字样2x.svg"></div>
+        <div class="col-sm-5"><img class="img-responsive" src="assets/story/brand笔记本2x.png"></div>
+    </div>
     <div class="clearfix"> 
-        <div class="pull-left fontsize-20 mb40">品牌故事 <small>Brand Story</small></div>
+        <div class="pull-left mb40" style="font-size: 20px;">品牌故事 <small>Brand Story</small></div>
         <div class="pull-right" style="position: relative;">
             <a class="btn btn-brand" href="javascript:;"
                 on-mouseenter="download" 

@@ -30,20 +30,40 @@
         </div>
         <div class="content-body">
             <div class="contextual-message bg-info mb40">
+                <!-- 
+                    background-color: rgb(215,232,249);
+                    border: 1px solid rgb(0,102,216);
+                    color: rgb(0,102,216);
+                 -->
                 <span class="zsfont glyph" style="color: #CBCBCB;">&#xe642;</span>
                 <span>XXX 创意已经通过审核</span>
             </div>
             <div class="contextual-message bg-info mb40">
+                <!-- 
+                    border: 1px solid rgb(255,123,89);
+                    background-color: rgb(255,232,222);
+                    color: rgb(255,123,89);
+                 -->
                 <span class="zsfont glyph color-primary">&#xe629;</span>
                 <span>确定要删除这个创意吗？</span>
                 <a href="javascript:;" class="ml40">删除</a>
                 <a href="javascript:;" class="ml20 color-gray">取消</a>
             </div>
             <div class="contextual-message bg-info mb40">
+                <!-- 
+                    background-color: rgb(215,236,218);
+                    border: 1px solid rgb(74,143,86);
+                    color: rgb(74,143,86);
+                 -->
                 <span class="zsfont glyph color-success">&#xf0156;</span>
                 <span>恭喜，您的计划已经创建完成</span>
             </div>
             <div class="contextual-message bg-info mb40">
+                <!-- 
+                    background-color: rgb(255,240,219);
+                    border: 1px solid rgb(255,164,92);
+                    color: rgb(255,164,92);
+                 -->
                 <span class="zsfont glyph color-warning">&#xf00b7;</span>
                 <span>您的账户余额不足，请尽快充值。</span>
                 <a href="javascript;:" class="ml40">去充值</a>
