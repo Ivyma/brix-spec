@@ -3,7 +3,7 @@
     <hr>
 </div>
 
-<div class="mb40">
+<div class="spec-section mb40" style="display: none;">
     <div class="mb40">
         <div class="fontsize-20 mb10">颜色 <small>Colors</small></div>
         <p>在SHB中降低S值-10°到-30°，B值-20°到-10°去区分色环自然产生的颜色模糊区域，再整体降低10°饱和度和去除亮度最高的疲劳色来适应用户长时间使用。在剩下的颜色中按照七色原则选取区分最大的7种颜色，最大程度的区分各个产品。</p>
@@ -169,7 +169,7 @@
     <p>基于 <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> 构建，结构参考了 <a href="http://cssstats.com/">CSS Stats</a>。</p>
 </blockquote> -->
 
-<div class="hide">
+<div class="spec-section hide" style="display: none;">
     <div class="list">
         <div class="item">
             <div class="item-content">hello</div>
@@ -188,7 +188,7 @@
     </div>
 </div>
 
-<div class="mb40">
+<div class="spec-section mb40" style="display: none;">
     <div class="mb40">
         <div class="fontsize-20 mb10">字体 <small>Font</small></div class="fontsize-28">
         <p class="mb20">提高文字辨识性和页面易读性，并在视觉上达到统一和整体。</p>
@@ -274,7 +274,7 @@
     </div>
 </div>
 
-<div class="mb40">
+<div class="spec-section mb40" style="display: none;">
     <div class="mb40">
         <div class="fontsize-20 mb10">行距 <small>Line Height</small></div>
     </div>
@@ -308,7 +308,7 @@
     </div>
 </div>
 
-<div class="mb40">
+<div class="spec-section mb40" style="display: none;">
     <div class="mb40">
         <div class="fontsize-20 mb10">栅格 <small>Grid</small></div>
     </div>

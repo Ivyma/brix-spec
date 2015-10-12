@@ -30,12 +30,18 @@
         Loader.boot(function() {
             Catalog('.sidebar', '.fontsize-20')
 
-            window.onhashchange = function(event){
+            function handler(event) {
+                console.log(new Date(), event && event.type)
                 $('a[name="' + location.hash.slice(1) + '"]')
-                    .parent().parent().parent().show()
+                    .parents('.spec-section').show()
                     .siblings().hide()
+                $(window).scrollTop(0)
             }
+            window.onhashchange = handler
+
             if (!location.hash) location.hash = '#动效规范'
+            else handler()
+
             $('.sidebar').find(
                 'a[href="' + location.hash + '"]'
             ).parent().addClass('active')

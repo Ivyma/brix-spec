@@ -35,13 +35,17 @@
             Catalog('.sidebar', '.fontsize-20')
             Clipboard.init()
 
-            window.onhashchange = function(event){
-                console.log(new Date(), event.type)
+            function handler(event){
+                console.log(new Date(), event && event.type)
                 $('a[name="' + location.hash.slice(1) + '"]')
-                    .parent().parent().show()
+                    .parents('.spec-section').show()
                     .siblings().hide()
+                $(window).scrollTop(0)
             }
+            window.onhashchange = handler
             if(!location.hash)location.hash= '#颜色 Colors'
+            else handler()
+
             $('.sidebar').find(
                 'a[href="' + location.hash + '"]'
             ).parent().addClass('active')

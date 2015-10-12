@@ -30,13 +30,18 @@
         Loader.boot(function() {
             Catalog('.sidebar', '.fontsize-20')
 
-            window.onhashchange = function(event){
-                console.log(new Date(), event.type)
+            function handler(event) {
+                console.log(new Date(), event && event.type)
                 $('a[name="' + location.hash.slice(1) + '"]')
-                    .parent().parent().show()
+                    .parents('.spec-section').show()
                     .siblings().hide()
+                $(window).scrollTop(0)
             }
-            if(!location.hash)location.hash= '#品牌故事 Brand Story'
+            window.onhashchange = handler
+
+            if (!location.hash) location.hash = '#品牌故事 Brand Story'
+            else handler()
+
             $('.sidebar').find(
                 'a[href="' + location.hash + '"]'
             ).parent().addClass('active')

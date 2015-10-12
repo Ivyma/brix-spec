@@ -1,4 +1,4 @@
-<div class="mb40" style="display: none;">
+<div class="spec-section mb40" style="display: none;">
     <div class="mb40">
         <div>
             <span class="fontsize-20">动效规范</span>
@@ -50,7 +50,7 @@
         </div>
     </div>
 </div>
-<div class="mb40">
+<div class="spec-section mb40">
     <div class="mb40">
         <div>
             <span class="fontsize-20">真实的动效</span>
@@ -109,7 +109,8 @@
         </div>
     </div>
 </div>
-<div class="mb40">
+
+<div class="spec-section mb40">
     <div class="mb40">
         <div>
             <span class="fontsize-20">效率优先</span>
@@ -170,7 +171,8 @@
         </div>
     </div>
 </div>
-<div class="mb40">
+
+<div class="spec-section mb40">
     <div class="mb40">
         <div>
             <span class="fontsize-20">遵循法则</span>

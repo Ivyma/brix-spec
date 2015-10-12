@@ -9,9 +9,9 @@ define(['jquery', 'underscore'], function($, _) {
 				$('<a class="spec-anchor">').attr('name', text)
 			)
 		})
-		var hash = location.hash
-		location.hash = ''
-		location.hash = hash
+		// var hash = location.hash
+		// location.hash = ''
+		// location.hash = hash
 
 		var $sidebar = $(sidebar).empty()
 		var $headers = $(headers)
