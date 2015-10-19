@@ -1,13 +1,13 @@
 # 阿里妈妈产品设计规范
 
-## Install
+## 安装依赖包
 
 ```
 npm install
 bower install
 ```
 
-## 本地服务
+## 开启本地服务
 
 ```
 gulp
