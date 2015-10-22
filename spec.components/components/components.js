@@ -2,15 +2,17 @@
 define(
     [
         'jquery', 'underscore', 'mock',
-        'brix/base',
+        'brix/base', 'brix/event',
         'spec.components/constant',
+        '../brand/brand.js',
         './components.tpl.js',
         'css!./components.css'
     ],
     function(
         $, _, Mock,
-        Brix,
+        Brix, EventManager,
         Constant,
+        Brand,
         template
     ) {
 
@@ -33,7 +35,11 @@ define(
                 this.data = this.data || _.extend({}, this.options)
                 var html = _.template(template)(this.data)
                 $(this.element).append(html)
-            }
+
+                var manager = new EventManager('on-')
+                manager.delegate(this.element, this)
+            },
+            download: Brand.prototype.download
         })
 
         return Components

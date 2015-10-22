@@ -28,7 +28,7 @@ define(function() {
                     <span>下载附件</span>
                 </a>
                 <% list = ['品牌故事/Alimama品牌指南第一版.pdf'] %>
-                <ul class="download-list">
+                <ul class="spec-download-list">
                     <% for( var i = 0; i < list.length; i++ ) { %>
                     <li class="clearfix">
                         <a href="download/<%= list[i] %>" download="">
@@ -67,7 +67,7 @@ define(function() {
                     <span>下载附件</span>
                 </a>
                 <% list = ['标志/阿里妈妈品牌规范-标志.ai', '标志/阿里妈妈品牌规范-标志.pdf', '标志/阿里妈妈旗下产品标志设计规范.ai', '标志/阿里妈妈旗下产品标志设计规范.pdf', '标志/阿里妈妈标志汇总.ai'] %>
-                <ul class="download-list">
+                <ul class="spec-download-list">
                     <% for( var i = 0; i < list.length; i++ ) { %>
                     <li class="clearfix">
                         <a href="download/<%= list[i] %>" download="">
@@ -394,7 +394,7 @@ define(function() {
                     <span>下载附件</span>
                 </a>
                 <% list = ['吉祥物/阿里妈妈品牌规范-吉祥物（校正）.ai', '吉祥物/阿里妈妈品牌规范-吉祥物（校正）.pdf'] %>
-                <ul class="download-list">
+                <ul class="spec-download-list">
                     <% for( var i = 0; i < list.length; i++ ) { %>
                     <li class="clearfix">
                         <a href="download/<%= list[i] %>" download="">
@@ -612,7 +612,7 @@ define(function() {
                     <span>下载附件</span>
                 </a>
                 <% list = ['字体/阿里妈妈品牌规范-字体.ai', '字体/阿里妈妈品牌规范-字体.pdf', '字体/阿里妈妈品牌规范-字体.zip'] %>
-                <ul class="download-list">
+                <ul class="spec-download-list">
                     <% for( var i = 0; i < list.length; i++ ) { %>
                     <li class="clearfix">
                         <a href="download/<%= list[i] %>" download="">
@@ -708,7 +708,7 @@ define(function() {
                     <span>下载附件</span>
                 </a>
                 <% list = ['色盘/阿里妈妈品牌规范－色盘.ai', '色盘/阿里妈妈品牌规范－色盘.pdf'] %>
-                <ul class="download-list">
+                <ul class="spec-download-list">
                     <% for( var i = 0; i < list.length; i++ ) { %>
                     <li class="clearfix">
                         <a href="download/<%= list[i] %>" download="">
@@ -970,7 +970,7 @@ define(function() {
                     <span>下载附件</span>
                 </a>
                 <% list = ['辅助形体/阿里妈妈品牌规范-案例辅助形体.ai', '辅助形体/阿里妈妈品牌规范-案例辅助形体.pdf'] %>
-                <ul class="download-list">
+                <ul class="spec-download-list">
                     <% for( var i = 0; i < list.length; i++ ) { %>
                     <li class="clearfix">
                         <a href="download/<%= list[i] %>" download="">
@@ -1043,7 +1043,7 @@ define(function() {
                     <span>下载附件</span>
                 </a>
                 <% list = ['图标/阿里妈妈品牌规范-图标.ai', '图标/阿里妈妈品牌规范-图标.pdf'] %>
-                <ul class="download-list">
+                <ul class="spec-download-list">
                     <% for( var i = 0; i < list.length; i++ ) { %>
                     <li class="clearfix">
                         <a href="download/<%= list[i] %>" download="">
@@ -1248,7 +1248,7 @@ define(function() {
                     <span>下载附件</span>
                 </a>
                 <% list = ['系统网格/阿里妈妈品牌规范-系统网格.ai', '系统网格/阿里妈妈品牌规范-系统网格.pdf'] %>
-                <ul class="download-list">
+                <ul class="spec-download-list">
                     <% for( var i = 0; i < list.length; i++ ) { %>
                     <li class="clearfix">
                         <a href="download/<%= list[i] %>" download="">
@@ -1309,7 +1309,7 @@ define(function() {
                     <span>下载附件</span>
                 </a>
                 <% list = ['案例/阿里妈妈名片模版CMYK格式.ai', '案例/阿里妈妈名片模版RGB格式.ai', '案例/阿里妈妈品牌规范-案例.ai', '案例/阿里妈妈品牌规范-案例.pdf', '案例/PPT模板.zip'] %>
-                <ul class="download-list">
+                <ul class="spec-download-list">
                     <% for( var i = 0; i < list.length; i++ ) { %>
                     <li class="clearfix">
                         <a href="download/<%= list[i] %>" download="">

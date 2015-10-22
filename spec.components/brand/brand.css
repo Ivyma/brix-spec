@@ -156,7 +156,7 @@
 .brand .brand-grid .print {
   max-width: 780px;
 }
-.brand ul.download-list {
+ul.spec-download-list {
   display: none;
   position: absolute;
   margin-top: 10px;
@@ -168,27 +168,27 @@
   background-color: #FFF;
   z-index: 1;
 }
-.brand ul.download-list li {
+ul.spec-download-list li {
   display: block;
   position: relative;
   white-space: nowrap;
   line-height: 1;
 }
-.brand ul.download-list li:hover {
+ul.spec-download-list li:hover {
   background: #F5F5F5;
 }
-.brand ul.download-list li:hover .specfont {
+ul.spec-download-list li:hover .specfont {
   display: inline-block;
 }
-.brand ul.download-list li a {
+ul.spec-download-list li a {
   display: block;
   color: #333;
   padding: 14px 18px;
 }
-.brand ul.download-list li a .name {
+ul.spec-download-list li a .name {
   margin-right: 40px;
 }
-.brand ul.download-list li a .specfont {
+ul.spec-download-list li a .specfont {
   position: absolute;
   right: 18px;
   display: none;
