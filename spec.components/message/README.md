@@ -7,11 +7,12 @@
 <div class="usage mb40">
     <div>基本规范</div>
     <ol>
-        <li>资讯：用户知道即可的信息。例如：双11 资讯</li>
-        <li>疑问：用户需要做决定的信息。例如：XXX已邀请你，是否接受？</li>
-        <li>成功：用户操作已成功。例如：宝贝发布成功。</li>
-        <li>警告：需要用户知道并采取行动的事件。例如：宝贝即将过期。</li>
-        <li>错误：用户操作已失效或是需要马上采取行动的问题。例如：宝贝已经失效，提交失败</li>
+        <li>帮助：提供用户功能、作用的解释。例如：列表中数据字段的解释。</li>
+        <li>资讯：告知用户事项、状态，知晓即可的信息，该信息可关闭。例如：您报名参加的活动已通过。</li>
+        <li>低风险警告：需要用户知道并采取行动，若忽略该信息，后续可进行修复的事件。例如：您的账户余额不足，请尽快充值。去充值。</li>
+        <li>高风险警告：需要用户知道并采取行动，若忽略该信息，后续无法挽回的事件。例如：您的账户已被触发，处于冻结状态。去申诉。</li>
+        <li>成功：用户操作已成功。例如：计划创建成功。</li>
+        <li>失败：用户操作已失效或是需要马上采取行动的问题。例如：提交失败。</li>
     </ol>
 </div>
 
@@ -105,11 +106,11 @@
     <div class="content">
         <div class="content-header">
             <div>场景 1 - 组件级信息反馈</div>
-            <div class="color-999 mt6">反馈，是由一个操作所引导的提示页面，并独立成提示区域，通常在页面的顶部显示。</div>
+            <!-- <div class="color-999 mt6">反馈，是由一个操作所引导的提示页面，并独立成提示区域，通常在页面的顶部显示。</div>
             <ol>
                 <li>成功：用户操作已成功；</li>
                 <li>错误：提醒用户操作已失败或是需要马上采取行动的问题。有效的错误反馈需要解释错误发生的原因，并提供解决方案。</li>
-            </ol>
+            </ol> -->
         </div>
         <div class="content-body">
             <div class="">
@@ -138,11 +139,11 @@
     <div class="content">
         <div class="content-header">
             <div>场景 2 - 模块级信息反馈</div>
-            <div class="color-999 mt6">反馈，是由一个操作所引导的提示页面，并独立成提示区域，通常在页面的顶部显示。</div>
+            <!-- <div class="color-999 mt6">反馈，是由一个操作所引导的提示页面，并独立成提示区域，通常在页面的顶部显示。</div>
             <ol>
                 <li>成功：用户操作已成功；</li>
                 <li>错误：提醒用户操作已失败或是需要马上采取行动的问题。有效的错误反馈需要解释错误发生的原因，并提供解决方案。</li>
-            </ol>
+            </ol> -->
         </div>
         <div class="content-body" style="padding-right: 0; padding-bottom: 0;">
             <div style="height: 50px; background-color: #FF6600;"></div>
@@ -170,11 +171,11 @@
     <div class="content">
         <div class="content-header">
             <div>场景 3 - 页面级信息反馈</div>
-            <div class="color-999 mt6">反馈，是由一个操作所引导的提示页面，并独立成提示区域，通常在页面的顶部显示。</div>
+            <!-- <div class="color-999 mt6">反馈，是由一个操作所引导的提示页面，并独立成提示区域，通常在页面的顶部显示。</div>
             <ol>
                 <li>成功：用户操作已成功；</li>
                 <li>错误：提醒用户操作已失败或是需要马上采取行动的问题。有效的错误反馈需要解释错误发生的原因，并提供解决方案。</li>
-            </ol>
+            </ol> -->
         </div>
         <div class="content-body" style="padding-right: 0; padding-bottom: 0;">
             <div style="height: 50px; background-color: #FF6600;"></div>
@@ -201,7 +202,7 @@
     <div class="content">
         <div class="content-header">
             <div>场景 4 - 账户级信息反馈</div>
-            <div class="color-999 mt6">用于显示用户需要关注的系统事件，出现在页面导航上方。如用户账号被冻结影响用户的全局操作。</div>
+            <!-- <div class="color-999 mt6">用于显示用户需要关注的系统事件，出现在页面导航上方。如用户账号被冻结影响用户的全局操作。</div> -->
         </div>
         <div class="content-body" style="padding-right: 0; padding-bottom: 0;">
             <div style="position: relative;">
@@ -230,10 +231,10 @@
     <div class="content">
         <div class="content-header">
             <div>场景 5 - 系统反馈</div>
-            <div class="color-999 mt6">404、500 页面错误，提供用户反馈或上一页的快捷入口。</div>
+            <!-- <div class="color-999 mt6">404、500 页面错误，提供用户反馈或上一页的快捷入口。</div>
             <ol class="hide">
                 <li>警告：提醒用户将来可能导致产生问题，出现于页面的上方，在页面导航下方。如余额不足时，不充值将会停止投放。</li>
-            </ol>
+            </ol> -->
         </div>
         <div class="content-body">
             <!-- <div class="text-center" style="font-size: 100px;">404</div> -->

@@ -26,12 +26,22 @@
                 data-shortcuts="false" 
                 class="form-control datepickerwrapper-trigger">
                 <span data-index="0">2015-1-1</span> 至 <span data-index="1">2015-1-2</span>
-                <i class="brixfont pull-right ml5 down"></i>
-                <i class="brixfont pull-right ml5 up"></i>
+                <i class="brixfont pull-right ml5 down">&#xe623;</i>
+                <i class="brixfont pull-right ml5 up">&#xe62e;</i>
             </div>
         </div>
     </div>
-    <pre class="example-pre"><code class="hljs html"></code></pre>
+    <pre class="example-pre"><code class="hljs html">
+        <input bx-name="components/datepickerwrapper" type="text" class="form-control w100 mr40">
+        <div bx-name="components/datepickerwrapper" 
+            data-dates="['2015-1-1', '2015-1-2']" 
+            data-shortcuts="false" 
+            class="form-control datepickerwrapper-trigger">
+            <span data-index="0">2015-1-1</span> 至 <span data-index="1">2015-1-2</span>
+            <i class="brixfont pull-right ml5 down">&#xe623;</i>
+            <i class="brixfont pull-right ml5 up">&#xe62e;</i>
+        </div>
+    </code></pre>
 </div>
 
 
@@ -46,12 +56,20 @@
                 data-dates="['2015-1-1', '2015-1-2']" 
                 class="form-control datepickerwrapper-trigger">
                 <span data-index="0">2015-1-1</span> 至 <span data-index="1">2015-1-2</span>
-                <i class="brixfont pull-right ml5 down"></i>
-                <i class="brixfont pull-right ml5 up"></i>
+                <i class="brixfont pull-right ml5 down">&#xe623;</i>
+                <i class="brixfont pull-right ml5 up">&#xe62e;</i>
             </div>
         </div>
     </div>
-    <pre class="example-pre"><code class="hljs html"></code></pre>
+    <pre class="example-pre"><code class="hljs html">
+        <div bx-name="components/datepickerwrapper" 
+            data-dates="['2015-1-1', '2015-1-2']" 
+            class="form-control datepickerwrapper-trigger">
+            <span data-index="0">2015-1-1</span> 至 <span data-index="1">2015-1-2</span>
+            <i class="brixfont pull-right ml5 down">&#xe623;</i>
+            <i class="brixfont pull-right ml5 up">&#xe62e;</i>
+        </div>
+    </code></pre>
 </div>
 
 <div class="example">
@@ -66,12 +84,35 @@
                 data-shortcuts="false" 
                 class="form-control datepickerwrapper-trigger">
                 <span data-index="0">2015-1-1</span> 至 <span data-index="1">2015-1-2</span>
-                <i class="brixfont pull-right ml5 down"></i>
-                <i class="brixfont pull-right ml5 up"></i>
+                <i class="brixfont pull-right ml5 down">&#xe623;</i>
+                <i class="brixfont pull-right ml5 up">&#xe62e;</i>
             </div>
         </div>
     </div>
-    <pre class="example-pre"><code class="hljs html"></code></pre>
+    <pre class="example-pre"><code class="hljs js">
+        <div id="case2" bx-name="components/datepickerwrapper" 
+            data-dates="['2015-1-1', '2015-1-2']" 
+            data-shortcuts="false" 
+            class="form-control datepickerwrapper-trigger">
+            <span data-index="0">2015-1-1</span> 至 <span data-index="1">2015-1-2</span>
+            <i class="brixfont pull-right ml5 down">&#xe623;</i>
+            <i class="brixfont pull-right ml5 up">&#xe62e;</i>
+        </div>
+    </code></pre>
+    <pre class="example-pre"><code class="hljs js">
+        var case2 = Loader.query($('#case2'))[0]
+        var pickers = Loader.query('components/datepicker', case2.$relatedElement)
+        pickers[0].on('change.datepicker', function(event, date, type){
+            pickers[1].val(
+                moment(date).add(1, 'month')
+            )
+        })
+        pickers[1].on('change.datepicker', function(event, date, type){
+            pickers[0].val(
+                moment(date).add(-1, 'month')
+            )
+        })
+    </code></pre>
 </div>
 
 <div class="example">
@@ -84,7 +125,9 @@
             <span bx-name="components/datepickerwrapper" class="fontsize-16">请选择日期</span>
         </div>
     </div>
-    <pre class="example-pre"><code class="hljs html"></code></pre>
+    <pre class="example-pre"><code class="hljs html">
+        <span bx-name="components/datepickerwrapper" class="fontsize-16">请选择日期</span>
+    </code></pre>
 </div>
 
 <div class="example">
@@ -110,7 +153,22 @@
             </div>
         </div>
     </div>
-    <pre class="example-pre"><code class="hljs html"></code></pre>
+    <pre class="example-pre"><code class="hljs html">
+        <div class="mr40" style="display: inline-block;">
+            <div class="pl9 mb10 color-999">开始日期</div>
+            <div style="position: relative;">
+                <input bx-name="components/datepickerwrapper" type="text" class="form-control">
+                <span class="brixfont color-c" style="position: absolute; right: 9px; top: 6px;">&#xe615;</span>
+            </div>
+        </div>
+        <div style="position: relative; display: inline-block;">
+            <div class="pl9 mb10 color-999">结束日期</div>
+            <div style="position: relative;">
+                <input bx-name="components/datepickerwrapper" type="text" class="form-control">
+                <span class="brixfont color-c" style="position: absolute; right: 9px; top: 6px;">&#xe615;</span>
+            </div>
+        </div>
+    </code></pre>
 </div>
 
 <script type="text/javascript">
