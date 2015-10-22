@@ -37,13 +37,16 @@
 
             function handler(event){
                 console.log(new Date(), event && event.type)
-                $('a[name="' + location.hash.slice(1) + '"]')
+                var hash = decodeURI(location.hash.slice(1))
+                $('a[name="' + hash + '"]')
                     .parents('.spec-section').show()
                     .siblings().hide()
                 $(window).scrollTop(0)
             }
             window.onhashchange = handler
-            if(!location.hash)location.hash= '#颜色 Colors'
+
+            // if (!location.hash) location.hash = encodeURI('#颜色 Colors')
+            if (!location.hash) $('a[href="#颜色 Colors"]')[0].click()
             else handler()
 
             $('.sidebar').find(
