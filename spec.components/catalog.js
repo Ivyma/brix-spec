@@ -1,4 +1,4 @@
-/* global define, location */
+/* global define */
 define(['jquery', 'underscore'], function($, _) {
 	return function(sidebar, headers, subs) {
 
