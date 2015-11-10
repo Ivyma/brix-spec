@@ -1,0 +1,193 @@
+/* global define, window */
+define(['mock'], function( /*Mock*/ ) {
+
+	return {
+		SIDEBARS: {
+			'alimama': {
+				'pc': {
+					'design': [{
+						'sidebar_top': '样式',
+						'sidebar_sub': [{
+							'name': '颜色',
+							'resp': 'Colors',
+							'href': '/css/colors'
+						}, {
+							'name': '字体',
+							'resp': 'Font',
+							'href': '/css/font'
+						}, {
+							'name': '行距',
+							'resp': 'Line_Height',
+							'href': '/css/line_height'
+						}, {
+							'name': '栅格',
+							'resp': 'Grid',
+							'href': '/css/grid'
+						}]
+					}, {
+						'sidebar_top': '组件',
+						'sidebar_sub': [{
+							'name': '所有',
+							'resp': 'All',
+							'href': '/all/all'
+						}, {
+							'name': '按钮',
+							'resp': 'Button',
+							'href': '/readme/button'
+						}, {
+							'name': '单选按钮',
+							'resp': 'Radio',
+							'href': '/readme/radio'
+						}, {
+							'name': '复选框',
+							'resp': 'Checkbox',
+							'href': '/readme/checkbox'
+						}, {
+							'name': '下拉框',
+							'resp': 'Dropdown',
+							'href': '/readme/dropdown'
+						}, {
+							'name': '输入框',
+							'resp': 'Input',
+							'href': '/readme/input'
+						}, {
+							'name': '文本框',
+							'resp': 'Textarea',
+							'href': '/readme/textarea'
+						}, {
+							'name': '日历',
+							'resp': 'Calendar',
+							'href': '/readme/calendar'
+						}, {
+							'name': '面包屑',
+							'resp': 'Breadcrumb',
+							'href': '/readme/breadcrumb'
+						}, {
+							'name': '翻页器',
+							'resp': 'Pagination',
+							'href': '/readme/pagination'
+						}, {
+							'name': '搜索框',
+							'resp': 'SearchBox',
+							'href': '/readme/searchbox'
+						}, {
+							'name': '就地编辑',
+							'resp': 'Editable',
+							'href': '/readme/editable'
+						}, {
+							'name': '通用信息',
+							'resp': 'Message',
+							'href': '/readme/message'
+						}, {
+							'name': '表格',
+							'resp': 'Table',
+							'href': '/readme/table'
+						}, {
+							'name': '页脚',
+							'resp': 'Footer',
+							'href': '/readme/footer'
+						}, {
+							'name': '进度条',
+							'resp': 'Progress',
+							'href': '/readme/progress'
+						}, {
+							'name': '字段控制器',
+							'resp': 'Field',
+							'href': '/readme/field'
+						}, {
+							'name': '步骤条',
+							'resp': 'Wizard',
+							'href': '/readme/wizard'
+						}, {
+							'name': '浮层',
+							'resp': 'Dialog',
+							'href': '/readme/dialog'
+						}, {
+							'name': '时间选择器',
+							'resp': 'HourPicker',
+							'href': '/readme/hourpicker'
+						}, {
+							'name': '标签切换',
+							'resp': 'Tab',
+							'href': '/readme/tab'
+						}, {
+							'name': '滚动条',
+							'resp': 'Scrollbar',
+							'href': '/readme/scrollbar'
+						}, {
+							'name': '加载',
+							'resp': 'Loading',
+							'href': '/readme/loading'
+						}]
+					}],
+					'brand': [{
+						'sidebar_sub': [{
+							'name': '品牌故事',
+							'resp': 'Brand_Story',
+							'href': '/brand/brand_story'
+						}, {
+							'name': '标志',
+							'resp': 'Logo',
+							'href': '/brand/logo'
+						}, {
+							'name': '吉祥物',
+							'resp': 'Character',
+							'href': '/brand/character'
+						}, {
+							'name': '字体',
+							'resp': 'Typography',
+							'href': '/brand/typography'
+						}, {
+							'name': '色盘',
+							'resp': 'Color_Palettes',
+							'href': '/brand/color_palettes'
+						}, {
+							'name': '辅助图形',
+							'resp': 'Shapes',
+							'href': '/brand/shapes'
+						}, {
+							'name': '图标',
+							'resp': 'Icon',
+							'href': '/brand/icon'
+						}, {
+							'name': '网格系统',
+							'resp': 'Grid_Systems',
+							'href': '/brand/grid_systems'
+						}, {
+							'name': '案例',
+							'resp': 'Examples',
+							'href': '/brand/examples'
+						}]
+					}],
+					'animation': [{
+						'sidebar_sub': [{
+							'name': '动效规范',
+							'resp': '',
+							'resp_hide': 'rules',
+							'href': '/animation/rules'
+						}, {
+							'name': '真实的动效',
+							'resp': '',
+							'resp_hide': 'real',
+							'href': '/animation/real'
+						}, {
+							'name': '效率优先',
+							'resp': '',
+							'resp_hide': 'effective',
+							'href': '/animation/effective'
+						}, {
+							'name': '遵循法则',
+							'resp': '',
+							'resp_hide': 'law',
+							'href': '/animation/law'
+						}]
+					}]
+				},
+				'wireless': {}
+			}
+		}
+
+
+
+	}
+})

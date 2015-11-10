@@ -59,7 +59,12 @@ blockquote {
 .tahoma {
   font-family: "Tahoma";
 }
-
+.cursor{
+    cursor: pointer;
+}
+.relative{
+    position: relative;
+}
 body a {
     color: @brand;
     text-decoration: none;
@@ -357,15 +362,35 @@ body {
         -ms-overflow-style: -ms-autohiding-scrollbar;
         -webkit-overflow-scrolling: touch;
 
+        .inline-block{
+            display:inline-block;
+        }
+        .left-ellipse{
+            width:60px;
+            height:28px;
+            border-top-left-radius:30px;
+            border-bottom-left-radius:30px;
+            background-color:#999;
+        }
+        .right-ellipse{
+            width:60px;
+            height:28px;
+            border-top-right-radius:30px;
+            border-bottom-right-radius:30px;
+            background-color:#eee;
+        }
         .sidebar {
             padding-bottom: 40px;
-         }
+        }
+        .sidebar-top{
+            padding:10px 20px;
+        }
         .sidebar-item,
         .sidebar-item-sub {
             a {
                 color: #666;
                 display: block;
-                padding: 10px 20px;
+                padding: 10px 20px 10px 40px;
                 white-space: nowrap;
                 word-wrap: normal;
                 text-overflow: ellipsis;

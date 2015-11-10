@@ -38,6 +38,9 @@
 .color-ccc {
   color: #cccccc;
 }
+.color-fff {
+  color: #ffffff;
+}
 .bg-brand {
   background-color: #ff6600;
 }
@@ -64,6 +67,9 @@
 }
 .color-hover-brand:hover {
   color: #ff6600;
+}
+.fontsize-0 {
+  font-size: 0px;
 }
 .fontsize-12 {
   font-size: 12px;
@@ -310,6 +316,9 @@
 }
 .mb80 {
   margin-bottom: 80px;
+}
+.mb160 {
+  margin-bottom: 160px;
 }
 .pl0 {
   padding-left: 0px;
