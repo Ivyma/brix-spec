@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<title>阿里妈妈产品设计规范</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1">
+<link rel="icon" type="image/png" href="favicon.png">
+
+<link href="http://g.tbcdn.cn/thx/brix-release/0.0.23/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+<link href="http://g.tbcdn.cn/thx/brix-release/0.0.23/highlightjs/styles/github.css" rel="stylesheet">
+<link href="http://g.tbcdn.cn/thx/brix-release/0.0.23/brix-components/css-tool/mm.css" rel="stylesheet">
+<link href="http://g.tbcdn.cn/thx/brix-release/0.0.23/brix-components/css-tool/browser.css" rel="stylesheet">
+
+<link href="spec.components/spec.css" rel="stylesheet">
+
+<div bx-name="spec/header"></div>
+<div class="ungrid-row">
+    <div class="sidebar-col">
+        <div class="sidebar-wrapper">
+            <div class="text-align-center fontsize-0 mb20">
+                <div class="left-ellipse inline-block relative cursor">
+                    <span class="specfont icon-pc color-fff fontsize-20"></span>
+                </div>
+                <div class="right-ellipse inline-block relative cursor">
+                    <span class="specfont icon-wireless color-fff fontsize-20"></span>
+                </div>
+            </div>
+            <div class="sidebar"></div>
+        </div>
+    </div><!-- col -->
+    <div class="main-col">
+        <div class="main-wrapper">
+			<div id="main"></div>
+			<div bx-name="spec/footer"></div>
+		</div>
+    </div><!-- col -->
+</div><!-- row -->
+
+<script src="http://g.tbcdn.cn/thx/brix-release/0.0.23/require-config.js"></script>
+<script src="frame.spec.components/config.js"></script>
+<script src="frame.spec.components/boot.js"></script>
+<script>
+    require([
+        'jquery', 'director', 'URIjs/URI', 'highlightjs',
+        'brix/loader', 
+        'frame.spec.components/catalog'
+    ], function(
+        $, Router, URI, hljs,
+        Loader, 
+        Catalog
+    ) {
+        function handle(){
+            var effect = 'bx-anim-fade-in-left'
+            var $main = $('#main').removeClass(effect)
+            var uri = new URI(location.href)
+            var fragment = uri.fragment()
+            if(!fragment) return
+            var furi = URI(fragment)
+            var segment = furi.segment()
+            var prefix = segment[0] === 'readme' ?  'spec.components' : segment[0] + '.spec.components'
+            var name = segment[1] ? segment[1] : segment[0]
+            var html = prefix + '/' + name + '/' + (segment[0] === 'readme' ? 'README.md' : name + '.tpl')
+            var css = prefix + '/' + name + '/' + name + '.css'
+            require(['css!' + css])
+            Loader.load(
+                $main, 
+                segment[0] === 'readme' ? 'spec.components/readme/readme' : prefix + '/' + name + '/' + name, // 'components/readme', 
+                {
+                    url: html
+                },
+                function() {
+                    Catalog('alimama', 'pc', segment[0] === 'css' || segment[0] === 'all' ||  segment[0] === 'readme' ? 'design' : segment[0])
+                    
+                    $(document.body).find('pre code').each(function(index, code) {
+                        hljs.highlightBlock(code)
+                    })
+
+                    $('[data-resp="' + name + '"]').addClass('active')
+
+                    $main.addClass(effect)
+                }
+            )
+        }
+
+        handle()
+        var router = new Router()
+        router.init()
+        router.on(/(.*)/, handle)
+    })
+</script>

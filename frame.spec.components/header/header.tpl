@@ -13,12 +13,13 @@
                 <div class="dropdown">
                     <div class="btn btn-default dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                         <a href="/">
-                            <span class="specfont icon-minecraft"></span>
-                            <span class="bu-name">阿里妈妈</span>
+                            <span class="specfont icon-minecraft color-brand"></span>
+                            <span class="middle-line"></span>
+                            <span class="specfont icon-bu-name color-brand"></span>
                         </a>
-                        <span class="specfont icon-xialakuang" onclick-bak="$(this).closest('.dropdown').toggleClass('open')"></span>
+                        <!-- <span class="specfont icon-xialakuang" onclick-bak="$(this).closest('.dropdown').toggleClass('open')"></span> -->
                      </div>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                         <li>
                             <a href="#">
                                 <span class="specfont">&#xe61b;</span>
@@ -37,14 +38,15 @@
                                 <span class="bu-name">聚划算商家</span>
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="css.html">样式</a></li>
+                <li><a href="main.html#/design">设计</a></li>
+                <!-- <li><a href="css.html">样式</a></li>
                 <li>
                     <a href="components.html" class="hasmore">组件</a>
                     <div class="dropdown">
@@ -55,9 +57,9 @@
                             <% }) %>
                         </ul>
                     </div>
-                </li>
-                <li><a href="brand.html">品牌</a></li>
-                <li><a href="animation.html">动效</a></li>
+                </li> -->
+                <li><a href="main.html#/brand/brand_story">品牌</a></li>
+                <li><a href="main.html#/animation/rules">动效</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

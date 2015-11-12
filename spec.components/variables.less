@@ -8,6 +8,7 @@
 @666: #666;
 @999: #999;
 @ccc: #ccc;
+@fff: #fff;
 @fafafa: #fafafa;
 @f0f0f0: #f0f0f0;
 @e6e6e6: #e6e6e6;
@@ -57,6 +58,9 @@
 .color-ccc {
     color: @ccc;
 }
+.color-fff {
+    color: @fff;
+}
 // 
 .bg-brand {
     background-color: @brand;
@@ -92,7 +96,7 @@
 
 // ----------------------------------------
 .fontsize- {
-    .for(12 14 16 18 20 24 28 32 36 40); .-each(@px) {
+    .for(0 12 14 16 18 20 24 28 32 36 40); .-each(@px) {
         &@{px} {
             font-size: @px * 1px;
         }
@@ -121,7 +125,7 @@
     }
 }
 .mb {
-    .for(0 2 3 4 5 6 7 8 9 10 15 20 25 30 35 40 60 80); .-each(@px) {
+    .for(0 2 3 4 5 6 7 8 9 10 15 20 25 30 35 40 60 80 160); .-each(@px) {
         &@{px} {
             margin-bottom: @px * 1px;
         }

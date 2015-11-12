@@ -28,16 +28,29 @@ define(
 
 
                 var uri = new URI(location.href)
-                var path = uri.filename()
+                var fragment = uri.fragment()
+                var furi = URI(fragment)
+                var segment = furi.segment()
+                // var query = furi.query(true)
+                // var name = query.name.toLowerCase()
+                var path = segment[0]
                 path = {
-                    'readme.html': 'components.html'
+                    'readme': 'design',
+                    'components' : 'design',
+                    'css': 'design'
                 }[path] || path
 
                 var items = $(this.element).find('a')
                 _.each(items, function(item /*, index*/ ) {
                     var $item = $(item)
                     var href = $item.attr('href')
-                    if (href === path) $item.parent('li').addClass('active')
+                    if (href.indexOf(path) >= 0) $item.parent('li').addClass('active')
+                })
+
+                $('.nav').on('click', 'li', function(event) {
+                    $(event.currentTarget)
+                        .addClass('active')
+                        .siblings().removeClass('active')
                 })
             }
         })
