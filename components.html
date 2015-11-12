@@ -31,6 +31,7 @@
 <script>
     require(['jquery', 'underscore', 'brix/loader', 'spec.components/catalog', 'spec.components/constant', 'spec.components/holder'], function($, _, Loader, Catalog, Constant, Holder) {
         Loader.boot(function() {
+            
             var $sidebar = $('.sidebar').empty()
             var tpl = '<div class="sidebar-item" data-resp="<%= resp || name %>"><a href="<%= href %>"><%= name %> <small><%= resp %></small></a></div>'
             tpl = _.template(tpl)

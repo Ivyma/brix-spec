@@ -18,8 +18,8 @@
     </div><!-- col -->
     <div class="main-col">
         <div class="main-wrapper">
-            <div id="main"></div>
-            <div bx-name="chart.spec.components/index/index"></div>
+            <div id="main" style="min-height:auto;margin-bottom:50px;"></div>
+            <div bx-name="chart.spec.components/list/index"></div>
             <div bx-name="spec/footer"></div>
         </div>
     </div><!-- col -->
@@ -50,13 +50,13 @@
         //     Catalog('.sidebar', 'h1')   
         // })
         // 加载组件 components/readme
+
         var uri = new URI(location.href)
         var query = uri.query(true)
         var name = query.name.toLowerCase()
         var readme = 'chart.spec.components/' + name + '/README.md'
-        var css = 'chart.spec.components/' + name + '/' + name + '.css'
-        require(['css!' + css]);
-
+        var css = 'chart.spec.components/' + name + '/index.css'
+        require(['css!' + css])
         Loader.load(
             document.getElementById('main'), 
             'spec.components/readme/readme', // 'components/readme', 

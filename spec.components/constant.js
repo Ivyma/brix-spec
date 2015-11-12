@@ -144,5 +144,6 @@ define(['mock'], function( /*Mock*/ ) {
 			resp: 'Loading',
 			prev: RETINA ? 'assets/components/加载@2x.png' : 'assets/components/加载.png'
 		}]
+		
 	}
 })
