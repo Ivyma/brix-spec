@@ -15,7 +15,7 @@ define(function() {
             <div class="navbar-logo">
                 <div class="ml17 mt10">
                     <div class="" id="dropdownMenu1">
-                        <a href="/">
+                        <a href="index.html">
                             <span class="specfont icon-minecraft color-brand"></span>
                             <span class="middle-line"></span>
                             <span class="specfont icon-bu-name color-brand"></span>
