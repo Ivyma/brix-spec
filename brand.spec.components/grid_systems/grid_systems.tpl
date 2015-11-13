@@ -10,7 +10,7 @@
     <div class="spec-section brand-grid">
         <div class="clearfix">
             <div class="pull-left fontsize-20 mb40">网格系统 <small>Grid Systems</small></div>
-            <div class="pull-right">
+            <div class="pull-right relative">
                 <a class="btn btn-brand" href="javascript:;"
                     on-mouseenter="download" 
                     on-click="download">

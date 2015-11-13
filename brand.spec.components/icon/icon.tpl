@@ -10,7 +10,7 @@
     <div class="spec-section brand-icon mb40">
         <div class="clearfix">
             <div class="pull-left fontsize-20 mb40">图标 <small>Icon</small></div>
-            <div class="pull-right">
+            <div class="pull-right relative">
                 <a class="btn btn-brand" href="javascript:;"
                     on-mouseenter="download" 
                     on-click="download">

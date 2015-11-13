@@ -13,7 +13,7 @@ define(function() {
     <div class="spec-section brand-examples">
         <div class="clearfix">
             <div class="pull-left fontsize-20 mb40">案例 <small>Examples</small></div>
-            <div class="pull-right">
+            <div class="pull-right relative">
                 <a class="btn btn-brand" href="javascript:;"
                     on-mouseenter="download" 
                     on-click="download">

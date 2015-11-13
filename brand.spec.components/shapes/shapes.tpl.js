@@ -13,7 +13,7 @@ define(function() {
     <div class="spec-section brand-shapes mb40">
         <div class="clearfix">
             <div class="pull-left fontsize-20 mb40">辅助图形 <small>Shapes</small></div>
-            <div class="pull-right">
+            <div class="pull-right relative">
                 <a class="btn btn-brand" href="javascript:;"
                     on-mouseenter="download" 
                     on-click="download">

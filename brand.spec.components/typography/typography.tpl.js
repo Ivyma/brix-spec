@@ -14,7 +14,7 @@ define(function() {
     <div class="spec-section brand-typography mb40">
         <div class="clearfix"> 
             <div class="pull-left fontsize-20 mb40">字体 <small>Typography</small></div>
-            <div class="pull-right">
+            <div class="pull-right relative">
                 <a class="btn btn-brand" href="javascript:;"
                     on-mouseenter="download" 
                     on-click="download">

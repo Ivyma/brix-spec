@@ -13,7 +13,7 @@ define(function() {
     <div class="spec-section brand-color-palettes">
         <div class="clearfix">
             <div class="pull-left fontsize-20 mb40">色盘 <small>Color Palettes</small></div>
-            <div class="pull-right">
+            <div class="pull-right relative">
                 <a class="btn btn-brand" href="javascript:;"
                     on-mouseenter="download" 
                     on-click="download">

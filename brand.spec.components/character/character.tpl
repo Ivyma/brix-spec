@@ -11,7 +11,7 @@
     <div class="spec-section brand-character">
         <div class="clearfix"> 
             <div class="pull-left fontsize-20 mb40">吉祥物 <small>Character</small></div>
-            <div class="pull-right">
+            <div class="pull-right relative">
                 <a class="btn btn-brand" href="javascript:;"
                     on-mouseenter="download" 
                     on-click="download">
