@@ -13,8 +13,8 @@ define(function() {
             </button>
 
             <div class="navbar-logo">
-                <div class="dropdown">
-                    <div class="btn btn-default dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <div class="ml17 mt10">
+                    <div class="" id="dropdownMenu1">
                         <a href="/">
                             <span class="specfont icon-minecraft color-brand"></span>
                             <span class="middle-line"></span>
@@ -47,7 +47,7 @@ define(function() {
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav ml80">
                 <li><a href="main.html#/design">设计</a></li>
                 <!-- <li><a href="css.html">样式</a></li>
                 <li>

@@ -35,9 +35,8 @@ define(
                 // var name = query.name.toLowerCase()
                 var path = segment[0]
                 path = {
-                    'readme': 'design',
-                    'components' : 'design',
-                    'css': 'design'
+                    'readme': 'css',
+                    'components' : 'css'
                 }[path] || path
 
                 var items = $(this.element).find('a')

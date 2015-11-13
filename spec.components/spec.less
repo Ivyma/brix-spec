@@ -65,6 +65,12 @@ blockquote {
 .relative{
     position: relative;
 }
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
 body a {
     color: @brand;
     text-decoration: none;
@@ -357,7 +363,7 @@ body {
         height: 100%;
         // min-height: 500px;
         padding: 90px 0px 25px 0px;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        background-color: #fafafa;
         overflow-y: scroll;
         -ms-overflow-style: -ms-autohiding-scrollbar;
         -webkit-overflow-scrolling: touch;
@@ -367,23 +373,39 @@ body {
         }
         .left-ellipse{
             width:60px;
-            height:28px;
+            height:32px;
             border-top-left-radius:30px;
             border-bottom-left-radius:30px;
-            background-color:#999;
+            background-color:#ccc;
+            .specfont{
+                position:relative;
+                top:2px;
+                left:2px;
+            }
         }
         .right-ellipse{
             width:60px;
-            height:28px;
+            height:32px;
             border-top-right-radius:30px;
             border-bottom-right-radius:30px;
-            background-color:#eee;
+            background-color:#f0f0f0;
+            .specfont{
+                position:relative;
+                top:2px;
+                left:-2px;
+            }
         }
         .sidebar {
             padding-bottom: 40px;
         }
         .sidebar-top{
             padding:10px 20px;
+            .down{
+                transform: rotate(180deg);
+            }
+            .transition{
+                transition: transform 0.5s;
+            }
         }
         .sidebar-item,
         .sidebar-item-sub {
@@ -404,9 +426,8 @@ body {
                 }
             }
             &.active a {
-                background-color: #FF6600;
                 &, small {
-                    color: #FFF;
+                    color: #FF6600;
                 }
             }
         }
@@ -429,7 +450,123 @@ body {
     }
 }
 
+
+
 @import "http://g.assets.daily.taobao.net/thx/minecraft-animation/0.0.1/css/animate-min.css";
+
+@keyframes fade-in-left {
+    0% {
+        transform: translate(6%,0);
+        -ms-transform: translate(6%,0);
+        -moz-transform: translate(6%,0);
+        -webkit-transform: translate(6%,0);
+        -o-transform: translate(6%,0);
+        opacity: 0
+    }
+
+    100% {
+        transform: translate(0,0);
+        -ms-transform: translate(0,0);
+        -moz-transform: translate(0,0);
+        -webkit-transform: translate(0,0);
+        -o-transform: translate(0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fade-in-left {
+    0% {
+        transform: translate(6%,0);
+        -ms-transform: translate(6%,0);
+        -moz-transform: translate(6%,0);
+        -webkit-transform: translate(6%,0);
+        -o-transform: translate(6%,0);
+        opacity: 0
+    }
+
+    100% {
+        transform: translate(0,0);
+        -ms-transform: translate(0,0);
+        -moz-transform: translate(0,0);
+        -webkit-transform: translate(0,0);
+        -o-transform: translate(0,0);
+        opacity: 1
+    }
+}
+
+@-moz-keyframes fade-in-left {
+    0% {
+        transform: translate(6%,0);
+        -ms-transform: translate(6%,0);
+        -moz-transform: translate(6%,0);
+        -webkit-transform: translate(6%,0);
+        -o-transform: translate(6%,0);
+        opacity: 0
+    }
+
+    100% {
+        transform: translate(0,0);
+        -ms-transform: translate(0,0);
+        -moz-transform: translate(0,0);
+        -webkit-transform: translate(0,0);
+        -o-transform: translate(0,0);
+        opacity: 1
+    }
+}
+
+@-ms-keyframes fade-in-left {
+    0% {
+        transform: translate(6%,0);
+        -ms-transform: translate(6%,0);
+        -moz-transform: translate(6%,0);
+        -webkit-transform: translate(6%,0);
+        -o-transform: translate(6%,0);
+        opacity: 0
+    }
+
+    100% {
+        transform: translate(0,0);
+        -ms-transform: translate(0,0);
+        -moz-transform: translate(0,0);
+        -webkit-transform: translate(0,0);
+        -o-transform: translate(0,0);
+        opacity: 1
+    }
+}
+
+@-o-keyframes fade-in-left {
+    0% {
+        transform: translate(6%,0);
+        -ms-transform: translate(6%,0);
+        -moz-transform: translate(6%,0);
+        -webkit-transform: translate(6%,0);
+        -o-transform: translate(6%,0);
+        opacity: 0
+    }
+
+    100% {
+        transform: translate(0,0);
+        -ms-transform: translate(0,0);
+        -moz-transform: translate(0,0);
+        -webkit-transform: translate(0,0);
+        -o-transform: translate(0,0);
+        opacity: 1
+    }
+}
+
+
+.bx-anim-fade-in-left {
+    animation: fade-in-left .5s ease-out;
+    -ms-animation: fade-in-left .5s ease-out;
+    -moz-animation: fade-in-left .5s ease-out;
+    -webkit-animation: fade-in-left .5s ease-out;
+    -o-animation: fade-in-left .5s ease-out;
+    animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+}
 
 input[type=checkbox]:checked:after {
     background-color: @brand;

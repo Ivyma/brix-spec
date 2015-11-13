@@ -15,7 +15,7 @@
 <div class="ungrid-row">
     <div class="sidebar-col">
         <div class="sidebar-wrapper">
-            <div class="text-align-center fontsize-0 mb20">
+            <div class="pc-wireless text-align-center fontsize-0 mb20">
                 <div class="left-ellipse inline-block relative cursor">
                     <span class="specfont icon-pc color-fff fontsize-20"></span>
                 </div>
@@ -67,15 +67,20 @@
                     url: html
                 },
                 function() {
-                    Catalog('alimama', 'pc', segment[0] === 'css' || segment[0] === 'all' ||  segment[0] === 'readme' ? 'design' : segment[0])
+                    //判断在设计板块下
+                    var flag = segment[0] === 'css' || segment[0] === 'all' ||  segment[0] === 'readme' || segment[0] === 'design'
+
+                    Catalog('alimama', 'pc', flag ? 'design' : segment[0])
                     
                     $(document.body).find('pre code').each(function(index, code) {
                         hljs.highlightBlock(code)
                     })
 
-                    $('[data-resp="' + name + '"]').addClass('active')
+                    $('[data-resp="' + name + '"]').addClass('active') //高亮
 
-                    $main.addClass(effect)
+                    $('.sidebar-wrapper .pc-wireless')[flag ? 'show' : 'hide']() //pc 无线是否显示
+
+                    $main.addClass(effect) //添加滑动效果
                 }
             )
         }

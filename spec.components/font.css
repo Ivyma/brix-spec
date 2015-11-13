@@ -1,8 +1,8 @@
 /* Font */
 @font-face {
   font-family: 'specfont';
-  src: url('//at.alicdn.com/t/font_1446798768_3960674.eot');
-  src: url('//at.alicdn.com/t/font_1446798768_3960674.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/font_1446798768_3960674.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/font_1446798768_3960674.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/font_1446798768_3960674.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_1447401584_2988884.eot');
+  src: url('//at.alicdn.com/t/font_1447401584_2988884.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/font_1447401584_2988884.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/font_1447401584_2988884.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/font_1447401584_2988884.svg#iconfont') format('svg');
   
   /* IE9*/
   /* iOS 4.1- */
@@ -27,6 +27,9 @@
 }
 .icon-wireless:before {
   content: "\e601";
+}
+.icon-arrow:before {
+  content: "\e606";
 }
 /* Font */
 @font-face {

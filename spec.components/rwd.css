@@ -134,6 +134,9 @@
 .ml15 {
   margin-left: 15px;
 }
+.ml17 {
+  margin-left: 17px;
+}
 .ml20 {
   margin-left: 20px;
 }
@@ -316,6 +319,9 @@
 }
 .mb80 {
   margin-bottom: 80px;
+}
+.mb140 {
+  margin-bottom: 140px;
 }
 .mb160 {
   margin-bottom: 160px;

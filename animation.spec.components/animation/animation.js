@@ -3,8 +3,8 @@ define(
     [
         'jquery', 'underscore', 'mock',
         'brix/base', 'brix/event',
-        './rules.tpl.js',
-        'css!./rules.css'
+        './animation.tpl.js',
+        'css!./animation.css'
     ],
     function(
         $, _, Mock,
