@@ -30,7 +30,7 @@
     <div class="row">
         <% _.each(COMPONENTS, function(item, index){ %>
         <div class="col-md-3">
-            <a href="readme.html?name=<%= item.resp %>">
+            <a href="main.html#/readme/<%= item.resp %>">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <%= item.name %> <%= item.resp %>
