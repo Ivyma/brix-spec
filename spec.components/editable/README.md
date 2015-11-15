@@ -19,17 +19,20 @@
             <div class="color-999 mt6"></div>
         </div>
         <div class="content-body">
-            <!-- <span bx-name="components/editable">文字内容</span> -->
-            <div id="case-base">
-                <div class="editable">
-                    <span class="editable-content">文字内容</span>
-                    <a href="javascript:;" class="editable-toggle brixfont color-ccc">&#xe604;</a>
-                    <input value="文字内容" class="editable-input" style="display: none;">
-                </div>
+            <div class="editable" bx-name="components/editable">
+                <span class="editable-content">文字内容</span>
+                <a href="javascript:;" class="editable-toggle brixfont color-c">&#xe604;<!-- &#xe604; --></a>
+                <input value="文字内容" class="editable-input" style="display: none;">
             </div>
         </div>
     </div>
-    <pre class="example-pre"><code class="hljs html"></code></pre>
+    <pre class="example-pre"><code class="hljs html">
+        <div class="editable" bx-name="components/editable">
+            <span class="editable-content">文字内容</span>
+            <a href="javascript:;" class="editable-toggle brixfont color-c">&#xe604;<!-- &#xe604; --></a>
+            <input value="文字内容" class="editable-input" style="display: none;">
+        </div>
+    </code></pre>
 </div>
 
 <% 
@@ -67,9 +70,9 @@
                     <% _.each(list, function(item){ %>
                     <tr>
                         <td class="nowrap ellipsis">
-                            <div class="editable">
+                            <div class="editable" bx-name="components/editable">
                                 <span class="editable-content"><%= item.name %></span>
-                                <a href="javascript:;" class="editable-toggle brixfont color-ccc">&#xe604;</a>
+                                <a href="javascript:;" class="editable-toggle brixfont color-c">&#xe604;<!-- &#xe604; --></a>
                                 <input value="<%= item.name %>" class="editable-input" style="display: none;">
                             </div>
                         </td>
@@ -106,7 +109,7 @@
             <div id="case-2">
                 <div class="editable">
                     <span class="editable-content">文字内容</span>
-                    <a href="javascript:;" class="editable-toggle brixfont color-ccc">&#xe604;</a>
+                    <a href="javascript:;" class="editable-toggle brixfont color-ccc">&#xe604;<!-- &#xe604; --></a>
                     <div class="suggestwrapper" style="display: none;">
                         <input bx-name="components/suggest" value="文字内容">
                     </div>
@@ -140,6 +143,7 @@
                 })
         })();
         (function(argument) {
+            return
             var wrapper = $('#case-1')
             var editable = wrapper.find('.editable')
             _.each(editable,  function(item, index){

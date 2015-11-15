@@ -148,3 +148,6 @@
         </div>
     </code></pre>
 </div>
+<script type="text/javascript">
+    require(['css!spec.components/pagination/pagination.css'])
+</script>

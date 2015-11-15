@@ -53,18 +53,6 @@
 .bg-primary {
   background-color: #ff6600;
 }
-.bg-success {
-  background-color: #51a300;
-}
-.bg-info {
-  background-color: #f0f0f0;
-}
-.bg-warning {
-  background-color: #a40100;
-}
-.bg-danger {
-  background-color: #a40100;
-}
 .color-hover-brand:hover {
   color: #ff6600;
 }

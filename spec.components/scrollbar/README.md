@@ -19,10 +19,11 @@
     		<div>基本用法</div>
     	</div>
     	<div class="content-body">
-    		<div class="dropdown open clearfix">
-        		<ul class="dropdown-menu" style="position: relative; width: 140px;">
+    		<div class="dropdown open">
+        		<ul class="dropdown-menu" style="position: relative;">
+                    <li class="active"><a href="javascript: void(0);" value="0" bx-click="select()">选项 1</a></li>
         			<% for(var i = 1; i < 11; i++) { %>
-                    <li><a href="javascript: void(0);">选项 <%= i %></a></li>
+                    <li><a href="javascript: void(0);">选项 <%= i + 1%></a></li>
                     <% } %>
   				</ul>
   			</div>

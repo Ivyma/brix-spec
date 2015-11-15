@@ -13,9 +13,9 @@
                 <div class="ml17 mt10">
                     <div class="" id="dropdownMenu1">
                         <a href="index.html">
-                            <span class="specfont icon-minecraft color-brand"></span>
+                            <span class="minecraft-refactor-font icon-minecraft color-brand"></span>
                             <span class="middle-line"></span>
-                            <span class="specfont icon-bu-name color-brand"></span>
+                            <span class="minecraft-refactor-font icon-bu-name color-brand"></span>
                         </a>
                         <!-- <span class="specfont icon-xialakuang" onclick-bak="$(this).closest('.dropdown').toggleClass('open')"></span> -->
                      </div>

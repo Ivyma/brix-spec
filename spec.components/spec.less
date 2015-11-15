@@ -71,17 +71,17 @@ blockquote {
 .fr{
     float: right;
 }
-body a {
-    color: @brand;
-    text-decoration: none;
-    &:hover, &:focus {
-        color: @brand-hover;
-    }
-    &, &:hover, &:focus, &:active, &:visited {
-        outline: 0;
-        text-decoration: none;
-    }
-}
+// body a {
+//     color: @brand;
+//     text-decoration: none;
+//     &:hover, &:focus {
+//         color: @brand-hover;
+//     }
+//     &, &:hover, &:focus, &:active, &:visited {
+//         outline: 0;
+//         text-decoration: none;
+//     }
+// }
 
 body .table {
     thead {
@@ -227,7 +227,7 @@ body .table {
 
 /* mm.css */
 
-body .btn {
+/*body .btn {
     border: 0;
     padding: 6px 20px;
     &.btn-brand {
@@ -283,7 +283,7 @@ body .btn {
             background-color: #FFF;
         }
     }
-}
+}*/
 
 /* */
 .spec-anchor {
@@ -329,7 +329,7 @@ body {
 // }
 
 /* Textarea */
-body {
+/*body {
     textarea, .textarea,
     textarea.form-control, .textarea.form-control {
         height: auto;
@@ -344,7 +344,7 @@ body {
     .form-control.error {
         border-color: @red;
     }
-}
+}*/
 
 /* 响应式 */
 
@@ -397,6 +397,9 @@ body {
         }
         .sidebar {
             padding-bottom: 40px;
+            background-color: transparent;
+            display: block;
+            position: static;
         }
         .sidebar-top{
             padding:10px 20px;
