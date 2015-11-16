@@ -26,7 +26,7 @@ define(function() {
 </div>
 <div class="ungrid-row mb160">
     <div class="ungrid-col animation-vertical-50 color-666 ">
-        <div class="color-brand fontsize-16 mb4">一致性的体验</div>
+        <div class="color-brand fontsize-16 mb4">专注于体验</div>
         <div class="line-height-24">阿里妈妈旗下有许多的营销产品平台，为了避免增加用户的认知学习成本 ，
 我们订定了产品设计核心准则，让用户在跨平台的使用上拥有一致的体验。
 </div>
