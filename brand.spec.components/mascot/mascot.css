@@ -62,7 +62,7 @@
 .brand .brand-color-palettes .huijiese .item {
   padding: 59px 10px;
 }
-.brand .brand-character .waixingtezheng .quanquan {
+.brand .brand-mascot .waixingtezheng .quanquan {
   position: absolute;
   border: 2px solid #666;
   width: 20px;
@@ -70,19 +70,19 @@
   border-style: dotted;
   border-radius: 50%;
 }
-.brand .brand-character .xinggetezheng .wrapper {
+.brand .brand-mascot .xinggetezheng .wrapper {
   position: relative;
   width: 200px;
   height: 275px;
 }
-.brand .brand-character .xinggetezheng .wrapper img {
+.brand .brand-mascot .xinggetezheng .wrapper img {
   position: absolute;
   left: 0;
   top: 0;
   z-index: 2;
   width: 200px;
 }
-.brand .brand-character .xinggetezheng .wrapper div {
+.brand .brand-mascot .xinggetezheng .wrapper div {
   position: absolute;
   left: 20px;
   bottom: 0;
@@ -92,23 +92,23 @@
   border: 1px solid #FF6600;
   border-radius: 50%;
 }
-.brand .brand-character .changjing .changjing-1 text {
+.brand .brand-mascot .changjing .changjing-1 text {
   font-size: 24px;
 }
-.brand .brand-character .changjing .changjing-3 text {
+.brand .brand-mascot .changjing .changjing-3 text {
   font-size: 20px;
 }
-.brand .brand-character .biaoqing img {
+.brand .brand-mascot .biaoqing img {
   width: 120px;
   margin: 0 auto;
   margin-bottom: 20px;
 }
-.brand .brand-character .sanshitu .item {
+.brand .brand-mascot .sanshitu .item {
   display: inline-block;
   width: 100px;
   text-align: left;
 }
-.brand .brand-character .sanshitu .item .circle {
+.brand .brand-mascot .sanshitu .item .circle {
   float: left;
   width: 16px;
   height: 16px;

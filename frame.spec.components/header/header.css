@@ -63,6 +63,9 @@
   width: 100%;
   min-width: inherit;
 }
+.navbar-spec .ml80 {
+  margin-left: 80px;
+}
 .navbar-spec .nav .open > a,
 .navbar-spec .nav .open > a:hover,
 .navbar-spec .nav .open > a:focus {

@@ -8,7 +8,7 @@
     </div>
 
 
-    <div class="spec-section brand-character">
+    <div class="spec-section brand-mascot">
         <div class="clearfix"> 
             <div class="pull-left fontsize-20 mb40">吉祥物 <small>Mascot</small></div>
             <div class="pull-right relative">
@@ -34,7 +34,7 @@
         <div class="mb60">
             <div class="ungrid-row mb40">
                 <div class="ungrid-col text-align-center vertical-align-middle" style="width: 27%; padding-right: 3%;">
-                    <img class="img-responsive" src="assets/character/1 袋妈.svg">
+                    <img class="img-responsive" src="assets/mascot/1 袋妈.svg">
                 </div>
                 <div class="ungrid-col vertical-align-middle" style="width: 50%">
                     <p style="font-size: 28px;">阿袋妈</p>
@@ -50,7 +50,7 @@
             </div>
             <div class="ungrid-row">
                 <div class="ungrid-col text-align-center vertical-align-middle" style="width: 27%; padding-right: 3%;">
-                    <img class="img-responsive" src="assets/character/2 小袋.svg" style="width: 60%; margin: 0 auto;"></div>
+                    <img class="img-responsive" src="assets/mascot/2 小袋.svg" style="width: 60%; margin: 0 auto;"></div>
                 <div class="ungrid-col vertical-align-middle" style="width: 50%">
                     <p style="font-size: 28px;">小袋</p>
                     <p>口头禅：“妈妈我饿了”、“妈妈我困了”</p>
@@ -67,12 +67,12 @@
             <div class="fontsize-16 mb20">外形特征</div>
             <div class="row mb40">
                 <div class="col-sm-6">
-                    <embed src="assets/character/3 特征.svg" style="max-width: 520px;"></embed>
+                    <embed src="assets/mascot/3 特征.svg" style="max-width: 520px;"></embed>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-6">
-                    <img src="assets/character/4 特征.svg" style="max-width: 520px;">
+                    <img src="assets/mascot/4 特征.svg" style="max-width: 520px;">
                 </div>
             </div>
         </div>
@@ -80,17 +80,17 @@
             <div class="fontsize-16 mb10">性格特征</div>
             <div class="row">
                 <div class="col-sm-3">
-                    <embed src="assets/character/5.1 性格.svg" class="img-responsive" style="max-width: 120px; margin: 0 auto;"></embed>
+                    <embed src="assets/mascot/5.1 性格.svg" class="img-responsive" style="max-width: 120px; margin: 0 auto;"></embed>
                     <div class="fontsize-16 mb10 text-align-center">乐观</div>
                     <p class="color-999">非常乐观的、能够带来充足信心。还能利用各种神器精打细算。</p>
                 </div>
                 <div class="col-sm-3">
-                    <img src="assets/character/5.2 性格.svg" class="img-responsive" style="max-width: 120px; margin: 0 auto;">
+                    <img src="assets/mascot/5.2 性格.svg" class="img-responsive" style="max-width: 120px; margin: 0 auto;">
                     <div class="fontsize-16 mb10 text-align-center">助人</div>
                     <p class="color-999">我很忙，不是难题不出手。效率超高，别问我怎么做到的。只要是难题都能解决，就是那么较真。</p>
                 </div>
                 <div class="col-sm-3">
-                    <img src="assets/character/5.3 性格.svg" class="img-responsive" style="max-width: 120px; margin: 0 auto;">
+                    <img src="assets/mascot/5.3 性格.svg" class="img-responsive" style="max-width: 120px; margin: 0 auto;">
                     <div class="fontsize-16 mb10 text-align-center">聪明</div>
                     <p class="color-999">我很聪明，不但在生活方面具备丰富经验值;情商也很高哦!</p>
                 </div>
@@ -100,23 +100,23 @@
             <div class="fontsize-16 mb10">动作和场景/对话</div>
             <div class="ungrid-row mb40" style="max-width: 840px;">
                 <div class="ungrid-col" style="width: 20%;">
-                    <embed class="img-responsive changjing-1" src="assets/character/6.1 场景.svg"></embed>
+                    <embed class="img-responsive changjing-1" src="assets/mascot/6.1 场景.svg"></embed>
                     <!-- 右 7.2 场景.svg 左 7.3 场景.svg -->
                 </div>
                 <div class="ungrid-col" style="width: 40%; padding-right: 20px;">
-                    <embed class="img-responsive changjing-2" src="assets/character/6.2 场景.svg"></embed>
+                    <embed class="img-responsive changjing-2" src="assets/mascot/6.2 场景.svg"></embed>
                 </div>
                 <div class="ungrid-col" style="width: 20%;">
-                    <embed class="img-responsive changjing-3" src="assets/character/6.3 场景.svg"></embed>
+                    <embed class="img-responsive changjing-3" src="assets/mascot/6.3 场景.svg"></embed>
                 </div>
             </div>
             <div class="ungrid-row mb40" style="max-width: 840px;">
                 <div class="ungrid-col" style="width: 56%;">
-                    <embed class="img-responsive changjing-4" src="assets/character/7.1 场景.svg"></embed>
+                    <embed class="img-responsive changjing-4" src="assets/mascot/7.1 场景.svg"></embed>
                     <!-- 右 7.2 场景.svg 左 7.3 场景.svg -->
                 </div>
                 <div class="ungrid-col" style="width: 40%;">
-                    <embed class="img-responsive changjing-5" src="assets/character/7.2 场景.svg"></embed>
+                    <embed class="img-responsive changjing-5" src="assets/mascot/7.2 场景.svg"></embed>
                 </div>
             </div>
         </div>
@@ -124,20 +124,20 @@
             <div class="fontsize-16 mb10">表情/袋妈</div>
             <div class="row">
                 <div class="col-sm-10">
-                    <img class="col-sm-2 img-responsive" src="assets/character/8.1 表情.svg">
-                    <img class="col-sm-2 img-responsive" src="assets/character/8.2 表情.svg">
-                    <img class="col-sm-2 img-responsive" src="assets/character/8.3 表情.svg">
-                    <img class="col-sm-2 img-responsive" src="assets/character/8.4 表情.svg">
-                    <img class="col-sm-2 img-responsive" src="assets/character/8.5 表情.svg">
+                    <img class="col-sm-2 img-responsive" src="assets/mascot/8.1 表情.svg">
+                    <img class="col-sm-2 img-responsive" src="assets/mascot/8.2 表情.svg">
+                    <img class="col-sm-2 img-responsive" src="assets/mascot/8.3 表情.svg">
+                    <img class="col-sm-2 img-responsive" src="assets/mascot/8.4 表情.svg">
+                    <img class="col-sm-2 img-responsive" src="assets/mascot/8.5 表情.svg">
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-10">
-                    <img class="col-sm-2 img-responsive" src="assets/character/8.6 表情.svg">
-                    <img class="col-sm-2 img-responsive" src="assets/character/8.7 表情.svg">
-                    <img class="col-sm-2 img-responsive" src="assets/character/8.8 表情.svg">
-                    <img class="col-sm-2 img-responsive" src="assets/character/8.9 表情.svg">
-                    <img class="col-sm-2 img-responsive" src="assets/character/8.10 表情.svg">
+                    <img class="col-sm-2 img-responsive" src="assets/mascot/8.6 表情.svg">
+                    <img class="col-sm-2 img-responsive" src="assets/mascot/8.7 表情.svg">
+                    <img class="col-sm-2 img-responsive" src="assets/mascot/8.8 表情.svg">
+                    <img class="col-sm-2 img-responsive" src="assets/mascot/8.9 表情.svg">
+                    <img class="col-sm-2 img-responsive" src="assets/mascot/8.10 表情.svg">
                 </div>
             </div>
         </div>
@@ -145,11 +145,11 @@
             <div class="fontsize-16 mb10">表情/小袋</div>
             <div class="row">
                 <div class="col-sm-10">
-                    <img class="col-sm-2 img-responsive" src="assets/character/9.1 表情.svg">
-                    <img class="col-sm-2 img-responsive" src="assets/character/9.2 表情.svg">
-                    <img class="col-sm-2 img-responsive" src="assets/character/9.3 表情.svg">
-                    <img class="col-sm-2 img-responsive" src="assets/character/9.4 表情.svg">
-                    <img class="col-sm-2 img-responsive" src="assets/character/9.5 表情.svg">
+                    <img class="col-sm-2 img-responsive" src="assets/mascot/9.1 表情.svg">
+                    <img class="col-sm-2 img-responsive" src="assets/mascot/9.2 表情.svg">
+                    <img class="col-sm-2 img-responsive" src="assets/mascot/9.3 表情.svg">
+                    <img class="col-sm-2 img-responsive" src="assets/mascot/9.4 表情.svg">
+                    <img class="col-sm-2 img-responsive" src="assets/mascot/9.5 表情.svg">
                 </div>
             </div>
         </div>
@@ -158,9 +158,9 @@
             <div class="mb60">
                 <div class="row mb20">
                     <div class="col-sm-10">
-                        <img class="col-sm-4 img-responsive" src="assets/character/10.1 三视图.svg">
-                        <img class="col-sm-4 img-responsive" src="assets/character/10.2 三视图.svg">
-                        <img class="col-sm-4 img-responsive" src="assets/character/10.3 三视图.svg">
+                        <img class="col-sm-4 img-responsive" src="assets/mascot/10.1 三视图.svg">
+                        <img class="col-sm-4 img-responsive" src="assets/mascot/10.2 三视图.svg">
+                        <img class="col-sm-4 img-responsive" src="assets/mascot/10.3 三视图.svg">
                     </div>
                 </div>
                 <div class="row mb20">
@@ -196,9 +196,9 @@
                 <div class="row mb20">
                     <div class="col-sm-10">
                         <div class="col-sm-3"></div>
-                        <img class="col-sm-2 img-responsive" src="assets/character/11.1 三视图.svg">
-                        <img class="col-sm-2 img-responsive" src="assets/character/11.2 三视图.svg">
-                        <img class="col-sm-2 img-responsive" src="assets/character/11.3 三视图.svg">
+                        <img class="col-sm-2 img-responsive" src="assets/mascot/11.1 三视图.svg">
+                        <img class="col-sm-2 img-responsive" src="assets/mascot/11.2 三视图.svg">
+                        <img class="col-sm-2 img-responsive" src="assets/mascot/11.3 三视图.svg">
                         <div class="col-sm-3"></div>
                     </div>
                 </div>
