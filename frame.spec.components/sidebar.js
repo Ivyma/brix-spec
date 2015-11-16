@@ -131,8 +131,8 @@ define(['mock'], function( /*Mock*/ ) {
 							'href': '/brand/logo'
 						}, {
 							'name': '吉祥物',
-							'resp': 'Character',
-							'href': '/brand/character'
+							'resp': 'Mascot',
+							'href': '/brand/mascot'
 						}, {
 							'name': '字体',
 							'resp': 'Typography',

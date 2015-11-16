@@ -1,6 +1,3 @@
-/* global define */
-define(function() {
-    return (function(){/*
 <% var RE_FILENAME = /.+\/([^\/]+)/ %>
 <% var list = [] %>
 
@@ -13,7 +10,7 @@ define(function() {
 
     <div class="spec-section brand-character">
         <div class="clearfix"> 
-            <div class="pull-left fontsize-20 mb40">吉祥物 <small>Character</small></div>
+            <div class="pull-left fontsize-20 mb40">吉祥物 <small>Mascot</small></div>
             <div class="pull-right relative">
                 <a class="btn btn-brand" href="javascript:;"
                     on-mouseenter="download" 
@@ -231,5 +228,3 @@ define(function() {
 
 
 </div><!-- /brand -->
-    */}).toString().split('\n').slice(1,-1).join('\n') + '\n'
-})

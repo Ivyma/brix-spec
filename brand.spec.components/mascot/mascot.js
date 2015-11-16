@@ -4,8 +4,8 @@ define(
         'jquery', 'underscore',
         'brix/base', 'brix/event',
         'components/dialog/position',
-        './character.tpl.js',
-        'css!./character.css'
+        './mascot.tpl.js',
+        'css!./mascot.css'
     ],
     function(
         $, _,
