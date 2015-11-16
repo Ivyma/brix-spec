@@ -180,7 +180,7 @@
 </div>
 
 <script type="text/javascript">
-    require(['spec.components/linkage'], function(Linkage) {
+    require(['components/table/linkage'], function(Linkage) {
         Linkage('#case2')
         Linkage('#case4')
     })

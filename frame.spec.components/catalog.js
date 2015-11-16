@@ -3,7 +3,7 @@ define(['jquery', 'underscore', 'frame.spec.components/sidebar'], function($, _,
 	return function(bu, platform, nav) {
 
 		var $$sidebar = $sidebar = $('.sidebar').empty()
-		var top_tpl = '<div class="sidebar-group" data-topName="<%= topName %>"><div class="sidebar-top cursor"><span><%= topName %></span><span class="specfont fr icon-arrow fontsize-12 color-brand transition"></span></div><div class="sidebar-sub"></div></div>'
+		var top_tpl = '<div class="sidebar-group" data-topName="<%= topName %>"><div class="sidebar-top cursor"><span><%= topName %></span><span class="minecraft-refactor-font fr icon-arrow fontsize-12 color-brand transition"></span></div><div class="sidebar-sub"></div></div>'
 
 		var tpl = '<div class="sidebar-item" data-resp="<%= respHighLight %>"><a href="main.html#<%= href %>"><%= subName %> <small><%= resp %></small></a></div>'
 		tpl = _.template(tpl)
@@ -28,7 +28,7 @@ define(['jquery', 'underscore', 'frame.spec.components/sidebar'], function($, _,
 		})
 
 		$sidebar.find('.sidebar-top').click(function(){
-			var $item = $(this).children('.specfont')
+			var $item = $(this).children('.minecraft-refactor-font')
 			$item[$item.hasClass('down') ? 'removeClass' : 'addClass']('down').parent('.sidebar-top')
 				.siblings().toggle('slow')
 		})

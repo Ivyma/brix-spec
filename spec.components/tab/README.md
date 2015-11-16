@@ -25,7 +25,7 @@
             </ol>
         </div>
         <div class="content-body">
-            <ul class="mm-tabs clearfix" style="margin-bottom: -1px;">
+            <ul class="mm-tabs clearfix" bx-name="components/tab" data-content="">
                 <li class="active"><a href="javascript:;">标题选项 1</a></li>
                 <li><a href="javascript:;">标题选项 2</a></li>
                 <li><a href="javascript:;">标题选项 3</a></li>
@@ -33,7 +33,7 @@
         </div>
     </div>
     <pre><code>
-    	<ul class="mm-tabs clearfix" style="margin-bottom: -1px;">
+    	<ul class="mm-tabs clearfix" bx-name="components/tab" data-content="">
             <li class="active"><a href="javascript:;">标题选项 1</a></li>
             <li><a href="javascript:;">标题选项 2</a></li>
             <li><a href="javascript:;">标题选项 3</a></li>
@@ -48,12 +48,12 @@
             <div class="color-999 mt6">为防止鼠标滑过时误操作，需设定300ms的延迟时间。 </div>
         </div>
         <div class="content-body">
-            <ul class="mm-tabs clearfix mb20" style="" data-event="mouseenter" data-delay="300" data-content="#case1-content">
+            <ul class="mm-tabs clearfix mb20" bx-name="components/tab" data-event="mouseenter" data-delay="300" data-content="#tab-case1-content">
                 <li class="active"><a href="javascript:;">标题选项 1</a></li>
                 <li><a href="javascript:;">标题选项 2</a></li>
                 <li><a href="javascript:;">标题选项 3</a></li>
             </ul>
-            <div id="case1-content">
+            <div id="tab-case1-content">
                 <div>
                     <p class="flat-text small">内容 1</p>
                     <p class="flat-text full-width mt10"><%= Mock.Random.cparagraph() %></p>
@@ -73,7 +73,7 @@
         </div>
     </div>
     <pre><code>
-        <ul class="mm-tabs clearfix" style="margin-bottom: -1px;">
+        <ul class="mm-tabs clearfix mb20" bx-name="components/tab" data-event="mouseenter" data-delay="300" data-content="#tab-case1-content">
             <li class="active"><a href="javascript:;">标题选项 1</a></li>
             <li><a href="javascript:;">标题选项 2</a></li>
             <li><a href="javascript:;">标题选项 3</a></li>
@@ -88,7 +88,7 @@
             <div class="color-999 mt6">除分组标题外，扩大点击的响应区域。 </div>
         </div>
         <div class="content-body">
-            <ul class="mm-tabs clearfix mb20" style="" data-content="#case2-content">
+            <ul class="mm-tabs mb20 clearfix" bx-name="components/tab" data-content="#case2-content">
                 <li class="active"><a href="javascript:;">标题选项 1</a></li>
                 <li><a href="javascript:;">标题选项 2</a></li>
                 <li><a href="javascript:;">标题选项 3</a></li>
@@ -123,6 +123,7 @@
 
 <script type="text/javascript">
     require(['jquery', 'underscore'], function($, _) {
+        return
         _.each($('ul.mm-tabs'), function(item, index){
             item = $(item)
             var type = item.attr('data-event') || 'click'

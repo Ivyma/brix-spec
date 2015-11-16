@@ -12,7 +12,7 @@
 
 <div class="fontsize-16 mb10">示例 <small>Examples</small></div>
 
-<div class="example">
+<div class="example hide">
     <div class="content">
         <div class="content-header">
             <div>基础用法</div>

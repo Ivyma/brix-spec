@@ -27,8 +27,8 @@
         </div>
         <div class="content-body">
             <div>
-                <label><input type="radio" name="case-base"> 未选中</label>
-                <label><input type="radio" name="case-base" checked>已选中</label>
+                <label><input type="radio" name="case-base-"> 未选中</label>
+                <label><input type="radio" name="case-base-" checked>已选中</label>
             </div>
             <div>
                 <label class="disabled"><input type="radio" disabled> 禁用/未选中</label>
@@ -37,8 +37,8 @@
         </div>
     </div>
     <pre><code class="hljs html">
-        <label><input type="radio" name="case-base"> 未选中</label>
-        <label><input type="radio" name="case-base" checked>已选中</label>
+        <label><input type="radio" name="case-base-example"> 未选中</label>
+        <label><input type="radio" name="case-base-example" checked>已选中</label>
         <label><input type="radio" disabled> 禁用/未选中</label>
         <label><input type="radio" checked disabled>禁用/已选中</label>
     </code></pre>
@@ -135,7 +135,7 @@
 </div>
 
 <script type="text/javascript">
-    require(['spec.components/linkage'], function(Linkage) {
+    require(['components/table/linkage'], function(Linkage) {
         Linkage('#case1')
     })
 </script>
