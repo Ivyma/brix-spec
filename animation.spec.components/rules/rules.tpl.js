@@ -3,8 +3,9 @@ define(function() {
     return (function(){/*
 <div class="animation-background">
     <div class="ungrid-row mb160">
-        <div class="ungrid-col animation-vertical"><img class="img-responsive" src="assets/animation/landing/标题.svg" alt="标题"></div>
+        <div class="ungrid-col animation-vertical" style="width:60%;"><img class="img-responsive" src="assets/animation/landing/标题.svg" alt="标题"></div>
         <div class="ungrid-col"><img class="img-responsive" src="assets/animation/landing/字母M.gif" alt="字母M"></div>
+        <div class="ungrid-col" style="width:10%"></div>
     </div>
 </div>
 <div class="ungrid-row mb160">

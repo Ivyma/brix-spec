@@ -2,6 +2,7 @@
     <div class="ungrid-row mb160">
         <div class="ungrid-col animation-vertical"><img class="img-responsive" src="assets/design/landing/标题.svg" alt="标题"></div>
         <div class="ungrid-col"><img class="img-responsive" src="assets/design/landing/字母D.gif" alt="字母M"></div>
+        <div class="ungrid-col animation-width-10"></div>
     </div>
 </div>
 <div class="ungrid-row mb160">
