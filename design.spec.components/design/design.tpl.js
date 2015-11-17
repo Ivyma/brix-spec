@@ -1,38 +1,39 @@
 /* global define */
 define(function() {
     return (function(){/*
-<div class="animation-background">
-    <div class="ungrid-row mb160">
-        <div class="ungrid-col animation-vertical"><img class="img-responsive" src="assets/design/landing/标题.svg" alt="标题"></div>
-        <div class="ungrid-col"><img class="img-responsive" src="assets/design/landing/字母D.gif" alt="字母M"></div>
-        <div class="ungrid-col animation-width-10"></div>
+<div class="design-background">
+    <div class="row">
+        <div class="col-sm-7 mb20" style="padding-top: 10%;"><img class="img-responsive" src="assets/design/landing/标题.svg" alt="标题"></div>
+        <div class="col-sm-4 design-decoration"><img class="img-responsive" src="assets/design/landing/字母D.gif" alt="字母M"></div>
     </div>
 </div>
-<div class="ungrid-row mb160">
-    <div class="ungrid-col color-666">
+<div class="row mb160">
+    <div class="col-sm-7 mb20">
         <div class="color-brand fontsize-16 mb4">简洁与高效</div>
-        <div class="line-height-24">透过数据化与经验的积累，我们不断的思考如何让用户在使用上能更顺畅、更有效率，同时达到相同的目的以减轻操作上的负担。</div>
+        <div class="color-666 line-height-24">透过数据化与经验的积累，我们不断的思考如何让用户在使用上能更顺畅、更有效率，同时达到相同的目的以减轻操作上的负担。</div>
     </div>
-    <div class="ungrid-col animation-width-20"></div>
-    <div class="ungrid-col animation-vertical-30"><img class="img-responsive" src="assets/animation/landing/真实.svg" alt="真实"></div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-4">
+        <img class="img-responsive" src="assets/animation/landing/真实.svg" alt="真实">
+    </div>
 </div>
-<div class="ungrid-row mb160">
-    <div class="ungrid-col animation-vertical-30"><img class="img-responsive" src="assets/animation/landing/效率优先.svg" alt="效率优先"></div>
-    <div class="ungrid-col animation-width-20"></div>
-    <div class="ungrid-col animation-vertical-part color-666">
+<div class="row mb160">
+    <div class="col-sm-4 mb20">
+        <img class="img-responsive" src="assets/animation/landing/效率优先.svg" alt="效率优先">
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-7">
         <div class="color-brand fontsize-16 mb4">贴近真实需求</div>
-        <div class="line-height-24">设计将抽象的概念转化至具象，同时也要满足用户的真实需求。我们善于倾听用户的声音，以实现最好、最贴心的解决方案做为设计目标。</div>
+        <div class="color-666 line-height-24">设计将抽象的概念转化至具象，同时也要满足用户的真实需求。我们善于倾听用户的声音，以实现最好、最贴心的解决方案做为设计目标。</div>
     </div>
 </div>
-<div class="ungrid-row mb160">
-    <div class="ungrid-col animation-vertical-50 color-666 ">
+<div class="row mb160">
+    <div class="col-sm-7 mb20">
         <div class="color-brand fontsize-16 mb4">专注于体验</div>
-        <div class="line-height-24">阿里妈妈旗下有许多的营销产品平台，为了避免增加用户的认知学习成本 ，
-我们订定了产品设计核心准则，让用户在跨平台的使用上拥有一致的体验。
-</div>
+        <div class="color-666 line-height-24">阿里妈妈旗下有许多的营销产品平台，为了避免增加用户的认知学习成本，我们订定了产品设计核心准则，让用户在跨平台的使用上拥有一致的体验。</div>
     </div>
-    <div class="ungrid-col animation-width-20"></div>
-    <div class="ungrid-col"><img class="img-responsive" src="assets/animation/landing/遵循法则.svg" alt="遵循法则"></div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-4"><img class="img-responsive" src="assets/animation/landing/遵循法则.svg" alt="遵循法则"></div>
 </div>
 
 <div class="fontsize-24 mb30 color-brand">解决用户在产品使用中的体验问题</div>

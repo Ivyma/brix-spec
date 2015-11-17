@@ -1335,29 +1335,24 @@ body .parsley-errors-list + .parsley-errors-list {
 .sidebar-col .sidebar-wrapper .inline-block {
   display: inline-block;
 }
-.sidebar-col .sidebar-wrapper .left-ellipse {
+.sidebar-col .sidebar-wrapper .left-ellipse,
+.sidebar-col .sidebar-wrapper .right-ellipse {
   width: 60px;
   height: 32px;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-  background-color: #ccc;
 }
-.sidebar-col .sidebar-wrapper .left-ellipse .specfont {
+.sidebar-col .sidebar-wrapper .left-ellipse .minecraft-refactor-font,
+.sidebar-col .sidebar-wrapper .right-ellipse .minecraft-refactor-font {
   position: relative;
   top: 2px;
   left: 2px;
 }
-.sidebar-col .sidebar-wrapper .right-ellipse {
-  width: 60px;
-  height: 32px;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  background-color: #f0f0f0;
+.sidebar-col .sidebar-wrapper .left-ellipse {
+  border-radius: 30px 0 0 30px;
+  background-color: #ccc;
 }
-.sidebar-col .sidebar-wrapper .right-ellipse .specfont {
-  position: relative;
-  top: 2px;
-  left: -2px;
+.sidebar-col .sidebar-wrapper .right-ellipse {
+  border-radius: 0 30px 30px 0;
+  background-color: #f0f0f0;
 }
 .sidebar-col .sidebar-wrapper .sidebar {
   padding-bottom: 40px;

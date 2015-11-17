@@ -368,32 +368,26 @@ body {
         -ms-overflow-style: -ms-autohiding-scrollbar;
         -webkit-overflow-scrolling: touch;
 
-        .inline-block{
-            display:inline-block;
+        .inline-block {
+            display: inline-block;
         }
-        .left-ellipse{
-            width:60px;
-            height:32px;
-            border-top-left-radius:30px;
-            border-bottom-left-radius:30px;
-            background-color:#ccc;
-            .specfont{
-                position:relative;
-                top:2px;
-                left:2px;
+        .left-ellipse,
+        .right-ellipse {
+            width: 60px;
+            height: 32px;
+            .minecraft-refactor-font {
+                position: relative;
+                top: 2px;
+                left: 2px;
             }
         }
-        .right-ellipse{
-            width:60px;
-            height:32px;
-            border-top-right-radius:30px;
-            border-bottom-right-radius:30px;
-            background-color:#f0f0f0;
-            .specfont{
-                position:relative;
-                top:2px;
-                left:-2px;
-            }
+        .left-ellipse {
+            border-radius: 30px 0 0 30px;
+            background-color: #ccc;
+        }
+        .right-ellipse {
+            border-radius: 0 30px 30px 0;
+            background-color: #f0f0f0;
         }
         .sidebar {
             padding-bottom: 40px;

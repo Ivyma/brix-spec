@@ -1,29 +1,67 @@
-.animation-background{
+@import "../../spec.components/variables.less";
+
+.vertical-align-middle {
+    vertical-align: middle;
+}
+
+.design-background{
     background:url('../../assets/animation/landing/minecraft背景.svg') no-repeat;
     background-size: 100%;
-    margin: 0px 0px -1px -40px;
-    padding: 20px 0px 1px 40px;
+    padding-bottom: 160px;
+
+    .design-decoration {
+        .img-responsive{
+            width: 100%;
+            max-width: 400px;
+        }
+    }
+
+    // margin: 0px 0px -1px -40px;
+    // padding: 20px 0px 1px 40px;
+
+    // .design-slogan {
+    //     width: 60%;
+    //     @media @device-phone {
+    //         display: block;
+    //         width: 100%;
+    //     }
+    // }
+    // .design-decoration {
+    //     width: 30%;
+    //     @media @device-phone {
+    //         display: block;
+    //         width: 100%;
+    //         img {
+    //         }
+    //     }
+    // }
+
+    @media @device-phone {}
+    @media @device-tablet {}
+    @media @device-desktop {}
+    @media @device-desktop-lg {}
+
 }
-.animation-vertical {
+.design-vertical {
     vertical-align: middle;
     width: 60%;
     padding-right: 30px;
 }
-.animation-vertical-50{
+.design-vertical-50{
     vertical-align: middle;
     width: 50%;
 }
-.animation-vertical-30{
+.design-vertical-30{
     vertical-align: middle;
     width: 30%;
 }
-.animation-width-20{
+.design-width-20{
     width: 20%;
 }
-.animation-width-10{
+.design-width-10{
     width: 10%;
 }
-.animation-ball{
+.design-ball{
     position: absolute;
     top: 70px;
     left: 60px;

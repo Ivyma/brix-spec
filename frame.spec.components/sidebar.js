@@ -1,4 +1,4 @@
-/* global define, window */
+/* global define */
 define(['mock'], function( /*Mock*/ ) {
 
 	return {
