@@ -3,8 +3,12 @@ define(function() {
     return (function(){/*
 <div class="design-background">
     <div class="row">
-        <div class="col-sm-7 mb20" style="padding-top: 10%;"><img class="img-responsive" src="assets/design/landing/标题.svg" alt="标题"></div>
-        <div class="col-sm-4 design-decoration"><img class="img-responsive" src="assets/design/landing/字母D.gif" alt="字母M"></div>
+        <div class="col-sm-7 mb20" style="padding-top: 10%;">
+            <img class="img-responsive" src="assets/design/landing/标题.svg" alt="标题">
+        </div>
+        <div class="col-sm-4 design-decoration">
+            <img class="img-responsive" src="assets/design/landing/字母D.gif" alt="字母M">
+        </div>
     </div>
 </div>
 <div class="row mb160">

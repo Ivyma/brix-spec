@@ -20,9 +20,9 @@
             <div>基础用法</div>
         </div>
         <div class="content-body">
-            <button class="btn btn-brand mr60">主要按钮</button>
-            <button class="btn mr60">次要按钮</button>
-            <button class="btn btn-disabled mr60">不可点按钮</button>
+            <button class="btn btn-brand mr60 mb10">主要按钮</button>
+            <button class="btn mr60 mb10">次要按钮</button>
+            <button class="btn btn-disabled mr60 mb10">不可点按钮</button>
             <a class="" href="javascript:;">文字按钮</a>
         </div>
     </div>

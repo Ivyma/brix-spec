@@ -1,8 +1,11 @@
 .animation-background {
   background: url('../../assets/animation/landing/minecraft背景.svg') no-repeat;
   background-size: 100%;
-  margin: 0px 0px -1px -40px;
-  padding: 20px 0px 1px 40px;
+  padding-bottom: 160px;
+}
+.animation-background .animation-decoration .img-responsive {
+  width: 100%;
+  max-width: 400px;
 }
 .animation-vertical {
   vertical-align: middle;
