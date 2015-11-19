@@ -2,64 +2,100 @@
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" on-click="toggleNavbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-
-            <div class="navbar-logo">
-                <div class="ml17 mt10">
-                    <div class="" id="dropdownMenu1">
-                        <a href="index.html">
-                            <span class="minecraft-refactor-font icon-minecraft color-brand"></span>
-                            <span class="middle-line"></span>
-                            <span class="minecraft-refactor-font icon-bu-name color-brand"></span>
-                        </a>
-                        <!-- <span class="specfont icon-xialakuang" onclick-bak="$(this).closest('.dropdown').toggleClass('open')"></span> -->
-                     </div>
-                    <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li>
-                            <a href="#">
-                                <span class="specfont">&#xe61b;</span>
-                                <span class="bu-name">淘宝商家</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="specfont">&#xe61b;</span>
-                                <span class="bu-name">天猫商家</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="specfont">&#xe61b;</span>
-                                <span class="bu-name">聚划算商家</span>
-                            </a>
-                        </li>
-                    </ul> -->
+            <div class="navbar-brand">
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" on-click="toggleBrand()">
+                        <span class="dropdown-toggle-label">
+                            <span class="minecraft-refactor-font">&#xe600;</span>
+                            <span class="middle-line">|</span>
+                            <span class="minecraft-refactor-font">&#xe603;<!-- 阿里妈妈 &#xe603; --></span>
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="active"><a href="javascript: void(0);" on-click="selectBrand()">
+                            <span class="minecraft-refactor-font">&#xe600;</span>
+                            <span class="middle-line">|</span>
+                            <span class="minecraft-refactor-font">&#xe603;<!-- 阿里妈妈 &#xe603; --></span>
+                        </a></li>
+                        <li class=""><a href="javascript: void(0);" on-click="selectBrand()">
+                            <span class="minecraft-refactor-font">&#xe600;</span>
+                            <span class="middle-line">|</span>
+                            <span>淘宝商家</span>
+                        </a></li>
+                        <li class=""><a href="javascript: void(0);" on-click="selectBrand()">
+                            <span class="minecraft-refactor-font">&#xe600;</span>
+                            <span class="middle-line">|</span>
+                            <span>天猫商家</span>
+                        </a></li>
+                        <li class=""><a href="javascript: void(0);" on-click="selectBrand()">
+                            <span class="minecraft-refactor-font">&#xe600;</span>
+                            <span class="middle-line">|</span>
+                            <span class="">聚划算商家</span>
+                        </a></li>
+                    </ul>
                 </div>
             </div>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav ml80">
-                <li><a href="main.html#/design">设计</a></li>
-                <!-- <li><a href="css.html">样式</a></li>
-                <li>
-                    <a href="components.html" class="hasmore">组件</a>
-                    <div class="dropdown">
-                        <a href="components.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">组件 <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <% _.each(COMPONENTS, function(item, index){ %>
-                            <li class="sidebar-item"><a href="readme.html?name=<%= item.resp %>"><%= item.name %> <small><%= item.resp %></small></a></li>
-                            <% }) %>
-                        </ul>
-                    </div>
-                </li> -->
-                <li><a href="main.html#/brand/brand_story">品牌</a></li>
-                <li><a href="main.html#/animation/rules">动效</a></li>
+        <div class="collapse navbar-collapse" id="minecraft-header-navbar-collapse-phone">
+            <ul class="nav navbar-nav">
+                <li data-phone="false"> <a href="main.html#/design">设计</a> </li>
+                <li data-phone="true" on-click="toggleNavbar"> <a href="main.html#/design">设计</a> </li>
+
+                <li data-phone="true" class="navbar-dropdown">
+                    <a href="javascript:;" on-click="toggleNavDropdown" class="dropdown-toggle">
+                        <span>样式</span> 
+                        <span class="dropdown-caret minecraft-refactor-font fontsize-12 color-brand">&#xe604;</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <% _.each(DESIGN_CSS_PC, function(item, index) { %>
+                        <li on-click="toggleNavbar"><a href="<%= item.hash %>"><%= item.name %></a></li>
+                        <% }) %>
+                    </ul>
+                </li>
+
+                <li data-phone="true" class="navbar-dropdown">
+                    <a href="javascript:;" on-click="toggleNavDropdown" class="dropdown-toggle">
+                        <span>组件</span> 
+                        <span class="dropdown-caret minecraft-refactor-font fontsize-12 color-brand">&#xe604;</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <% _.each(DESIGN_COMPONENT_PC, function(item, index) { %>
+                        <li on-click="toggleNavbar"><a href="<%= item.hash %>"><%= item.name %></a></li>
+                        <% }) %>
+                    </ul>
+                </li>
+
+                <li data-phone="false"> <a href="main.html#/brand/brand_story">品牌</a> </li>
+                <li data-phone="true" class="navbar-dropdown">
+                    <a href="javascript:;" on-click="toggleNavDropdown" class="dropdown-toggle">
+                        <span>品牌</span> 
+                        <span class="dropdown-caret minecraft-refactor-font fontsize-12 color-brand">&#xe604;</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <% _.each(BRAND, function(item, index) { %>
+                        <li on-click="toggleNavbar"><a href="<%= item.hash %>"><%= item.name %></a></li>
+                        <% }) %>
+                    </ul>
+                </li>
+                <li data-phone="false"> <a href="main.html#/animation/rules">动效</a> </li>
+                <li data-phone="true" class="navbar-dropdown">
+                    <a href="javascript:;" on-click="toggleNavDropdown" class="dropdown-toggle">
+                        <span>动效</span> 
+                        <span class="dropdown-caret minecraft-refactor-font fontsize-12 color-brand">&#xe604;</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <% _.each(ANIMATION, function(item, index) { %>
+                        <li on-click="toggleNavbar"><a href="<%= item.hash %>"><%= item.name %></a></li>
+                        <% }) %>
+                    </ul>
+                </li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

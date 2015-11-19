@@ -532,7 +532,6 @@
 .pb80 {
   padding-bottom: 80px;
 }
-/* Font */
 @font-face {
   font-family: 'minecraft-refactor-font';
   src: url('//at.alicdn.com/t/font_1447660897_6310773.eot');
@@ -565,7 +564,6 @@
 .icon-arrow:before {
   content: "\e604";
 }
-/* Font */
 @font-face {
   font-family: 'zsfont';
   src: url('//at.alicdn.com/t/font_1436859315_9685595.eot');
@@ -583,7 +581,6 @@
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
 }
-/* Font */
 @font-face {
   font-family: 'productfont';
   src: url('//at.alicdn.com/t/font_1438848723_123487.eot');
