@@ -564,7 +564,7 @@
 }
 .navbar.navbar-spec .container-fluid .navbar-header .navbar-brand .dropdown .dropdown-toggle {
   border: none;
-  height: 50px;
+  height: 48px;
 }
 .navbar.navbar-spec .container-fluid .navbar-header .navbar-brand .dropdown .dropdown-toggle:active,
 .navbar.navbar-spec .container-fluid .navbar-header .navbar-brand .dropdown .dropdown-toggle:hover {
@@ -585,7 +585,7 @@
 }
 .navbar.navbar-spec .container-fluid .navbar-header .navbar-brand .dropdown ul.dropdown-menu {
   min-width: 160px;
-  margin-top: 0;
+  margin-top: 2px;
   padding: 10px 0;
   border-radius: 0;
   border: 0;

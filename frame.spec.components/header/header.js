@@ -25,23 +25,18 @@ define(
                 $(this.element).append(html)
 
                 var uri = new URI(location.href)
-                var fragment = uri.fragment()
-                var furi = URI(fragment)
+                var furi = new URI(uri.fragment())
                 var segment = furi.segment()
-                    // var query = furi.query(true)
-                    // var name = query.name.toLowerCase()
                 var path = segment[0]
-                path = {
-                    'readme': 'css',
-                    'components': 'css'
-                }[path] || path
 
-                var items = $(this.element).find('ul.navbar-nav > li > a')
-                _.each(items, function(item /*, index*/ ) {
-                    var $item = $(item)
-                    var href = $item.attr('href')
-                    if (href.indexOf(path) >= 0) $item.parent('li').addClass('active')
-                })
+                if (path) {
+                    var items = $(this.element).find('ul.navbar-nav > li > a')
+                    _.each(items, function(item /*, index*/ ) {
+                        var $item = $(item)
+                        var href = $item.attr('href')
+                        if (href.indexOf(path) >= 0) $item.parent('li').addClass('active')
+                    })
+                }
 
                 $('.nav').on('click', 'li', function(event) {
                     $(event.currentTarget)

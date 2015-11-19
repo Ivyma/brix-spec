@@ -10,12 +10,14 @@
             </button>
             <div class="navbar-brand">
                 <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" type="button" on-click="toggleBrand()">
-                        <span class="dropdown-toggle-label">
-                            <span class="minecraft-refactor-font">&#xe600;</span>
-                            <span class="middle-line">|</span>
-                            <span class="minecraft-refactor-font">&#xe603;<!-- 阿里妈妈 &#xe603; --></span>
-                        </span>
+                    <button class="btn btn-default dropdown-toggle" type="button"><!-- on-click="toggleBrand()" -->
+                        <a href="index.html">
+                            <span class="dropdown-toggle-label">
+                                <span class="minecraft-refactor-font">&#xe600;</span>
+                                <span class="middle-line">|</span>
+                                <span class="minecraft-refactor-font">&#xe603;<!-- 阿里妈妈 &#xe603; --></span>
+                            </span>
+                        </a>
                     </button>
                     <ul class="dropdown-menu">
                         <li class="active"><a href="javascript: void(0);" on-click="selectBrand()">

@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import "http://g.assets.daily.taobao.net/thx/minecraft-animation/0.0.1/css/animate-min.css";
 /* Color */
 .color-brand {
   color: #ff6600;
@@ -1403,114 +1402,11 @@ body .parsley-errors-list + .parsley-errors-list {
   min-height: 500px;
   max-width: 1170px;
 }
-@keyframes fade-in-left {
-  0% {
-    transform: translate(6%, 0);
-    -ms-transform: translate(6%, 0);
-    -moz-transform: translate(6%, 0);
-    -webkit-transform: translate(6%, 0);
-    -o-transform: translate(6%, 0);
-    opacity: 0;
-  }
-  100% {
-    transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    -moz-transform: translate(0, 0);
-    -webkit-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fade-in-left {
-  0% {
-    transform: translate(6%, 0);
-    -ms-transform: translate(6%, 0);
-    -moz-transform: translate(6%, 0);
-    -webkit-transform: translate(6%, 0);
-    -o-transform: translate(6%, 0);
-    opacity: 0;
-  }
-  100% {
-    transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    -moz-transform: translate(0, 0);
-    -webkit-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    opacity: 1;
-  }
-}
-@-moz-keyframes fade-in-left {
-  0% {
-    transform: translate(6%, 0);
-    -ms-transform: translate(6%, 0);
-    -moz-transform: translate(6%, 0);
-    -webkit-transform: translate(6%, 0);
-    -o-transform: translate(6%, 0);
-    opacity: 0;
-  }
-  100% {
-    transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    -moz-transform: translate(0, 0);
-    -webkit-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    opacity: 1;
-  }
-}
-@-ms-keyframes fade-in-left {
-  0% {
-    transform: translate(6%, 0);
-    -ms-transform: translate(6%, 0);
-    -moz-transform: translate(6%, 0);
-    -webkit-transform: translate(6%, 0);
-    -o-transform: translate(6%, 0);
-    opacity: 0;
-  }
-  100% {
-    transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    -moz-transform: translate(0, 0);
-    -webkit-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    opacity: 1;
-  }
-}
-@-o-keyframes fade-in-left {
-  0% {
-    transform: translate(6%, 0);
-    -ms-transform: translate(6%, 0);
-    -moz-transform: translate(6%, 0);
-    -webkit-transform: translate(6%, 0);
-    -o-transform: translate(6%, 0);
-    opacity: 0;
-  }
-  100% {
-    transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    -moz-transform: translate(0, 0);
-    -webkit-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    opacity: 1;
-  }
-}
-.bx-anim-fade-in-left {
-  animation: fade-in-left 0.5s ease-out;
-  -ms-animation: fade-in-left 0.5s ease-out;
-  -moz-animation: fade-in-left 0.5s ease-out;
-  -webkit-animation: fade-in-left 0.5s ease-out;
-  -o-animation: fade-in-left 0.5s ease-out;
-  animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -ms-animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-}
-input[type=checkbox]:checked:after {
-  background-color: #ff6600;
-  top: 1px;
-}
-input[type=radio]:checked:after {
-  background-color: #ff6600;
+.install pre {
+  margin: 0;
+  border: none;
+  padding: 18px 40px;
+  border-radius: 6px;
 }
 @media only screen and (max-width: 767px) {
   .navbar .navbar-header .navbar-toggle {
