@@ -10,22 +10,17 @@
 <div class="components">
     <div class="row">
         <% _.each(COMPONENTS, function(item, index){ %>
-        <div class="col-md-3">
-            <a href="readme.html?name=<%= item.resp %>">
+        <div class="col-md-4" style="margin-bottom:50px;">
+            <a href="chart.spec.components/demo/build/demo/<%= item.type %>/<%= item.resp %>.html" target="_blank">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <%= item.name %> 
-                        <%= item.resp %>
                     </div>
-                    <div class="panel-body">
-                        <img src="<%= item.prev %>">
+                    <div class="panel-body" style="height:180px;line-height:160px;">
+                        <img src="assets/charts/vteam-chart/<%= item.type %>/<%= item.resp %>.<%= item.prevImgType %>">
                     </div>
-                    <div class="panel-footer hide">
-                        示例
-                        配置
-                        属性
-                        方法
-                        事件
+                    <div class="panel-footer hide" style="color:#999">
+                        <%= item.beizhu %>
                     </div>
                 </div>
             </a>

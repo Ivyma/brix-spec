@@ -1,7 +1,7 @@
 /* global define, console */
 define(
     [
-        'jquery', 'underscore', 'mock',
+        'jquery', 'URIjs/URI','underscore', 'mock',
         'brix/base', 'brix/event',
         'chart.spec.components/constant',
         //'../brand/brand.js',
@@ -9,7 +9,7 @@ define(
         'css!./index.css'
     ],
     function(
-        $, _, Mock,
+        $, URI, _, Mock,
         Brix, EventManager,
         Constant,
         //Brand,
@@ -21,24 +21,28 @@ define(
             options: {},
             init: function() {
                 // name resp desc readme links
+                
+                var uri = new URI(location.href)
+                var query = uri.query(true)
+                var name = query.name.toLowerCase()
                 this.data = {
                     BASICS: Constant.BASICS,
-                    COMPONENTS: Constant.line
+                    COMPONENTS: Constant[ name ]
                 }
                 _.each(this.data.COMPONENTS, function(item /*, index*/ ) {
-                    item.prev = item.prev || Mock.Random.dataImage('128x128', '')
-                })
-                //console.log(this.data)
+                        item.prev = item.prev || Mock.Random.dataImage('128x128', '')
+                    })
+                    //console.log(this.data)
             },
             render: function() {
-                this.data = this.data || _.extend({}, this.options)
-                var html = _.template(template)(this.data)
-                $(this.element).append(html)
+                    this.data = this.data || _.extend({}, this.options)
+                    var html = _.template(template)(this.data)
+                    $(this.element).append(html)
 
-                var manager = new EventManager('on-')
-                manager.delegate(this.element, this)
-            }
-            //download: Brand.prototype.download
+                    var manager = new EventManager('on-')
+                    manager.delegate(this.element, this)
+                }
+                //download: Brand.prototype.download
         })
 
         return Components
