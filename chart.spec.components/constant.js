@@ -44,7 +44,7 @@ define(['mock'], function( /*Mock*/ ) {
 			type: 'line',
 			resp: 'anchor',
 			beizhu: "",
-			prevImgType: "gif"
+			prevImgType: "png"
 		}, {
 			name: '双Y轴折线图',
 			type: 'line',
@@ -56,7 +56,7 @@ define(['mock'], function( /*Mock*/ ) {
 			type: 'line',
 			resp: 'biaxial_sortyaxis',
 			beizhu: "",
-			prevImgType: "gif"
+			prevImgType: "png"
 		}, {
 			name: '拐角才出现节点',
 			type: 'line',
@@ -91,6 +91,12 @@ define(['mock'], function( /*Mock*/ ) {
 			name: 'x轴文案旋转',
 			type: 'line',
 			resp: 'xAxis_rotate',
+			beizhu: "",
+			prevImgType: "png"
+		}, {
+			name: '双轴，多纬度，不同排序',
+			type: 'line',
+			resp: 'biaxial_morefield_sort',
 			beizhu: "",
 			prevImgType: "png"
 		}],
@@ -179,50 +185,222 @@ define(['mock'], function( /*Mock*/ ) {
 			beizhu: "",
 			prevImgType: "png"
 		}],
+		map : [
+        {
+			name: '中国地图',
+			type: 'map',
+			resp: 'index',
+			beizhu: "",
+			prevImgType: "png"
+		},
+		{
+			name: '中国地图- 省市地图联动',
+			type: 'map',
+			resp: 'provinces_linkage',
+			beizhu: "",
+			prevImgType: "gif"
+		},
+		{
+			name: '世界地图',
+			type: 'map',
+			resp: 'world',
+			beizhu: "",
+			prevImgType: "png"
+		},
+		{
+			name: '中国地图-标注点',
+			type: 'map',
+			resp: 'markpoint',
+			beizhu: "",
+			prevImgType: "png"
+		}
+		],
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+		pie : [
+        {
+			name: '基础饼图',
+			type: 'pie',
+			resp: 'index',
+			beizhu: "",
+			prevImgType: "png"
+		},{
+			name: '饼图，无周边tips',
+			type: 'pie',
+			resp: 'nodatalabel',
+			beizhu: "",
+			prevImgType: "png"
+		},{
+			name: '实心饼图',
+			type: 'pie',
+			resp: 'solid',
+			beizhu: "",
+			prevImgType: "png"
+		}
+		],
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+        radar : [
+        {
+			name: '基础雷达图',
+			type: 'radar',
+			resp: 'index',
+			beizhu: "",
+			prevImgType: "png"
+		},{
+			name: '雷达图，可自定义y轴的纬度',
+			type: 'radar',
+			resp: 'custom_yAxis',
+			beizhu: "",
+			prevImgType: "png"
+		},{
+			name: '雷达图，平滑曲线',
+			type: 'radar',
+			resp: 'smooth',
+			beizhu: "",
+			prevImgType: "png"
+		}
+		],
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+        scat : [
+        {
+			name: '基础散点图',
+			type: 'scat',
+			resp: 'index',
+			beizhu: "",
+			prevImgType: "png"
+		},{
+			name: '带标尺，而且自定义坐标原点',
+			type: 'scat',
+			resp: 'cross_origin',
+			beizhu: "",
+			prevImgType: "png"
+		},{
+			name: '散点图，带label',
+			type: 'scat',
+			resp: 'index_label',
+			beizhu: "",
+			prevImgType: "png"
+		}
+		],
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+		topo : [
+        {
+			name: '树状图',
+			type: 'topo',
+			resp: 'tree',
+			beizhu: "",
+			prevImgType: "png"
+		},{
+			name: '横向树状图',
+			type: 'topo',
+			resp: 'tree-h',
+			beizhu: "",
+			prevImgType: "png"
+		}
+		],
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+		progress : [
+        {
+			name: '基础进度图表',
+			type: 'progress',
+			resp: 'index',
+			beizhu: "",
+			prevImgType: "png"
+		},{
+			name: '进度图表样式1',
+			type: 'progress',
+			resp: 'index1',
+			beizhu: "",
+			prevImgType: "png"
+		},{
+			name: '多分组进度图表',
+			type: 'progress',
+			resp: 'morebar',
+			beizhu: "",
+			prevImgType: "png"
+		}
+		],
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+        venn : [{
+			name: '韦恩图',
+			type: 'venn',
+			resp: 'index',
+			beizhu: "",
+			prevImgType: "png"
+		},{
+			name: '多纬度韦恩图',
+			type: 'venn',
+			resp: 'morecircle',
+			beizhu: "",
+			prevImgType: "png"
+		}
+		],
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+        hybrid : [{
+			name: '柱折混合图',
+			type: 'hybrid',
+			resp: 'bar_line',
+			beizhu: "",
+			prevImgType: "png"
+		},{
+			name: '柱折混合图-markPoint',
+			type: 'hybrid',
+			resp: 'bar_line_markpoint',
+			beizhu: "",
+			prevImgType: "png"
+		},{
+			name: '多分组进度图表',
+			type: 'hybrid',
+			resp: 'bar_line_markline',
+			beizhu: "",
+			prevImgType: "png"
+		}
+		],
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
 		all: [{
 			name: '折线图',
 			resp: 'line',
-			prev: RETINA ? 'assets/components/加载@2x.png' : 'assets/components/加载.png'
+			prev: 'index.png'
+			//prev: RETINA ? 'assets/components/加载@2x.png' : 'assets/components/加载.png'
 		}, {
 			name: '柱状图',
 			resp: 'bar',
-			prev: RETINA ? 'assets/components/加载@2x.png' : 'assets/components/加载.png'
+			prev: 'index.png'
 		}, {
 			name: '地图',
 			resp: 'map',
-			prev: RETINA ? 'assets/components/加载@2x.png' : 'assets/components/加载.png'
+			prev: 'index.png'
 		}, {
 			name: '饼图',
 			resp: 'pie',
-			prev: RETINA ? 'assets/components/加载@2x.png' : 'assets/components/加载.png'
+			prev: 'index.png'
 		}, {
 			name: '雷达图',
 			resp: 'radar',
-			prev: RETINA ? 'assets/components/加载@2x.png' : 'assets/components/加载.png'
+			prev: 'index.png'
 		}, {
 			name: '散点图',
 			resp: 'scat',
-			prev: RETINA ? 'assets/components/加载@2x.png' : 'assets/components/加载.png'
+			prev: 'index.png'
 		}, {
 			name: '拓扑图',
 			resp: 'topo',
-			prev: RETINA ? 'assets/components/加载@2x.png' : 'assets/components/加载.png'
+			prev: 'index.png'
 		}, {
 			name: '进度图表',
 			resp: 'progress',
-			prev: RETINA ? 'assets/components/加载@2x.png' : 'assets/components/加载.png'
+			prev: 'index.png'
+		}, {
+			name: '和旋图',
+			resp: 'chord',
+			prev: 'index.png'
 		}, {
 			name: '韦恩图',
 			resp: 'venn',
-			prev: RETINA ? 'assets/components/加载@2x.png' : 'assets/components/加载.png'
-		}, {
-			name: '力导向布局图',
-			resp: 'force',
-			prev: RETINA ? 'assets/components/加载@2x.png' : 'assets/components/加载.png'
+			prev: 'index.png'
 		}, {
 			name: '混合图表',
-			resp: 'hybird',
-			prev: RETINA ? 'assets/components/加载@2x.png' : 'assets/components/加载.png'
+			resp: 'hybrid',
+			prev: 'bar_line.png'
 		}]
 	}
 })

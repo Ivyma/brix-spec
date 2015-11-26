@@ -17,7 +17,7 @@
                         <%= item.name %> <%= item.resp %>
                     </div>
                     <div class="panel-body">
-                        <img src="<%= item.prev %>">
+                        <img src="assets/charts/vteam-chart/<%= item.resp %>/<%= item.prev %>">
                     </div>
                     <div class="panel-footer hide">
                         示例

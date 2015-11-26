@@ -14,7 +14,7 @@ define(function() {
     <div class="row">
         <% _.each(COMPONENTS, function(item, index){ %>
         <div class="col-md-4" style="margin-bottom:50px;">
-            <a href="chart.spec.components/demo/build/demo/<%= item.type %>/<%= item.resp %>.html" target="_blank">
+            <a href="http://thx.github.io/chartx/demo/<%= item.type %>/<%= item.resp %>.html" target="_blank">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <%= item.name %> 
