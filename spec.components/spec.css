@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import "http://g.assets.daily.taobao.net/thx/minecraft-animation/0.0.1/css/animate-min.css";
 /* Color */
 .color-brand {
   color: #ff6600;
@@ -40,6 +39,9 @@
 .color-ccc {
   color: #cccccc;
 }
+.color-fff {
+  color: #ffffff;
+}
 .bg-brand {
   background-color: #ff6600;
 }
@@ -52,20 +54,11 @@
 .bg-primary {
   background-color: #ff6600;
 }
-.bg-success {
-  background-color: #51a300;
-}
-.bg-info {
-  background-color: #f0f0f0;
-}
-.bg-warning {
-  background-color: #a40100;
-}
-.bg-danger {
-  background-color: #a40100;
-}
 .color-hover-brand:hover {
   color: #ff6600;
+}
+.fontsize-0 {
+  font-size: 0px;
 }
 .fontsize-12 {
   font-size: 12px;
@@ -129,6 +122,9 @@
 }
 .ml15 {
   margin-left: 15px;
+}
+.ml17 {
+  margin-left: 17px;
 }
 .ml20 {
   margin-left: 20px;
@@ -312,6 +308,12 @@
 }
 .mb80 {
   margin-bottom: 80px;
+}
+.mb140 {
+  margin-bottom: 140px;
+}
+.mb160 {
+  margin-bottom: 160px;
 }
 .pl0 {
   padding-left: 0px;
@@ -529,17 +531,16 @@
 .pb80 {
   padding-bottom: 80px;
 }
-/* Font */
 @font-face {
-  font-family: 'specfont';
-  src: url('//at.alicdn.com/t/font_1438244124_9732695.eot');
-  src: url('//at.alicdn.com/t/font_1438244124_9732695.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/font_1438244124_9732695.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/font_1438244124_9732695.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/font_1438244124_9732695.svg#iconfont') format('svg');
+  font-family: 'minecraft-refactor-font';
+  src: url('//at.alicdn.com/t/font_1447660897_6310773.eot');
+  src: url('//at.alicdn.com/t/font_1447660897_6310773.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/font_1447660897_6310773.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/font_1447660897_6310773.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/font_1447660897_6310773.svg#iconfont') format('svg');
   
   /* IE9*/
   /* iOS 4.1- */
 }
-.specfont {
-  font-family: "specfont" !important;
+.minecraft-refactor-font {
+  font-family: "minecraft-refactor-font" !important;
   font-size: 16px;
   font-style: normal;
   display: inline-block;
@@ -548,12 +549,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 .icon-minecraft:before {
-  content: "\e631";
+  content: "\e600";
 }
-.icon-xialakuang:before {
-  content: "\e623";
+.icon-bu-name:before {
+  content: "\e603";
 }
-/* Font */
+.icon-pc:before {
+  content: "\e602";
+}
+.icon-wireless:before {
+  content: "\e601";
+}
+.icon-arrow:before {
+  content: "\e604";
+}
 @font-face {
   font-family: 'zsfont';
   src: url('//at.alicdn.com/t/font_1436859315_9685595.eot');
@@ -571,7 +580,6 @@
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
 }
-/* Font */
 @font-face {
   font-family: 'productfont';
   src: url('//at.alicdn.com/t/font_1438848723_123487.eot');
@@ -1060,21 +1068,17 @@ blockquote {
 .tahoma {
   font-family: "Tahoma";
 }
-body a {
-  color: #ff6600;
-  text-decoration: none;
+.cursor {
+  cursor: pointer;
 }
-body a:hover,
-body a:focus {
-  color: #fc4218;
+.relative {
+  position: relative;
 }
-body a,
-body a:hover,
-body a:focus,
-body a:active,
-body a:visited {
-  outline: 0;
-  text-decoration: none;
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
 }
 body .table thead tr th,
 body .table thead tr.active th {
@@ -1197,63 +1201,63 @@ body .table tbody tr.sub > td table.table {
   text-align: center;
 }
 /* mm.css */
-body .btn {
-  border: 0;
-  padding: 6px 20px;
-}
-body .btn.btn-brand {
-  border: 0;
-  background-color: #ff6600;
-}
-body .btn.btn-brand:hover,
-body .btn.btn-brand.hover,
-body .btn.btn-brand:focus,
-body .btn.btn-brand.focus,
-body .btn.btn-brand:active,
-body .btn.btn-brand.active {
-  border: 0;
-  color: #fff;
-  background-color: #fc4218;
-}
-body .btn.btn-disabled {
-  border: 0;
-  cursor: not-allowed;
-  color: #cccccc;
-}
-body .btn.btn-progress {
-  position: relative;
-}
-body .btn.btn-progress .btn-progress-bar {
-  position: absolute;
-  height: 32px;
-  width: 50%;
-  top: 0px;
-  left: 0px;
-  border-radius: 4px 0px 0px 4px;
-  background-color: #cccccc;
-}
-body .btn.btn-progress span {
-  position: relative;
-}
-body .btn.btn-progress:hover {
-  background-color: #e6e6e6;
-}
-body .btn.btn-brand.btn-progress .btn-progress-bar {
-  background-color: #fc4218;
-}
-body .btn.btn-brand.btn-progress:hover {
-  background-color: #ff6600;
-}
-body .btn.btn-bounce .one,
-body .btn.btn-bounce .two,
-body .btn.btn-bounce .three {
-  display: inline-block;
-  margin: auto 5px;
-  border-radius: 100%;
-  width: 5px;
-  height: 5px;
-  background-color: #FFF;
-}
+/*body .btn {
+    border: 0;
+    padding: 6px 20px;
+    &.btn-brand {
+        border: 0;
+        background-color: @brand;
+        &:hover, &.hover,
+        &:focus, &.focus,
+        &:active, &.active {
+            border: 0;
+            color: #fff;
+            background-color: @brand-hover;
+        }
+    }
+    &.btn-disabled {
+        border: 0;
+        cursor: not-allowed;
+        color: @ccc;
+    }
+    &.btn-progress {
+        position: relative;
+        .btn-progress-bar {
+            position: absolute;
+            height: 32px;
+            width: 50%;
+            top: 0px;
+            left: 0px;
+            border-radius: 4px 0px 0px 4px;
+            background-color: #cccccc;
+        }
+        span {
+            position: relative;
+        }
+        &:hover {
+            background-color: #e6e6e6;
+        }
+    }
+    &.btn-brand.btn-progress {
+        .btn-progress-bar {
+            background-color: @brand-hover;
+        }
+        &:hover {
+            background-color: @brand;
+        }
+    }
+
+    &.btn-bounce {
+        .one, .two, .three {
+            display: inline-block;
+            margin: auto 5px;
+            border-radius: 100%;
+            width: 5px;
+            height: 5px;
+            background-color: #FFF;
+        }
+    }
+}*/
 /* */
 .spec-anchor {
   display: block;
@@ -1288,29 +1292,22 @@ body .parsley-errors-list + .parsley-errors-list {
   margin-top: 5px;
 }
 /* Textarea */
-body textarea,
-body .textarea,
-body textarea.form-control,
-body .textarea.form-control {
-  height: auto;
-}
-body input:focus,
-body .input:focus,
-body input.focus,
-body textarea:focus,
-body .textarea:focus,
-body textarea.focus,
-body .form-control:focus,
-body .form-control.focus {
-  border-color: #ff6600;
-}
-body .input.error,
-body input.error,
-body .textarea.error,
-body textarea.error,
-body .form-control.error {
-  border-color: #a40100;
-}
+/*body {
+    textarea, .textarea,
+    textarea.form-control, .textarea.form-control {
+        height: auto;
+    }
+    input:focus, .input:focus, input.focus,
+    textarea:focus, .textarea:focus, textarea.focus,
+    .form-control:focus, .form-control.focus {
+        border-color: @brand;
+    }
+    .input.error, input.error,
+    .textarea.error, textarea.error,
+    .form-control.error {
+        border-color: @red;
+    }
+}*/
 /* 响应式 */
 .sidebar-col,
 .main-col {
@@ -1326,19 +1323,53 @@ body .form-control.error {
   width: 200px;
   height: 100%;
   padding: 90px 0px 25px 0px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  background-color: #fafafa;
   overflow-y: scroll;
   -ms-overflow-style: -ms-autohiding-scrollbar;
   -webkit-overflow-scrolling: touch;
 }
+.sidebar-col .sidebar-wrapper .inline-block {
+  display: inline-block;
+}
+.sidebar-col .sidebar-wrapper .left-ellipse,
+.sidebar-col .sidebar-wrapper .right-ellipse {
+  width: 60px;
+  height: 32px;
+}
+.sidebar-col .sidebar-wrapper .left-ellipse .minecraft-refactor-font,
+.sidebar-col .sidebar-wrapper .right-ellipse .minecraft-refactor-font {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+.sidebar-col .sidebar-wrapper .left-ellipse {
+  border-radius: 30px 0 0 30px;
+  background-color: #ccc;
+}
+.sidebar-col .sidebar-wrapper .right-ellipse {
+  border-radius: 0 30px 30px 0;
+  background-color: #f0f0f0;
+}
 .sidebar-col .sidebar-wrapper .sidebar {
   padding-bottom: 40px;
+  background-color: transparent;
+  display: block;
+  position: static;
+}
+.sidebar-col .sidebar-wrapper .sidebar-top {
+  padding: 10px 20px;
+}
+.sidebar-col .sidebar-wrapper .sidebar-top .down {
+  transform: rotate(180deg);
+}
+.sidebar-col .sidebar-wrapper .sidebar-top .transition {
+  transition: transform 0.5s;
 }
 .sidebar-col .sidebar-wrapper .sidebar-item a,
 .sidebar-col .sidebar-wrapper .sidebar-item-sub a {
   color: #666;
   display: block;
-  padding: 10px 20px;
+  padding: 10px 20px 10px 40px;
   white-space: nowrap;
   word-wrap: normal;
   text-overflow: ellipsis;
@@ -1354,14 +1385,10 @@ body .form-control.error {
   font-size: 65%;
 }
 .sidebar-col .sidebar-wrapper .sidebar-item.active a,
-.sidebar-col .sidebar-wrapper .sidebar-item-sub.active a {
-  background-color: #FF6600;
-}
-.sidebar-col .sidebar-wrapper .sidebar-item.active a,
 .sidebar-col .sidebar-wrapper .sidebar-item-sub.active a,
 .sidebar-col .sidebar-wrapper .sidebar-item.active a small,
 .sidebar-col .sidebar-wrapper .sidebar-item-sub.active a small {
-  color: #FFF;
+  color: #FF6600;
 }
 .sidebar-col .sidebar-wrapper .sidebar-item-sub a {
   padding: 5px 10px 5px 40px;
@@ -1375,12 +1402,11 @@ body .form-control.error {
   min-height: 500px;
   max-width: 1170px;
 }
-input[type=checkbox]:checked:after {
-  background-color: #ff6600;
-  top: 1px;
-}
-input[type=radio]:checked:after {
-  background-color: #ff6600;
+.install pre {
+  margin: 0;
+  border: none;
+  padding: 18px 40px;
+  border-radius: 6px;
 }
 @media only screen and (max-width: 767px) {
   .navbar .navbar-header .navbar-toggle {
@@ -1453,6 +1479,12 @@ input[type=radio]:checked:after {
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .sidebar-col .sidebar-wrapper {
     width: 120px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .sidebar-col .sidebar-wrapper .pc-wireless .left-ellipse,
+  .sidebar-col .sidebar-wrapper .pc-wireless .right-ellipse {
+    width: 45px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {

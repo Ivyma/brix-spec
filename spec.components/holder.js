@@ -6,6 +6,10 @@ define(['jquery'], function($) {
                 $(window).scrollTop(
                     localStorage.getItem('scrollTop')
                 )
+            } else {
+                $(window).scrollTop(
+                    0
+                )
             }
             return this
         },

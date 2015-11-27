@@ -19,7 +19,7 @@
             <div class="color-999 mt6 hide"></div>
         </div>
         <div class="content-body">
-            <div bx-name="spec.components/hourpicker/hourpicker"></div>
+            <div bx-name="components/hourpicker" data-simplify="true" data-value="12345,60"></div>
         </div>
     </div>
 </div>
@@ -30,7 +30,7 @@
             <div>视业务需求，可以精细化筛选周一到周天的投放时间。</div>
         </div>
         <div class="content-body">
-            <div bx-name="components/hourpicker"></div>
+            <div bx-name="components/hourpicker" data-value="1234560"></div>
         </div>
     </div>
 </div>
@@ -39,7 +39,7 @@
     require(['brix/loader'], function(Loader) {
         Loader.boot(function() {
             var instance = Loader.query('components/hourpicker')[0]
-            instance.shortcut('0123456')
+            // instance.shortcut('0123456')
         })
     })
 </script>

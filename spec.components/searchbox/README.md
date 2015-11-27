@@ -25,19 +25,19 @@
             </ol>
         </div>
         <div class="content-body">
-            <div class="searchbox mb10 mr40">
+            <div class="searchbox mb10">
                 <label>
-                    <span class="brixfont">&#xe61c;</span>
+                    <span class="brixfont">&#xe61c;<!-- &#xe61c; --></span>
                     <input type="text" placeholder="请输入关键词搜索">
                 </label>
             </div>
             <div class="searchbox mb10">
                 <label>
-                    <span class="brixfont">&#xe61c;</span>
+                    <span class="brixfont">&#xe61c;<!-- &#xe61c; --></span>
                     <input type="text" bx-name="components/suggest" placeholder="请输入关键词搜索">
                 </label>
             </div>
-            <div class="input-group">
+            <div class="input-group mb10">
                 <input type="text" class="form-control" bx-name="components/suggest" placeholder="请输入关键词搜索">
                 <span class="input-group-addon">搜索</span>
             </div>
@@ -54,7 +54,7 @@
             <div class="color-999 mt6">一个搜索框承担多个分类的查询功能时，可以使用分类搜索样式，默认选中的为最常用的分类。一般分类词置于搜索框上方以标签形式展示或左侧下拉收起。先选分类，再搜索，缩小范畴，结果更明确。</div>
         </div>
         <div class="content-body">
-            <div class="bs-example-searchbox-1 mb20">
+            <div class="input-group-wrapper mb10">
                 <div class="input-group">
                     <div class="input-group-btn">
                         <select bx-name="components/dropdown">
@@ -71,7 +71,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bs-example-searchbox-2 mb20">
+            <div class="input-group-wrapper mb10">
                 <div class="input-group-tab">
                     <button class="btn btn-default active" type="button">分类 1</button>
                     <button class="btn btn-default" type="button">分类 2</button>
@@ -99,7 +99,7 @@
         <div class="content-body">
             <div class="searchbox searchbox-simplify mb10">
                 <label>
-                    <span class="brixfont">&#xe61c;</span>
+                    <span class="brixfont">&#xe61c;<!-- &#xe61c; --></span>
                     <input id="case2" type="text" placeholder="请输入关键词搜索" style="transition: inherit;">
                 </label>
             </div>
@@ -114,7 +114,7 @@
             <div class="color-999 mt6">在搜索框下方放置一排热词，引导目标并非特别明确的用户点击，在站内逛起来。</div>
         </div>
         <div class="content-body">
-            <div class="bs-example-searchbox-1 mb20">
+            <div class="input-group-wrapper mb10">
                 <div class="input-group mb10">
                     <div class="input-group-input">
                         <input type="text" class="form-control" bx-name="components/suggest" placeholder="请输入关键词搜索">
@@ -131,6 +131,23 @@
             </div>
         </div>
     </div>
+    <pre><code class="hljs html">
+        <div class="input-group-wrapper mb10">
+            <div class="input-group mb10">
+                <div class="input-group-input">
+                    <input type="text" class="form-control" bx-name="components/suggest" placeholder="请输入关键词搜索">
+                </div>
+                <div class="input-group-btn">
+                    <button class="btn btn-default bg-brand" type="button">搜索</button>
+                </div>
+            </div>
+            <div class="hots">
+                <a href="javascript:;">热词 1</a>
+                <a href="javascript:;">热词 2</a>
+                <a href="javascript:;">热词 3</a>
+            </div>
+        </div>
+    </code></pre>
 </div>
 
 <script>

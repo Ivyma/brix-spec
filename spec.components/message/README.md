@@ -22,81 +22,57 @@
     <div class="content">
         <div class="content-header">
             <div>基础用法</div>
-            <div class="color-999 mt6 hide">提示，诠释当前需要提示内容的信息，依附于所提示的内容显示。</div>
-            <ol class="hide">
-                <li>alt：图片的XHTML提示信息，主要为了SEO优化和低端环境下的提示；</li>
-                <li>title：文字、操作的解释，大多数情况下用于段落显示不全的提示信息；</li>
-                <li>tips：对信息的对话云式的提示，用作在当前区域的提示。</li>
-            </ol>
         </div>
         <div class="content-body">
             <div class="contextual-message bg-info mb40">
-                <!-- 
-                    background-color: rgb(215,232,249);
-                    border: 1px solid rgb(0,102,216);
-                    color: rgb(0,102,216);
-                 -->
-                <span class="zsfont glyph" style="color: #CBCBCB;">&#xe642;</span>
-                <span>XXX 创意已经通过审核</span>
+                <span class="zsfont glyph color-help">&#xe6ab;<!-- &#xe6ab; --></span>
+                <span>XXX 创意已经通过审核。</span>
             </div>
             <div class="contextual-message bg-info mb40">
-                <!-- 
-                    border: 1px solid rgb(255,123,89);
-                    background-color: rgb(255,232,222);
-                    color: rgb(255,123,89);
-                 -->
-                <span class="zsfont glyph color-primary">&#xe629;</span>
-                <span>确定要删除这个创意吗？</span>
-                <a href="javascript:;" class="ml40">删除</a>
-                <a href="javascript:;" class="ml20 color-gray">取消</a>
+                <span class="zsfont glyph color-help">&#xe6af;<!-- &#xe6af; --></span>
+                <span>XXX 创意已经通过审核。</span>
             </div>
-            <div class="contextual-message bg-info mb40">
-                <!-- 
-                    background-color: rgb(215,236,218);
-                    border: 1px solid rgb(74,143,86);
-                    color: rgb(74,143,86);
-                 -->
-                <span class="zsfont glyph color-success">&#xf0156;</span>
-                <span>恭喜，您的计划已经创建完成</span>
+            <div class="contextual-message bg-warning color-f mb40">
+                <span class="zsfont glyph">&#xe6ae;<!-- &#xe6ae; --></span>
+                <span>您的账户余额不足，请尽快崇志。<a href="javascript:;" class="color-f ml10">去充值</a></span>
             </div>
-            <div class="contextual-message bg-info mb40">
-                <!-- 
-                    background-color: rgb(255,240,219);
-                    border: 1px solid rgb(255,164,92);
-                    color: rgb(255,164,92);
-                 -->
-                <span class="zsfont glyph color-warning">&#xf00b7;</span>
-                <span>您的账户余额不足，请尽快充值。</span>
-                <a href="javascript;:" class="ml40">去充值</a>
+            <div class="contextual-message bg-danger color-f mb40">
+                <span class="zsfont glyph">&#xe6ad;<!-- &#xe6ad; --></span>
+                <span>您的账户已被处罚，处于冻结状态。<a href="javascript:;" class="color-f ml10">去申诉</a></span>
             </div>
-            <div class="contextual-message bg-info">
-                <span class="zsfont glyph color-warning">&#xf00b7;</span>
+            <div class="contextual-message bg-success color-f mb40">
+                <span class="zsfont glyph">&#xe6aa;<!-- &#xe6aa; --></span>
+                <span>恭喜，您的 XXX 计划已经创建完成。</span>
+            </div>
+            <div class="contextual-message bg-fail color-f mb40">
+                <span class="zsfont glyph">&#xe6a7;<!-- &#xe6a7; --></span>
                 <span>对不起，当前的修改提交失败，请重试。</span>
             </div>
         </div>
     </div>
     <pre><code class="hljs html">
-        <div class="contextual-message bg-info">
-            <span class="zsfont glyph" style="color: #CBCBCB;">&#xe642;</span>
-            <span>XXX 创意已经通过审核</span>
+        <div class="contextual-message bg-info mb40">
+            <span class="zsfont glyph color-help">&#xe6ab;<!-- &#xe6ab; --></span>
+            <span>XXX 创意已经通过审核。</span>
         </div>
-        <div class="contextual-message bg-info">
-            <span class="zsfont glyph color-primary">&#xe629;</span>
-            <span>确定要删除这个创意吗？</span>
-            <a href="javascript:;" class="ml40">删除</a>
-            <a href="javascript:;" class="ml20 color-gray">取消</a>
+        <div class="contextual-message bg-info mb40">
+            <span class="zsfont glyph color-help">&#xe6af;<!-- &#xe6af; --></span>
+            <span>XXX 创意已经通过审核。</span>
         </div>
-        <div class="contextual-message bg-info">
-            <span class="zsfont glyph color-success">&#xf0156;</span>
-            <span>恭喜，您的计划已经创建完成</span>
+        <div class="contextual-message bg-warning color-f mb40">
+            <span class="zsfont glyph">&#xe6ae;<!-- &#xe6ae; --></span>
+            <span>您的账户余额不足，请尽快崇志。<a href="javascript:;" class="color-f ml10">去充值</a></span>
         </div>
-        <div class="contextual-message bg-info">
-            <span class="zsfont glyph color-warning">&#xf00b7;</span>
-            <span>您的账户余额不足，请尽快充值。</span>
-            <a href="javascript;:" class="ml40">去充值</a>
+        <div class="contextual-message bg-danger color-f mb40">
+            <span class="zsfont glyph">&#xe6ad;<!-- &#xe6ad; --></span>
+            <span>您的账户已被处罚，处于冻结状态。<a href="javascript:;" class="color-f ml10">去申诉</a></span>
         </div>
-        <div class="contextual-message bg-info">
-            <span class="zsfont glyph color-warning">&#xf00b7;</span>
+        <div class="contextual-message bg-success color-f mb40">
+            <span class="zsfont glyph">&#xe6aa;<!-- &#xe6aa; --></span>
+            <span>恭喜，您的 XXX 计划已经创建完成。</span>
+        </div>
+        <div class="contextual-message bg-fail color-f mb40">
+            <span class="zsfont glyph">&#xe6a7;<!-- &#xe6a7; --></span>
             <span>对不起，当前的修改提交失败，请重试。</span>
         </div>
     </code></pre>
@@ -106,11 +82,6 @@
     <div class="content">
         <div class="content-header">
             <div>场景 1 - 组件级信息反馈</div>
-            <!-- <div class="color-999 mt6">反馈，是由一个操作所引导的提示页面，并独立成提示区域，通常在页面的顶部显示。</div>
-            <ol>
-                <li>成功：用户操作已成功；</li>
-                <li>错误：提醒用户操作已失败或是需要马上采取行动的问题。有效的错误反馈需要解释错误发生的原因，并提供解决方案。</li>
-            </ol> -->
         </div>
         <div class="content-body">
             <div class="">
@@ -139,11 +110,6 @@
     <div class="content">
         <div class="content-header">
             <div>场景 2 - 模块级信息反馈</div>
-            <!-- <div class="color-999 mt6">反馈，是由一个操作所引导的提示页面，并独立成提示区域，通常在页面的顶部显示。</div>
-            <ol>
-                <li>成功：用户操作已成功；</li>
-                <li>错误：提醒用户操作已失败或是需要马上采取行动的问题。有效的错误反馈需要解释错误发生的原因，并提供解决方案。</li>
-            </ol> -->
         </div>
         <div class="content-body" style="padding-right: 0; padding-bottom: 0;">
             <div style="height: 50px; background-color: #FF6600;"></div>
@@ -152,8 +118,8 @@
                 </div>
                 <div class="ungrid-col" style="padding: 40px; background-color: #fafafa; position: relative;">
                     <p class="flat-text small"></p>
-                    <div class="contextual-message bg-info mt10 mb10">
-                        <span class="zsfont glyph color-warning">&#xf00b7;</span>
+                    <div class="contextual-message bg-warning color-f mt10 mb10" style="border-radius: 0;">
+                        <span class="zsfont glyph">&#xe6ae;<!-- &#xe6ae; --></span>
                         <span>您上传的创意中有个 1 个不符合当前的设置。</span>
                     </div>
                     <p class="flat-text full-width mt10"></p>
@@ -183,8 +149,9 @@
                 <div class="ungrid-col" style="width: 200px; padding: 60px 30px; text-align: center; vertical-align: top; background-color: #423f48;">
                 </div>
                 <div class="ungrid-col" style="padding: 72px 40px 40px 40px; background-color: #fafafa; position: relative;">
-                    <div class="mm-message-overlay">
-                        <span>您的账户余额不足，如不及时充值将会停止投放。</span>
+                    <div class="contextual-message contextual-message-sticky bg-info mb10">
+                        <span class="zsfont glyph color-help"><!-- &#xe6af; --></span>
+                        <span>XXX 创意已经通过审核。</span>
                     </div>
                     <p class="flat-text small"></p>
                     <p class="flat-text full-width mt10"></p>
@@ -206,8 +173,9 @@
         </div>
         <div class="content-body" style="padding-right: 0; padding-bottom: 0;">
             <div style="position: relative;">
-                <div class="mm-message-top">
-                    <span>您的账户被禁用，无法进行相关操作，如果有疑问请与客服联系。</span>
+                <div class="contextual-message bg-danger color-f" style="border-radius: 0;">
+                    <span class="zsfont glyph">&#xe6ad;<!-- &#xe6ad; --></span>
+                    <span>您的账户已被处罚，处于冻结状态。<a href="javascript:;" class="color-f ml10">去申诉</a></span>
                 </div>
                 <div style="height: 50px; background-color: #FF6600;"></div>
                 <div class="ungrid-row">

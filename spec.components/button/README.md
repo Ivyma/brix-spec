@@ -20,16 +20,16 @@
             <div>基础用法</div>
         </div>
         <div class="content-body">
-            <button class="btn btn-brand mr60">主要按钮</button>
-            <button class="btn mr60">次要按钮</button>
-            <button class="btn btn-disabled mr60">不可点按钮</button>
-            <a class="" href="javascript:;">文字按钮</a>
+            <button class="btn btn-brand bx-trans-btn-radius mr60 mb10">主要按钮</button>
+            <button class="btn bx-trans-btn-radius mr60 mb10">次要按钮</button>
+            <button class="btn btn-disabled mr60 mb10">不可点按钮</button>
+            <a href="javascript:;">文字按钮</a>
         </div>
     </div>
     <pre class="example-pre"><code class="hljs html">
-        <button class="btn btn-brand mr10">主要按钮</button>
-        <button class="btn mr10">次要按钮</button>
-        <button class="btn btn-disabled  mr10">不可点按钮</button>
+        <button class="btn btn-brand bx-trans-btn-radius mb10">主要按钮</button>
+        <button class="btn bx-trans-btn-radius mb10">次要按钮</button>
+        <button class="btn btn-disabled mb10">不可点按钮</button>
         <a href="javascript:;">文字按钮</a>
     </code></pre>
 </div>
@@ -44,7 +44,7 @@
             <div style="height: 50px; background-color: #FF6600;"></div>
             <div class="ungrid-row">
                 <div class="ungrid-col" style="width: 200px; padding: 60px 30px; text-align: center; vertical-align: top; background-color: #423f48;">
-                    <button class="btn btn-brand">＋新建推广计划</button>
+                    <button class="btn btn-brand bx-trans-btn-radius">＋新建推广计划</button>
                 </div>
                 <div class="ungrid-col" style="padding: 40px; background-color: #fafafa;">
                     <p class="flat-text small"></p>
@@ -55,7 +55,7 @@
         </div>
     </div>
     <pre class="example-pre"><code class="hljs html">
-        <button class="btn btn-brand">＋新建推广计划</button>
+        <button class="btn btn-brand bx-trans-btn-radius">＋新建推广计划</button>
     </code></pre>
 </div>
 
@@ -79,15 +79,15 @@
                     <p class="flat-text full-width mt10"></p>
                 </div>
                 <div style="padding: 18px 40px; border-top: 1px solid #e6e6e6;">
-                    <button class="btn btn-brand mr10">确定</button>
-                    <button class="btn mr10">取消</button>
+                    <button class="btn btn-brand bx-trans-btn-radius mr10">确定</button>
+                    <button class="btn bx-trans-btn-radius mr10">取消</button>
                 </div>
             </div>
         </div>
     </div>
     <pre class="example-pre"><code class="hljs html">
-        <button class="btn btn-brand mr10">确定</button>
-        <button class="btn mr10">取消</button>
+        <button class="btn btn-brand bx-trans-btn-radius mr10">确定</button>
+        <button class="btn bx-trans-btn-radius mr10">取消</button>
     </code></pre>
 </div>
 
@@ -103,9 +103,9 @@
         <div class="content-body">
             <div class="fontsize-16 mb10">时段报表</div>
             <div class="mb10">
-                <button class="btn btn-brand mr10">＋新建推广计划</button>
-                <button class="btn mr10">修改人群</button>
-                <button class="btn mr10">设置定向</button>
+                <button class="btn btn-brand bx-trans-btn-radius mr10">＋新建推广计划</button>
+                <button class="btn bx-trans-btn-radius mr10">修改人群</button>
+                <button class="btn bx-trans-btn-radius mr10">设置定向</button>
             </div>
             <div>
                 <table class="table table-hover">
@@ -154,15 +154,15 @@
                     <p class="flat-text full-width mt10"></p>
                 </div>
                 <div style="padding: 18px 40px; border-top: 1px solid #e6e6e6;">
-                    <button class="btn btn-brand mr10 animated infinite ani-shake">确定</button>
-                    <button class="btn mr10">取消</button>
+                    <button class="btn btn-brand bx-trans-btn-radius bx-anim-btn-shake animated infinite mr10">确定</button>
+                    <button class="btn bx-trans-btn-radius mr10">取消</button>
                 </div>
             </div>
         </div>
     </div>
     <pre class="example-pre"><code class="hljs html">
-        <button class="btn btn-brand mr10 animated infinite ani-shake">确定</button>
-        <button class="btn mr10">取消</button>
+        <button class="btn btn-brand bx-trans-btn-radius bx-anim-btn-shake animated infinite mr10">确定</button>
+        <button class="btn bx-trans-btn-radius mr10">取消</button>
     </code></pre>
 </div>
 
@@ -174,23 +174,25 @@
         </div>
         <div class="content-body">
             <div class="btn btn-brand btn-progress mr60">
-                <div class="btn-progress-bar animated infinite ani-progressbar"></div>
+                <div class="btn-progress-bar bx-trans-progressbar animated infinite"></div>
                 <span>正在加载</span>
             </div>
             <div class="btn btn-progress mr60">
-                <div class="btn-progress-bar animated infinite ani-progressbar"></div>
+                <div class="btn-progress-bar bx-trans-progressbar animated infinite"></div>
                 <span>正在加载</span>
             </div>
         </div>
     </div>
     <pre class="example-pre"><code class="hljs html">
         <div class="btn btn-brand btn-progress mr60">
-            <div class="btn-progress-bar animated infinite ani-progressbar"></div>
+            <div class="btn-progress-bar bx-trans-progressbar animated infinite"></div>
             <span>正在加载</span>
         </div>
         <div class="btn btn-progress mr60">
-            <div class="btn-progress-bar animated infinite ani-progressbar"></div>
+            <div class="btn-progress-bar bx-trans-progressbar animated infinite"></div>
             <span>正在加载</span>
         </div>
     </code></pre>
 </div>
+
+<link rel="stylesheet" type="text/css" href="spec.components/button/button.css">

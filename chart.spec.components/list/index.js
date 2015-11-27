@@ -23,8 +23,10 @@ define(
                 // name resp desc readme links
                 
                 var uri = new URI(location.href)
-                var query = uri.query(true)
-                var name = query.name.toLowerCase()
+                var fragment = uri.fragment() // hash witout leading #
+                var furi = new URI(fragment)
+                var segment = furi.segment() // directories
+                var name = segment[1] || segment[0]
                 this.data = {
                     BASICS: Constant.BASICS,
                     COMPONENTS: Constant[ name ]

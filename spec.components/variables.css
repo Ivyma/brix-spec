@@ -38,6 +38,9 @@
 .color-ccc {
   color: #cccccc;
 }
+.color-fff {
+  color: #ffffff;
+}
 .bg-brand {
   background-color: #ff6600;
 }
@@ -50,20 +53,11 @@
 .bg-primary {
   background-color: #ff6600;
 }
-.bg-success {
-  background-color: #51a300;
-}
-.bg-info {
-  background-color: #f0f0f0;
-}
-.bg-warning {
-  background-color: #a40100;
-}
-.bg-danger {
-  background-color: #a40100;
-}
 .color-hover-brand:hover {
   color: #ff6600;
+}
+.fontsize-0 {
+  font-size: 0px;
 }
 .fontsize-12 {
   font-size: 12px;
@@ -127,6 +121,9 @@
 }
 .ml15 {
   margin-left: 15px;
+}
+.ml17 {
+  margin-left: 17px;
 }
 .ml20 {
   margin-left: 20px;
@@ -310,6 +307,12 @@
 }
 .mb80 {
   margin-bottom: 80px;
+}
+.mb140 {
+  margin-bottom: 140px;
+}
+.mb160 {
+  margin-bottom: 160px;
 }
 .pl0 {
   padding-left: 0px;

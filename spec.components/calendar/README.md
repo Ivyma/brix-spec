@@ -20,11 +20,11 @@
             <div class="color-999 mt6 hide"></div>
         </div>
         <div class="content-body">
-            <input bx-name="components/datepickerwrapper" type="text" class="form-control w100 mr40">
+            <input bx-name="components/datepickerwrapper" type="text" class="w100 mr40">
             <div bx-name="components/datepickerwrapper" 
                 data-dates="['2015-1-1', '2015-1-2']" 
                 data-shortcuts="false" 
-                class="form-control datepickerwrapper-trigger">
+                class="datepickerwrapper-trigger">
                 <span data-index="0">2015-1-1</span> 至 <span data-index="1">2015-1-2</span>
                 <i class="brixfont pull-right ml5 down">&#xe623;</i>
                 <i class="brixfont pull-right ml5 up">&#xe62e;</i>
@@ -32,11 +32,11 @@
         </div>
     </div>
     <pre class="example-pre"><code class="hljs html">
-        <input bx-name="components/datepickerwrapper" type="text" class="form-control w100 mr40">
+        <input bx-name="components/datepickerwrapper" type="text" class="w100 mr40">
         <div bx-name="components/datepickerwrapper" 
             data-dates="['2015-1-1', '2015-1-2']" 
             data-shortcuts="false" 
-            class="form-control datepickerwrapper-trigger">
+            class="datepickerwrapper-trigger">
             <span data-index="0">2015-1-1</span> 至 <span data-index="1">2015-1-2</span>
             <i class="brixfont pull-right ml5 down">&#xe623;</i>
             <i class="brixfont pull-right ml5 up">&#xe62e;</i>
@@ -54,7 +54,7 @@
         <div class="content-body">
             <div bx-name="components/datepickerwrapper" 
                 data-dates="['2015-1-1', '2015-1-2']" 
-                class="form-control datepickerwrapper-trigger">
+                class="datepickerwrapper-trigger">
                 <span data-index="0">2015-1-1</span> 至 <span data-index="1">2015-1-2</span>
                 <i class="brixfont pull-right ml5 down">&#xe623;</i>
                 <i class="brixfont pull-right ml5 up">&#xe62e;</i>
@@ -64,7 +64,7 @@
     <pre class="example-pre"><code class="hljs html">
         <div bx-name="components/datepickerwrapper" 
             data-dates="['2015-1-1', '2015-1-2']" 
-            class="form-control datepickerwrapper-trigger">
+            class="datepickerwrapper-trigger">
             <span data-index="0">2015-1-1</span> 至 <span data-index="1">2015-1-2</span>
             <i class="brixfont pull-right ml5 down">&#xe623;</i>
             <i class="brixfont pull-right ml5 up">&#xe62e;</i>
@@ -82,7 +82,7 @@
             <div id="case2" bx-name="components/datepickerwrapper" 
                 data-dates="['2015-1-1', '2015-1-2']" 
                 data-shortcuts="false" 
-                class="form-control datepickerwrapper-trigger">
+                class="datepickerwrapper-trigger">
                 <span data-index="0">2015-1-1</span> 至 <span data-index="1">2015-1-2</span>
                 <i class="brixfont pull-right ml5 down">&#xe623;</i>
                 <i class="brixfont pull-right ml5 up">&#xe62e;</i>
@@ -93,7 +93,7 @@
         <div id="case2" bx-name="components/datepickerwrapper" 
             data-dates="['2015-1-1', '2015-1-2']" 
             data-shortcuts="false" 
-            class="form-control datepickerwrapper-trigger">
+            class="datepickerwrapper-trigger">
             <span data-index="0">2015-1-1</span> 至 <span data-index="1">2015-1-2</span>
             <i class="brixfont pull-right ml5 down">&#xe623;</i>
             <i class="brixfont pull-right ml5 up">&#xe62e;</i>
@@ -122,11 +122,11 @@
             <div class="color-999 mt6">当日期组件控制整个页面或模块统计的时间范围，则以标题形式展现。</div>
         </div>
         <div class="content-body">
-            <span bx-name="components/datepickerwrapper" class="fontsize-16">请选择日期</span>
+            <span bx-name="components/datepickerwrapper" class="cursor-pointer fontsize-16">请选择日期</span>
         </div>
     </div>
     <pre class="example-pre"><code class="hljs html">
-        <span bx-name="components/datepickerwrapper" class="fontsize-16">请选择日期</span>
+        <span bx-name="components/datepickerwrapper" class="cursor-pointer fontsize-16">请选择日期</span>
     </code></pre>
 </div>
 
