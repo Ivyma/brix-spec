@@ -81,7 +81,8 @@ require([
                     hljs.highlightBlock(code)
                 })
 
-                $('[data-resp="' + name + '"]').addClass('active') // 高亮
+                // $('[data-resp="' + name + '"]').addClass('active') // 高亮
+                $('a[href="' + location.hash + '"]').parent().addClass('active') // 高亮
 
                 $('.sidebar-wrapper .pc-wireless')[groupHooks[group] ? 'show' : 'hide']() // pc 无线是否显示
 
