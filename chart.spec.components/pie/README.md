@@ -1,14 +1,29 @@
-# 饼图 pie
+<div class="mb40">
+    <div class="fontsize-20 mb10">
+    饼图 <small>pie</small>
+    </div class="fontsize-28">
+    <p class="mb20"></p>
+</div>
 
-## 定义
+<div class="mb40">
+    <div class="fontsize-20 mb10">
+    定义 
+    </div class="fontsize-28">
+    <p class="mb20">
+        饼图是将圆形切割成不同的扇形片段，每一片代表一个分类数据或一组数据，每一片的大小则反映其占饼图总面积的百分比或比例。
+    </p>
+</div>
 
-- 饼图是将圆形切割成不同的扇形片段，每一片代表一个分类数据或一组数据，每一片的大小则反映其占饼图总面积的百分比或比例。
-
-## 基础规范
-
-- 在饼图中，各个构成部分的百分比之和必须是100%。
-
-- 饼图需要有相关的辅助说明，表述饼图的构成内容及占比。
+<div class="mb40">
+    <div class="fontsize-20 mb10">
+    基础规范
+    </div class="fontsize-28">
+    <p class="mb20">
+    在饼图中，各个构成部分的百分比之和必须是100%。
+    <br />
+    饼图需要有相关的辅助说明，表述饼图的构成内容及占比。       
+    </p>
+</div>
 
 <div bx-name="chart.spec.components/list/index"></div>
 

@@ -1,12 +1,27 @@
-# 韦恩图 venn 
+<div class="mb40">
+    <div class="fontsize-20 mb10">
+    韦恩图 <small>venn</small>
+    </div class="fontsize-28">
+    <p class="mb20"></p>
+</div>
 
-## 定义
+<div class="mb40">
+    <div class="fontsize-20 mb10">
+    定义 
+    </div class="fontsize-28">
+    <p class="mb20">
+       韦恩图是指用一条封闭曲线直观地表示集合及其关系的图形。
+    </p>
+</div>
 
-- 韦恩图是指用一条封闭曲线直观地表示集合及其关系的图形。
-
-## 基础规范
-
-- 例如，可以用于两个不同的群体之间的交集程度与并集程度。
+<div class="mb40">
+    <div class="fontsize-20 mb10">
+     基础规范
+    </div class="fontsize-28">
+    <p class="mb20">
+     例如，可以用于两个不同的群体之间的交集程度与并集程度。
+    </p>
+</div>
 
 <div bx-name="chart.spec.components/list/index"></div>
 

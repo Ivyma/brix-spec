@@ -1,4 +1,4 @@
-/* global define, console */
+/* global define  */
 define(
     [
         'jquery', 'underscore', 'mock',
@@ -28,7 +28,6 @@ define(
                 _.each(this.data.COMPONENTS, function(item /*, index*/ ) {
                     item.prev = item.prev || Mock.Random.dataImage('128x128', '')
                 })
-                //console.log(this.data)
             },
             render: function() {
                 this.data = this.data || _.extend({}, this.options)

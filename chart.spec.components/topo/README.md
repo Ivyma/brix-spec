@@ -1,12 +1,27 @@
-# 拓扑网络结构图 topo
+<div class="mb40">
+    <div class="fontsize-20 mb10">
+    拓扑网络结构图 <small>topo</small>
+    </div class="fontsize-28">
+    <p class="mb20"></p>
+</div>
 
-# 定义
+<div class="mb40">
+    <div class="fontsize-20 mb10">
+    定义 
+    </div class="fontsize-28">
+    <p class="mb20">
+      为了用图表示亲缘关系，把分类单位摆在图上树枝顶部，根据分枝可以表示其相互关系，具有二次元和三次元。在数量分类学上用于表型分类的树状图，称为拓朴图(Topology)，也可以称为树状图（phenogram)。
+    </p>
+</div>
 
-- 为了用图表示亲缘关系，把分类单位摆在图上树枝顶部，根据分枝可以表示其相互关系，具有二次元和三次元。在数量分类学上用于表型分类的树状图，称为拓朴图(Topology)，也可以称为树状图（phenogram)。
-
-# 基础规范
-
-- 拓朴图分为两种形式，一种为至上而下的纵向树形图、另一种为从左到右的横向树形图。
+<div class="mb40">
+    <div class="fontsize-20 mb10">
+    基础规范
+    </div class="fontsize-28">
+    <p class="mb20">
+    拓朴图分为两种形式，一种为至上而下的纵向树形图、另一种为从左到右的横向树形图。
+    </p>
+</div>
 
 <div bx-name="chart.spec.components/list/index"></div>
 

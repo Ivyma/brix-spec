@@ -1,23 +1,5 @@
-/* global define, window */
+/* global define */
 define(['mock'], function( /*Mock*/ ) {
-
-	// https://github.com/KyleAMathews/isRetina/blob/master/index.js
-	function isRetina() {
-		var mediaQuery;
-		if (typeof window !== "undefined" && window !== null) {
-			mediaQuery = "(-webkit-min-device-pixel-ratio: 1.25), (min--moz-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5/4), (min-resolution: 1.25dppx)";
-			if (window.devicePixelRatio > 1.25) {
-				return true;
-			}
-			if (window.matchMedia && window.matchMedia(mediaQuery).matches) {
-				return true;
-			}
-		}
-		return false;
-	}
-
-	var RETINA = isRetina();
-
 	return {
 		line: [{
 			name: '基础折线图',
@@ -26,7 +8,6 @@ define(['mock'], function( /*Mock*/ ) {
 			beizhu: "全部默认配置",
 			changjing: "图表使用场景的说明文案图表使用场景的说明文案",
 			prevImgType: "png",
-			//prev: RETINA ? 'assets/components/加载@2x.png' : 'assets/components/加载.png'
 		}, {
 			name: '添加删除折线',
 			type: 'line',
@@ -369,7 +350,6 @@ define(['mock'], function( /*Mock*/ ) {
 			name: '折线图',
 			resp: 'line',
 			prev: 'index.png'
-			//prev: RETINA ? 'assets/components/加载@2x.png' : 'assets/components/加载.png'
 		}, {
 			name: '柱状图',
 			resp: 'bar',

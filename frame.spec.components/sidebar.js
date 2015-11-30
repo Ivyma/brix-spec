@@ -380,14 +380,23 @@ define(['underscore'], function(_) {
 		href: '#/animation/law'
 	}]
 	var CHART = [{
-		name: '所有',
-		name_en: 'All',
+		name: 'Chartx',
+		name_en: ' ',
 		type: 'node',
 		path: 'chart.spec.components/index/README.md',
 		hash: '#/chart/index',
 
-		resp: 'index',
+		resp: 'chartx',
 		herf: '#/chart/index',
+	},{
+		name: '所有',
+		name_en: 'All',
+		type: 'node',
+		path: 'chart.spec.components/all/README.md',
+		hash: '#/chart/all',
+
+		resp: 'all',
+		herf: '#/chart/all',
 	},{
 		name: '折线图',
 		name_en: 'Line',

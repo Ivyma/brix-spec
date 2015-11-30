@@ -1,12 +1,27 @@
-# 地图 map
+<div class="mb40">
+    <div class="fontsize-20 mb10">
+    地图 <small>map</small>
+    </div class="fontsize-28">
+    <p class="mb20"></p>
+</div>
 
-## 定义
+<div class="mb40">
+    <div class="fontsize-20 mb10">
+    定义 
+    </div class="fontsize-28">
+    <p class="mb20">
+        地图图表是以特定颜色绘制的大陆、国家或地区的地图，用来展示地理背景的业务数据，区域的颜色与地图上相关地点的特定指标数值相对应。
+    </p>
+</div>
 
-地图图表是以特定颜色绘制的大陆、国家或地区的地图，用来展示地理背景的业务数据，区域的颜色与地图上相关地点的特定指标数值相对应。
-
-## 基础规范 
-
-基本上宏观分析展现各省市业务数据的时候，使用地图图表。
+<div class="mb40">
+    <div class="fontsize-20 mb10">
+    基础规范
+    </div class="fontsize-28">
+    <p class="mb20">
+        基本上宏观分析展现各省市业务数据的时候，使用地图图表。        
+    </p>
+</div>
 
 <div bx-name="chart.spec.components/list/index"></div>
 

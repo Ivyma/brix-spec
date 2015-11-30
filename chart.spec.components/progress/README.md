@@ -1,12 +1,27 @@
-# 进度图表 progress
+<div class="mb40">
+    <div class="fontsize-20 mb10">
+    进度图表 <small>progress</small>
+    </div class="fontsize-28">
+    <p class="mb20"></p>
+</div>
 
-## 定义
+<div class="mb40">
+    <div class="fontsize-20 mb10">
+    定义 
+    </div class="fontsize-28">
+    <p class="mb20">
+      用在表示当前进度，或者完成比例的场景
+    </p>
+</div>
 
-- 用在表示当前进度，或者完成比例的场景
-
-## 基础规范
-
-- 用在表示当前进度，或者完成比例的场景
+<div class="mb40">
+    <div class="fontsize-20 mb10">
+    基础规范
+    </div class="fontsize-28">
+    <p class="mb20">
+    用在表示当前进度，或者完成比例的场景
+    </p>
+</div>
 
 <div bx-name="chart.spec.components/list/index"></div>
 

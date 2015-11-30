@@ -1,14 +1,29 @@
-# 折线 line
+<div class="mb40">
+    <div class="fontsize-20 mb10">
+    折线图 <small>line</small>
+    </div class="fontsize-28">
+    <p class="mb20"></p>
+</div>
 
-## 定义
+<div class="mb40">
+    <div class="fontsize-20 mb10">
+    定义 
+    </div class="fontsize-28">
+    <p class="mb20">
+      折线图是用线段将各数据点连接起来而组成的图形。常用来分析数据随时间的变化趋势，也可用来分析多组数据随时间变化的相互作用和相互影响。
+    </p>
+</div>
 
-折线图是用线段将各数据点连接起来而组成的图形。常用来分析数据随时间的变化趋势，也可用来分析多组数据随时间变化的相互作用和相互影响。
-
-## 基础规范
-
-- 在折线图中，类别数据沿水平轴均匀分布，所有值数据沿垂直轴均匀分布。
-
-- 折线图可以清晰的反映数据是递增还是递减、增减的速率、增减的规律（周期性、螺旋性等）、峰值等特征。
+<div class="mb40">
+    <div class="fontsize-20 mb10">
+    基础规范
+    </div class="fontsize-28">
+    <p class="mb20">
+    在折线图中，类别数据沿水平轴均匀分布，所有值数据沿垂直轴均匀分布。
+    <br />
+    折线图可以清晰的反映数据是递增还是递减、增减的速率、增减的规律（周期性、螺旋性等）、峰值等特征。
+    </p>
+</div>
 
 <div bx-name="chart.spec.components/list/index"></div>
 
@@ -46,13 +61,6 @@ var options = {
  options配置，从上面可以看出，一个图表的options，由一系列的组件配置xAxis,yAxis等，和自身的绘图配置组成。比如下面，组件配置部分会有标明。**注：（后续的文档里只会罗列自身绘图配置，组件配置不再说明，因为组件可以适用任何图表）**
 
  
- + [xAxis（x轴组件配置）](#xaxis)
- + [yAxis（y轴组件配置）](#yaxis)
- + [back（背景组件配置）](#back)
- + [tips（tips组件配置）](#tips)
- + [anchor（十字瞄准组件器配置）](#anchor)
- + [markPoint（标记点组件配置）](#markPoint)
- + [markLine（标记线组件配置）](#markLine)
  + graphs
      - biaxial --> 是否显示双Y轴（只适用yAxis配置了两个指标的情况）
      - line --> 折线的配置

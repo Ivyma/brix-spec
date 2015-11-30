@@ -1,14 +1,30 @@
-# 柱状图 bar
+<div class="mb40">
+    <div class="fontsize-20 mb10">
+    柱状图 <small>bar</small>
+    </div class="fontsize-28">
+    <p class="mb20"></p>
+</div>
 
-## 定义 
+<div class="mb40">
+    <div class="fontsize-20 mb10">
+    定义 
+    </div class="fontsize-28">
+    <p class="mb20">
+        直方图是由一系列高度不等的纵向条纹或线段排列组成的图形。常用来表示数据的分布情况。
+    </p>
+</div>
 
-直方图是由一系列高度不等的纵向条纹或线段排列组成的图形。常用来表示数据的分布情况。
+<div class="mb40">
+    <div class="fontsize-20 mb10">
+    基础规范
+    </div class="fontsize-28">
+    <p class="mb20">
+ 在直方图中，类别数据一般情况下沿水平轴均匀分布，所有值数据沿垂直轴均匀分布。
+ <br />
+ 直方图可设关键点数据，同时鼠标在移动到相关选中区域会浮出详细数据。
+    </p>
+</div>
 
-## 基础规范
-
-- 在直方图中，类别数据一般情况下沿水平轴均匀分布，所有值数据沿垂直轴均匀分布。
-
-- 直方图可设关键点数据，同时鼠标在移动到相关选中区域会浮出详细数据。
 
 <div bx-name="chart.spec.components/list/index"></div>
 

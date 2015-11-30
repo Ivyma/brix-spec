@@ -35,5 +35,7 @@ define(function() {
         <% }) %>
     </div>
 </div>
+
+
     */}).toString().split('\n').slice(1,-1).join('\n') + '\n'
 })
