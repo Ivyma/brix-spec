@@ -21,7 +21,7 @@ define(function() {
     <p class="mb20">注：Type.CSS的font-family为：[Helvetica neue]，[tahoma]，[hiragino sans gb]，[stheiti]，[wenquanyi micro hei]</p>
      <div>
      <pre>
-        <code>
+        <code class="hljs html xml">
          body {
              font-size: 12px;
              font-family: "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", Georgia, "Times New Roman", Arial, sans-serif;
