@@ -1,10 +1,10 @@
 <div class="design-background mb160">
     <div class="row">
         <div class="col-sm-7 mb20" style="padding-top: 10%;">
-            <img class="img-responsive" src="assets/design/landing/标题.svg" alt="标题">
+            <img class="img-responsive" src="assets/story/chart.svg" style="margin-bottom: 80px;">
         </div>
         <div class="col-sm-4 design-decoration">
-            <img class="img-responsive" src="assets/design/landing/字母D.gif" alt="字母M">
+            <img class="img-responsive" src="assets/design/landing/字母C.gif" alt="字母M">
         </div>
     </div>
 </div>
