@@ -60,9 +60,20 @@ define(
                     var val = $.trim($(this).val());
                     if(val != ''){
                         $('.button').show(); 
+                        $(this).parents('.content-wrap').find('.suggestList').show();
                     }else{
                         $('.button').hide(); 
+                        $(this).parents('.content-wrap').find('.suggestList').hide();
                     }
+                });
+                $('.typeChoose').on('click',function(){
+                    if($(this).attr('isshow')=='false'){
+                        $('.toggle').show(); 
+                        $(this).attr('isshow','true');
+                    }else{
+                        $('.toggle').hide(); 
+                        $(this).attr('isshow','false');
+                    } 
                 });
             }
         })

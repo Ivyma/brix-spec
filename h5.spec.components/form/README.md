@@ -18,12 +18,37 @@
                 </div> 
                 <div class="content-body pd0">
                     <div class="content-show">
-                       <div class="content-wrap">
+                       <div class="demo_content">
+                            <div class="phone_demo">
+                                <div class="inputCol">
+                                    <span class="colt">标签名</span> 
+                                    <input type="text" placeholder="输入内容的暗提示"/>
+                                </div> 
+                            </div> 
                        </div> 
+                       <div class="demo_content">
+                            <div class="phone_demo">
+                                <div class="inputCol">
+                                    <span class="colIcon">标签名</span> 
+                                    <input type="text" placeholder="输入内容的暗提示"/>
+                                </div> 
+                            </div> 
+                       </div>
+                       <div class="demo_content">
+                            <div class="phone_demo">
+                                <div class="inputCol">
+                                    <input type="text" placeholder="输入内容的暗提示"/>
+                                </div> 
+                            </div> 
+                       </div>
                     </div> 
                     <div class="content-pre">
                          <pre class="example-pre" style="border-top:none;">
                              <code class="hljs html xml">
+                                <div class="inputCol">
+                                    <span class="colt">标签名</span> 
+                                    <input type="text" placeholder="输入内容的暗提示"/>
+                                </div>
                              </code>
                          </pre> 
                      </div>
@@ -31,4 +56,73 @@
              </div> 
       </div>
         <!--demo1end-->
+        <div class="example demo1">
+            <div class="content" style="overflow:hidden;">
+                <div class="content-header">
+                    <div>场景二：开关</div> 
+                </div> 
+                <div class="content-body pd0">
+                    <div class="content-show">
+                       <div class="demo_content">
+                            <div class="phone_demo">
+                                <div class="ToggleCol">
+                                    <span class="colt">音效提示</span> 
+                                    <div class="toggleBtn off"><i ></i></div>
+                                </div> 
+                            </div> 
+                       </div> 
+                    </div> 
+                    <div class="content-pre">
+                         <pre class="example-pre" style="border-top:none;">
+                             <code class="hljs html xml">
+                                <div class="ToggleCol">
+                                    <span class="colt">音效提示</span> 
+                                    <div class="toggleBtn off"><i ></i></div>
+                                </div>
+                             </code>
+                         </pre> 
+                     </div>
+                 </div> 
+             </div> 
+      </div>
+      <!--demo2-->
+      <div class="example demo1">
+            <div class="content" style="overflow:hidden;">
+                <div class="content-header">
+                    <div>场景三：文本框</div> 
+                </div> 
+                <div class="content-body pd0">
+                    <div class="content-show">
+                       <div class="demo_content" style="height:268px;">
+                            <div class="phone_demo" style="height:268px;">
+                                 <textarea placeholder="输入的暗文提示"></textarea>
+                            </div> 
+                       </div> 
+                    </div> 
+                    <div class="content-pre">
+                         <pre class="example-pre" style="border-top:none;">
+                             <code class="hljs html xml">
+                                  <textarea placeholder="输入的暗文提示"></textarea>
+                             </code>
+                         </pre> 
+                     </div>
+                 </div> 
+             </div> 
+      </div>
+      <!--demo3-->
 </div>
+<script>
+    $('.inputCol input').on('focus',function(){
+       $(this).parent().addClass('active'); 
+    })
+    $('.inputCol input').on('blur',function(){
+       $(this).parent().removeClass('active'); 
+    })
+    $('.toggleBtn').on('click',function(){
+        if($(this).hasClass('off')){
+            $(this).removeClass('off').addClass('on'); 
+        }else if($(this).hasClass('on')){
+            $(this).removeClass('on').addClass('off');
+       } 
+    });
+</script>

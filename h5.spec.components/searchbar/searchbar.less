@@ -6,6 +6,8 @@ p{
 small{
     font-size:12px;
 }
+ul{margin:0;padding:0;}
+li{list-style:none;}
 @font-face {
   font-family: 'searchfont';
   src: url('//at.alicdn.com/t/font_1448508055_778928.eot'); /* IE9*/
@@ -91,6 +93,16 @@ small{
         padding: 12px 0;
         -webkit-appearance: none;
         -webkit-tap-highlight-color: transparent 
+    }
+    .suggestList{
+        background:#fff; 
+        display:none;
+        li{
+            height:48px; 
+            border-bottom:1px solid #D7D7D7;
+            line-height:48px;
+            padding-left:16px;
+        }
     }
     .search_box{
         padding:8px 16px; 

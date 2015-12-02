@@ -23,15 +23,90 @@ li{
         width:380px;
         background:#fff;
         h2{margin:0;height:100%;}
-        .content-wrap{
-            margin:26px 30px 30px 30px;
-            background:#F6F5F7;
+        .demo_content{
+            background:#fff;
             overflow:hidden;
-            height:235px;
+            height:134px;
+            border-bottom:1px solid #ccc;
             position:relative;
+            .phone_demo{
+                border:2px solid #666666; 
+                border-bottom:none;
+                background:#f6f5f7;
+                margin:28px 30px 0 30px;
+                height:106px;
+            }
         }
         .content-pre{
             border-left:1px solid #ccc;
+        }
+        textarea{
+            margin:15px 8px 24px 8px; 
+            width:304px;
+            height:200px;
+        }
+    }
+    .active {
+        .colt{
+            color:@brand-color!important; 
+        } 
+    }
+    .ToggleCol{
+        height:48px; 
+        line-height:48px;
+        border:1px solid #ebebeb;
+        padding:0 16px;
+        background:#fff;
+        margin-top:15px;
+        position:relative; 
+        .colt{
+            color:rgba(0,0,0,.8); 
+            font-size:16px;
+            margin-right:10px; 
+        }
+        .toggleBtn{
+            width:64px; 
+            height:32px;
+            position:absolute;
+            right:16px;
+            background:#E6E6E6;
+            top:8px;
+            border-radius:15px;
+            i{
+               width:32px;
+               height:32px; 
+               display:inline-block;
+               border-radius:50%;
+               background:#fff;
+            }
+        }
+        .on{
+            background:#62CC72;
+            i{
+                margin-left:32px; 
+            } 
+        }
+    }
+    .inputCol{
+        height:48px; 
+        line-height:48px;
+        border:1px solid #ebebeb;
+        padding:0 16px;
+        background:#fff;
+        margin-top:15px;
+        position:relative;
+        .colt{
+            color:rgba(0,0,0,.8); 
+            font-size:16px;
+            margin-right:10px;
+        }
+        input{
+            font-size:16px;
+            border:0; 
+            position:absolute;
+            top:0px;
+            padding:0px;
+            height:46px;
         }
     }
     .pd0{

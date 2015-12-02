@@ -21,6 +21,9 @@
                        <div class="content-wrap">
                             <div bx-name="h5.spec.components/searchbar/searchbar"></div>
                             <ul class="suggestList">
+                                <li>连衣裙夏</li>
+                                <li>连衣裙 长裙</li>
+                                <li>连衣裙 中裙</li>
                             </ul>
                        </div> 
                     </div> 
@@ -75,6 +78,11 @@
                                      </div>
                                 </form> 
                             </div>
+                            <ul class="suggestList">
+                                <li>连衣裙夏</li>
+                                <li>连衣裙 长裙</li>
+                                <li>连衣裙 中裙</li>
+                            </ul>
                        </div> 
                     </div> 
                     <div class="content-pre">
