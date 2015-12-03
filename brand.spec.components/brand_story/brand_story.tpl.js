@@ -16,7 +16,11 @@ define(function() {
         </div>
         <div class="row mb40">
             <div class="col-sm-7"><img class="img-responsive" src="assets/story/branding landingpage字样2x.svg" style="margin-bottom: 80px;"></div>
-            <div class="col-sm-5"><img class="img-responsive" src="assets/story/brand笔记本2x.png" style="margin-top: -40px;"></div>
+
+            <div class="col-sm-4 design-decoration">
+                <img class="img-responsive" src="assets/design/landing/字母B.gif" alt="字母B">
+            </div>
+ 
         </div>
         <div class="clearfix"> 
             <div class="pull-left mb40" style="font-size: 20px;">品牌故事 <small>Brand Story</small></div>

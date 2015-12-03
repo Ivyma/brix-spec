@@ -387,7 +387,7 @@ define(['underscore'], function(_) {
 		hash: '#/chart/index',
 
 		resp: 'chartx',
-		herf: '#/chart/index',
+		herf: '#/chart/index'
 	},{
 		name: '所有',
 		name_en: 'All',
@@ -396,7 +396,7 @@ define(['underscore'], function(_) {
 		hash: '#/chart/all',
 
 		resp: 'all',
-		herf: '#/chart/all',
+		herf: '#/chart/all'
 	},{
 		name: '折线图',
 		name_en: 'Line',
