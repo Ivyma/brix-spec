@@ -25,28 +25,49 @@
 
 <div bx-name="chart.spec.components/list/index"></div>
 
-#### 雷达图的配置
+<div class="example">
+    <div class="content">
+        <div class="content-header">
+            <div>基础用法</div>
+        </div>
+        <div class="content-body" style="padding:18p 40px;">
+                <pre class="example-pre"  style="background:white"><code class="hljs html">
+                    var data= [
+                        [ "英雄"     , "攻击力" ,"操作难度"] ,
+                        [ "德玛皇子" , 65       , 28   ] ,
+                        [ "疾风剑豪" , 59       , 48   ] ,
+                        [ "盖伦"     , 90       , 40   ] ,
+                        [ "寒冰射手" , 81       , 19   ] ,
+                        [ "武器大师" , 56       , 96   ] ,
+                        [ "战争之王" , 55       , 27   ] ,
+                        [ "瑞文"     , 40       , 100  ] 
+                    ];
+                    var options = {
+                        yAxis : {
+                            field : ["攻击力","操作难度"],
+                            //dataSection : [0,40,80,100]
+                        },
+                        xAxis : {
+                            field : ["英雄"],
+                        },
+                        tips : {
+                            prefix : ["攻击力","操作难度"]
+                        },
+                        graphs : {
+                            alpha : 0.2
+                        }
+                    };
+                       
+                    Chartx.radar("canvasTest" , data , options).then(function( chart ){
+                        chart.on("click" , function(e){
+                             //e.eventInfo = { field : "" ,fole:{name , value}}
+                             e.eventInfo.field && console.log("当前点击了分组："+e.eventInfo.field);
+                             e.eventInfo.role && console.log("当前点击了角色："+e.eventInfo.role.name+"，值为"+e.eventInfo.role.value);
+                        });
+                    });
 
- - graphs 
-     + fillStyle 
-     + alpha
-     + lineWidth 
-    
-#### 雷达图的事件
+                </code></pre>
+        </div>
+    </div>
+</div>
 
-<table class='table'>
-    <thead>
-    <tr>
-        <th>事件名称</th>   
-        <th>参数</th>   
-        <th>描述</th>   
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>click</td>
-        <td>e.eventInfo.field(该分组对应的字段)</td>
-        <td>点击雷达网触发</td>
-    </tr>
-    </tbody>
-</table>
