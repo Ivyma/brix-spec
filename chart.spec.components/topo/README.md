@@ -25,37 +25,28 @@
 
 <div bx-name="chart.spec.components/list/index"></div>
 
-#### topo配置
- 
- - graph 
-   + rankdir --> 排序方向，默认“TB”从上到下
-   + nodesep --> 节点间距
-   + ranksep --> 排间距
- - node 
-   + width --> 节点width
-   + height --> 节点height
-   + fillStyle --> 节点填充色
-   + strokeStyle --> 节点描边色
-   + strokeStyleHover --> 节点hover态描边色
-   + labelColor --> 节点上面文本颜色
- - link
-   + 连接线拐点圆角半径
 
-### 进度图表（progress）
-
-#### progress图配置
-
-  - barWidth --> bar宽
-  - axisWidth --> 轴宽，默认等于barWidth
-  - progColor --> bar的颜色
-  - startAngle --> 起始角度
-  - angleCount --> 角度的总长
-  - currRatio --> 当前的进度比率
-  - barDis --> 如果有多组progress，则代表两bar之间的间距
-  - field --> 配置哪组数据做为数据源，可以是数组
-  - dataType --> 默认是占比，如果是绝对值"absolute"则需要自己另外计算占比
-  - text 
-     - enabled --> 是否显示文案
-     - fillStyle --> 文案背景色
-     - format --> 文案过滤函数
-     - fontSize --> 文案大小
+<div class="example">
+    <div class="content">
+        <div class="content-header">
+            <div>topo配置</div>
+        </div>
+        <div class="content-body" style="padding:18p 40px;">
+            <ul data-anchor-id="72xn">
+            <li>graph  <br>
+            <ul><li>rankdir --&gt; 排序方向，默认“TB”从上到下</li>
+            <li>nodesep --&gt; 节点间距</li>
+            <li>ranksep --&gt; 排间距</li></ul></li>
+            <li>node  <br>
+            <ul><li>width --&gt; 节点width</li>
+            <li>height --&gt; 节点height</li>
+            <li>fillStyle --&gt; 节点填充色</li>
+            <li>strokeStyle --&gt; 节点描边色</li>
+            <li>strokeStyleHover --&gt; 节点hover态描边色</li>
+            <li>labelColor --&gt; 节点上面文本颜色</li></ul></li>
+            <li>link <br>
+            <ul><li>连接线拐点圆角半径</li></ul></li>
+            </ul>
+        </div>
+    </div>
+</div>

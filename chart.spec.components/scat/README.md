@@ -25,30 +25,22 @@
 
 <div bx-name="chart.spec.components/list/index"></div>
 
-#### 散点图的配置
 
- - zAxis --> 散点图中的大小维度
-    + field zAxis的字段配置，和xAxis,yAxis的field配置一样
- - graphs 
-    + maxR --> 最大半径
-    + minR --> 最小半径
-    + normalR --> 默认半径  
-       
+<div class="example">
+    <div class="content">
+        <div class="content-header">
+            <div>散点图的配置</div>
+        </div>
+        <div class="content-body" style="padding:18p 40px;">
+            <ul data-anchor-id="72xn">
+            <li>zAxis --&gt; 散点图中的大小维度 <br>
+            <ul><li>field zAxis的字段配置，和xAxis,yAxis的field配置一样</li></ul></li>
+            <li>graphs  <br>
+            <ul><li>maxR --&gt; 最大半径</li>
+            <li>minR --&gt; 最小半径</li>
+            <li>normalR --&gt; 默认半径 </li></ul></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-### 拓扑图（topo）
-    
-#### topo配置
- 
- - graph 
-   + rankdir --> 排序方向，默认“TB”从上到下
-   + nodesep --> 节点间距
-   + ranksep --> 排间距
- - node 
-   + width --> 节点width
-   + height --> 节点height
-   + fillStyle --> 节点填充色
-   + strokeStyle --> 节点描边色
-   + strokeStyleHover --> 节点hover态描边色
-   + labelColor --> 节点上面文本颜色
- - link
-   + 连接线拐点圆角半径
