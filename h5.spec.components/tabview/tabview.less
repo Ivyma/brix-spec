@@ -1,0 +1,102 @@
+@brand-color : #ff6600;
+p{
+    color:#999;
+    font-size:14px;
+}
+small{
+    font-size:12px;
+}
+ul{
+    margin:0;
+    padding:0;
+}
+li{
+    list-style:none;
+}
+.spec-section{
+    .content-body{
+        background:#FAFAFA;
+        overflow:hidden;
+    }
+    .content-show{
+        float:left;
+        width:380px;
+        background:#fff;
+        h2{margin:0;height:100%;}
+        .content-wrap{
+            margin:26px 30px 30px 30px;
+            background:#F6F5F7;
+            overflow:hidden;
+            height:235px;
+            position:relative;
+        }
+        .content-pre{
+            border-left:1px solid #ccc;
+        }
+    }
+    .demo_row{
+        height:44px; 
+        background:#fff;
+        border-bottom:1px solid #ccc;
+        margin-top:32px;
+        padding:6px 16px;
+        ul{
+            height:32px;
+            display:box;
+            display:-moz-box;
+            display:-webkit-box;
+            li{
+                border:1px solid @brand-color;
+                cursor:pointer;
+                box-flex:1;
+                -webkit-box-flex:1;
+                -moz-box-flex:1;
+                line-height:32px;
+                text-align:center;
+                color:@brand-color;
+                list-style:none;
+                &.select{
+                   color:#fff;
+                   background:@brand-color; 
+                }
+            }
+            .noborder{
+                border-left:none; 
+                border-right:none;
+            }
+            .radiusL{
+                border-radius:10px 0 0 10px; 
+            }
+            .radiusR{
+                border-radius:0 10px 10px 0; 
+            }
+        }
+    }
+    .floorTab{
+        height:44px; 
+        background:#fff;
+        border-bottom:1px solid #ccc;
+        margin-top:32px;
+        display:box;
+        display:-moz-box;
+        display:-webkit-box;
+        li{
+            cursor:pointer;
+            box-flex:1;
+            -webkit-box-flex:1;
+            -moz-box-flex:1; 
+            line-height:44px;
+            text-decoration:none;
+            text-align:center;
+            &.select{
+                border-bottom:1px solid @brand-color; 
+                color:@brand-color;
+            }
+        }
+    }
+    .pd0{
+        padding:0px!important;
+    }
+}
+
+

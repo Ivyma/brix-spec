@@ -1,0 +1,265 @@
+p {
+  color: #999;
+  font-size: 14px;
+}
+small {
+  font-size: 12px;
+}
+@font-face {
+  font-family: 'navfont';
+  src: url('//at.alicdn.com/t/font_1448508055_778928.eot');
+  src: url('//at.alicdn.com/t/font_1448508055_778928.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/font_1448508055_778928.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/font_1448508055_778928.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/font_1448508055_778928.svg#iconfont') format('svg');
+  
+  /* IE9*/
+  /* iOS 4.1- */
+}
+.navfont {
+  font-family: "navfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.spec-section .content-body {
+  background: #FAFAFA;
+  overflow: hidden;
+}
+.spec-section .android .content-show .content-wrap {
+  margin: 22px 10px 0 10px;
+}
+.spec-section .demo2 .navBar-ios .oprate-btn {
+  left: 0px;
+  font-size: 30px;
+}
+.spec-section .demo2 .navBar-android {
+  padding-left: 55px!important;
+}
+.spec-section .demo2 .navBar-android .oprate-btn {
+  left: 0px;
+  font-size: 30px;
+}
+.spec-section .demo3 .navBar-ios .oprate-close {
+  width: 46px;
+  height: 100%;
+  display: block;
+  text-align: center;
+  color: #ff6600;
+  font-size: 16px;
+  line-height: 44px;
+  position: absolute;
+  left: 48px;
+  top: 0;
+}
+.spec-section .demo3 .navBar-ios .oprate-btn {
+  left: 0px;
+  font-size: 30px;
+}
+.spec-section .demo3 .navBar-android {
+  padding-left: 54px!important;
+}
+.spec-section .demo3 .navBar-android .oprate-close {
+  width: 46px;
+  height: 100%;
+  display: block;
+  text-align: center;
+  color: #ff6600;
+  font-size: 16px;
+  line-height: 48px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.spec-section .demo4 .navBar-ios .oprate-close {
+  width: 48px;
+  height: 100%;
+  display: block;
+  text-align: center;
+  color: #ff6600;
+  font-size: 16px;
+  line-height: 44px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.spec-section .demo4 .navBar-android {
+  padding-left: 54px!important;
+}
+.spec-section .demo4 .navBar-android .oprate-close {
+  width: 46px;
+  height: 100%;
+  display: block;
+  text-align: center;
+  color: #ff6600;
+  font-size: 16px;
+  line-height: 48px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.spec-section .demo5 .navBar-ios h2 {
+  width: 120px;
+  margin: 0 auto;
+  color: #ff6600;
+  font-size: 18px;
+}
+.spec-section .demo5 .navBar-ios .oprate-back {
+  width: 48px;
+  height: 100%;
+  display: block;
+  text-align: center;
+  color: #ff6600;
+  font-size: 24px;
+  line-height: 44px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.spec-section .demo5 .navBar-android h2 {
+  width: 96px;
+  margin-left: 48px;
+  color: #ff6600;
+  font-size: 18px;
+}
+.spec-section .demo5 .navBar-android .oprate-back {
+  width: 48px;
+  height: 100%;
+  display: block;
+  text-align: center;
+  color: #ff6600;
+  font-size: 24px;
+  line-height: 48px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.spec-section .demo6 .navBar-ios .oprate-back {
+  width: 48px;
+  height: 100%;
+  display: block;
+  text-align: center;
+  color: #ff6600;
+  font-size: 24px;
+  line-height: 44px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.spec-section .demo6 .navBar-android {
+  padding-left: 54px!important;
+}
+.spec-section .demo6 .navBar-android .oprate-back {
+  width: 48px;
+  height: 100%;
+  display: block;
+  text-align: center;
+  color: #ff6600;
+  font-size: 24px;
+  line-height: 48px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.spec-section .demo7 hgroup {
+  padding: 5px;
+}
+.spec-section .demo7 h1,
+.spec-section .demo7 h5 {
+  margin: 0;
+}
+.spec-section .demo7 h1 {
+  font-size: 18px;
+}
+.spec-section .demo7 h5 {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.spec-section .demo7 .navBar-ios .oprate-back {
+  width: 48px;
+  height: 100%;
+  display: block;
+  text-align: center;
+  color: #ff6600;
+  font-size: 24px;
+  line-height: 44px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.spec-section .demo7 .navBar-android {
+  padding-left: 54px!important;
+}
+.spec-section .demo7 .navBar-android .oprate-back {
+  width: 48px;
+  height: 100%;
+  display: block;
+  text-align: center;
+  color: #ff6600;
+  font-size: 24px;
+  line-height: 48px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.spec-section .content-show {
+  float: left;
+  width: 380px;
+  background: #fff;
+}
+.spec-section .content-show h2 {
+  margin: 0;
+  height: 100%;
+}
+.spec-section .content-show .content-wrap {
+  margin: 26px 30px 0 30px;
+  background: #F6F5F7;
+  overflow: hidden;
+  border: 2px solid #555;
+  border-radius: 5px 5px 0 0;
+  border-top: none;
+  border-bottom: none;
+  height: 170px;
+  position: relative;
+}
+.spec-section .content-show .content-wrap header {
+  background: #fafafa;
+  font-size: 18px;
+  color: #000;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+.spec-section .content-show .content-wrap .oprate-btn {
+  width: 48px;
+  height: 100%;
+  display: block;
+  text-align: center;
+  color: #ff6600;
+  font-size: 16px;
+  line-height: 48px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.spec-section .content-show .content-pre {
+  border-left: 1px solid #ccc;
+}
+.spec-section .content-show .navBar-ios {
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+}
+.spec-section .content-show .navBar-ios h2 {
+  line-height: 44px;
+}
+.spec-section .content-show .navBar-android {
+  height: 48px;
+  line-height: 48px;
+  text-align: left;
+  padding-left: 16px;
+}
+.spec-section .content-show .navBar-android h2 {
+  line-height: 48px;
+}
+.spec-section .pd0 {
+  padding: 0px!important;
+}

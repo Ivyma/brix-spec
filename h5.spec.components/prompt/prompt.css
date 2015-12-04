@@ -1,0 +1,130 @@
+p {
+  color: #999;
+  font-size: 14px;
+}
+small {
+  font-size: 12px;
+}
+@font-face {
+  font-family: 'promotfont';
+  src: url('//at.alicdn.com/t/font_1448949980_7627826.eot');
+  src: url('//at.alicdn.com/t/font_1448949980_7627826.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/font_1448949980_7627826.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/font_1448949980_7627826.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/font_1448949980_7627826.svg#iconfont') format('svg');
+  
+  /* IE9*/
+  /* iOS 4.1- */
+}
+.promotfont {
+  font-family: "promotfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fail:before {
+  content: "\e60b";
+}
+.success:before {
+  content: "\e60e";
+}
+.smile:before {
+  content: "\e60d";
+}
+.cry:before {
+  content: "\e60c";
+}
+.loading:before {
+  content: "\e613";
+}
+.spec-section .content-body {
+  background: #FAFAFA;
+  overflow: hidden;
+}
+.spec-section .content-show {
+  float: left;
+  width: 380px;
+  background: #fff;
+}
+.spec-section .content-show h2 {
+  margin: 0;
+  height: 100%;
+}
+.spec-section .content-show .content-wrap {
+  margin: 26px 30px 30px 30px;
+  background: #fff;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  position: relative;
+}
+.spec-section .content-show .content-pre {
+  border-left: 1px solid #ccc;
+}
+.spec-section .toast {
+  width: 120px;
+  height: 120px;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  color: #fff;
+  font-size: 60px;
+  float: left;
+  margin: 30px;
+}
+.spec-section .toast p {
+  font-size: 16px;
+  margin: 0;
+  color: #fff;
+}
+.spec-section .demoPage {
+  width: 100%;
+  height: 280px;
+  position: relative;
+}
+.spec-section .mask {
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 201;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.spec-section .mask .dialog {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 25%;
+  background: #fff;
+  border-radius: 10px;
+}
+.spec-section .mask .dialog .text {
+  color: #333;
+  font-size: 14px;
+  padding: 20px;
+  line-height: 1.5;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0px;
+}
+.spec-section .mask .dialog .double {
+  display: box;
+  display: -moz-box;
+  display: -webkit-box;
+}
+.spec-section .mask .dialog .double a {
+  -webkit-box-flex: 1;
+}
+.spec-section .mask .dialog .double .cancelBtn {
+  border-right: 1px solid #e5e5e5;
+}
+.spec-section .mask .dialog .btns {
+  overflow: hidden;
+}
+.spec-section .mask .dialog .btns a {
+  display: block;
+  color: #ff6600;
+  text-align: center;
+  line-height: 44px;
+  font-size: 16px;
+  text-decoration: none;
+}
+.spec-section .pd0 {
+  padding: 0px!important;
+}

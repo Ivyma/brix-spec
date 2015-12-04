@@ -1,0 +1,110 @@
+.spec-section .content-body {
+  background: #FAFAFA;
+  overflow: hidden;
+}
+.spec-section .content-show {
+  float: left;
+  width: 380px;
+  background: #fff;
+}
+.spec-section .content-show .content-wrap {
+  margin: 0px 30px 38px 30px;
+  background: #F6F5F7;
+  overflow: hidden;
+  border: 2px solid #555;
+  border-top: none;
+  height: 170px;
+  position: relative;
+}
+.spec-section .content-show .content-pre {
+  border-left: 1px solid #ccc;
+}
+.spec-section .pd0 {
+  padding: 0px!important;
+}
+.spec-section .tabs {
+  height: 52px;
+  border-top: 1px solid #d7d7d7;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.spec-section .tabs ol.brand-tab {
+  list-style: none;
+  padding: 0px;
+  margin-bottom: 0px;
+  background: transparent;
+}
+.spec-section .tabs ol li {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.05);
+}
+.spec-section .tabs ol .curr .tabIcon {
+  background: #ff6600;
+}
+.spec-section .tabs ol .curr .tabName {
+  color: #ff6600;
+}
+.spec-section .tabs ol .tabIcon {
+  width: 30px;
+  height: 30px;
+  background: #CCCCCC;
+  margin: 4.5px 25px 0 25px;
+}
+.spec-section .tabs ol .tabmore {
+  width: 30px;
+  height: 30px;
+  margin: 5px 17px 0 17px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+}
+.spec-section .tabs ol .tabName {
+  color: #666;
+}
+.spec-section .tabs ol .major {
+  height: 64px!important;
+  margin-top: -13px;
+  background: #ff6600;
+  border-radius: 50%;
+}
+.spec-section .tabs ol .major .tabIcon {
+  background: #fff;
+  margin: 17px!important;
+}
+.spec-section .tabs ol .li4 {
+  float: left;
+  text-align: center;
+  height: 100%;
+  width: 25%;
+}
+.spec-section .tabs ol .li5 {
+  float: left;
+  text-align: center;
+  width: 20%;
+  height: 100%;
+}
+.spec-section .tabs ol .li5 .tabIcon {
+  margin: 5px 17px 0 17px;
+}
+.spec-section .tabs ol .more {
+  position: relative;
+}
+.spec-section .tabs ol .popup {
+  width: 80px;
+  position: absolute;
+  background: #fff;
+  border-radius: 10px;
+  bottom: 54px;
+  right: 0px;
+  display: none;
+}
+.spec-section .tabs ol .popup .chooseTab {
+  height: 44px;
+  padding: 0 8px;
+}
+.spec-section .tabs ol .popup p {
+  margin: 0px;
+  height: 44px;
+  line-height: 44px;
+}
