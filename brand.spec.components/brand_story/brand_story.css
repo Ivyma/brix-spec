@@ -23,6 +23,40 @@
 .brand {
   min-height: 500px;
 }
+.brand .brand-story .brand-personality .border-left-brand {
+  border-left: 1px solid #FF6600;
+  padding-left: 20px;
+}
+.brand .brand-story .visual-style img {
+  width: 110px;
+  height: 110px;
+}
+.brand .brand-story .brand-download a.item {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+}
+.brand .brand-story .brand-download a.item img {
+  width: 110px;
+  height: 110px;
+}
+.brand .brand-story .brand-download a.item:hover:after {
+  width: 110px;
+  height: 110px;
+  font-family: 'minecraft-refactor-font';
+  content: '\e606';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #FF6600;
+  border-radius: 50%;
+  opacity: .9;
+  font-size: 40px;
+  color: white;
+  line-height: 110px;
+  vertical-align: middle;
+}
 .brand .brand-logo table.logo-color-and-background-color td,
 .brand .brand-logo table.logo-color-and-background-color th {
   text-align: center;
