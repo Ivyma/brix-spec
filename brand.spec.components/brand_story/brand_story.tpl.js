@@ -102,7 +102,7 @@ define(function() {
                             <img src="assets/story/20151206/吉祥物.svg">
                         </a>
                     </div>
-                    <div class="fontsize-16">吉祥物 <span class="color-brand">Caracter</span></div>
+                    <div class="fontsize-16">吉祥物 <span class="color-brand">Mascot</span></div>
                 </div>
                 <div class="col-sm-1"></div>
                 <div class="col-sm-3">
