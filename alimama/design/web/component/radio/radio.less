@@ -1,0 +1,54 @@
+@import "../../../../frame/variables.less";
+
+.radio {
+    
+}
+
+label {
+    font-weight: normal;
+    margin-right: 40px;
+    padding: 9px 0;
+    // line-height: 32px;
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin-right: 10px;
+        &:checked:after {
+            background-color: @brand;
+        }
+        &[disabled]:after {
+            background-color: #ccc;
+        }
+        &[disabled]:hover {
+            border-color: #E6E6E6;
+        }
+    }
+    p.desc {
+        color: #999;
+        padding-left: 25px;
+        margin-bottom: 0px;
+    }
+    &.disabled {
+        color: #999;
+        cursor: not-allowed;
+    }
+}
+
+ul.checklist {
+    list-style: none;
+    padding-left: 25px;
+    > li {
+        margin-bottom: 10px;
+    }
+}
+.checklist-linkage {
+    ul {
+        display: inline-block;
+        list-style: none;
+        li {
+            float: left;
+            .title {
+                line-height: 26px;
+            }
+        }
+    }
+}

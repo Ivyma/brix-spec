@@ -1,0 +1,63 @@
+@import "../../../../frame/variables.less";
+
+.field {
+    
+}
+
+.dialog.column-priority {
+    margin-top: 10px;
+    .dialog-content {
+        .dialog-header {
+            &.row {
+                margin: 0;
+                .col-xs-8, .col-xs-4 {
+                    padding: 0;
+                    a {
+                        color: #999;
+                        &:hover {
+                            color: @brand;
+                        }
+                    }
+                }
+            }
+            h4 {
+                margin: 0;
+                font-size: 16px;
+                color: #999;
+            }
+        }
+        .dialog-body {
+            &.row {
+                margin: 0;
+                .col-xs-8, .col-xs-4 {
+                    padding: 0;
+                }
+            }
+            .candidates {
+                .item {
+                    span {
+                        vertical-align: text-top;
+                    }
+                }
+            }
+            .queue {
+                padding-right: 20px!important;
+                .item {
+                    text-align: left;
+                    padding: 6px 10px 4px 10px;
+                    border-radius: 4px;
+                }
+            }
+        }
+        .dialog-footer {
+            .btn {
+                color: white;
+                background-color: @brand;
+                margin-right: 10px;
+            }
+            a {
+                color: #999;
+            }
+        }
+    }
+}

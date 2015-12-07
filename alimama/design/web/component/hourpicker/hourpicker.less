@@ -1,0 +1,61 @@
+@import "../../../../frame/variables.less";
+@import "../radio/radio.less";
+
+.hourpicker {
+    
+}
+
+body .example {
+    .hourpicker {
+        div.shortcuts {
+            label {
+                font-weight: normal;
+                color: #333;
+            }
+        }
+        div.apply-dialog {
+            .apply-dialog-body {
+                margin-bottom: 20px;
+                label {
+                    margin-bottom: 10px;
+                    font-weight: normal;
+                }
+            }
+            .apply-dialog-footer {
+                .btn.submit {
+                    background-color: @brand;
+                    color: white;
+                }
+            }
+        }
+        table.picker-days {
+            .picker-day {
+                .picker-hours {
+                    .picker-hour {
+                        float: left;
+                        .picker-hour-duration {
+                            z-index: 1;
+                        }
+                        &.active .picker-hour-duration {
+                            background-color: @brand;
+                        }
+                        .picker-hour-start, .picker-hour-end {
+                            background-color: @brand;
+                            z-index: 2;
+                        }
+                        .bottom .picker-hour-arrow {
+                            top: -3px;
+                            border-bottom: 3px solid @brand;
+                            margin-left: -3px;
+                        }
+                        .top .picker-hour-arrow {
+                            bottom: -3px;
+                            border-top: 3px solid @brand;
+                            margin-left: -3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

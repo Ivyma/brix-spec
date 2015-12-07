@@ -26,6 +26,7 @@ gulp.task('connect', function() {
 gulp.task('jshint', function() {
     var globs = [
         '**/*.js',
+        '!bak/**/*',
         '!bower_components/**/*',
         '!node_modules/**/*'
     ]
@@ -37,6 +38,7 @@ gulp.task('jshint', function() {
 // https://github.com/floatdrop/gulp-watch
 gulp.task('watch', function( /*callback*/ ) {
     var globs = [
+        '!bak/**/*',
         '!bower_components/**/*',
         '!node_modules/**/*'
     ]
@@ -49,6 +51,7 @@ gulp.task('watch', function( /*callback*/ ) {
 gulp.task('less', function() {
     var globs = [
         '**/*.less',
+        '!bak/**/*',
         '!bower_components/**/*',
         '!node_modules/**/*'
     ]
@@ -63,6 +66,7 @@ gulp.task('tpl', function() {
     var Buffer = require('buffer').Buffer
     var globs = [
         '**/*.tpl',
+        '!bak/**/*',
         '!bower_components/**/*',
         '!node_modules/**/*'
     ];
