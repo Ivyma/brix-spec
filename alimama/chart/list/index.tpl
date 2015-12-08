@@ -17,7 +17,7 @@
                         <%= item.name %> 
                     </div>
                     <div class="panel-body" style="height:180px;line-height:160px;">
-                        <img src="assets/charts/vteam-chart/<%= item.type %>/<%= item.resp %>.<%= item.prevImgType %>">
+                        <img src="alimama/chart/assets/vteam-chart/<%= item.type %>/<%= item.resp %>.<%= item.prevImgType %>">
                     </div>
                     <div class="panel-footer hide" style="color:#999">
                         <%= item.beizhu %>

@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4"><img class="img-responsive" src="assets/animation/效率优先/1效率优先_触发的反馈.gif"></div>
+                <div class="col-sm-4"><img class="img-responsive" src="alimama/animation/assets/效率优先/1效率优先_触发的反馈.gif"></div>
             </div>
         </div>
         <div class="mb60 hide">
@@ -38,12 +38,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-9"><img class="img-responsive" src="assets/animation/效率优先/2效率优先_加载时间.svg"></div>
+                <div class="col-sm-9"><img class="img-responsive" src="alimama/animation/assets/效率优先/2效率优先_加载时间.svg"></div>
             </div>
             <div class="row">
-                <div class="col-sm-3"><img class="img-responsive" src="assets/animation/效率优先/3效率优先_按钮等待.gif"></div>
-                <div class="col-sm-3"><img class="img-responsive" src="assets/animation/效率优先/4效率优先_按钮等待进度条.gif"></div>
-                <div class="col-sm-3"><img class="img-responsive" src="assets/animation/效率优先/5效率优先_按钮等待进度条百分比.gif"></div>
+                <div class="col-sm-3"><img class="img-responsive" src="alimama/animation/assets/效率优先/3效率优先_按钮等待.gif"></div>
+                <div class="col-sm-3"><img class="img-responsive" src="alimama/animation/assets/效率优先/4效率优先_按钮等待进度条.gif"></div>
+                <div class="col-sm-3"><img class="img-responsive" src="alimama/animation/assets/效率优先/5效率优先_按钮等待进度条百分比.gif"></div>
             </div>
         </div>
         <div class="mb60">
@@ -54,7 +54,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-9"><img class="img-responsive" src="assets/animation/效率优先/6效率优先_动效果延迟.gif"></div>
+                <div class="col-sm-9"><img class="img-responsive" src="alimama/animation/assets/效率优先/6效率优先_动效果延迟.gif"></div>
             </div>
         </div>
     </div>

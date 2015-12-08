@@ -20,7 +20,7 @@ define(function() {
                         <%= item.name %> <%= item.resp %>
                     </div>
                     <div class="panel-body">
-                        <img src="assets/charts/vteam-chart/<%= item.resp %>/<%= item.prev %>">
+                        <img src="alimama/chart/assets/vteam-chart/<%= item.resp %>/<%= item.prev %>">
                     </div>
                     <div class="panel-footer hide">
                         示例
