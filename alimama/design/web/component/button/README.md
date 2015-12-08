@@ -195,4 +195,4 @@
     </code></pre>
 </div>
 
-<link rel="stylesheet" type="text/css" href="spec.components/button/button.css">
+<link rel="stylesheet" type="text/css" href="alimama/design/web/component/button/button.css">
