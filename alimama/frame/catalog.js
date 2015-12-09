@@ -79,7 +79,6 @@ define(
                 })
             }
             var LIST = PLATFORM ? PLATFORM.children : GROUP.children
-            debugger
 
             var $sidebar = $('.sidebar').empty().html(
                 tpl({

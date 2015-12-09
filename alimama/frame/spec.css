@@ -1387,7 +1387,6 @@ body .parsley-errors-list + .parsley-errors-list {
 .sidebar-col .sidebar-wrapper .sidebar-item a small,
 .sidebar-col .sidebar-wrapper .sidebar-item-sub a small {
   color: #999;
-  font-size: 65%;
 }
 .sidebar-col .sidebar-wrapper .sidebar-item.active a,
 .sidebar-col .sidebar-wrapper .sidebar-item-sub.active a,
