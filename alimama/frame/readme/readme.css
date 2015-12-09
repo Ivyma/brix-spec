@@ -1,0 +1,71 @@
+.readme .spin {
+  margin: 0 0 18px 0;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  border: 0;
+}
+.readme .spin .spinner .three-bounce .one,
+.readme .spin .spinner .three-bounce .two,
+.readme .spin .spinner .three-bounce .three {
+  background-color: #FF6600;
+}
+.readme .code {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.usage {
+  background-color: #FAFAFA;
+  padding: 18px 40px;
+  border: 1px solid #E6E6E6;
+  border-radius: 6px;
+}
+.usage > ol {
+  padding-left: 18px;
+  color: #999;
+  margin-bottom: 0px;
+}
+.usage > ol li {
+  margin-top: 6px;
+}
+.example {
+  position: relative;
+  margin: 0 0 40px 0;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+}
+.example > .content {
+  position: relative;
+  padding: 0;
+}
+.example > .content .content-header {
+  background-color: #FAFAFA;
+  padding: 18px 40px;
+  border: 1px solid #E6E6E6;
+  border-radius: 6px;
+  margin: 0;
+  border-radius: 6px 6px 0 0;
+  border: none;
+  border-bottom: 1px solid #E6E6E6;
+}
+.example > .content .content-header > ol {
+  padding-left: 18px;
+  color: #999;
+  margin-bottom: 0px;
+}
+.example > .content .content-header > ol li {
+  margin-top: 6px;
+}
+.example > .content .content-body {
+  padding: 60px 40px 60px 120px;
+}
+.example pre {
+  margin: 0;
+  border: none;
+  border-top: 1px solid #e6e6e6;
+  padding: 18px 40px;
+  border-radius: 0 0 6px 6px;
+}
+.hljs {
+  padding: 0;
+  background-color: transparent;
+}

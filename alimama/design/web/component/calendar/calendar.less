@@ -1,0 +1,47 @@
+@import "../../../../frame/variables.less";
+
+.calendar {
+    
+}
+
+.example {
+    .datepickerwrapper {
+        .datepickerwrapper-shortcuts {
+            .datepickerwrapper-shortcuts-body {
+                .shortcut {
+                    &.active {
+                        background-color: @brand;
+                    }
+                }
+            }
+        }
+        .datepickerwrapper-inputs {
+
+        }
+        .datepickerwrapper-pickers {
+
+        }
+        .datepickerwrapper-footer {
+            .btn.submit {
+                background-color: @brand;
+                &:hover {
+                    background-color: @brand-hover;
+                }
+            }
+        }
+        .picker {
+            .datepicker-container {
+                .picker-group {
+                    .picker-body {
+                        .active {
+                            background-color: @brand;
+                        }
+                    }
+                }
+            }
+        }
+        &.single {
+            border: none!important;
+        }
+    }
+}

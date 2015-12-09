@@ -4,13 +4,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="favicon.png">
 
-<link href="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-<link href="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/highlightjs/styles/github.css" rel="stylesheet">
-<link href="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/brix-components/css-tool/mm.css" rel="stylesheet">
-<link href="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/brix-components/css-tool/browser.css" rel="stylesheet">
-<link href="spec.components/spec.css" rel="stylesheet">
+<script src="http://g.tbcdn.cn/thx/brix-release/0.1.0/require-config-css-animation.js"></script>
+<link href="http://g.tbcdn.cn/thx/brix-release/0.1.0/brix-components/css-tool/browser.css" rel="stylesheet">
+<link href="alimama/frame/spec.css" rel="stylesheet">
 
-<div bx-name="spec/header"></div>
+<div bx-name="alimama/frame/header/header"></div>
 <div class="container ungrid-row">
     <div id="indexMainWrapper" class="ungrid-col vertical-align-middle">
         <div class="browser">
@@ -36,34 +34,27 @@
     </div>
 </div>
 
-<div class="main-wrapper">
-
-    <div class="">
-        <div class="marginfix"></div>
-        <h1>引入 <small>Install</small></h1>
-        <hr>
+<div class="container ungrid-row install">
+    <div class="fontsize-20 mb40">引入 <small>Install</small></div>
+    <div class="mb40">
+        <div class="fontsize-16 mb20"> 压缩版本 <small>Production Version</small> </div>
+        <pre>http://g.tbcdn.cn/thx/brix-release/0.1.0/require-config-css.js</pre>
     </div>
-    <div class="mb20">
-        <div class="mb5"><h2>压缩版本 <small>Production Version</small></h2></div>
-        <pre>http://g.tbcdn.cn/thx/brix-release/0.0.22/require+config.js</pre>
-        <div class="mb5"><h2>未压缩版本 <small>Development Version</small></h2></div>
-        <pre>http://g.tbcdn.cn/thx/brix-release/0.0.22/require+config.js</pre>
+    <div class="mb40">
+        <div class="fontsize-16 mb20"> 未压缩版本 <small>Production Version</small> </div>
+        <pre>http://g.tbcdn.cn/thx/brix-release/0.1.0/require-config-css-debug.js</pre>
     </div>
-
 </div>
 
-<div bx-name="spec/footer"></div>
+<div bx-name="components/footer"></div>
 
-<script src="http://g-assets.daily.taobao.net/thx/brix-release/0.0.22/require+config.js"></script>
-<script src="spec.components/config.js"></script>
-<script src="spec.components/boot.js"></script>
+<script src="alimama/frame/boot.js"></script>
 
 <script>
     require(['jquery'], function($){
-        $(function(){
-            $('#indexMainWrapper').height(
-                $(window).height() - 50
-            )
-        })    
+        $('#indexMainWrapper').height(
+            $(window).height() - 50
+        )
     })
+
 </script>

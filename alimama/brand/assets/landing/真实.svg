@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="图层_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="220px" height="88.5px"
+	 viewBox="0 0 220 88.5" enable-background="new 0 0 220 88.5" xml:space="preserve">
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  height="88.25" width="220.034" y="-100" x="0" bottomLeftOrigin="true"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g>
+	<defs>
+		<rect id="SVGID_1_" y="0.25" width="220.034" height="88.25"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_2_)" fill="#FF6600" d="M73.671,17.486c0.264,8.36-6.3,15.35-14.662,15.614
+		c-8.359,0.261-15.35-6.301-15.614-14.663c-0.263-8.359,6.301-15.35,14.663-15.613C66.418,2.561,73.407,9.125,73.671,17.486"/>
+	<polygon clip-path="url(#SVGID_2_)" fill="#F0F0F0" points="67.367,18.682 114.096,88.5 20.638,88.5 	"/>
+	<polygon clip-path="url(#SVGID_2_)" fill="#D7D7D7" points="134.244,0.25 193.309,88.5 75.179,88.5 	"/>
+	<polygon clip-path="url(#SVGID_2_)" fill="#FF954D" points="173.709,19.286 220.034,88.5 127.388,88.5 	"/>
+	<polygon clip-path="url(#SVGID_2_)" fill="#FFD2B3" points="34.159,37.462 68.318,88.5 0,88.5 	"/>
+	<polygon clip-path="url(#SVGID_2_)" fill="#FF6600" points="97.002,12.225 148.053,88.5 45.952,88.5 	"/>
+</g>
+</svg>

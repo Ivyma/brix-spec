@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="图层_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="546px" height="324.5px"
+	 viewBox="0 0 546 324.5" enable-background="new 0 0 546 324.5" xml:space="preserve">
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  height="328.859" width="542.5" x="1" y="169.141" bottomLeftOrigin="true"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<line fill="none" stroke="#FF6600" stroke-width="3" stroke-miterlimit="10" x1="544" y1="300" x2="1.5" y2="300"/>
+<line fill="none" stroke="#F0F0F0" stroke-width="3" stroke-miterlimit="10" x1="544" y1="240" x2="1.5" y2="240"/>
+<line fill="none" stroke="#FF6600" stroke-width="3" stroke-miterlimit="10" x1="88.924" y1="240" x2="1.5" y2="240"/>
+<text transform="matrix(1 0 0 1 1.5 318.7715)" fill="#333333" font-family="'NotoSansHans-Light-GBpc-EUC-H'" font-size="12">底层页面    宽度1280</text>
+<text transform="matrix(1 0 0 1 1.5 258.7715)" fill="#333333" font-family="'NotoSansHans-Light-GBpc-EUC-H'" font-size="12">tips</text>
+<line fill="none" stroke="#F0F0F0" stroke-width="3" stroke-miterlimit="10" x1="544" y1="180" x2="1.5" y2="180"/>
+<line fill="none" stroke="#FF6600" stroke-width="3" stroke-miterlimit="10" x1="209.899" y1="180" x2="1.5" y2="180"/>
+<text transform="matrix(1 0 0 1 1.5 198.7715)" fill="#333333" font-family="'NotoSansHans-Light-GBpc-EUC-H'" font-size="12">组件、跟随浮层</text>
+<line fill="none" stroke="#F0F0F0" stroke-width="3" stroke-miterlimit="10" x1="544" y1="120" x2="1.5" y2="120"/>
+<line fill="none" stroke="#FF6600" stroke-width="3" stroke-miterlimit="10" x1="544" y1="120" x2="1.5" y2="120"/>
+<text transform="matrix(1 0 0 1 1.5 138.7715)" fill="#333333" font-family="'NotoSansHans-Light-GBpc-EUC-H'" font-size="12">投影遮罩层</text>
+<line fill="none" stroke="#F0F0F0" stroke-width="3" stroke-miterlimit="10" x1="544" y1="60" x2="1.5" y2="60"/>
+<line fill="none" stroke="#FF6600" stroke-width="3" stroke-miterlimit="10" x1="391.094" y1="60" x2="1.5" y2="60"/>
+<text transform="matrix(1 0 0 1 1.5 78.7715)" fill="#333333" font-family="'NotoSansHans-Light-GBpc-EUC-H'" font-size="12">页面浮出层</text>
+<line fill="none" stroke="#F0F0F0" stroke-width="3" stroke-miterlimit="10" x1="544" y1="4" x2="1.5" y2="4"/>
+<line fill="none" stroke="#FF6600" stroke-width="3" stroke-miterlimit="10" x1="544" y1="4" x2="1.5" y2="4"/>
+<rect x="138.07" y="8.5" fill="none" width="108.216" height="14.5"/>
+<text transform="matrix(1 0 0 1 1.5 18.7715)" fill="#333333" font-family="'NotoSansHans-Light-GBpc-EUC-H'" font-size="12">新页面</text>
+</svg>

@@ -1,0 +1,29 @@
+.suggestwrapper {
+  display: inline-block;
+  position: relative;
+  width: 190px;
+}
+.suggestwrapper input {
+  width: 100%;
+}
+.suggestwrapper .suggest.dropdown {
+  width: 100%;
+}
+.suggestwrapper .suggest.dropdown .dropdown-menu {
+  width: 100%;
+}
+table tbody tr td .editable-content {
+  overflow: hidden;
+  display: inline-block;
+  max-width: 80%;
+  text-overflow: ellipsis;
+}
+table tbody tr td .editable-toggle {
+  position: absolute;
+  margin-left: 3px;
+  margin-top: -2px;
+  display: none;
+}
+table tbody tr:hover .editable-toggle {
+  display: inline-block;
+}

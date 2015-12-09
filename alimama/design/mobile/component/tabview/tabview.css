@@ -1,0 +1,100 @@
+p {
+  color: #999;
+  font-size: 14px;
+}
+small {
+  font-size: 12px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.spec-section .content-body {
+  background: #FAFAFA;
+  overflow: hidden;
+}
+.spec-section .content-show {
+  float: left;
+  width: 380px;
+  background: #fff;
+}
+.spec-section .content-show h2 {
+  margin: 0;
+  height: 100%;
+}
+.spec-section .content-show .content-wrap {
+  margin: 26px 30px 30px 30px;
+  background: #F6F5F7;
+  overflow: hidden;
+  height: 235px;
+  position: relative;
+}
+.spec-section .content-show .content-pre {
+  border-left: 1px solid #ccc;
+}
+.spec-section .demo_row {
+  height: 44px;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  margin-top: 32px;
+  padding: 6px 16px;
+}
+.spec-section .demo_row ul {
+  height: 32px;
+  display: box;
+  display: -moz-box;
+  display: -webkit-box;
+}
+.spec-section .demo_row ul li {
+  border: 1px solid #ff6600;
+  cursor: pointer;
+  box-flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  line-height: 32px;
+  text-align: center;
+  color: #ff6600;
+  list-style: none;
+}
+.spec-section .demo_row ul li.select {
+  color: #fff;
+  background: #ff6600;
+}
+.spec-section .demo_row ul .noborder {
+  border-left: none;
+  border-right: none;
+}
+.spec-section .demo_row ul .radiusL {
+  border-radius: 10px 0 0 10px;
+}
+.spec-section .demo_row ul .radiusR {
+  border-radius: 0 10px 10px 0;
+}
+.spec-section .floorTab {
+  height: 44px;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  margin-top: 32px;
+  display: box;
+  display: -moz-box;
+  display: -webkit-box;
+}
+.spec-section .floorTab li {
+  cursor: pointer;
+  box-flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  line-height: 44px;
+  text-decoration: none;
+  text-align: center;
+}
+.spec-section .floorTab li.select {
+  border-bottom: 1px solid #ff6600;
+  color: #ff6600;
+}
+.spec-section .pd0 {
+  padding: 0px!important;
+}

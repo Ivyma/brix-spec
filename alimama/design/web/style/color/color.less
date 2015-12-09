@@ -1,0 +1,57 @@
+@import "../../../../frame/variables.less";
+
+table.table-brand {
+    width: 100%;
+    td {
+        text-align: center;
+        padding: 10px;
+        white-space: nowrap;
+        .img-circle {
+            display: inline-block;
+        }
+    }
+}
+.demo-background-color-item,
+.demo-background-color-hover-item {
+    margin-bottom: 10px;
+    .content {
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 4px;
+        .up,
+        .down {
+            color: #FFF;
+            height: 48px;
+            line-height: 48px;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .up {
+            border-radius: 5px 5px 0 0;
+        }
+        .down {
+            border-radius: 0 0 5px 5px;
+        }
+    }
+}
+.demo-background-color-item {
+    .content {
+        height: 50px;
+        line-height: 48px;
+    }
+    .desc {
+        text-align: center;
+    }
+}
+
+.mm-row {
+    margin-bottom: 16px;
+    background-color: #f5d9d9;
+    .col {
+        background-color: @brand;
+        color: white;
+        font-size: 16px;
+        line-height: 1.8;
+        text-align: center;
+    }
+}

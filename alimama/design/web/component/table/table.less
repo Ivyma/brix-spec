@@ -1,0 +1,75 @@
+@import "../../../../frame/variables.less";
+@import "../tab/tab.less";
+@import "../dropdown/dropdown.less";
+
+.table {
+    
+}
+
+.example {
+	.table {
+		tbody {
+			tr {
+				td {
+					.operation {
+						
+						// visibility: visible;
+						.btn {
+						    padding: 5px 11px;
+							height: 26px;
+						}
+						.btn-dropdown {
+							display: inline-block;
+							position: relative;
+							.btn-dropdown-toggle {
+								.down {
+									font-size: 12px;
+									display: inline-block;
+								}
+								.up {
+									font-size: 12px;
+									display: none;
+								}
+								&:hover {
+									background-color: @brand;
+									color: white;
+								}
+							}
+							.btn-dropdown-content {
+								display: none;
+								position: absolute;
+								right: 0;
+								top: 100%;
+							    border: 1px solid #e6e6e6;
+							    border-radius: 4px;
+							    background-color: white;
+							    padding: 20px 10px 10px 10px;
+    							box-shadow: none;
+    							margin-top: 10px;
+    							z-index: 1;
+							}
+							&.open {
+								.btn-dropdown-toggle {
+									background-color: @brand;
+									color: white;
+								}
+								.btn-dropdown-content {
+									display: block;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+    .column-scroll-arrow {
+    	background-color: #CCC;
+    	transition: none;
+    }
+    .column-scroll-arrow.hover,
+    .column-scroll-arrow:hover {
+    	background-color: @brand;
+    }
+}

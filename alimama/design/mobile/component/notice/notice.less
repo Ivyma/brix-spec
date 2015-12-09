@@ -1,0 +1,95 @@
+@brand-color : #ff6600;
+p{
+    color:#999;
+    font-size:14px;
+}
+small{
+    font-size:12px;
+}
+@font-face {
+  font-family: 'noticefont';
+  src: url('//at.alicdn.com/t/font_1448508055_778928.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_1448508055_778928.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_1448508055_778928.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/font_1448508055_778928.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_1448508055_778928.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.noticefont {
+  font-family: "noticefont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.spec-section{
+    .content-body{
+        background:#FAFAFA;
+        overflow:hidden;
+    }
+    .content-show{
+        float:left;
+        width:380px;
+        background:#fff;
+        h2{margin:0;height:100%;}
+        .content-wrap{
+            margin:26px 30px 0 30px;
+            background:#F6F5F7;
+            overflow:hidden;
+            border:2px solid #555;
+            border-radius:5px 5px 0 0;
+            border-bottom:none;
+            height:211px;
+            position:relative;
+        }
+        .content-pre{
+            border-left:1px solid #ccc;
+        }
+    }
+    .demo1{
+        .announcement{
+            z-index:200;
+            height:32px; 
+            width:100%;
+            color:#fff;
+            background:#555;
+            text-align:center;
+            line-height:32px;
+            .closeBtn{
+                float:right;
+                margin-right:5px;
+                cursor:pointer;
+            }
+        } 
+    }
+    .demo2{
+        .announcement{
+            z-index:200;
+            height:32px; 
+            width:100%;
+            color:#fff;
+            background:@brand-color;
+            text-align:center;
+            line-height:32px;
+            .moreBtn{
+                float:right;
+                margin-right:5px;
+                cursor:pointer;
+            }
+        } 
+    }
+    .demo3{
+        .announcement{
+            z-index:200;
+            height:32px; 
+            width:100%;
+            color:#fff;
+            background:#555;
+            text-align:center;
+            line-height:32px;
+        } 
+    }
+    .pd0{
+        padding:0px!important;
+    }
+}

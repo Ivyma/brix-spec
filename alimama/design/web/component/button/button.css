@@ -1,0 +1,20 @@
+.btn-progress.bx-trans-btn-radius .btn-progress-bar {
+  border-radius: 8px 0 0 8px;
+}
+@keyframes bx-trans-progressbar {
+  0% {
+    width: 1%;
+  }
+  80% {
+    border-radius: inherit;
+  }
+  100% {
+    width: 100%;
+    border-radius: inherit;
+  }
+}
+.bx-trans-progressbar {
+  animation-duration: 2s;
+  -webkit-animation-name: bx-trans-progressbar;
+  animation-name: bx-trans-progressbar;
+}
