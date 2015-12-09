@@ -1,0 +1,458 @@
+@import "./variables.less";
+@import "./for.less";
+@import "./font.less";
+@import "./grid.less";
+
+// 重新定义字体渲染为默认，需要删除 mm.css 中的定义
+* {
+    // -webkit-font-smoothing: auto;
+    transition: width .15s, padding .15s, margin .15s, opacity .15s;
+}
+
+// 隐藏横向滚动条
+body {
+    overflow-x: hidden;
+}
+
+::selection {
+  background-color: @brand;
+  color: white;
+}
+
+/* SVG */
+tspan {
+    font-family: "Microsoft YaHei","微软雅黑",STXihei,"华文细黑",Georgia,"Times New Roman",Arial,sans-serif;
+}
+
+/* 基础样式 & 工具样式 */
+h1, .h1 {
+    font-size: 24px;
+}
+h2, .h2 {
+    font-size: 16px;
+}
+h3, .h3 {
+    font-size: 12px;
+}
+h4, .h4 {
+    font-size: 12px;
+}
+small, .small {
+    color: #999;
+    font-size: 80%;
+}
+pre {
+    background-color: #FAFAFA;
+}
+hr {
+    border-top: 1px solid #e6e6e6;
+}
+p {
+    line-height: 1.8;
+}
+blockquote {
+    font-size: 14px;
+}
+.bold {
+    font-weight: bold;
+}
+.tahoma {
+  font-family: "Tahoma";
+}
+.cursor{
+    cursor: pointer;
+}
+.relative{
+    position: relative;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+// body a {
+//     color: @brand;
+//     text-decoration: none;
+//     &:hover, &:focus {
+//         color: @brand-hover;
+//     }
+//     &, &:hover, &:focus, &:active, &:visited {
+//         outline: 0;
+//         text-decoration: none;
+//     }
+// }
+
+body .table {
+    thead {
+        tr, tr.active {
+            th {
+                color: #999;
+                font-weight: normal;
+                height: 60px;
+                vertical-align: middle;
+                padding: 0 8px 0 14px;
+                white-space: nowrap;
+                background-color: #fafafa;
+                border: none;
+                &.stable {
+                    background-color: #f0f0f0;
+                }
+            }
+        }
+    }
+    tbody tr td {
+        color: #333;
+        height: 60px;
+        max-height: 90px;
+        vertical-align: middle;
+        padding: 0 8px 0 14px;
+        border-top: none;
+        border-bottom: 1px solid #e6e6e6;
+    }
+    tbody tr.active td {
+        background-color: transparent;
+    }
+    tbody tr:hover {
+        background-color: #FAF3EB;
+    }
+    tbody tr.active:hover td {
+        background-color: #FAF3EB;
+    }
+    &.table-bordered {
+        thead tr th {
+            border: 1px solid #e6e6e6;
+        }
+    }
+    tr:hover .operation {
+        visibility: hidden;
+    }
+    tr:hover > td > .operation {
+        visibility: visible;
+    }
+
+    tbody tr {
+        td.sub-toggle {
+            .brixfont {
+                cursor: pointer;
+                display: none;
+                &.plus {
+                    display: block;
+                }
+            }
+        }
+        td.sub-toggle.open {
+            .brixfont {
+                display: none;
+                &.minus {
+                    display: block;
+                }
+            }
+        }
+    }
+    tbody tr.sub {
+        display: none;
+        background-color: transparent!important;
+
+        > td {
+            table.table {
+                margin-bottom: -1px;
+            }
+        }
+    }
+}
+
+.lead {
+    font-size: 12px;
+}
+.marginfix {
+    height: 1px;
+}
+.text-align-center {
+    text-align: center;
+}
+.vertical-align-middle {
+    vertical-align: middle;
+}
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.hljs {
+    padding: 0;
+    background-color: transparent;
+}
+
+/* Table Grid */
+
+@media (min-width: 30em) {
+    .ungrid-row {
+        width: 100%;
+        display: table;
+        table-layout: fixed;
+    }
+    .ungrid-col {
+        display: table-cell;
+    }
+}
+
+/* Clipboard */
+.zero-clipboard {
+    position: relative;
+    .btn-clipboard {
+        position: absolute;
+        top: 0;
+        right: -1px;
+        z-index: 10;
+        display: block;
+        padding: 5px 8px;
+        font-size: 12px;
+        color: #767676;
+        cursor: pointer;
+        background-color: #fff;
+        border: 1px solid #e1e1e8;
+        border-radius: 0 0 0 4px;
+        &.zeroclipboard-is-hover {
+            color: #FFF;
+            border-color: @brand;
+            background-color: @brand;
+        }
+    }
+    .popover-content {
+        text-align: center;
+    }
+}
+
+
+/* mm.css */
+
+/*body .btn {
+    border: 0;
+    padding: 6px 20px;
+    &.btn-brand {
+        border: 0;
+        background-color: @brand;
+        &:hover, &.hover,
+        &:focus, &.focus,
+        &:active, &.active {
+            border: 0;
+            color: #fff;
+            background-color: @brand-hover;
+        }
+    }
+    &.btn-disabled {
+        border: 0;
+        cursor: not-allowed;
+        color: @ccc;
+    }
+    &.btn-progress {
+        position: relative;
+        .btn-progress-bar {
+            position: absolute;
+            height: 32px;
+            width: 50%;
+            top: 0px;
+            left: 0px;
+            border-radius: 4px 0px 0px 4px;
+            background-color: #cccccc;
+        }
+        span {
+            position: relative;
+        }
+        &:hover {
+            background-color: #e6e6e6;
+        }
+    }
+    &.btn-brand.btn-progress {
+        .btn-progress-bar {
+            background-color: @brand-hover;
+        }
+        &:hover {
+            background-color: @brand;
+        }
+    }
+
+    &.btn-bounce {
+        .one, .two, .three {
+            display: inline-block;
+            margin: auto 5px;
+            border-radius: 100%;
+            width: 5px;
+            height: 5px;
+            background-color: #FFF;
+        }
+    }
+}*/
+
+/* */
+.spec-anchor {
+    display: block;
+    height: 80px;
+    width: 0px;
+    margin-top: -80px;
+}
+
+/* Readme */
+
+#main {
+    min-height: 500px;
+}
+
+/* Components */
+
+.flat-text, .flat-text.small {
+    margin: 0;
+    height: 20px;
+    background-color: @e6e6e6;
+    padding-left: 8px;
+    padding-right: 8px;
+    overflow: hidden;
+    color: #999;
+}
+
+/* Input */
+body {
+    .parsley-errors-list {
+        list-style: none;
+        padding-left: 9px;
+        color: #999;
+        margin-top: 9px;
+        margin-bottom: 5px;
+    }
+    .parsley-errors-list + .parsley-errors-list {
+        margin-top: 5px;
+    }
+}
+// .parsley-errors-list {
+//     color: #B94A48;
+// }
+
+/* Textarea */
+/*body {
+    textarea, .textarea,
+    textarea.form-control, .textarea.form-control {
+        height: auto;
+    }
+    input:focus, .input:focus, input.focus,
+    textarea:focus, .textarea:focus, textarea.focus,
+    .form-control:focus, .form-control.focus {
+        border-color: @brand;
+    }
+    .input.error, input.error,
+    .textarea.error, textarea.error,
+    .form-control.error {
+        border-color: @red;
+    }
+}*/
+
+/* 响应式 */
+
+.sidebar-col, .main-col {
+    float: left;
+    position: relative;
+    min-height: 1px;
+}
+.sidebar-col {
+    .sidebar-wrapper {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        width: 200px;
+        height: 100%;
+        // min-height: 500px;
+        padding: 90px 0px 25px 0px;
+        background-color: #fafafa;
+        overflow-y: scroll;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        -webkit-overflow-scrolling: touch;
+
+        .inline-block {
+            display: inline-block;
+        }
+        .left-ellipse,
+        .right-ellipse {
+            width: 60px;
+            height: 32px;
+            .minecraft-refactor-font {
+                position: relative;
+                top: 2px;
+                left: 2px;
+            }
+        }
+        .left-ellipse {
+            border-radius: 30px 0 0 30px;
+            background-color: #ccc;
+        }
+        .right-ellipse {
+            border-radius: 0 30px 30px 0;
+            background-color: #f0f0f0;
+        }
+        .sidebar {
+            padding-bottom: 40px;
+            background-color: transparent;
+            display: block;
+            position: static;
+        }
+        .sidebar-top{
+            padding:10px 20px;
+            .down{
+                transform: rotate(180deg);
+            }
+            .transition{
+                transition: transform 0.5s;
+            }
+        }
+        .sidebar-item,
+        .sidebar-item-sub {
+            a {
+                color: #666;
+                display: block;
+                padding: 10px 20px 10px 40px;
+                white-space: nowrap;
+                word-wrap: normal;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                &:hover {
+                    background-color: #F8F8F8;
+                }
+                small {
+                    color: #999;
+                    font-size: 65%;
+                }
+            }
+            &.active a {
+                &, small {
+                    color: #FF6600;
+                }
+            }
+        }
+        .sidebar-item-sub {
+            a {
+                padding: 5px 10px 5px 40px;
+            }
+        }
+
+    }
+}
+.main-col {
+    margin-left: 200px;
+
+    .main-wrapper {
+        margin-top: 50px;
+        padding: 40px 40px 0 40px;
+        min-height: 500px;
+        max-width: 1170px;
+    }
+}
+
+.install {
+    pre {
+        margin: 0;
+        border: none;
+        padding: 18px 40px;
+        border-radius: 6px;
+    }
+}
+@import "./rwd.less";

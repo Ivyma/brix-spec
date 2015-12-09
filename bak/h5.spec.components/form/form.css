@@ -1,0 +1,113 @@
+p {
+  color: #999;
+  font-size: 14px;
+}
+small {
+  font-size: 12px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.spec-section .content-body {
+  background: #FAFAFA;
+  overflow: hidden;
+}
+.spec-section .content-show {
+  float: left;
+  width: 380px;
+  background: #fff;
+}
+.spec-section .content-show h2 {
+  margin: 0;
+  height: 100%;
+}
+.spec-section .content-show .demo_content {
+  background: #fff;
+  overflow: hidden;
+  height: 134px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.spec-section .content-show .demo_content .phone_demo {
+  border: 2px solid #666666;
+  border-bottom: none;
+  background: #f6f5f7;
+  margin: 28px 30px 0 30px;
+  height: 106px;
+}
+.spec-section .content-show .content-pre {
+  border-left: 1px solid #ccc;
+}
+.spec-section .content-show textarea {
+  margin: 15px 8px 24px 8px;
+  width: 304px;
+  height: 200px;
+}
+.spec-section .active .colt {
+  color: #ff6600 !important;
+}
+.spec-section .ToggleCol {
+  height: 48px;
+  line-height: 48px;
+  border: 1px solid #ebebeb;
+  padding: 0 16px;
+  background: #fff;
+  margin-top: 15px;
+  position: relative;
+}
+.spec-section .ToggleCol .colt {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  margin-right: 10px;
+}
+.spec-section .ToggleCol .toggleBtn {
+  width: 64px;
+  height: 32px;
+  position: absolute;
+  right: 16px;
+  background: #E6E6E6;
+  top: 8px;
+  border-radius: 15px;
+}
+.spec-section .ToggleCol .toggleBtn i {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #fff;
+}
+.spec-section .ToggleCol .on {
+  background: #62CC72;
+}
+.spec-section .ToggleCol .on i {
+  margin-left: 32px;
+}
+.spec-section .inputCol {
+  height: 48px;
+  line-height: 48px;
+  border: 1px solid #ebebeb;
+  padding: 0 16px;
+  background: #fff;
+  margin-top: 15px;
+  position: relative;
+}
+.spec-section .inputCol .colt {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  margin-right: 10px;
+}
+.spec-section .inputCol input {
+  font-size: 16px;
+  border: 0;
+  position: absolute;
+  top: 0px;
+  padding: 0px;
+  height: 46px;
+}
+.spec-section .pd0 {
+  padding: 0px!important;
+}

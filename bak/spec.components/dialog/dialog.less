@@ -1,0 +1,52 @@
+@import "../variables.less";
+
+.dialog {
+    
+}
+
+.example {
+    .dialog {
+        position: relative;
+        opacity: 1;
+        z-index: 1;
+        .dialog-close {
+            position: absolute;
+            top: 16px;
+            right: 10px;
+            margin: 0;
+            .brixfont {
+                font-size: 30px;
+                font-weight: normal;
+            }
+            &:hover, &:focus {}
+        }
+        .dialog-content {
+            .dialog-header, .dialog-body, .dialog-footer {
+                padding: 18px 40px;
+            }
+            .dialog-header {
+                border-bottom: 1px solid #e6e6e6;
+                padding: 18px 45px 18px 40px;
+            }
+            .dialog-footer {
+                text-align: left;
+                border-top: 1px solid #e6e6e6;
+            }
+        }
+    }
+    .dialog-backdrop {
+        position: relative;
+        display: block;
+        opacity: 1;
+        background-color: #808080;
+        padding: 40px 50px;
+    }
+    .mm-tabs {
+        li:hover, li.active {
+            border-bottom-color: @brand;
+            a {
+                color: @brand;
+            }
+        }
+    }
+}
