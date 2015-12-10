@@ -207,7 +207,7 @@
         <div class="content-body">
             <!-- <div class="text-center" style="font-size: 100px;">404</div> -->
             <div>
-                <img class="img-responsive" src="assets/components/404-01.svg">
+                <img class="img-responsive" src="alimama/design/web/component/assets/404-01.svg">
             </div>
             <div class="text-center fontsize-20 color-999">啊哦！思绪全乱了，让我静一静。</div>
             <div class="text-center fontsize-20 color-999">暂时无法为您服务拉。</div>
