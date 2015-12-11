@@ -1,13 +1,13 @@
 /* global define */
 define(
     [
-        'jquery', 'underscore', 'mock',
+        'jquery', 'underscore', /*'mock',*/
         'brix/base',
         './tab.tpl.js',
         'css!./tab.css'
     ],
     function(
-        $, _, Mock,
+        $, _, /*Mock,*/
         Brix,
         template
     ) {

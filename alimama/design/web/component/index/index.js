@@ -3,7 +3,7 @@ define(
     [
         'jquery', 'underscore', 'mock',
         'brix/base', 'brix/event',
-        'config/alimama/index', 'config/alimama/mapped',
+        'config/alimama/index', /*'config/alimama/mapped',*/
         'alimama/frame/download/download',
         './index.tpl.js',
         'css!./index.css'
@@ -11,7 +11,7 @@ define(
     function(
         $, _, Mock,
         Brix, EventManager,
-        CONSTANT, MAPPED,
+        CONSTANT, /*MAPPED,*/
         download,
         template
     ) {

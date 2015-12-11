@@ -1,4 +1,4 @@
-/* global define */
+/* global define, require */
 define(
     [
         'jquery', 'underscore',

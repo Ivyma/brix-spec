@@ -1,3 +1,4 @@
+/* global define, document */
 define(
 	[
 		'jquery',

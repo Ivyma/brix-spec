@@ -1,12 +1,12 @@
 /* global define, location */
 define(
     [
-        'jquery', 'underscore', 'mock', 'director', 'URIjs/URI',
-        'config/alimama/index', 'config/alimama/mapped'
+        'jquery', 'underscore', 'mock', /*'director',*/ 'URIjs/URI',
+        'config/alimama/index' /*, 'config/alimama/mapped'*/
     ],
     function(
-        $, _, Mock, Router, URI,
-        CONSTANT, MAPPED
+        $, _, Mock, /*Router,*/ URI,
+        CONSTANT /*, MAPPED*/
     ) {
 
         var tpl = Mock.heredoc(function() {
@@ -57,7 +57,7 @@ define(
         })
         tpl = _.template(tpl)
 
-        return function(bu, platform, nav) {
+        return function() {
             var uri = new URI(location.href)
             var fragment = uri.fragment() // hash witout leading #
             if (!fragment) return

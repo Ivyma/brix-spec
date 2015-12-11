@@ -1,3 +1,4 @@
+/* global define, window */
 define(function() {
 	// https://github.com/KyleAMathews/isRetina/blob/master/index.js
 	function isRetina() {

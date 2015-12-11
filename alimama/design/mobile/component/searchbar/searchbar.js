@@ -1,4 +1,4 @@
-/* global define */
+/* global define, require */
 define(
     [
         'jquery', 'underscore',
@@ -36,14 +36,14 @@ define(
                 ready destroyed
 
         */
-        function Searchbar () {}
+        function Searchbar() {}
 
-        _.extend( Searchbar.prototype, Brix.prototype, {
+        _.extend(Searchbar.prototype, Brix.prototype, {
             options: {},
             init: function() {
                 // 支持自定义 HTML 模板 template
                 template = this.options.template || template
-                // 支持自定义 CSS 样式
+                    // 支持自定义 CSS 样式
                 if (this.options.css) require(['css!' + this.options.css])
             },
             render: function() {
@@ -52,28 +52,28 @@ define(
                 $(this.element).append(html)
                 this.events();
             },
-            events :function(){
-                $('.search_input').on('focus',function(){
-                    $('.search_box').addClass('active'); 
-                }); 
-                $('.search_input').on('input',function(e){
+            events: function() {
+                $('.search_input').on('focus', function() {
+                    $('.search_box').addClass('active');
+                });
+                $('.search_input').on('input', function( /*e*/ ) {
                     var val = $.trim($(this).val());
-                    if(val != ''){
-                        $('.button').show(); 
+                    if (val !== '') {
+                        $('.button').show();
                         $(this).parents('.content-wrap').find('.suggestList').show();
-                    }else{
-                        $('.button').hide(); 
+                    } else {
+                        $('.button').hide();
                         $(this).parents('.content-wrap').find('.suggestList').hide();
                     }
                 });
-                $('.typeChoose').on('click',function(){
-                    if($(this).attr('isshow')=='false'){
-                        $('.toggle').show(); 
-                        $(this).attr('isshow','true');
-                    }else{
-                        $('.toggle').hide(); 
-                        $(this).attr('isshow','false');
-                    } 
+                $('.typeChoose').on('click', function() {
+                    if ($(this).attr('isshow') == 'false') {
+                        $('.toggle').show();
+                        $(this).attr('isshow', 'true');
+                    } else {
+                        $('.toggle').hide();
+                        $(this).attr('isshow', 'false');
+                    }
                 });
             }
         })

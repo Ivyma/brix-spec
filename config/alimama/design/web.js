@@ -1,3 +1,4 @@
+/* global define */
 define(
     [
         './web.style', './web.component'

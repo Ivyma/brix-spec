@@ -13,7 +13,7 @@
         </div>
         <div class="row mb40">
             <div class="col-sm-7" style="margin-top: 7%;">
-                <div class="color-brand fontsize-20 mb5">Increasing brand value of customer driven</div>
+                <div class="color-brand fontsize-20 mb5">Customer Driven Branding Strategy</div>
                 <div class="color-brand fontsize-20 mb10">客户价值驱动品牌提升</div>
                 <a class="btn btn-brand" href="alimama/brand/download/品牌故事/Alimama品牌指南第一版.pdf">
                     <span class="specfont">&#xe633;</span>
@@ -55,23 +55,21 @@
         <div class="mb40 visual-style">
             <div class="fontsize-20 text-center mb40">Visual style</div>
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <div class="text-center mb10">
                         <img src="alimama/brand/assets/story/20151206/生活化.svg">
                     </div>
                     <div class="fontsize-16">生活化 <span class="color-brand">Life-oriented</span></div>
                     <p class="color-999 mt4 mb0">我们通过成功的案例证明我们的商业价值。我们品牌的外在风格带有真实感受，创意来源于生活中的场景、人物、物品等元素。我们不需要过度包装。</p>
                 </div>
-                <div class="col-sm-1"></div>
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <div class="text-center mb10">
                         <img src="alimama/brand/assets/story/20151206/温情.svg">
                     </div>
                     <div class="fontsize-16">温情 <span class="color-brand">Warm</span></div>
                     <p class="color-999 mt4 mb0">我们关心客户，并给他们带来长久的信心。我们塑造温和的、带有情感的形象；我们品牌的外在风格会带有一些温情的元素，如柔和的线条、形态和配色，温暖和细腻的纹理等。</p>
                 </div>
-                <div class="col-sm-1"></div>
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <div class="text-center mb10">
                         <img src="alimama/brand/assets/story/20151206/活力.svg">
                     </div>
@@ -84,7 +82,7 @@
         <div class="mb40 brand-download">
             <div class="fontsize-20 text-center mb40">Download</div>
             <div class="row text-center">
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <div class="mb10">
                         <a href="alimama/brand/download/标志/阿里妈妈品牌规范-标志.ai" class="item">
                             <img src="alimama/brand/assets/story/20151206/标识.svg">
@@ -92,8 +90,7 @@
                     </div>
                     <div class="fontsize-16">标识 <span class="color-brand">Logo</span></div>
                 </div>
-                <div class="col-sm-1"></div>
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <div class="mb10 item">
                         <a href="alimama/brand/download/吉祥物/阿里妈妈品牌规范-吉祥物（校正）.ai" class="item">
                             <img src="alimama/brand/assets/story/20151206/吉祥物.svg">
@@ -101,8 +98,7 @@
                     </div>
                     <div class="fontsize-16">吉祥物 <span class="color-brand">Mascot</span></div>
                 </div>
-                <div class="col-sm-1"></div>
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <div class="mb10 item">
                         <a href="alimama/brand/download/案例/PPT模板.zip" class="item">
                             <img src="alimama/brand/assets/story/20151206/ppt.svg">

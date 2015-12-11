@@ -37,7 +37,7 @@ require(
                 },
                 function() {
                     // 
-                    Catalog()
+                    Catalog(BU)
 
                     // 
                     _.each($(document.body).find('pre code'), function(code /*, index*/ ) {
