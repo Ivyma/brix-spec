@@ -88,14 +88,14 @@ small {
   position: absolute;
   top: 0;
 }
-.spec-section .mask .dialog {
+.spec-section .mask .dialogs {
   width: 80%;
   margin: 0 auto;
   margin-top: 25%;
   background: #fff;
   border-radius: 10px;
 }
-.spec-section .mask .dialog .text {
+.spec-section .mask .dialogs .text {
   color: #333;
   font-size: 14px;
   padding: 20px;
@@ -103,21 +103,21 @@ small {
   border-bottom: 1px solid #e5e5e5;
   margin: 0px;
 }
-.spec-section .mask .dialog .double {
+.spec-section .mask .dialogs .double {
   display: box;
   display: -moz-box;
   display: -webkit-box;
 }
-.spec-section .mask .dialog .double a {
+.spec-section .mask .dialogs .double a {
   -webkit-box-flex: 1;
 }
-.spec-section .mask .dialog .double .cancelBtn {
+.spec-section .mask .dialogs .double .cancelBtn {
   border-right: 1px solid #e5e5e5;
 }
-.spec-section .mask .dialog .btns {
+.spec-section .mask .dialogs .btns {
   overflow: hidden;
 }
-.spec-section .mask .dialog .btns a {
+.spec-section .mask .dialogs .btns a {
   display: block;
   color: #ff6600;
   text-align: center;

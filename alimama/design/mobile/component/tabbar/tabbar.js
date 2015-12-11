@@ -50,7 +50,6 @@ define(
                 this.data = this.data || _.extend({}, this.options)
                 var html = _.template(template)(this.data)
                 $(this.element).append(html)
-                alert(1)
             }
         })
 

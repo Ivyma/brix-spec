@@ -1,3 +1,4 @@
+<div bx-name="alimama/design/mobile/component/prompt/prompt"></div>
 <div class="spec-section mb40">
     <div class="mb40">
         <div class="fontsize-20 mb10">定义</div>
@@ -80,7 +81,7 @@
                        <div class="content-wrap">
                            <div class="demoPage mb20">
                               <div class="mask">
-                                <div class="dialog">
+                                <div class="dialogs">
                                     <p class="text">通知文案通知文案,通知文案,通知文案,通知文案,通知文案.</p>
                                     <div class="btns single">
                                         <a href="javascript:;">确认</a> 
@@ -90,7 +91,7 @@
                            </div> 
                            <div class="demoPage mb20">
                               <div class="mask">
-                                <div class="dialog">
+                                <div class="dialogs">
                                     <p class="text">通知文案通知文案,通知文案,通知文案,通知文案,通知文案,通知文案,通知文案.</p>
                                     <div class="btns double">
                                         <a href="javascript:;" class="cancelBtn">取消</a> 
@@ -101,7 +102,7 @@
                            </div>
                            <div class="demoPage mb20">
                               <div class="mask">
-                                <div class="dialog">
+                                <div class="dialogs">
                                     <p class="text"><strong>新版联盟App已发布</br></strong>新增分享赚功能，分享即有收益哦，立即更新吧。</p>
                                     <div class="btns double">
                                         <a href="javascript:;" class="cancelBtn">取消</a> 
@@ -116,7 +117,7 @@
                          <pre class="example-pre" style="border-top:none;">
                              <code class="hljs html xml">
                                 <div class="mask">
-                                    <div class="dialog">
+                                    <div class="dialogs">
                                         <p class="text">通知文案通知文案,通知文案,通知文案,通知文案,通知文案.</p>
                                         <div class="btns single">
                                             <a href="javascript:;">确认</a> 
@@ -124,7 +125,7 @@
                                     </div> 
                                 </div>
                                 <div class="mask">
-                                    <div class="dialog">
+                                    <div class="dialogs">
                                         <p class="text">通知文案通知文案,通知文案,通知文案,通知文案,通知文案,通知文案,通知文案.</p>
                                         <div class="btns double">
                                             <a href="javascript:;" class="cancelBtn">取消</a> 
@@ -133,7 +134,7 @@
                                     </div> 
                                 </div>
                                 <div class="mask">
-                                    <div class="dialog">
+                                    <div class="dialogs">
                                         <p class="text"><strong>新版联盟App已发布</br></strong>新增分享赚功能，分享即有收益哦，立即更新吧。</p>
                                         <div class="btns double">
                                             <a href="javascript:;" class="cancelBtn">取消</a> 

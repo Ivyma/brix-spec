@@ -1,3 +1,4 @@
+<div bx-name="alimama/design/mobile/component/tablelist/tablelist"></div>
 <div class="spec-section mb40">
    <div class="mb40">
         <div class="fontsize-20 mb10">定义</div>

@@ -19,7 +19,7 @@
                 <div class="content-body pd0">
                     <div class="content-show">
                        <div class="content-wrap">
-                            <div bx-name="h5.spec.components/searchbar/searchbar"></div>
+                            <div bx-name="alimama/design/mobile/component/searchbar/searchbar"></div>
                             <ul class="suggestList">
                                 <li>连衣裙夏</li>
                                 <li>连衣裙 长裙</li>
