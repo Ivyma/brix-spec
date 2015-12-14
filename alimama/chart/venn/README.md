@@ -30,7 +30,7 @@
         <div class="content-header">
             <div>venn图配置</div>
         </div>
-        <div class="content-body" style="padding:18p 40px;">
+        <div class="content-body" style="padding:18px;">
             <ul data-anchor-id="p38v">
             <li>padding --&gt; 绘图区域的边距，默认15</li>
             <li>nodeField --&gt; 节点字段配置</li>

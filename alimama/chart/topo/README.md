@@ -31,7 +31,7 @@
         <div class="content-header">
             <div>topo配置</div>
         </div>
-        <div class="content-body" style="padding:18p 40px;">
+        <div class="content-body" style="padding:18px;">
             <ul data-anchor-id="72xn">
             <li>graph  <br>
             <ul><li>rankdir --&gt; 排序方向，默认“TB”从上到下</li>

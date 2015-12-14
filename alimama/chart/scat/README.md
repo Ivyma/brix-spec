@@ -31,7 +31,7 @@
         <div class="content-header">
             <div>散点图的配置</div>
         </div>
-        <div class="content-body" style="padding:18p 40px;">
+        <div class="content-body" style="padding:18px;">
             <ul data-anchor-id="72xn">
             <li>zAxis --&gt; 散点图中的大小维度 <br>
             <ul><li>field zAxis的字段配置，和xAxis,yAxis的field配置一样</li></ul></li>

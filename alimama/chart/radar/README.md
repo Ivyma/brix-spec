@@ -30,8 +30,8 @@
         <div class="content-header">
             <div>基础用法</div>
         </div>
-        <div class="content-body" style="padding:18p 40px;">
-                <pre class="example-pre"  style="background:white"><code class="hljs html">
+        <div class="content-body" style="padding:18px;">
+                <pre class="example-pre"  style="background:white;border-top:none;"><code class="hljs html">
                     var data= [
                         [ "英雄"     , "攻击力" ,"操作难度"] ,
                         [ "德玛皇子" , 65       , 28   ] ,

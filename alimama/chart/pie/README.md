@@ -33,8 +33,8 @@
         <div class="content-header">
             <div>基础用法</div>
         </div>
-        <div class="content-body" style="padding:18p 40px;">
-                <pre class="example-pre"  style="background:white"><code class="hljs html">
+        <div class="content-body" style="padding:18px !important;">
+                <pre class="example-pre"  style="background:white;border-top:none!important"><code class="hljs html">
                     var data= [
                         ["ie"     , 30],
                         ["chrome" , 35],
@@ -55,7 +55,7 @@
         <div class="content-header">
             <div>pie图的配置</div>
         </div>
-        <div class="content-body" style="padding:0;">
+        <div class="content-body" style="padding:18px !important;">
 
                 <ul data-anchor-id="72xn">
                 <li>innerRadius --&gt; 内圆半径，默认为0，即为实心饼图</li>

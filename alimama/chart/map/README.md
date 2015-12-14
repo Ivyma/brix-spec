@@ -33,8 +33,8 @@
         <div class="content-header">
             <div>基础用法</div>
         </div>
-        <div class="content-body" style="padding:18p 40px;">
-                <pre class="example-pre"  style="background:white"><code class="hljs html">
+        <div class="content-body" style="padding:18px!important">
+                <pre class="example-pre"  style="background:white;border-top:none"><code class="hljs html">
                     var data = [
                         [ "area"   , "click" , "color"],
                         [ "广东省" , 111     , "#3871BF"],
@@ -53,7 +53,7 @@
         <div class="content-header">
             <div>地图配置</div>
         </div>
-        <div class="content-body" style="padding:0;">
+        <div class="content-body" style="padding:18px!important;">
 <ul data-anchor-id="72xn">
 <li><p>area </p>
 

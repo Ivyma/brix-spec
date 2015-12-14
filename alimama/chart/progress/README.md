@@ -30,7 +30,7 @@
         <div class="content-header">
             <div>progress图配置</div>
         </div>
-        <div class="content-body" style="padding:18p 40px;">
+        <div class="content-body" style="padding:18px;">
         <ul data-anchor-id="72xn">
         <li>barWidth --&gt; bar宽</li>
         <li>axisWidth --&gt; 轴宽，默认等于barWidth</li>
