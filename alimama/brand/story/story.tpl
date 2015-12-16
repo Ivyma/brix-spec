@@ -84,7 +84,7 @@
             <div class="row text-center">
                 <div class="col-sm-4">
                     <div class="mb10">
-                        <a href="alimama/brand/download/标志/阿里妈妈品牌规范-标志.ai" class="item">
+                        <a href="alimama/brand/download/品牌故事/阿里妈妈标志.zip" class="item">
                             <img src="alimama/brand/assets/story/20151206/标识.svg">
                         </a>
                     </div>
@@ -92,7 +92,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="mb10 item">
-                        <a href="alimama/brand/download/吉祥物/阿里妈妈品牌规范-吉祥物（校正）.ai" class="item">
+                        <a href="alimama/brand/download/品牌故事/吉祥物.zip" class="item">
                             <img src="alimama/brand/assets/story/20151206/吉祥物.svg">
                         </a>
                     </div>
@@ -100,7 +100,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="mb10 item">
-                        <a href="alimama/brand/download/案例/PPT模板.zip" class="item">
+                        <a href="alimama/brand/download/品牌故事/PPT模板.zip" class="item">
                             <img src="alimama/brand/assets/story/20151206/ppt.svg">
                         </a>
                     </div>
