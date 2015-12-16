@@ -51,7 +51,7 @@ define(function() {
         <div class="collapse navbar-collapse" id="minecraft-header-navbar-collapse-phone">
             <ul class="nav navbar-nav">
                 <li data-phone="false"> <a href="main.html<%= DESIGN.href %>">设计</a> </li>
-                <li data-phone="true" on-click="toggleNavbar"> <a href="#/design">设计</a> </li>
+                <li data-phone="true" on-click="toggleNavbar"> <a href="main.html<%= DESIGN.href %>">设计</a> </li>
 
                 <li data-phone="true" class="navbar-dropdown">
                     <a href="javascript:;" on-click="toggleNavDropdown" class="dropdown-toggle">
@@ -84,7 +84,7 @@ define(function() {
                         <span class="dropdown-caret minecraft-refactor-font fontsize-12 color-brand">&#xe604;</span>
                     </a>
                     <ul class="dropdown-menu">
-                        <% _.each(BRAND, function(item, index) { %>
+                        <% _.each(BRAND.children, function(item, index) { %>
                         <li on-click="toggleNavbar"><a href="<%= item.href %>"><%= item.name %></a></li>
                         <% }) %>
                     </ul>
@@ -96,7 +96,7 @@ define(function() {
                         <span class="dropdown-caret minecraft-refactor-font fontsize-12 color-brand">&#xe604;</span>
                     </a>
                     <ul class="dropdown-menu">
-                        <% _.each(ANIMATION, function(item, index) { %>
+                        <% _.each(ANIMATION.children, function(item, index) { %>
                         <li on-click="toggleNavbar"><a href="<%= item.href %>"><%= item.name %></a></li>
                         <% }) %>
                     </ul>
