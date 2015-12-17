@@ -5,7 +5,8 @@ define(
         'brix/base', 'brix/event',
         'components/dialog/position',
         './story.tpl.js',
-        'css!./story.css'
+        'css!./story.css',
+        'css!../../design/web/assets/landing/landing.css'
     ],
     function(
         $, _,

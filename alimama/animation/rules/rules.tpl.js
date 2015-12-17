@@ -1,14 +1,13 @@
 /* global define */
 define(function() {
     return (function(){/*
-<div class="animation-background">
-    <div class="row">
-        <div class="col-sm-7 mb20" style="padding-top: 10%;">
-            <img class="img-responsive" src="alimama/brand/assets/landing/标题.svg" alt="标题">
-        </div>
-        <div class="col-sm-4 animation-decoration">
-            <img class="img-responsive" src="alimama/brand/assets/landing/字母M.gif" alt="字母M">
-        </div>
+<div class="landing-ungrid">
+    <div class="landing-col" style="width: 58.33333333%;">
+        <div class="color-brand fontsize-32 mb5">Functional Animation: Imitating the real world to enhance UX</div>
+            <div class="color-brand fontsize-24 mb10">真实的动效，更符合用户的直觉和感知</div>
+    </div>
+    <div class="landing-col" style="width: 33.33333333%;">
+        <img class="img-responsive" src="alimama/brand/assets/landing/字母M.gif" alt="字母M">
     </div>
 </div>
 <div class="row mb160">
@@ -34,7 +33,7 @@ define(function() {
 <div class="row mb160">
     <div class="col-sm-7 mb20">
         <div class="color-brand fontsize-16 mb4">遵循法则，节奏统一，平滑流畅</div>
-        <div class="color-666 line-height-24">动效在设计中不仅仅是形式美的存在，它蕴含着空间关系、功能性、系统的意图。并且满足自然的物理原则，不应动效增加用户的理解和认知成本。</div>
+        <div class="color-666 line-height-24">基于真实的动效场景层级梳理，在一致性的原则下，动效的展现应当是符合统一的规范和逻辑，因此运动曲线函数应当是有规律可循，动效的带给用户的主观感受应当尽可能是一致的。</div>
     </div>
     <div class="col-sm-1"></div>
     <div class="col-sm-4">

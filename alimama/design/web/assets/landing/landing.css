@@ -1,0 +1,32 @@
+.landing-ungrid {
+  background: url('../assets/landing/minecraft背景.svg') no-repeat;
+  background-size: 100%;
+  padding-bottom: 160px;
+}
+@media (min-width: 768px) {
+  .landing-ungrid {
+    width: 100%;
+    display: table;
+  }
+  .landing-ungrid .landing-col {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+  }
+  .landing-ungrid .landing-col .img-responsive {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+@media (max-width: 767px) {
+  .landing-ungrid {
+    width: 100%;
+  }
+  .landing-ungrid .landing-col {
+    width: 100%!important;
+  }
+  .landing-ungrid .landing-col .img-responsive {
+    width: 100%;
+    max-width: 400px;
+  }
+}

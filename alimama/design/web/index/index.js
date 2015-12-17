@@ -4,7 +4,8 @@ define(
         'jquery', 'underscore',
         'brix/base', 'brix/event',
         './index.tpl.js',
-        'css!./index.css'
+        'css!./index.css',
+        'css!../assets/landing/landing.css'
     ],
     function(
         $, _,

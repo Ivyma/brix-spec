@@ -4,7 +4,7 @@
             <span class="fontsize-20">遵循法则</span>
             <small class="color-999 fontsize-12">节奏统⼀，平滑流畅</small>
         </div>
-        <div class="color-999 mt4">动效在设计中不哈仅仅是形式美的存在，它蕴含着空间关系、功能性、系统的意图。并且满⾜⾃然的物理原则，不应动效增加⽤户的理解和认知成本。</div>
+        <div class="color-999 mt4">基于真实的动效场景层级梳理，在一致性的原则下，动效的展现应当是符合统一的规范和逻辑，因此运动曲线函数应当是有规律可循，动效的带给用户的主观感受应当尽可能是一致的。</div>
     </div>
     <div>
         <div class="mb60">

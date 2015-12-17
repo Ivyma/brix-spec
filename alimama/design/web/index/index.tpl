@@ -1,13 +1,14 @@
-<div class="design-background">
-    <div class="row">
-        <div class="col-sm-7 mb20" style="padding-top: 10%;">
-            <img class="img-responsive" src="alimama/design/web/assets/landing/标题.svg" alt="标题">
-        </div>
-        <div class="col-sm-4 design-decoration">
-            <img class="img-responsive" src="alimama/design/web/assets/landing/字母D.gif" alt="字母M">
-        </div>
+<div class="landing-ungrid">
+    <div class="landing-col" style="width: 58.33333333%;">
+        <div class="color-brand fontsize-32 mb5">Basic consistency is the fundamental to UX design</div>
+        <div class="color-brand fontsize-24 mb10">一致性是用户体验设计的根本</div>
+        <!-- <img class="img-responsive" src="alimama/design/web/assets/landing/标题.svg" alt="标题"> -->
+    </div>
+    <div class="landing-col" style="width: 33.33333333%;">
+        <img class="img-responsive" src="alimama/design/web/assets/landing/字母D.gif" alt="字母M">
     </div>
 </div>
+
 <div class="row mb160">
     <div class="col-sm-7 mb20">
         <div class="color-brand fontsize-16 mb4">简洁与高效</div>

@@ -4,7 +4,7 @@
             <span class="fontsize-20">真实的动效</span>
             <small class="color-999 fontsize-12">符合⽤户的直觉和感知</small>
         </div>
-        <div class="color-999 mt4">动效在设计中不哈仅仅是形式美的存在，它蕴含着空间关系、功能性、系统的意图。并且满⾜⾃然的物理原则，不应动效增加⽤户的理解和认知成本。</div>
+        <div class="color-999 mt4">动效在设计中不仅仅是形式美的存在，它蕴含着空间关系、功能性、系统的意图。并且满足自然的物理原则，同时，不应因动效的增加和而影响用户的理解和认知成本。</div>
     </div>
     <div>
         <div class="mb60">

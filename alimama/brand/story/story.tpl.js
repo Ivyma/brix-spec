@@ -14,16 +14,16 @@ define(function() {
         <div class="hide">
             <div class="fontsize-20">品牌故事 <small>Brand Story</small></div>
         </div>
-        <div class="row mb40">
-            <div class="col-sm-7" style="margin-top: 7%;">
-                <div class="color-brand fontsize-20 mb5">Customer Driven Branding Strategy</div>
-                <div class="color-brand fontsize-20 mb10">客户价值驱动品牌提升</div>
-                <a class="btn btn-brand" href="alimama/brand/download/品牌故事/Alimama品牌指南第一版.pdf">
+        <div class="landing-ungrid">
+            <div class="landing-col" style="width: 58.33333333%;">
+                <div class="color-brand fontsize-32 mb5">Customer Driven Branding Strategy</div>
+                <div class="color-brand fontsize-24 mb10">客户价值驱动品牌提升</div>
+                <a class="btn btn-brand mb10" href="alimama/brand/download/品牌故事/Alimama品牌指南第一版.pdf">
                     <span class="specfont">&#xe633;</span>
                     <span>下载品牌指南</span>
                 </a>
             </div>
-            <div class="col-sm-4 design-decoration">
+            <div class="landing-col" style="width: 33.33333333%;">
                 <img class="img-responsive" src="alimama/brand/assets/landing/字母B.gif">
             </div>
         </div>
