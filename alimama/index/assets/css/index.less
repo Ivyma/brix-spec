@@ -1,0 +1,250 @@
+@navItemWidth: 90px;
+@itemDuration: 2s;
+@itemAmount: 24;
+@fadeoutDuration: 0.4s;
+@moveDuration: 0.4s;
+
+.site-index {
+    /*margin: 70px 0 0 0;*/
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.si-header {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    height: 100px;
+    overflow: hidden;
+    z-index: 16;
+}
+.si-logo {
+    color: #FD523F;
+    font-size: 56px;
+    float: left;
+}
+.si-title {
+    font-size: 179px;
+    float: left;
+    margin: -63px 0 0 4px;
+    color: #595656;
+}
+
+.video-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    .si-video {
+        display: block;
+        height: 100%;
+        max-width: 100%;
+        width: auto;
+        margin: 0 auto;
+    }
+    .video-ctrl {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+    .video-ctrl-hide {
+        display: none;
+    }
+}
+
+
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    top: 36%;
+    height: 90px;
+    width: 100%;
+    overflow: hidden;
+
+
+    .nav-item {
+        width: @navItemWidth;
+        height: @navItemWidth;
+        overflow: hidden;
+        transform: translate(0, 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .nav-item-alibaba {
+        left: 20%;
+    }
+    .nav-item-tmall {
+        left: 30%;
+    }
+    .nav-item-juhuasuan {
+        left: 40%;
+    }
+    .nav-item-shoutao {
+        left: 50%;
+    }
+    .nav-item-taobao {
+        left: 60%;
+    }
+    .nav-item-alimama {
+        left: 70%;
+    }
+
+    .nav-item-slidein {
+        animation: slidein 1s forwards;
+    }
+
+    @keyframes slidein {
+        0% {
+            transform: translate(0, 100%);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+
+
+    .nav-item-selected {
+        transition: left @moveDuration;
+        left: 45%;
+        z-index: 3;
+    }
+
+
+    .nav-item-logo {
+        display: inline-block;
+        width: @navItemWidth * 24;
+        height: @navItemWidth;
+        background: url("../img/alimama.png")  no-repeat 0 0 ;
+    }
+    .nav-item-alibaba {
+        .nav-item-logo {
+            background-image: url("../img/alibaba.png");
+        }
+    }
+    .nav-item-tmall {
+        .nav-item-logo {
+            background-image: url("../img/tmall.png");
+        }
+    }
+    .nav-item-juhuasuan {
+        .nav-item-logo {
+            background-image: url("../img/juhuasuan.png");
+        }
+    }
+    .nav-item-shoutao {
+        .nav-item-logo {
+            background-image: url("../img/shoutao.png");
+        }
+    }
+    .nav-item-taobao {
+        .nav-item-logo {
+            background-image: url("../img/taobao.png");
+        }
+    }
+    .nav-item-alimama {
+        .nav-item-logo {
+            background-image: url("../img/alimama.png");
+        }
+    }
+
+
+    .nav-item.nav-item-active .nav-item-logo {
+        animation: @itemDuration item-active steps(@itemAmount);
+    }
+    .nav-item.nav-item-enter .nav-item-logo {
+        animation: @itemDuration / 4 item-enter steps(@itemAmount / 2) forwards;
+    }
+    .nav-item.nav-item-leave .nav-item-logo {
+        animation: @itemDuration / 4 item-leave steps(@itemAmount / 2);
+    }
+
+    @keyframes item-active {
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            transform: translate(-2160px, 0);
+        }
+    }
+    @keyframes item-enter {
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            transform: translate(-1080px, 0);
+        }
+    }
+    @keyframes item-leave {
+        0% {
+            transform: translate(-1080px, 0);
+        }
+        100% {
+            transform: translate(-2160px, 0);
+        }
+    }
+
+    .nav-item-fadeout {
+        animation: item-fadeout @fadeoutDuration forwards;
+        transform: translate(0, 0);
+    }
+    @keyframes item-fadeout {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .site-index {
+    }
+    .nav-list {
+        height: 200px;
+        width: 290px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+
+        .nav-item {
+            transform: translate(0, 330px);
+        }
+        .nav-item-alibaba {
+            left: 0;
+        }
+        .nav-item-tmall {
+            left: 100px;
+        }
+        .nav-item-juhuasuan {
+            left: 200px;
+        }
+        .nav-item-shoutao {
+            top: 100px;
+            left: 0;
+        }
+        .nav-item-taobao {
+            top: 100px;
+            left: 100px;
+        }
+        .nav-item-alimama {
+            top: 100px;
+            left: 200px;
+        }
+
+        .nav-item-selected {
+            left: 100px;
+        }
+    }
+}

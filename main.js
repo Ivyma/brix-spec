@@ -21,6 +21,11 @@ require(
         var BU = 'ALIMAMA'
 
         function handle() {
+            if(!location.hash) {
+                location.hash = '#/design/index'
+                return
+            }
+
             var $main = $('#main').removeClass(EFFECT)
             var path = MAPPED[location.hash]
             var moduleId = /(\.tpl|\.md)$/.test(path) ? 'alimama/frame/readme/readme' : path
