@@ -3,5 +3,6 @@
     "strict": false,
     "undef": true,
     "unused": "strict",
-    "node": true
+    "browser": true,
+    "predef": ["define", "require"]
 }
