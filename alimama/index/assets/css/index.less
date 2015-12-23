@@ -2,7 +2,7 @@
 @itemDuration: 2s;
 @itemAmount: 24;
 @fadeoutDuration: 0.4s;
-@moveDuration: 0.4s;
+@moveDuration: 0.8s;
 
 .site-index {
     /*margin: 70px 0 0 0;*/
@@ -42,11 +42,14 @@
     position: relative;
 
     .si-video {
-        display: block;
+        display: none;
         height: 100%;
         max-width: 100%;
         width: auto;
         margin: 0 auto;
+    }
+    .si-video-show {
+        display: block;
     }
     .video-ctrl {
         position: absolute;
@@ -80,6 +83,7 @@
         position: absolute;
         top: 0;
         left: 0;
+        cursor: pointer;
     }
     .nav-item-alibaba {
         left: 20%;
@@ -160,13 +164,13 @@
 
 
     .nav-item.nav-item-active .nav-item-logo {
-        animation: @itemDuration item-active steps(@itemAmount);
+        animation: @itemDuration item-active steps(23) ;
     }
     .nav-item.nav-item-enter .nav-item-logo {
         animation: @itemDuration / 4 item-enter steps(@itemAmount / 2) forwards;
     }
     .nav-item.nav-item-leave .nav-item-logo {
-        animation: @itemDuration / 4 item-leave steps(@itemAmount / 2);
+        animation: @itemDuration / 4 item-leave steps(11);
     }
 
     @keyframes item-active {
@@ -174,7 +178,7 @@
             transform: translate(0, 0);
         }
         100% {
-            transform: translate(-2160px, 0);
+            transform: translate(-2070px, 0);
         }
     }
     @keyframes item-enter {
@@ -190,7 +194,7 @@
             transform: translate(-1080px, 0);
         }
         100% {
-            transform: translate(-2160px, 0);
+            transform: translate(-2070px, 0);
         }
     }
 

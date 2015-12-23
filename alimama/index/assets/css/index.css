@@ -34,11 +34,14 @@
   position: relative;
 }
 .video-container .si-video {
-  display: block;
+  display: none;
   height: 100%;
   max-width: 100%;
   width: auto;
   margin: 0 auto;
+}
+.video-container .si-video-show {
+  display: block;
 }
 .video-container .video-ctrl {
   position: absolute;
@@ -67,6 +70,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  cursor: pointer;
 }
 .nav-list .nav-item-alibaba {
   left: 20%;
@@ -98,7 +102,7 @@
   }
 }
 .nav-list .nav-item-selected {
-  transition: left 0.4s;
+  transition: left 0.8s;
   left: 45%;
   z-index: 3;
 }
@@ -127,20 +131,20 @@
   background-image: url("../img/alimama.png");
 }
 .nav-list .nav-item.nav-item-active .nav-item-logo {
-  animation: 2s item-active steps(24);
+  animation: 2s item-active steps(23);
 }
 .nav-list .nav-item.nav-item-enter .nav-item-logo {
   animation: 0.5s item-enter steps(12) forwards;
 }
 .nav-list .nav-item.nav-item-leave .nav-item-logo {
-  animation: 0.5s item-leave steps(12);
+  animation: 0.5s item-leave steps(11);
 }
 @keyframes item-active {
   0% {
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(-2160px, 0);
+    transform: translate(-2070px, 0);
   }
 }
 @keyframes item-enter {
@@ -156,7 +160,7 @@
     transform: translate(-1080px, 0);
   }
   100% {
-    transform: translate(-2160px, 0);
+    transform: translate(-2070px, 0);
   }
 }
 .nav-list .nav-item-fadeout {

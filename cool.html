@@ -15,7 +15,7 @@
         <span class="minecraft-refactor-font si-title">&#xe607;</span>
     </div>
     <div class="video-container">
-        <video src="./alimama/index/assets/video/welcome.mp4" class="si-video" autoplay></video>
+        <video src="./alimama/index/assets/video/welcome.mp4" class="si-video" autoplay style="display: none;"></video>
         <button type="button" class="video-ctrl video-skip">跳过动画</button>
         <button type="button" class="video-ctrl video-replay">重播动画</button>
     </div>
@@ -64,9 +64,12 @@
         './alimama/index/video-ctrl',
         'css!./alimama/index/assets/css/index.css'
     ], function(SiteIndex, NavItemCtrl, VideoCtrl){
+        NavItemCtrl.init()
+        VideoCtrl.init()
         SiteIndex.init(NavItemCtrl, VideoCtrl)
-        SiteIndex.$proxy.on('close', function (item) {
+        SiteIndex.$proxy.on('close', function (e, item) {
             console.log('包装动画结束, 被选中的页面是:', item)
+            location.href = '/main.html'
         })
     })
 </script>
