@@ -34,7 +34,7 @@
             </div>
             <div class="contextual-message bg-warning color-f mb40">
                 <span class="zsfont glyph">&#xe6ae;<!-- &#xe6ae; --></span>
-                <span>您的账户余额不足，请尽快崇志。<a href="javascript:;" class="color-f ml10">去充值</a></span>
+                <span>您的账户余额不足，请尽快充值。<a href="javascript:;" class="color-f ml10">去充值</a></span>
             </div>
             <div class="contextual-message bg-danger color-f mb40">
                 <span class="zsfont glyph">&#xe6ad;<!-- &#xe6ad; --></span>
