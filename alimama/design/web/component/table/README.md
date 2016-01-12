@@ -163,7 +163,7 @@
                         <th class="">滚动列 1</th>
                         <th class="">滚动列 2</th>
                         <th class="">滚动列 3</th>
-                        <th class="stable" width="150">操作</th>
+                        <th class="stable" width="160">操作</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -243,8 +243,8 @@
                     </tr>
                     <tr class="sub">
                         <td></td>
-                        <td colspan="5" style="padding-left: 0; padding-right: 0;">
-                            <table bx-name="components/table" class="table table-hover table-fixed">
+                        <td colspan="5" style="padding-right: 0;">
+                            <table bx-name="components/table" class="table table-hover table-fixed" style="border-left: 1px solid #ffc299;">
                                 <thead>
                                     <tr>
                                         <th class="nowrap">名称</th>

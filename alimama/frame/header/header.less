@@ -91,18 +91,18 @@
                         color: #999;
                         padding: 15px 40px;
                         font-size: 14px;
-                        opacity: .6;
                         &, &:visited, &:hover, &:active, &:focus {
                             background: none;
+                        }
+                        &:hover {
+                            color: #333;
                         }
                         @media @device-phone {
                             padding-left: 15px;
                         }
                     }
                     &:hover, &.active {
-                        > a {
-                            opacity: 1;
-                        }
+                        > a {}
                     }
                     &.active {
                         > a {

@@ -545,17 +545,10 @@
     margin-left: -90px;
   }
 }
-.navbar .navbar-collapse ul.navbar-nav > li > a {
-  opacity: .6;
-}
 @media only screen and (max-width: 767px) {
   .navbar .navbar-collapse ul.navbar-nav > li > a.hasmore {
     display: none;
   }
-}
-.navbar .navbar-collapse ul.navbar-nav > li:hover > a,
-.navbar .navbar-collapse ul.navbar-nav > li.active > a {
-  opacity: 1;
 }
 .navbar .navbar-collapse ul.navbar-nav > li > .dropdown {
   padding-left: 18px;

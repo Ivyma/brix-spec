@@ -32,13 +32,20 @@
                 <span class="zsfont glyph color-help">&#xe6af;<!-- &#xe6af; --></span>
                 <span>XXX 创意已经通过审核。</span>
             </div>
+            <div class="contextual-message bg-info mb40">
+                <span class="zsfont glyph color-help">&#xe6af;<!-- &#xe6af; --></span>
+                <span>XXX 创意已经通过审核。</span>
+                <a href="javascript:;" class="ml10">去查看</a>
+            </div>
             <div class="contextual-message bg-warning color-f mb40">
                 <span class="zsfont glyph">&#xe6ae;<!-- &#xe6ae; --></span>
-                <span>您的账户余额不足，请尽快充值。<a href="javascript:;" class="color-f ml10">去充值</a></span>
+                <span>您的账户余额不足，请尽快充值。</span>
+                <a href="javascript:;" class="color-f ml10">去充值</a>
             </div>
             <div class="contextual-message bg-danger color-f mb40">
                 <span class="zsfont glyph">&#xe6ad;<!-- &#xe6ad; --></span>
-                <span>您的账户已被处罚，处于冻结状态。<a href="javascript:;" class="color-f ml10">去申诉</a></span>
+                <span>您的账户已被处罚，处于冻结状态。</span>
+                <a href="javascript:;" class="color-f ml10">去申诉</a>
             </div>
             <div class="contextual-message bg-success color-f mb40">
                 <span class="zsfont glyph">&#xe6aa;<!-- &#xe6aa; --></span>
@@ -59,13 +66,20 @@
             <span class="zsfont glyph color-help">&#xe6af;<!-- &#xe6af; --></span>
             <span>XXX 创意已经通过审核。</span>
         </div>
+        <div class="contextual-message bg-info mb40">
+            <span class="zsfont glyph color-help">&#xe6af;<!-- &#xe6af; --></span>
+            <span>XXX 创意已经通过审核。</span>
+            <a href="javascript:;" class="ml10">去查看</a>
+        </div>
         <div class="contextual-message bg-warning color-f mb40">
             <span class="zsfont glyph">&#xe6ae;<!-- &#xe6ae; --></span>
-            <span>您的账户余额不足，请尽快崇志。<a href="javascript:;" class="color-f ml10">去充值</a></span>
+            <span>您的账户余额不足，请尽快充值。</span>
+            <a href="javascript:;" class="color-f ml10">去充值</a>
         </div>
         <div class="contextual-message bg-danger color-f mb40">
             <span class="zsfont glyph">&#xe6ad;<!-- &#xe6ad; --></span>
-            <span>您的账户已被处罚，处于冻结状态。<a href="javascript:;" class="color-f ml10">去申诉</a></span>
+            <span>您的账户已被处罚，处于冻结状态。</span>
+            <a href="javascript:;" class="color-f ml10">去申诉</a>
         </div>
         <div class="contextual-message bg-success color-f mb40">
             <span class="zsfont glyph">&#xe6aa;<!-- &#xe6aa; --></span>
@@ -175,7 +189,8 @@
             <div style="position: relative;">
                 <div class="contextual-message bg-danger color-f" style="border-radius: 0;">
                     <span class="zsfont glyph">&#xe6ad;<!-- &#xe6ad; --></span>
-                    <span>您的账户已被处罚，处于冻结状态。<a href="javascript:;" class="color-f ml10">去申诉</a></span>
+                    <span>您的账户已被处罚，处于冻结状态。</span>
+                    <a href="javascript:;" class="color-f ml10">去申诉</a>
                 </div>
                 <div style="height: 50px; background-color: #FF6600;"></div>
                 <div class="ungrid-row">
