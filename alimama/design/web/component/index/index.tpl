@@ -12,12 +12,12 @@
             <span class="specfont">&#xe633;</span>
             <span>下载附件</span>
         </a>
-        <% list = ['组件/UI Kit(0821).sketch', '组件/Mama Design(0729).rplib'] %>
+        <% list = ['UI Kit(0821).sketch', 'Mama Design(0729).rplib'] %>
         <ul class="spec-download-list">
             <% for( var i = 0; i < list.length; i++ ) { %>
             <li class="clearfix">
                 <a href="alimama/design/web/component/download/<%= list[i] %>" download="">
-                    <span class="name"><%= RE_FILENAME.exec(list[i])[1] %></span>
+                    <span class="name"><%= list[i] %></span>
                     <span class="specfont">&#xe633;</span>
                 </a>
             </li>
