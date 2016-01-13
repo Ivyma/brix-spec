@@ -149,5 +149,5 @@
     </code></pre>
 </div>
 <script type="text/javascript">
-    require(['css!spec.components/pagination/pagination.css'])
+    require(['css!alimama/design/web/component/pagination/pagination'])
 </script>
