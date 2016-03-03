@@ -92,5 +92,5 @@
 
 
 <script type="text/javascript">
-	require(['css!spec.components/table/table.css', 'css!spec.components/dialog/dialog.css'])
+	require(['css!alimama/design/web/component/table/table.css'])
 </script>

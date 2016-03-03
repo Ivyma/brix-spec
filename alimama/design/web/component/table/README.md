@@ -114,7 +114,7 @@
             <table id="case1" bx-name="components/table" class="table table-hover">
                 <thead>
                     <tr>
-                        <th width="40"><input type="checkbox" data-linkage-name="all"></th>
+                        <th width="40"><input type="checkbox" class="bx-anim-checkbox" data-linkage-name="all"></th>
                         <th class="nowrap">名称</th>
                         <th class="nowrap">状态</th>
                         <th class="nowrap">类型</th>
@@ -125,7 +125,7 @@
                 <tbody>
                     <% _.each(list, function(item){ %>
                     <tr>
-                        <td><input type="checkbox" value="<%= item.name %>" data-linkage-parent-name="all"></td>
+                        <td><input type="checkbox" class="bx-anim-checkbox" value="<%= item.name %>" data-linkage-parent-name="all"></td>
                         <td class="nowrap"><%= item.name %></td>
                         <td class="nowrap"><%= item.status %></td>
                         <td class="nowrap"><%= item.type %></td>
@@ -155,7 +155,7 @@
             <table bx-name="components/table" class="table table-hover table-fixed mt40" data-column-rwd-range="[2,-1]" data-column-rwd-limit="3" data-column-rwd-cursor="1">
                 <thead>
                     <tr>
-                        <th class="stable" width="40"><input type="checkbox" data-linkage-name="all"></th>
+                        <th class="stable" width="40"><input type="checkbox" class="bx-anim-checkbox" data-linkage-name="all"></th>
                         <th class="stable">名称</th>
                         <th class="">状态</th>
                         <th class="">类型</th>
@@ -169,7 +169,7 @@
                 <tbody>
                     <% _.each(list, function(item){ %>
                     <tr>
-                        <td><input type="checkbox" value="<%= item.name %>" data-linkage-parent-name="all"></td>
+                        <td><input type="checkbox" class="bx-anim-checkbox" value="<%= item.name %>" data-linkage-parent-name="all"></td>
                         <td class=""><%= item.name %></td>
                         <td class=""><%= item.status %></td>
                         <td class=""><%= item.type %></td>
@@ -350,7 +350,7 @@
                     <table bx-name="components/table" class="table table-hover table-fixed" data-column-rwd-range="[2,-1]" data-column-rwd-limit="3" data-column-rwd-cursor="1">
                         <thead>
                             <tr>
-                                <th class="stable" width="40"><input type="checkbox" data-linkage-name="all"></th>
+                                <th class="stable" width="40"><input type="checkbox" class="bx-anim-checkbox" data-linkage-name="all"></th>
                                 <th class="stable nowrap">名称</th>
                                 <th class="nowrap">状态</th>
                                 <th class="nowrap">类型</th>
@@ -364,7 +364,7 @@
                         <tbody>
                             <% _.each(list, function(item){ %>
                             <tr>
-                                <td><input type="checkbox" data-linkage-parent-name="all"></td>
+                                <td><input type="checkbox" class="bx-anim-checkbox" data-linkage-parent-name="all"></td>
                                 <td class="nowrap"><%= Mock.Random.ctitle() %></td>
                                 <td class="nowrap"><%= Mock.Random.ctitle() %></td>
                                 <td class="nowrap"><%= Mock.Random.ctitle() %></td>

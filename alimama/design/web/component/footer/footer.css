@@ -8,3 +8,21 @@
 .footer-top-border {
   margin: 40px -40px 0 -40px;
 }
+#alimama-footer .alimama-info a,
+#alimama-footer .aligroup-info a,
+#alimama-footer .ualificate-info a {
+  color: #999;
+  opacity: 1;
+}
+#alimama-footer .alimama-info a:hover,
+#alimama-footer .aligroup-info a:hover,
+#alimama-footer .ualificate-info a:hover {
+  color: #333;
+  opacity: 1;
+}
+#alimama-footer .alimama-info span,
+#alimama-footer .aligroup-info span,
+#alimama-footer .ualificate-info span {
+  color: #999;
+  opacity: 1;
+}

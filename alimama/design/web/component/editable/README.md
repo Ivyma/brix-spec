@@ -121,7 +121,7 @@
 </div>
 
 <script>
-    require(['css!spec.components/searchbox/searchbox.css'])
+    require(['css!alimama/design/web/component/searchbox/searchbox.css'])
     require(['brix/loader', 'jquery', 'underscore', 'mock'], function(Loader, $,_, Mock) {
         (function(argument) {
             var wrapper = $('#case-base')

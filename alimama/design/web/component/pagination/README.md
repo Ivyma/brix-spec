@@ -5,9 +5,7 @@
 
 <div class="usage mb40">
     <div>基本规范</div>
-    <ol>
-        <li>向用户显示他们在产品的哪一个页面，以及共有多少个页面，并提供跳转至上一页、、下一页的功能 </li>
-    </ol>
+    <div class="color-999 mt6">向用户显示他们在产品的哪一个页面，以及共有多少个页面，并提供跳转至上一页、下一页的功能。</div>
 </div>
 
 <div class="fontsize-16 mb10">示例 <small>Examples</small></div>

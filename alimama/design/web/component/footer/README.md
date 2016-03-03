@@ -16,11 +16,11 @@
     <div class="content">
     	<div class="content-header">前台页脚</div>
     	<div class="content-body" style="padding: 60px 120px;">
-        	<div bx-name="spec.components/footer/footer"></div>
+        	<div bx-name="alimama/design/web/component/footer/footer"></div>
         </div>
     </div>
     <pre><code class="html">
-    	<div bx-name="spec.components/footer/footer"></div>
+    	<div bx-name="alimama/design/web/component/footer/footer"></div>
     </code></pre>
 </div>
 
@@ -28,10 +28,10 @@
     <div class="content">
         <div class="content-header">后台页脚</div>
         <div class="content-body" style="padding: 60px 120px;">
-            <div bx-name="spec.components/footer/footer" data-type="back"></div>
+            <div bx-name="alimama/design/web/component/footer/footer" data-type="back"></div>
         </div>
     </div>
     <pre><code class="html">
-        <div bx-name="spec.components/footer/footer" data-type="back"></div>
+        <div bx-name="alimama/design/web/component/footer/footer" data-type="back"></div>
     </code></pre>
 </div>

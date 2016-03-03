@@ -26,8 +26,8 @@
             <div class="fontsize-16 mb10">响应的时间是可控的</div>
             <p class="color-999 mt4 mb10">在执⾏任何相应动作的动效中，解决⽤户的核⼼诉求是第⼀要务，不能因形式感的样式⽽延⻓动效的浏览时间，因此，在⻚⾯展现中，动效时间也应当是可控的，并且是有边界的。如需过⻓的动效的说明的场景，则需要考虑辅助其他⽅法来解决。</p>
             <div class="row">
-                <div class="col-sm-4"><img class="img-responsive" src="placeholder.jpg"></div>
-                <div class="col-sm-4"><img class="img-responsive" src="placeholder.jpg"></div>
+                <div class="col-sm-4"><img class="img-responsive" src="alimama/assets/placeholder.jpg"></div>
+                <div class="col-sm-4"><img class="img-responsive" src="alimama/assets/placeholder.jpg"></div>
             </div>
         </div>
         <div class="mb60">

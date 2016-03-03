@@ -77,7 +77,3 @@
         <div bx-name="components/spin"></div>
     </code></pre>
 </div>
-
-<script type="text/javascript">
-    require(['css!spec.components/animate.css'])
-</script>

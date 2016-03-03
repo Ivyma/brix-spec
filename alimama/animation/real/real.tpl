@@ -52,7 +52,7 @@
                     <div class="col-sm-9 mb20"><img class="img-responsive" src="alimama/animation/assets/真实动效/5真实的动效_跟随浮层.gif"></div>
                     <div class="col-sm-9"><img class="img-responsive" src="alimama/animation/assets/真实动效/6真实的动效_全局浮层.gif"></div>
                 </div>
-                <!-- <div class="col-sm-6"><img class="img-responsive" src="placeholder.jpg"></div> -->
+                <!-- <div class="col-sm-6"><img class="img-responsive" src="alimama/assets/placeholder.jpg"></div> -->
             </div>
         </div>
     </div>

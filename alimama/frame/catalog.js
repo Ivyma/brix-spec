@@ -57,6 +57,7 @@ define(
         })
         tpl = _.template(tpl)
 
+        var LIST_PRE
         return function() {
             var uri = new URI(location.href)
             var fragment = uri.fragment() // hash witout leading #
@@ -79,14 +80,19 @@ define(
                 })
             }
             var LIST = PLATFORM ? PLATFORM.children : GROUP.children
+            var $sidebar = $('.sidebar')
+            var rerender = LIST !== LIST_PRE
 
-            var $sidebar = $('.sidebar').empty().html(
-                tpl({
-                    GROUP: GROUP,
-                    PLATFORM: PLATFORM,
-                    LIST: LIST
-                })
-            )
+            if (rerender) {
+                $sidebar.empty().html(
+                    tpl({
+                        GROUP: GROUP,
+                        PLATFORM: PLATFORM,
+                        LIST: LIST
+                    })
+                )
+                LIST_PRE = LIST
+            }
 
             $sidebar.find('.sidebar-top').click(function() {
                 var $item = $(this).children('.minecraft-refactor-font')
@@ -94,10 +100,12 @@ define(
                     .siblings().toggle('slow')
             })
 
-            $sidebar.on('click', '.sidebar-item', function(event) {
-                $(event.currentTarget)
-                    .addClass('active')
-                    .siblings().removeClass('active')
-            })
+            $sidebar.find('.sidebar-item').removeClass('active')
+            $sidebar.off('click.sidebar')
+                .on('click.sidebar', '.sidebar-item', function(event) {
+                    $sidebar.find('.sidebar-item').removeClass('active')
+                    $(event.currentTarget)
+                        .addClass('active')
+                })
         }
     })

@@ -27,20 +27,44 @@
         </div>
         <div class="content-body">
             <div>
-                <label><input type="radio" name="case-base-"> 未选中</label>
-                <label><input type="radio" name="case-base-" checked>已选中</label>
+                <label>
+                    <input type="radio" name="case-base-" class="bx-anim-radio">
+                    未选中
+                </label>
+                <label>
+                    <input type="radio" name="case-base-" class="bx-anim-radio" checked>
+                    已选中
+                </label>
             </div>
             <div>
-                <label class="disabled"><input type="radio" disabled> 禁用/未选中</label>
-                <label class="disabled"><input type="radio" checked disabled>禁用/已选中</label>
+                <label class="disabled">
+                    <input type="radio" class="bx-anim-radio" disabled>
+                    禁用/未选中
+                </label>
+                <label class="disabled">
+                    <input type="radio" class="bx-anim-radio" checked disabled>
+                    禁用/已选中
+                </label>
             </div>
         </div>
     </div>
     <pre><code class="hljs html">
-        <label><input type="radio" name="case-base-example"> 未选中</label>
-        <label><input type="radio" name="case-base-example" checked>已选中</label>
-        <label><input type="radio" disabled> 禁用/未选中</label>
-        <label><input type="radio" checked disabled>禁用/已选中</label>
+        <label>
+            <input type="radio" name="case-base-example" class="bx-anim-radio">
+            未选中
+        </label>
+        <label>
+            <input type="radio" name="case-base-example" class="bx-anim-radio" checked>
+            已选中
+        </label>
+        <label class="disabled">
+            <input type="radio" class="bx-anim-radio" disabled>
+            禁用/未选中
+        </label>
+        <label class="disabled">
+            <input type="radio" class="bx-anim-radio" checked disabled>
+            禁用/已选中
+        </label>
     </code></pre>
 </div>
 
@@ -52,29 +76,85 @@
         </div>
         <div class="content-body">
             <ul class="checklist" id="case1">
-                <li><label><input type="radio" name="case1" data-linkage-name="all-1"> 单选1</label></li>
-                <li><label><input type="radio" name="case1" data-linkage-name="all-2"> 单选2</label></li>
                 <li>
-                    <label><input type="radio" name="case1" data-linkage-name="all"> 单选3</label>
+                    <label>
+                        <input type="radio" name="case1" class="bx-anim-radio" data-linkage-name="all-1">
+                        单选1
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="case1" class="bx-anim-radio" data-linkage-name="all-2">
+                        单选2
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="case1" class="bx-anim-radio" data-linkage-name="all">
+                        单选3
+                    </label>
                     <ul class="checklist">
-                        <li><label><input type="checkbox" data-linkage-parent-name="all"> 多选1</label></li>
-                        <li><label><input type="checkbox" data-linkage-parent-name="all"> 多选2</label></li>
-                        <li><label><input type="checkbox" data-linkage-parent-name="all"> 多选3</label></li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="bx-anim-checkbox" data-linkage-parent-name="all">
+                                多选1
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="bx-anim-checkbox" data-linkage-parent-name="all">
+                                多选2
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="bx-anim-checkbox" data-linkage-parent-name="all">
+                                多选3
+                            </label>
+                        </li>
                     </ul>
                 </li>
             </ul>
         </div>
     </div>
     <pre><code class="hljs html">
-        <ul class="checklist" id="case1">
-            <li><label><input type="radio" name="case1" data-linkage-name="all-1"> 单选1</label></li>
-            <li><label><input type="radio" name="case1" data-linkage-name="all-2"> 单选2</label></li>
+        <ul class="checklist">
             <li>
-                <label><input type="radio" name="case1" data-linkage-name="all"> 单选3</label>
+                <label>
+                    <input type="radio" name="case1" class="bx-anim-radio" data-linkage-name="all-1">
+                    单选1
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="case1" class="bx-anim-radio" data-linkage-name="all-2">
+                    单选2
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="case1" class="bx-anim-radio" data-linkage-name="all">
+                    单选3
+                </label>
                 <ul class="checklist">
-                    <li><label><input type="checkbox" data-linkage-parent-name="all"> 多选1</label></li>
-                    <li><label><input type="checkbox" data-linkage-parent-name="all"> 多选2</label></li>
-                    <li><label><input type="checkbox" data-linkage-parent-name="all"> 多选3</label></li>
+                    <li>
+                        <label>
+                            <input type="checkbox" class="bx-anim-checkbox" data-linkage-parent-name="all">
+                            多选1
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" class="bx-anim-checkbox" data-linkage-parent-name="all">
+                            多选2
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" class="bx-anim-checkbox" data-linkage-parent-name="all">
+                            多选3
+                        </label>
+                    </li>
                 </ul>
             </li>
         </ul>
@@ -91,20 +171,20 @@
             <ul class="checklist">
                 <li>
                     <label>
-                        <input type="radio" name="sss"> 单选1
-                        <p class="desc">此处为真此单选的一些注意说明</p>
+                        <input type="radio" name="sss" class="bx-anim-radio"> 单选1
+                        <p class="desc">此处为此单选的一些注意说明</p>
                     </label>
                 </li>
                 <li>
                     <label>
-                        <input type="radio" name="sss"> 单选2
-                        <p class="desc">此处为真此单选的一些注意说明</p>
+                        <input type="radio" name="sss" class="bx-anim-radio"> 单选2
+                        <p class="desc">此处为此单选的一些注意说明</p>
                     </label>
                 </li>
                 <li>
                     <label>
-                        <input type="radio" name="sss"> 单选3
-                        <p class="desc">此处为真此单选的一些注意说明</p>
+                        <input type="radio" name="sss" class="bx-anim-radio"> 单选3
+                        <p class="desc">此处为此单选的一些注意说明</p>
                     </label>
                 </li>
             </ul>
@@ -114,20 +194,20 @@
         <ul class="checklist">
             <li>
                 <label>
-                    <input type="radio" name="sss"> 单选1
-                    <p class="desc">此处为真此单选的一些注意说明</p>
+                    <input type="radio" name="sss" class="bx-anim-radio"> 单选1
+                    <p class="desc">此处为此单选的一些注意说明</p>
                 </label>
             </li>
             <li>
                 <label>
-                    <input type="radio" name="sss"> 单选2
-                    <p class="desc">此处为真此单选的一些注意说明</p>
+                    <input type="radio" name="sss" class="bx-anim-radio"> 单选2
+                    <p class="desc">此处为此单选的一些注意说明</p>
                 </label>
             </li>
             <li>
                 <label>
-                    <input type="radio" name="sss"> 单选3
-                    <p class="desc">此处为真此单选的一些注意说明</p>
+                    <input type="radio" name="sss" class="bx-anim-radio"> 单选3
+                    <p class="desc">此处为此单选的一些注意说明</p>
                 </label>
             </li>
         </ul>

@@ -530,6 +530,9 @@
 .pb80 {
   padding-bottom: 80px;
 }
+.example .datepickerwrapper-trigger.noborder {
+  border: none;
+}
 .example .datepickerwrapper .datepickerwrapper-shortcuts .datepickerwrapper-shortcuts-body .shortcut.active {
   background-color: #ff6600;
 }

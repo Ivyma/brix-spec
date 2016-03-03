@@ -122,7 +122,11 @@
             <div class="color-999 mt6">当日期组件控制整个页面或模块统计的时间范围，则以标题形式展现。</div>
         </div>
         <div class="content-body">
-            <span bx-name="components/datepickerwrapper" class="cursor-pointer fontsize-16">请选择日期</span>
+            <span id="case3" bx-name="components/datepickerwrapper" class="cursor-pointer fontsize-16 datepickerwrapper-trigger noborder">
+                <span data-index="0">请选择日期</span>
+                <span class="brixfont down">&#xe623;</span><!-- 向下 &#xe623; -->
+                <span class="brixfont up">&#xe62e;</span><!-- 向上 &#xe62e;-->
+            </span>
         </div>
     </div>
     <pre class="example-pre"><code class="hljs html">
@@ -172,6 +176,7 @@
 </div>
 
 <script type="text/javascript">
+    require(['css!alimama/design/web/component/calendar/calendar.css'])
     require(['jquery', 'moment', 'brix/loader'], function($, moment, Loader) {
         Loader.boot(function(){
             var case2 = Loader.query($('#case2'))[0]
@@ -185,6 +190,14 @@
                 pickers[0].val(
                     moment(date).add(-1, 'month')
                 )
+            })
+
+            var case3 = Loader.query($('#case3'))[0]
+            case3.on('change.datepickerwrapper', function(event, dates){
+                case3.$element.find('[data-index="0"]').text(
+                    dates[0].format('YYYY-MM-DD')
+                )
+                event.preventDefault()
             })
         })
     })

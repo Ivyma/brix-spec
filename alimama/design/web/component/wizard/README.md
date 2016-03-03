@@ -24,7 +24,7 @@
             </ol>
         </div>
         <div class="content-body">
-            <div bx-name="spec.components/wizard/wizard" data-total="4" data-cursor="0" class="wizard wizard-horizontal">
+            <div bx-name="alimama/design/web/component/wizard/wizard" data-total="4" data-cursor="0" class="wizard wizard-horizontal">
                 <% var total = 4, cursor = 0, POOL='一二三四五六七八九' %>
                 <ol class="wizard-nav clearfix">
                     <% for( var i = 0; i < total; i++ ) { %>
@@ -61,7 +61,7 @@
             <div class="color-999 mt6">适用没有分支流程，需要一步到位完成的情况。当用户决定开始流程时出现，明确告知用户流程步骤数，放在内容的左上方，可替代标题。每个步骤指的是操作而无需是单独的页面，步骤必须依次往下，通过字体变大显示当前步骤，操作过流程的步骤颜色深于没有到达的步骤颜色。</div>
         </div>
         <div class="content-body">
-            <div bx-name="spec.components/wizard/wizard" class="wizard wizard-vertical">
+            <div bx-name="alimama/design/web/component/wizard/wizard" class="wizard wizard-vertical">
                 <div class="wizard-cards">
                     <% var total = 4, cursor = 0, POOL='一二三四五六七八九' %>
                     <% for( var i = 0; i < total; i++ ) { %>

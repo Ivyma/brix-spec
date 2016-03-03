@@ -62,7 +62,7 @@
 <div class="example">
     <div class="content">
         <div class="content-header">
-            <div>场景 1 - 基于用户浏览及所在位置关系</div>
+            <div>场景 2 - 基于用户浏览及所在位置关系</div>
             <div class="color-999 mt6">显示用户浏览的轨迹及当前在网站的层次结构。它们通常用于导航方案（通常超过两个级别），如计划管理中的：计划 > 单元 > 创意。</div>
         </div>
         <div class="content-body">

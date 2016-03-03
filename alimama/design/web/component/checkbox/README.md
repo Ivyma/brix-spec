@@ -26,20 +26,44 @@
         </div>
         <div class="content-body">
             <div>
-                <label><input type="checkbox"> 未选中</label>
-                <label><input type="checkbox" checked>已选中</label>
+                <label>
+                    <input type="checkbox" class="bx-anim-checkbox">
+                    未选中
+                </label>
+                <label>
+                    <input type="checkbox" class="bx-anim-checkbox" checked>
+                    已选中
+                </label>
             </div>
             <div>
-                <label class="disabled"><input type="checkbox" disabled> 禁用/未选中</label>
-                <label class="disabled"><input type="checkbox" checked disabled>禁用/已选中</label>
+                <label class="disabled">
+                    <input type="checkbox" class="bx-anim-checkbox" disabled>
+                    禁用/未选中
+                </label>
+                <label class="disabled">
+                    <input type="checkbox" class="bx-anim-checkbox" checked disabled>
+                    禁用/已选中
+                </label>
             </div>
         </div>
     </div>
     <pre><code class="hljs html">
-        <label><input type="checkbox"> 选项1</label>
-        <label><input type="checkbox"> 选项2</label>
-        <label><input type="checkbox"> 选项3</label>
-        <label><input type="checkbox"> 选项4</label>
+        <label>
+            <input type="checkbox" class="bx-anim-checkbox">
+            未选中
+        </label>
+        <label>
+            <input type="checkbox" class="bx-anim-checkbox" checked>
+            已选中
+        </label>
+        <label class="disabled">
+            <input type="checkbox" class="bx-anim-checkbox" disabled>
+            禁用/未选中
+        </label>
+        <label class="disabled">
+            <input type="checkbox" class="bx-anim-checkbox" checked disabled>
+            禁用/已选中
+        </label>
     </code></pre>
 </div>
 
@@ -50,11 +74,17 @@
             <div class="color-999 mt6">使用单个复选框来表示二元的是或否选项，如同意产品协议时。</div>
         </div>
         <div class="content-body">
-            <label><input type="checkbox"> 阅读并接受<a href="javascript:;">《用户协议》</a></label>    
+            <label>
+                <input type="checkbox" class="bx-anim-checkbox">
+                阅读并接受<a href="javascript:;">《用户协议》</a>
+            </label>    
         </div>
     </div>
     <pre><code class="hljs html">
-        <label><input type="checkbox"> 阅读并接受<a href="javascript:;">《用户协议》</a></label>
+        <label>
+            <input type="checkbox" class="bx-anim-checkbox">
+            阅读并接受<a href="javascript:;">《用户协议》</a>
+        </label>    
     </code></pre>
 </div>
 
@@ -66,14 +96,42 @@
         </div>
         <div class="content-body">
             <ul class="checklist" id="case2">
-                <li><label><input type="radio" name="sss" data-linkage-name="all-1"> 单选1</label></li>
-                <li><label><input type="radio" name="sss" data-linkage-name="all-2"> 单选2</label></li>
                 <li>
-                    <label><input type="radio" name="sss" data-linkage-name="all"> 单选3</label>
+                    <label>
+                        <input type="radio" name="sss" class="bx-anim-radio" data-linkage-name="all-1">
+                        单选1
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="sss" class="bx-anim-radio" data-linkage-name="all-2">
+                        单选2
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="sss" class="bx-anim-radio" data-linkage-name="all">
+                        单选3
+                    </label>
                     <ul class="checklist">
-                        <li><label><input type="checkbox" data-linkage-parent-name="all"> 多选1</label></li>
-                        <li><label><input type="checkbox" data-linkage-parent-name="all"> 多选2</label></li>
-                        <li><label><input type="checkbox" data-linkage-parent-name="all"> 多选3</label></li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="bx-anim-checkbox" data-linkage-parent-name="all">
+                                多选1
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="bx-anim-checkbox" data-linkage-parent-name="all">
+                                多选2
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="bx-anim-checkbox" data-linkage-parent-name="all">
+                                多选3
+                            </label>
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -81,14 +139,42 @@
     </div>
     <pre><code class="hljs html">
         <ul class="checklist">
-            <li><label><input type="radio" name="sss"> 单选1</label></li>
-            <li><label><input type="radio" name="sss"> 单选2</label></li>
             <li>
-                <label><input type="radio" name="sss"> 单选3</label>
+                <label>
+                    <input type="radio" name="sss" class="bx-anim-radio" data-linkage-name="all-1">
+                    单选1
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="sss" class="bx-anim-radio" data-linkage-name="all-2">
+                    单选2
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="sss" class="bx-anim-radio" data-linkage-name="all">
+                    单选3
+                </label>
                 <ul class="checklist">
-                    <li><label><input type="checkbox"> 多选1</label></li>
-                    <li><label><input type="checkbox"> 多选2</label></li>
-                    <li><label><input type="checkbox"> 多选3</label></li>
+                    <li>
+                        <label>
+                            <input type="checkbox" class="bx-anim-checkbox" data-linkage-parent-name="all">
+                            多选1
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" class="bx-anim-checkbox" data-linkage-parent-name="all">
+                            多选2
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" class="bx-anim-checkbox" data-linkage-parent-name="all">
+                            多选3
+                        </label>
+                    </li>
                 </ul>
             </li>
         </ul>
@@ -105,20 +191,20 @@
             <ul class="checklist">
                 <li>
                     <label>
-                        <input type="checkbox"> 多选1
-                        <p class="desc">此处为真此单选的一些注意说明</p>
+                        <input type="checkbox" class="bx-anim-checkbox"> 多选1
+                        <p class="desc">此处为此多选的一些注意说明</p>
                     </label>
                 </li>
                 <li>
                     <label>
-                        <input type="checkbox"> 多选2
-                        <p class="desc">此处为真此单选的一些注意说明</p>
+                        <input type="checkbox" class="bx-anim-checkbox"> 多选2
+                        <p class="desc">此处为此多选的一些注意说明</p>
                     </label>
                 </li>
                 <li>
                     <label>
-                        <input type="checkbox"> 多选3
-                        <p class="desc">此处为真此单选的一些注意说明</p>
+                        <input type="checkbox" class="bx-anim-checkbox"> 多选3
+                        <p class="desc">此处为此多选的一些注意说明</p>
                     </label>
                 </li>
             </ul>
@@ -128,20 +214,20 @@
         <ul class="checklist">
             <li>
                 <label>
-                    <input type="checkbox"> 多选1
-                    <p class="desc">此处为真此单选的一些注意说明</p>
+                    <input type="checkbox" class="bx-anim-checkbox"> 多选1
+                    <p class="desc">此处为此多选的一些注意说明</p>
                 </label>
             </li>
             <li>
                 <label>
-                    <input type="checkbox"> 多选2
-                    <p class="desc">此处为真此单选的一些注意说明</p>
+                    <input type="checkbox" class="bx-anim-checkbox"> 多选2
+                    <p class="desc">此处为此多选的一些注意说明</p>
                 </label>
             </li>
             <li>
                 <label>
-                    <input type="checkbox"> 多选3
-                    <p class="desc">此处为真此单选的一些注意说明</p>
+                    <input type="checkbox" class="bx-anim-checkbox"> 多选3
+                    <p class="desc">此处为此多选的一些注意说明</p>
                 </label>
             </li>
         </ul>
@@ -155,25 +241,67 @@
             <div class="color-999 mt6">当一个选项应用于多个对象时，可以使用复选框来表示该选项应用于全部、部分还是不应用于任何对象。</div>
         </div>
         <div class="content-body">
-            <div class="checklist-linkage" id="case4">
-                <ul>
-                    <li><label class="title">标题</li>
-                    <li><label><input type="checkbox" data-linkage-name="all"> 全部</label></li>
-                    <li><label><input type="checkbox" data-linkage-parent-name="all"> 选项1</label></li>
-                    <li><label><input type="checkbox" data-linkage-parent-name="all"> 选项2</label></li>
-                    <li><label><input type="checkbox" data-linkage-parent-name="all"> 选项3</label></li>
-                </ul>
-            </div>
+            <ul class="checklist checklist-linear clearfix" id="case4">
+                <li>
+                    <label class="title">标题</label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="bx-anim-checkbox" data-linkage-name="all">
+                        全部
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="bx-anim-checkbox" data-linkage-parent-name="all">
+                        选项1
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="bx-anim-checkbox" data-linkage-parent-name="all">
+                        选项2
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="bx-anim-checkbox" data-linkage-parent-name="all">
+                        选项3
+                    </label>
+                </li>
+            </ul>
         </div>
     </div>
     <pre><code class="hljs html">
         <div class="checklist-linkage">
-            <ul>
-                <li><label class="title">标题</li>
-                <li><label><input type="checkbox" data-linkage-name="all"> 全部</label></li>
-                <li><label><input type="checkbox" data-linkage-parent-name="all"> 选项1</label></li>
-                <li><label><input type="checkbox" data-linkage-parent-name="all"> 选项2</label></li>
-                <li><label><input type="checkbox" data-linkage-parent-name="all"> 选项3</label></li>
+            <ul class="checklist checklist-linear clearfix">
+                <li>
+                    <label class="title">标题</label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="bx-anim-checkbox" data-linkage-name="all">
+                        全部
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="bx-anim-checkbox" data-linkage-parent-name="all">
+                        选项1
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="bx-anim-checkbox" data-linkage-parent-name="all">
+                        选项2
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="bx-anim-checkbox" data-linkage-parent-name="all">
+                        选项3
+                    </label>
+                </li>
             </ul>
         </div>
     </code></pre>

@@ -127,3 +127,8 @@
 </div>
 
 <script type="text/javascript"></script>
+<style type="text/css">
+    .popover {
+        font-family: "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", Georgia, "Times New Roman", Arial, sans-serif;
+    }
+</style>
