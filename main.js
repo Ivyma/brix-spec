@@ -92,9 +92,10 @@ require(
 
             function end() {
                 $main.removeClass(EFFECT_IN).removeClass(EFFECT_OUT).addClass(EFFECT_IN)
-                $main.on(ANIMATIONEND, function( /*event*/ ) {
-                    Holder.recover().hold()
-                })
+
+                // $main.on(ANIMATIONEND, function( /*event*/ ) {
+                Holder.recover().hold()
+                    // })
             }
         }
 
