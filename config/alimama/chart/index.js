@@ -78,6 +78,18 @@ define(function() {
 			role: [],
 			path: 'alimama/chart/chord/README.md',
 			href: '#/chart/chord'
+		},{
+			name: '标签云',
+			name_en: 'Cloud',
+			role: [],
+			path: 'alimama/chart/Cloud/README.md',
+			href: '#/chart/cloud'
+		},{
+			name: '桑基图',
+			name_en: 'Sankey',
+			role: [],
+			path: 'alimama/chart/sankey/README.md',
+			href: '#/chart/sankey'
 		}, {
 			name: '混合图表',
 			name_en: 'Hybrid',
