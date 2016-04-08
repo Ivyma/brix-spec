@@ -325,6 +325,24 @@ define(['mock'], function( /*Mock*/ ) {
 		}
 		],
         //////////////////////////////////////////////////////////////////////////////////////////////////////
+        cloud : [{
+			name: '标签云',
+			type: 'cloud',
+			resp: 'index',
+			beizhu: "",
+			prevImgType: "png"
+		}
+		],
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+        sankey : [{
+			name: '桑基图',
+			type: 'sankey',
+			resp: 'index',
+			beizhu: "",
+			prevImgType: "png"
+		}
+		],
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
         hybrid : [{
 			name: '柱折混合图',
 			type: 'hybrid',
@@ -385,6 +403,14 @@ define(['mock'], function( /*Mock*/ ) {
 		}, {
 			name: '韦恩图',
 			resp: 'venn',
+			prev: 'index.png'
+		}, {
+			name: '标签云',
+			resp: 'cloud',
+			prev: 'index.png'
+		}, {
+			name: '桑基图',
+			resp: 'sankey',
 			prev: 'index.png'
 		}, {
 			name: '混合图表',
