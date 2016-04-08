@@ -530,130 +530,14 @@
 .pb80 {
   padding-bottom: 80px;
 }
-.suggest.dropdown {
-  width: 100%;
-}
-.suggest.dropdown ul.dropdown-menu {
-  width: 100%;
-}
-.suggest.dropdown ul.dropdown-menu li a {
-  color: #333;
-}
 .suggest.dropdown ul.dropdown-menu li a span.highlight {
   color: #ff6600;
   background-color: transparent;
   font-weight: normal;
 }
 .suggest.dropdown ul.dropdown-menu li.active a {
+  color: #333;
   background-color: #f0f0f0;
-}
-.searchbox {
-  display: inline-block;
-}
-.searchbox label {
-  font-weight: normal;
-}
-.searchbox span.brixfont {
-  color: #CCC;
-}
-.searchbox.searchbox-simplify input {
-  padding-left: 22px;
-  width: 0;
-}
-.searchbox.searchbox-simplify input:focus {
-  padding-left: 30px;
-  width: auto;
-}
-.searchbox.searchbox-simplify.open input {
-  padding-left: 30px;
-  width: auto;
-}
-.bs-example-searchbox-1 .input-group {
-  border: 1px solid #FF6600;
-  border-radius: 4px;
-}
-.bs-example-searchbox-1 .input-group .input-group-btn > .btn {
-  border-width: 0;
-  width: initial;
-}
-.bs-example-searchbox-1 .input-group .input-group-btn > .btn.bg-brand {
-  border-radius: 0;
-  background-color: #FF6600;
-  color: #FFF;
-}
-.bs-example-searchbox-1 .input-group .input-group-btn .dropdown {
-  min-width: 90px;
-}
-.bs-example-searchbox-1 .input-group .input-group-btn .dropdown .dropdown-toggle {
-  border-radius: 4px 0 0 4px;
-  border-width: 0;
-  background-color: #F0F0F0;
-}
-.bs-example-searchbox-1 .input-group .input-group-input {
-  position: relative;
-  display: table-cell;
-}
-.bs-example-searchbox-1 .input-group .input-group-input input {
-  border-width: 0;
-}
-.bs-example-searchbox-1 .input-group .input-group-input .dropdown.suggest {
-  width: 100%;
-}
-.bs-example-searchbox-1 .input-group .input-group-input .dropdown.suggest .dropdown-menu {
-  width: 100%;
-}
-.bs-example-searchbox-1 .hots {
-  padding-left: 10px;
-}
-.bs-example-searchbox-1 .hots a {
-  margin-right: 10px;
-  color: #999;
-}
-.bs-example-searchbox-1 .hots a:hover {
-  color: #ff6600;
-}
-.bs-example-searchbox-2 .input-group-tab {
-  padding-left: 10px;
-}
-.bs-example-searchbox-2 .input-group-tab .btn {
-  height: 24px;
-  line-height: 0;
-  border-radius: 4px 4px 0 0;
-  margin-right: 5px;
-  background-color: transparent;
-}
-.bs-example-searchbox-2 .input-group-tab .btn:hover {
-  background-color: #E6E6E6;
-}
-.bs-example-searchbox-2 .input-group-tab .btn.active {
-  background-color: #FF6600;
-  color: #FFF;
-}
-.bs-example-searchbox-2 .input-group {
-  border: 1px solid #FF6600;
-  border-radius: 4px;
-}
-.bs-example-searchbox-2 .input-group .input-group-btn > .btn {
-  border-width: 0;
-  width: initial;
-}
-.bs-example-searchbox-2 .input-group .input-group-btn > .btn.bg-brand {
-  border-radius: 0;
-  background-color: #FF6600;
-  color: #FFF;
-}
-.bs-example-searchbox-2 .input-group .input-group-input {
-  position: relative;
-  display: table-cell;
-}
-.bs-example-searchbox-2 .input-group .input-group-input input {
-  border-width: 0;
-}
-.bs-example-searchbox-2 .input-group .input-group-input .dropdown.suggest {
-  width: 100%;
-}
-.bs-example-searchbox-2 .input-group .input-group-input .dropdown.suggest .dropdown-menu {
-  width: 100%;
 }
 ol.breadcrumb {
   list-style: none;

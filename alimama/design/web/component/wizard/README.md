@@ -52,6 +52,19 @@
             </div>
         </div>
     </div>
+    <pre><code class="hljs html">
+        <div bx-name="alimama/design/web/component/wizard/wizard" data-total="4" data-cursor="0" class="wizard wizard-horizontal">
+            <ol class="wizard-nav clearfix">
+                <!-- ... -->
+            </ol>
+            <div class="wizard-cards">
+                <!-- ... -->
+            </div>
+            <div class="wizard-footer">
+                <!-- ... -->
+            </div>
+        </div>
+    </code></pre>
 </div>
 
 <div class="example bs-example2">
@@ -96,6 +109,13 @@
             </div>
         </div>
     </div>
+    <pre><code class="hljs html">
+        <div bx-name="alimama/design/web/component/wizard/wizard" class="wizard wizard-vertical">
+            <div class="wizard-cards">
+                <!-- ... -->
+            </div>
+        </div>
+    </code></pre>
 </div>
 
 <div class="example bs-example2">
@@ -122,9 +142,19 @@
                     <span>已选择 <b class="fontsize-16">6</b> 个标签，覆盖人数约 <b class="fontsize-16">157</b></span>
                 </div>
                 <div class="ungrid-col" style="">
-                    <a href="javascript:;" style="color: #FFF;">创建营销人群 &gt;</a>
+                    <a href="javascript:;" class="color-f">创建营销人群 &gt;</a>
                 </div>
             </div>
         </div>
     </div>
+    <pre><code class="hljs html">
+        <div class="ungrid-row summary">
+            <div class="ungrid-col" style="">
+                <span>已选择 <b class="fontsize-16">6</b> 个标签，覆盖人数约 <b class="fontsize-16">157</b></span>
+            </div>
+            <div class="ungrid-col" style="">
+                <a href="javascript:;" class="color-f">创建营销人群 &gt;</a>
+            </div>
+        </div>
+    </code></pre>
 </div>

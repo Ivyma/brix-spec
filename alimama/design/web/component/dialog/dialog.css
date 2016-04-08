@@ -530,46 +530,11 @@
 .pb80 {
   padding-bottom: 80px;
 }
-.example .dialog {
-  position: relative;
-  opacity: 1;
-  z-index: 1;
-}
-.example .dialog .dialog-close {
-  position: absolute;
-  top: 16px;
-  right: 10px;
-  margin: 0;
-}
-.example .dialog .dialog-close .brixfont {
-  font-size: 30px;
-  font-weight: normal;
-}
-.example .dialog .dialog-content .dialog-header,
-.example .dialog .dialog-content .dialog-body,
-.example .dialog .dialog-content .dialog-footer {
-  padding: 18px 40px;
-}
-.example .dialog .dialog-content .dialog-header {
-  border-bottom: 1px solid #e6e6e6;
-  padding: 18px 45px 18px 40px;
-}
-.example .dialog .dialog-content .dialog-footer {
-  text-align: left;
-  border-top: 1px solid #e6e6e6;
-}
-.example .dialog-backdrop {
-  position: relative;
-  display: block;
-  opacity: 1;
-  background-color: #808080;
-  padding: 40px 50px;
-}
-.example .mm-tabs li:hover,
-.example .mm-tabs li.active {
-  border-bottom-color: #ff6600;
-}
-.example .mm-tabs li:hover a,
-.example .mm-tabs li.active a {
-  color: #ff6600;
+.example .status-more {
+  list-style: none;
+  border: 1px solid #e6e6e6;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
 }

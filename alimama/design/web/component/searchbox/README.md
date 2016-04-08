@@ -44,6 +44,26 @@
         </div>
     </div>
     <pre><code class="hljs html">
+        <div class="searchbox mb10">
+            <label>
+                <span class="brixfont">&#xe61c;<!-- &#xe61c; --></span>
+                <input type="text" placeholder="请输入关键词搜索">
+            </label>
+        </div>
+    </code></pre>
+    <pre><code class="hljs html">
+        <div class="searchbox mb10">
+            <label>
+                <span class="brixfont">&#xe61c;<!-- &#xe61c; --></span>
+                <input type="text" bx-name="components/suggest" placeholder="请输入关键词搜索">
+            </label>
+        </div>
+    </code></pre>
+    <pre><code class="hljs html">
+        <div class="input-group mb10">
+            <input type="text" class="form-control" bx-name="components/suggest" placeholder="请输入关键词搜索">
+            <span class="input-group-addon">搜索</span>
+        </div>
     </code></pre>
 </div>
 
@@ -88,6 +108,42 @@
             </div>
         </div>
     </div>
+    <pre><code class="hljs html">
+        <div class="input-group-wrapper mb10">
+            <div class="input-group">
+                <div class="input-group-btn">
+                    <select bx-name="components/dropdown">
+                        <option value="1">分类 1</option>
+                        <option value="2">分类 2</option>
+                        <option value="3">分类 3</option>
+                    </select>
+                </div>
+                <div class="input-group-input">
+                    <input type="text" class="form-control" bx-name="components/suggest" placeholder="请输入关键词搜索">
+                </div>
+                <div class="input-group-btn">
+                    <button class="btn btn-default bg-brand" type="button">搜索</button>
+                </div>
+            </div>
+        </div>
+    </code></pre>
+    <pre><code class="hljs html">
+        <div class="input-group-wrapper mb10">
+            <div class="input-group-tab">
+                <button class="btn btn-default active" type="button">分类 1</button>
+                <button class="btn btn-default" type="button">分类 2</button>
+                <button class="btn btn-default" type="button">分类 3</button>
+            </div>
+            <div class="input-group">
+                <div class="input-group-input">
+                    <input type="text" class="form-control" bx-name="components/suggest" placeholder="请输入关键词搜索">
+                </div>
+                <div class="input-group-btn">
+                    <button class="btn btn-default bg-brand" type="button">搜索</button>
+                </div>
+            </div>
+        </div>
+    </code></pre>
 </div>
 
 <div class="example">
@@ -100,11 +156,19 @@
             <div class="searchbox searchbox-simplify mb10">
                 <label>
                     <span class="brixfont">&#xe61c;<!-- &#xe61c; --></span>
-                    <input id="case2" type="text" placeholder="请输入关键词搜索" style="transition: inherit;">
+                    <input type="text" placeholder="请输入关键词搜索" style="transition: inherit;">
                 </label>
             </div>
         </div>
     </div>
+    <pre><code class="hljs html">
+        <div class="searchbox searchbox-simplify mb10">
+            <label>
+                <span class="brixfont">&#xe61c;<!-- &#xe61c; --></span>
+                <input type="text" placeholder="请输入关键词搜索" style="transition: inherit;">
+            </label>
+        </div>
+    </code></pre>
 </div>
 
 <div class="example">
@@ -151,6 +215,7 @@
 </div>
 
 <script>
+    require(['css!alimama/design/web/component/searchbox/searchbox'])
     require(['brix/loader', 'underscore', 'mock'], function(Loader, _, Mock) {
         Loader.boot(function() {
             var data = Mock.mock({

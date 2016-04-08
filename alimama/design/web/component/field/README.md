@@ -22,11 +22,7 @@
         </div>
         <div class="content-body">
         	<div class="clearfix mb10">
-        		<div id="clickme" href="javascript:;" class="pull-right" style="
-        			cursor: pointer;
-					padding: 2px 6px;
-					border: 1px solid #E6E6E6;
-					border-radius: 4px;">
+        		<div id="clickme" href="javascript:;" class="table-column-priority-trigger pull-right">
         			<span class="brixfont fontsize-20 color-ccc">&#xe602;</span>
         		</div>
         	</div>
@@ -62,34 +58,15 @@
 			</table>
         </div>
     </div>
-    <pre class="example-pre"><code class="hljs html"></code></pre>
-</div>
-
-<div class="example hide">
-    <div class="content">
-        <div class="content-header">
-            <div>场景 1 - 单个按钮</div>
-            <div class="color-999 mt6">常见于字段多，但因界面显示问题需要进行字段取舍的列表中。</div>
+    <pre><code class="hljs html">
+        <div id="clickme" href="javascript:;" class="table-column-priority-trigger pull-right">
+            <span class="brixfont fontsize-20 color-ccc">&#xe602;</span>
         </div>
-        <div class="content-body" style="padding-right: 0; padding-bottom: 0;">
-            <div style="height: 50px; background-color: #FF6600;"></div>
-            <div class="ungrid-row">
-                <div class="ungrid-col" style="width: 200px; padding: 60px 30px; text-align: center; vertical-align: top; background-color: #423f48;">
-                    <button class="btn btn-brand">＋新建推广计划</button>
-                </div>
-                <div class="ungrid-col" style="padding: 40px; background-color: #fafafa;">
-                    <p class="flat-text small"></p>
-                    <p class="flat-text full-width mt10"></p>
-                    <p class="flat-text full-width mt10"></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <pre class="example-pre"><code class="hljs html">
-        <button class="btn btn-brand">＋新建推广计划</button>
+        <table bx-name="components/table" class="table table-hover table-fixed" data-column-rwd-range="[3,-2]" data-column-rwd-limit="3" data-column-rwd-cursor="1" data-column-priority-trigger="#clickme">
+            <!-- ... -->
+        </table>
     </code></pre>
 </div>
-
 
 <script type="text/javascript">
 	require(['css!alimama/design/web/component/table/table.css'])

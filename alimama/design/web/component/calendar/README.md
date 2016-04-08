@@ -144,14 +144,14 @@
             <div class="mr40" style="display: inline-block;">
                 <div class="pl9 mb10 color-999">开始日期</div>
                 <div style="position: relative;">
-                    <input bx-name="components/datepickerwrapper" type="text" class="form-control">
+                    <input id="case41" bx-name="components/datepickerwrapper" type="text" class="form-control">
                     <span class="brixfont color-c" style="position: absolute; right: 9px; top: 6px;">&#xe615;</span>
                 </div>
             </div>
             <div style="position: relative; display: inline-block;">
                 <div class="pl9 mb10 color-999">结束日期</div>
                 <div style="position: relative;">
-                    <input bx-name="components/datepickerwrapper" type="text" class="form-control">
+                    <input id="case42" bx-name="components/datepickerwrapper" type="text" class="form-control">
                     <span class="brixfont color-c" style="position: absolute; right: 9px; top: 6px;">&#xe615;</span>
                 </div>
             </div>
@@ -192,12 +192,11 @@
                 )
             })
 
-            var case3 = Loader.query($('#case3'))[0]
-            case3.on('change.datepickerwrapper', function(event, dates){
-                case3.$element.find('[data-index="0"]').text(
-                    dates[0].format('YYYY-MM-DD')
-                )
-                event.preventDefault()
+            var case41 = Loader.query($('#case41'))[0]
+            var case42 = Loader.query($('#case42'))[0]
+            case41.on('change.datepicker', function(event, date, type) {
+                if(case42.val()[0].diff(date, 'days') < 0) case42.val(date)
+                case42.range([date])
             })
         })
     })

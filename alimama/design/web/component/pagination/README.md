@@ -17,12 +17,22 @@
             <div class="color-999 mt6 hide">翻页器最基本的元素为：当前页页码、总页码、上一页、下一页的按钮。默认显示第1页时，上一页置灰不可点击；最后一页时，下一页置灰不可点击。 </div>
         </div>
         <div class="content-body">
-            <div bx-name="components/pagination" data-total="100" data-cursor="1" data-limit="9" data-simplify="true"></div>
+            <div bx-name="components/pagination" 
+                data-total="100" 
+                data-cursor="1" 
+                data-limit="9" 
+                data-simplify="true">
+            </div>
         </div>
-        <pre><code class="hljs html">
-            <div bx-name="components/pagination" data-total="100" data-cursor="1" data-limit="9" data-simplify="true"></div>
-        </code></pre>
     </div>
+    <pre><code class="hljs html">
+        <div bx-name="components/pagination" 
+            data-total="100" 
+            data-cursor="1" 
+            data-limit="9" 
+            data-simplify="true">
+        </div>
+    </code></pre>
 </div>
 
 <div class="example">
@@ -43,13 +53,26 @@
                 <tfoot>
                     <tr>
                         <td colspan="6">
-                            <div bx-name="components/pagination" data-total="1000" data-cursor="1" data-limit="10" bx-options="{ step: 4 }"></div>
+                            <div bx-name="components/pagination"
+                                data-total="1000"
+                                data-cursor="1"
+                                data-limit="10"
+                                bx-options="{ step: 7 }">
+                            </div>
                         </td>
                     </tr>
                 </tfoot>
             </table>
         </div>
     </div>
+    <pre><code class="hljs html">
+        <div bx-name="components/pagination"
+            data-total="1000"
+            data-cursor="1"
+            data-limit="10"
+            bx-options="{ step: 7 }">
+        </div>
+    </code></pre>
 </div>
 
 <div class="example">
@@ -72,10 +95,10 @@
                         <td colspan="5">
                             <div class="row paginationwrapper">
                                 <div class="col-md-12" style="text-align: right;">
-                                    <ul class="pagination" style="text-align: right;">
-                                        <li class="disabled"><a href="javascript: void(0);" bx-click="moveTo(0)"><span class="brixfont"></span></a></li><!-- Previous -->
+                                    <ul class="pagination">
+                                        <li class="disabled"><a href="javascript: void(0);" bx-click="moveTo(0)"><span class="brixfont">&#xe601;</span></a></li><!-- Previous &#xe601; -->
                                         <li class="pagination-statistics-simplify"><span>1/12</span></li>
-                                        <li class=""><a href="javascript: void(0);" bx-click="moveTo(2)"><span class="brixfont"></span></a></li><!-- Next -->
+                                        <li class=""><a href="javascript: void(0);" bx-click="moveTo(2)"><span class="brixfont">&#xe600;</span></a></li><!-- Next &#xe600; -->
                                         <li class="pagination-statistics-simplify" style="vertical-align: top;">
                                             <span style="display: inline-block; padding-right: 5px; font-weight: normal;">向第</span>
                                             <input style="width: 36px; float: left; text-align: center;" value="1">
@@ -92,6 +115,19 @@
             </table>
         </div>
     </div>
+    <pre><code class="hljs html">
+        <ul class="pagination">
+            <li class="disabled"><a href="javascript: void(0);" bx-click="moveTo(0)"><span class="brixfont">&#xe601;</span></a></li><!-- Previous &#xe601; -->
+            <li class="pagination-statistics-simplify"><span>1/12</span></li>
+            <li class=""><a href="javascript: void(0);" bx-click="moveTo(2)"><span class="brixfont">&#xe600;</span></a></li><!-- Next &#xe600; -->
+            <li class="pagination-statistics-simplify" style="vertical-align: top;">
+                <span style="display: inline-block; padding-right: 5px; font-weight: normal;">向第</span>
+                <input style="width: 36px; float: left; text-align: center;" value="1">
+                <span style="display: inline-block; padding-left:  5px; font-weight: normal;">页</span>
+                <button class="btn" style="padding: 6px 9px;">跳转</button>
+            </li>
+        </ul>
+    </code></pre>
 </div>
 
 <div class="example">
@@ -105,7 +141,12 @@
                 <div class="items">
                     <div class="item"></div>
                 </div>
-                <ul class="navigator"><li class="active"></li><li></li><li></li><li></li></ul>
+                <ul class="navigator">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
                 <div class="arrows">
                     <div class="left"><span class="brixfont">&#xe62f;</span></div>
                     <div class="right"><span class="brixfont">&#xe630;</span></div>
@@ -114,6 +155,21 @@
         </div>
     </div>
     <pre><code class="hljs html">
+        <div class="example-slider">
+            <div class="items">
+                <div class="item"></div>
+            </div>
+            <ul class="navigator">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="arrows">
+                <div class="left"><span class="brixfont">&#xe62f;</span></div>
+                <div class="right"><span class="brixfont">&#xe630;</span></div>
+            </div>
+        </div>
     </code></pre>
 </div>
 

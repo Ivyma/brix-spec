@@ -22,8 +22,8 @@
             <div class="color-999 mt6">内容是响应了用户的某一操作，浮层信息层需要与底层信息产生明显的区别，帮助用户快速完成任务，并回到原任务中。</div>
         </div>
         <div class="content-body bg-backdrop" style="padding-right: 0;">
-            <div class="dialog dialog-singleton" style="position: relative;">
-                <button bx-click="close" type="button" class="dialog-close"><span class="brixfont">&#xe62d;</span></button>
+            <div class="dialog" style="position: relative;">
+                <button bx-click="close" type="button" class="dialog-close"><span class="brixfont">&#xe62d;<!-- &#xe62d; --></span></button>
                 <div class="dialog-content">
                     <div class="dialog-header">
                         <h4 class="dialog-title fontsize-16">店铺推荐标签</h4>
@@ -37,6 +37,21 @@
             </div>
         </div>
     </div>
+    <pre><code class="hljs html">
+        <div class="dialog">
+            <button bx-click="close" type="button" class="dialog-close"><span class="brixfont">&#xe62d;<!-- &#xe62d; --></span></button>
+            <div class="dialog-content">
+                <div class="dialog-header">
+                    <h4 class="dialog-title fontsize-16">店铺推荐标签</h4>
+                </div>
+                <div class="dialog-body" style="height: 350px;"></div>
+                <div class="dialog-footer">
+                    <button class="btn btn-brand mr10">确定</button>
+                    <button class="btn mr10">取消</button>
+                </div>
+            </div>
+        </div>
+    </code></pre>
 </div>
 <div class="example">
     <div class="content">
@@ -45,7 +60,7 @@
         </div>
         <div class="content-body bg-backdrop" style="padding-right: 0;">
             <div class="dialog dialog-singleton" style="position: relative;">
-                <button bx-click="close" type="button" class="dialog-close"><span class="brixfont">&#xe62d;</span></button>
+                <button bx-click="close" type="button" class="dialog-close"><span class="brixfont">&#xe62d;<!-- &#xe62d; --></span></button>
                 <div class="dialog-content">
                     <div class="dialog-header">
                         <h4 class="dialog-title fontsize-16">店铺推荐标签 <small class="ml3">您选择出来的用户数很少，建议增加资源位或扩展定向标签。</small></h4>
@@ -59,6 +74,21 @@
             </div>
         </div>
     </div>
+    <pre><code class="hljs html">
+        <div class="dialog dialog-singleton" style="position: relative;">
+            <button bx-click="close" type="button" class="dialog-close"><span class="brixfont">&#xe62d;<!-- &#xe62d; --></span></button>
+            <div class="dialog-content">
+                <div class="dialog-header">
+                    <h4 class="dialog-title fontsize-16">店铺推荐标签 <small class="ml3">您选择出来的用户数很少，建议增加资源位或扩展定向标签。</small></h4>
+                </div>
+                <div class="dialog-body" style="height: 350px;"></div>
+                <div class="dialog-footer">
+                    <button class="btn btn-brand mr10">确定</button>
+                    <button class="btn mr10">取消</button>
+                </div>
+            </div>
+        </div>
+    </code></pre>
 </div>
 <div class="example">
     <div class="content">
@@ -67,7 +97,7 @@
         </div>
         <div class="content-body bg-backdrop" style="padding-right: 0;">
             <div class="dialog dialog-singleton" style="position: relative;">
-                <button bx-click="close" type="button" class="dialog-close"><span class="brixfont">&#xe62d;</span></button>
+                <button bx-click="close" type="button" class="dialog-close"><span class="brixfont">&#xe62d;<!-- &#xe62d; --></span></button>
                 <div class="dialog-content">
                     <div class="dialog-header clearfix">
                         <h4 class="pull-left dialog-title fontsize-16">店铺推荐标签</h4>
@@ -82,6 +112,22 @@
             </div>
         </div>
     </div>
+    <pre><code class="hljs">
+        <div class="dialog dialog-singleton" style="position: relative;">
+            <button bx-click="close" type="button" class="dialog-close"><span class="brixfont">&#xe62d;<!-- &#xe62d; --></span></button>
+            <div class="dialog-content">
+                <div class="dialog-header clearfix">
+                    <h4 class="pull-left dialog-title fontsize-16">店铺推荐标签</h4>
+                    <div class="pull-right mt5"><span class="color-999">圈定人数：</span><strong class="color-brand">92,969,000</strong></div>
+                </div>
+                <div class="dialog-body" style="height: 350px;"></div>
+                <div class="dialog-footer">
+                    <button class="btn btn-brand mr10">确定</button>
+                    <button class="btn mr10">取消</button>
+                </div>
+            </div>
+        </div>
+    </code></pre>
 </div>
 <div class="example">
     <div class="content">
@@ -90,7 +136,7 @@
         </div>
         <div class="content-body bg-backdrop" style="padding-right: 0;">
             <div class="dialog dialog-singleton" style="position: relative;">
-                <button bx-click="close" type="button" class="dialog-close"><span class="brixfont">&#xe62d;</span></button>
+                <button bx-click="close" type="button" class="dialog-close"><span class="brixfont">&#xe62d;<!-- &#xe62d; --></span></button>
                 <div class="dialog-content">
                     <div class="dialog-header clearfix" style="padding-bottom: 0px;">
                         <ul class="mm-tabs clearfix" style="margin-bottom: -1px;">
@@ -108,6 +154,25 @@
             </div>
         </div>
     </div>
+    <pre><code class="hljs html">
+        <div class="dialog dialog-singleton" style="position: relative;">
+            <button bx-click="close" type="button" class="dialog-close"><span class="brixfont">&#xe62d;<!-- &#xe62d; --></span></button>
+            <div class="dialog-content">
+                <div class="dialog-header clearfix" style="padding-bottom: 0px;">
+                    <ul class="mm-tabs clearfix" style="margin-bottom: -1px;">
+                        <li class="active"><a href="javascript:;">店铺推荐标签</a></li>
+                        <li><a href="javascript:;">单品推荐标签</a></li>
+                        <li><a href="javascript:;">全部标签</a></li>
+                    </ul>
+                </div>
+                <div class="dialog-body" style="height: 350px;"></div>
+                <div class="dialog-footer">
+                    <button class="btn btn-brand mr10">确定</button>
+                    <button class="btn mr10">取消</button>
+                </div>
+            </div>
+        </div>
+    </code></pre>
 </div>
 
 <div class="example">
@@ -135,23 +200,35 @@
                     </div>
                 </div>
             </div>
-            <ul class="mt40" style="list-style: none;
-                border: 1px solid #e6e6e6;
-                display: inline-block;
-                padding: 20px;
-                border-radius: 4px;
-                box-shadow: 0 0 10px rgba(0,0,0,.18);">
-                <li class="mb10"><span class="zsfont color-green fontsize-18 mr5">&#xe683;</span> 投放中</li>
-                <li class="mb10"><span class="zsfont color-red fontsize-18 mr5">&#xe682;</span> 暂停投放</li>
-                <li class=""><span class="zsfont color-gray fontsize-18 mr5">&#xe680;</span> 等待投放</li>
+            <ul class="status-more mt40">
+                <li class="mb10"><span class="zsfont color-green fontsize-18 mr5">&#xe683;<!-- &#xe683; --></span> 投放中</li>
+                <li class="mb10"><span class="zsfont color-red fontsize-18 mr5">&#xe682;<!-- &#xe682; --></span> 暂停投放</li>
+                <li class=""><span class="zsfont color-gray fontsize-18 mr5">&#xe680;<!-- &#xe680; --></span> 等待投放</li>
             </ul>
         </div>
     </div>
+    <pre><code class="hljs html">
+        <div class="dialog dialog-singleton" style="position: relative; display: inline-block;">
+            <div class="dialog-content">
+                <div class="dialog-body" style="padding: 15px 30px;">
+                    <span class="fontsize-14 mr10">充值金额</span>
+                    <input placeholder="请输入充值金额">
+                </div>
+                <div class="dialog-footer" style="padding: 15px 30px;">
+                    <button class="btn btn-brand mr10">立即充值</button>
+                    <button class="btn mr10">支付宝充值</button>
+                </div>
+            </div>
+        </div>
+    </code></pre>
+    <pre><code class="hljs html">
+        <ul class="status-more mt40" style="">
+            <li class="mb10"><span class="zsfont color-green fontsize-18 mr5">&#xe683;<!-- &#xe683; --></span> 投放中</li>
+            <li class="mb10"><span class="zsfont color-red fontsize-18 mr5">&#xe682;<!-- &#xe682; --></span> 暂停投放</li>
+            <li class=""><span class="zsfont color-gray fontsize-18 mr5">&#xe680;<!-- &#xe680; --></span> 等待投放</li>
+        </ul>
+    </code></pre>
 </div>
-
-<div class="example hide">
-    <div class="content">
-        <div bx-name="components/dialog" bx-click="open" data-content="<div class='dialog-body'>hello<div>" data-placement="bottom" data-align="left" class="btn btn-default">Dialog</div>
-        <div bx-name="components/dialog" bx-click="open" data-content="<div class='dialog-body'>hello<div>" data-placement="bottom" data-align="left" data-modal="true" class="btn btn-default">Modal Dialog</div>
-    </div>
-</div>
+<script type="text/javascript">
+    require(['css!alimama/design/web/component/dialog/dialog.css'])
+</script>

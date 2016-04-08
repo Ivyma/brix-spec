@@ -22,6 +22,9 @@
             <div bx-name="components/hourpicker" data-simplify="true" data-value="12345,60"></div>
         </div>
     </div>
+    <pre><code class="hljs html">
+        <div bx-name="components/hourpicker" data-simplify="true" data-value="12345,60"></div>
+    </code></pre>
 </div>
 
 <div class="example">
@@ -33,6 +36,9 @@
             <div bx-name="components/hourpicker" data-value="1234560"></div>
         </div>
     </div>
+    <pre><code class="hljs html">
+        <div bx-name="components/hourpicker" data-value="1234560"></div>
+    </code></pre>
 </div>
 
 <script type="text/javascript">

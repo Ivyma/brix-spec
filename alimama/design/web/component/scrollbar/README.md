@@ -29,4 +29,10 @@
   			</div>
         </div>
     </div>
+    <pre><code class="hljs css">
+        .dropdown .dropdown-menu {
+            max-height: 270px;
+            overflow: auto;
+        }
+    </code></pre>
 </div>

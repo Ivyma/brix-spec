@@ -79,4 +79,17 @@
             </ol>
         </div>
     </div>
+    <pre><code class="hljs html">
+        <ol class="breadcrumb">
+            <li>
+                <select bx-name="components/dropdown">
+                    <option value="1">计划名称 1</option>
+                    <option value="2">计划名称 2</option>
+                    <option value="3">计划名称 3</option>
+                </select>
+            </li>
+            <li><a href="javascript:;">宝贝名称</a></li>
+            <li class="active"><a href="javascript:;">宝贝关键词 1</a></li>
+        </ol>
+    </code></pre>
 </div>

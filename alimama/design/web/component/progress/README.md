@@ -79,7 +79,34 @@
             </div>
         </div>
     </div>
-    <pre class="example-pre"><code class="hljs html"></code></pre>
+    <pre><code class="hljs html">
+        <div class="btn btn-brand btn-progress mr40">
+            <div class="btn-progress-bar animated infinite ani-progressbar"></div>
+            <span>上传中... 50%</span>
+        </div>
+        <a class="color-999" href="javascript:;">取消</a>
+    </code></pre>
+    <pre><code class="hljs html">
+        <div class="btn btn-brand btn-progress mr40">
+            <div class="btn-progress-bar animated infinite ani-progressbar" style="width: 0%;"></div>
+            <span>上传</span>
+        </div>
+        <span class="color-999">上传成功</span>
+    </code></pre>
+    <pre><code class="hljs html">
+        <div class="btn btn-progress mr40">
+            <div class="btn-progress-bar animated infinite ani-progressbar"></div>
+            <span>上传中... 50%</span>
+        </div>
+        <a class="color-999" href="javascript:;">取消</a>
+    </code></pre>
+    <pre><code class="hljs html">
+        <div class="btn btn-progress mr40">
+            <div class="btn-progress-bar animated infinite ani-progressbar" style="width: 0%;"></div>
+            <span>上传</span>
+        </div>
+        <span class="color-999">上传成功</span>
+    </code></pre>
 </div>
 
 <div class="example">
@@ -123,7 +150,34 @@
             </div>
         </div>
     </div>
-    <pre class="example-pre"><code class="hljs html"></code></pre>
+    <pre><code class="hljs html">
+        <div class="btn btn-brand btn-progress mr40">
+            <div class="btn-progress-bar animated infinite ani-progressbar" style="width: 25%;"></div>
+            <span>(2/8) 上传中...</span>
+        </div>
+        <a class="color-999" href="javascript:;">取消</a>
+    </code></pre>
+    <pre><code class="hljs html">
+        <div class="btn btn-brand btn-progress mr40">
+            <div class="btn-progress-bar animated infinite ani-progressbar" style="width: 0%;"></div>
+            <span>上传</span>
+        </div>
+        <span class="color-999">上传成功</span>
+    </code></pre>
+    <pre><code class="hljs html">
+        <div class="btn btn-progress mr40">
+            <div class="btn-progress-bar animated infinite ani-progressbar" style="width: 25%;"></div>
+            <span>(2/8) 上传中...</span>
+        </div>
+        <a class="color-999" href="javascript:;">取消</a>
+    </code></pre>
+    <pre><code class="hljs html">
+        <div class="btn btn-progress mr40">
+            <div class="btn-progress-bar animated infinite ani-progressbar" style="width: 0%;"></div>
+            <span>上传</span>
+        </div>
+        <span class="color-999">上传成功</span>
+    </code></pre>
 </div>
 
 <div class="example">
@@ -134,7 +188,7 @@
         </div>
         <div class="content-body" style="padding-right: 0; padding-bottom: 0;">
             <div style="height: 50px; background-color: #FF6600;"></div>
-            <div style="height: 4px; background-color: #fc4218; margin-top: -4px; width: 80%;"></div>
+            <div class="animated" style="height: 4px; background-color: #fc4218; margin-top: -4px; width: 80%;"></div>
             <div class="ungrid-row">
                 <div class="ungrid-col" style="width: 200px; padding: 60px 30px; text-align: center; vertical-align: top; background-color: #423f48;"></div>
                 <div class="ungrid-col" style="padding: 40px; background-color: #fafafa;">
@@ -145,5 +199,7 @@
             </div>
         </div>
     </div>
-    <pre class="example-pre"><code class="hljs html"></code></pre>
+    <pre><code class="hljs html">
+        <div class="animated" style="height: 4px; background-color: #fc4218; margin-top: -4px; width: 80%;"></div>
+    </code></pre>
 </div>

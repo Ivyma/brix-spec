@@ -98,6 +98,14 @@
         </div>
     </div>
     <pre><code class="hljs html">
+        <table bx-name="components/table" class="table table-hover table-fixed ">
+            <!-- ... -->
+        </table>
+    </code></pre>
+    <pre><code class="hljs html">
+        <table bx-name="components/table" class="table table-hover table-fixed mt40" data-column-rwd-range="[1,-1]" data-column-rwd-limit="3" data-column-rwd-cursor="1">
+            <!-- ... -->
+        </table>
     </code></pre>
 </div>
 
@@ -142,6 +150,22 @@
         </div>
     </div>
     <pre><code class="hljs html">
+        <div id="case1-toolbar" class="toolbar mb20" style="visibility: hidden;">
+            <button class="btn btn-brand mr10">批量删除</button>
+        </div>
+        <table id="case1" bx-name="components/table" class="table table-hover">
+            <!-- ... -->
+        </table>
+    </code></pre>
+    <pre><code class="hljs js">
+        require(['jquery', 'brix/loader'], function($, Loader) {
+            Loader.query($('#case1')).on('toggle.table', function(event, values, target) {
+                $('#case1-toolbar').css(
+                    'visibility',
+                    values.length ? 'visible' : 'hidden'
+                )
+            })
+        })
     </code></pre>
 </div>
 
@@ -202,6 +226,9 @@
         </div>
     </div>
     <pre><code class="hljs html">
+        <table bx-name="components/table" class="table table-hover table-fixed mt40" data-column-rwd-range="[2,-1]" data-column-rwd-limit="3" data-column-rwd-cursor="1">
+            <!-- ... -->
+        </table>
     </code></pre>
 </div>
 
@@ -209,7 +236,7 @@
     <div class="content">
         <div class="content-header">
             <div>场景 3 - 二级列表型表格</div>
-            <div class="color-999 mt6">对当前表格进行管理。例如，当用户 hover 在当前表格上出现操作及更多选项、编辑、复制、设置、删除等。</div>
+            <!-- <div class="color-999 mt6">对当前表格进行管理。例如，当用户 hover 在当前表格上出现操作及更多选项、编辑、复制、设置、删除等。</div> -->
         </div>
         <div class="content-body">
             <table bx-name="components/table" class="table table-hover table-fixed">
@@ -277,7 +304,16 @@
             </table>
         </div>
     </div>
-    <pre><code class="hljs html">
+    <pre><code class="hljs js">
+        require(['jquery', 'brix/loader'], function($, Loader) {
+            Loader.boot(function(argument) {
+                $('.sub-toggle > .brixfont').on('click', function(event) {
+                    $(event.currentTarget)
+                        .parents('td.sub-toggle').toggleClass('open')
+                        .parent('tr').next('tr.sub').toggle()
+                })
+            })
+        })
     </code></pre>
 </div>
 
@@ -326,6 +362,31 @@
         </div>
     </div>
     <pre><code class="hljs html">
+        <ul class="mm-tabs clearfix" style="border-bottom: 1px solid #E6E6E6;" data-content="#case4-content">
+            <li class="active"><a href="javascript:;">计划列表</a></li>
+            <li><a href="javascript:;">单元列表</a></li>
+            <li><a href="javascript:;">人群列表</a></li>
+            <li><a href="javascript:;">资源位列表</a></li>
+        </ul>
+    </code></pre>
+    <pre><code class="hljs js">
+        require(['jquery', 'brix/loader'], function($, Loader) {
+            $('ul.mm-tabs').on('click', 'li', function(event) {
+                var contents = $(event.delegateTarget).attr('data-content')
+                if (contents) {
+                    var content = $(contents)
+                        .children().hide()
+                        .eq(
+                            $(event.currentTarget).index()
+                        ).removeClass('hide').show()
+
+                    var table = Loader.query('components/table', content)[0]
+                    if(table) table.columnRWDHandler.beautify()
+                }
+                $(event.currentTarget).addClass('active')
+                    .siblings().removeClass('active')
+            })
+        })
     </code></pre>
 </div>
 
@@ -399,6 +460,7 @@
         </div>
     </div>
     <pre><code class="hljs html">
+        见前面的场景。
     </code></pre>
 </div>
 

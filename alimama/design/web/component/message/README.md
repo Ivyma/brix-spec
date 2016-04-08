@@ -62,29 +62,41 @@
             <span class="zsfont glyph color-help">&#xe6ab;<!-- &#xe6ab; --></span>
             <span>XXX 创意已经通过审核。</span>
         </div>
+    </code></pre>
+    <pre><code class="hljs html">
         <div class="contextual-message bg-info mb40">
             <span class="zsfont glyph color-help">&#xe6af;<!-- &#xe6af; --></span>
             <span>XXX 创意已经通过审核。</span>
         </div>
+    </code></pre>
+    <pre><code class="hljs html">
         <div class="contextual-message bg-info mb40">
             <span class="zsfont glyph color-help">&#xe6af;<!-- &#xe6af; --></span>
             <span>XXX 创意已经通过审核。</span>
             <a href="javascript:;" class="ml10">去查看</a>
         </div>
+    </code></pre>
+    <pre><code class="hljs html">
         <div class="contextual-message bg-warning color-f mb40">
             <span class="zsfont glyph">&#xe6ae;<!-- &#xe6ae; --></span>
             <span>您的账户余额不足，请尽快充值。</span>
             <a href="javascript:;" class="color-f ml10">去充值</a>
         </div>
+    </code></pre>
+    <pre><code class="hljs html">
         <div class="contextual-message bg-danger color-f mb40">
             <span class="zsfont glyph">&#xe6ad;<!-- &#xe6ad; --></span>
             <span>您的账户已被处罚，处于冻结状态。</span>
             <a href="javascript:;" class="color-f ml10">去申诉</a>
         </div>
+    </code></pre>
+    <pre><code class="hljs html">
         <div class="contextual-message bg-success color-f mb40">
             <span class="zsfont glyph">&#xe6aa;<!-- &#xe6aa; --></span>
             <span>恭喜，您的 XXX 计划已经创建完成。</span>
         </div>
+    </code></pre>
+    <pre><code class="hljs html">
         <div class="contextual-message bg-fail color-f mb40">
             <span class="zsfont glyph">&#xe6a7;<!-- &#xe6a7; --></span>
             <span>对不起，当前的修改提交失败，请重试。</span>
@@ -111,12 +123,30 @@
             <div class="mt40">
                 <p class="color-333 pl9">人群名称</p>
                 <input style="width: 330px;" value="一线城市成熟男性高富帅">
-                <span class="color-green brixfont fontsize-20 ml10">&#xe627;</span>
+                <span class="color-green brixfont fontsize-20 ml10">&#xe627;<!-- &#xe627; --></span>
             </div>
         </div>
     </div>
     <pre><code class="hljs html">
-        
+        <div>
+            <p class="color-brand pl9">人群名称</p>
+            <input class="focus" style="width: 330px;" value="一线城市成熟男性高富帅">
+            <span class="color-ccc ml10">不超过 10 个字符</span>
+        </div>
+    </code></pre>
+    <pre><code class="hljs html">
+        <div>
+            <p class="color-red pl9">人群名称</p>
+            <input class="error" style="width: 330px;" value="一线城市成熟男性高富帅">
+            <span class="color-red ml10">错误提示文案</span>
+        </div>
+    </code></pre>
+    <pre><code class="hljs html">
+        <div>
+            <p class="color-333 pl9">人群名称</p>
+            <input style="width: 330px;" value="一线城市成熟男性高富帅">
+            <span class="color-green brixfont fontsize-20 ml10">&#xe627;<!-- &#xe627; --></span>
+        </div>
     </code></pre>
 </div>
 
@@ -143,7 +173,10 @@
         </div>
     </div>
     <pre><code class="hljs html">
-        
+        <div class="contextual-message bg-warning color-f mt10 mb10" style="border-radius: 0;">
+            <span class="zsfont glyph">&#xe6ae;<!-- &#xe6ae; --></span>
+            <span>您上传的创意中有个 1 个不符合当前的设置。</span>
+        </div>
     </code></pre>
 </div>
 
@@ -164,7 +197,7 @@
                 </div>
                 <div class="ungrid-col" style="padding: 72px 40px 40px 40px; background-color: #fafafa; position: relative;">
                     <div class="contextual-message contextual-message-sticky bg-info mb10">
-                        <span class="zsfont glyph color-help"><!-- &#xe6af; --></span>
+                        <span class="zsfont glyph color-help">&#xe6af;<!-- &#xe6af; --></span>
                         <span>XXX 创意已经通过审核。</span>
                     </div>
                     <p class="flat-text small"></p>
@@ -175,7 +208,10 @@
         </div>
     </div>
     <pre><code class="hljs html">
-        
+        <div class="contextual-message contextual-message-sticky bg-info mb10">
+            <span class="zsfont glyph color-help">&#xe6af;<!-- &#xe6af; --></span>
+            <span>XXX 创意已经通过审核。</span>
+        </div>
     </code></pre>
 </div>
 
@@ -206,7 +242,11 @@
         </div>
     </div>
     <pre><code class="hljs html">
-        
+        <div class="contextual-message bg-danger color-f" style="border-radius: 0;">
+            <span class="zsfont glyph">&#xe6ad;<!-- &#xe6ad; --></span>
+            <span>您的账户已被处罚，处于冻结状态。</span>
+            <a href="javascript:;" class="color-f ml10">去申诉</a>
+        </div>
     </code></pre>
 </div>
 
@@ -221,9 +261,7 @@
         </div>
         <div class="content-body">
             <!-- <div class="text-center" style="font-size: 100px;">404</div> -->
-            <div>
-                <img class="img-responsive" src="alimama/design/web/component/assets/404-01.svg">
-            </div>
+            <img class="img-responsive" src="alimama/design/web/component/assets/404-01.svg">
             <div class="text-center fontsize-20 color-999">啊哦！思绪全乱了，让我静一静。</div>
             <div class="text-center fontsize-20 color-999">暂时无法为您服务拉。</div>
             <div class="text-center mt20">
@@ -232,6 +270,11 @@
         </div>
     </div>
     <pre><code class="hljs html">
-        
+        <img class="img-responsive" src="alimama/design/web/component/assets/404-01.svg">
+        <div class="text-center fontsize-20 color-999">啊哦！思绪全乱了，让我静一静。</div>
+        <div class="text-center fontsize-20 color-999">暂时无法为您服务拉。</div>
+        <div class="text-center mt20">
+            <a href="/" class="btn btn-brand">返回首页</a>
+        </div>
     </code></pre>
 </div>
