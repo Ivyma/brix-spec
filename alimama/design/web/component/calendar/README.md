@@ -79,7 +79,17 @@
             <div class="color-999 mt6">图表默认显示某一时间范围的效果统计，若需再指定一个日期或日期范围进行对比时，需要保证所选的天数一致。</div>
         </div>
         <div class="content-body">
-            <div id="case2" bx-name="components/datepickerwrapper" 
+            <div id="reference" 
+                bx-name="components/datepickerwrapper" 
+                data-dates="['2015-1-1', '2015-1-2']" 
+                data-shortcuts="false" 
+                class="datepickerwrapper-trigger">
+                <span data-index="0">2015-1-1</span> 至 <span data-index="1">2015-1-2</span>
+                <i class="brixfont pull-right ml5 down">&#xe623;</i>
+                <i class="brixfont pull-right ml5 up">&#xe62e;</i>
+            </div>
+            <div id="later"
+                bx-name="components/datepickerwrapper" 
                 data-dates="['2015-1-1', '2015-1-2']" 
                 data-shortcuts="false" 
                 class="datepickerwrapper-trigger">
@@ -90,7 +100,17 @@
         </div>
     </div>
     <pre class="example-pre"><code class="hljs js">
-        <div id="case2" bx-name="components/datepickerwrapper" 
+        <div id="reference" 
+            bx-name="components/datepickerwrapper" 
+            data-dates="['2015-1-1', '2015-1-2']" 
+            data-shortcuts="false" 
+            class="datepickerwrapper-trigger">
+            <span data-index="0">2015-1-1</span> 至 <span data-index="1">2015-1-2</span>
+            <i class="brixfont pull-right ml5 down">&#xe623;</i>
+            <i class="brixfont pull-right ml5 up">&#xe62e;</i>
+        </div>
+        <div id="later"
+            bx-name="components/datepickerwrapper" 
             data-dates="['2015-1-1', '2015-1-2']" 
             data-shortcuts="false" 
             class="datepickerwrapper-trigger">
@@ -100,16 +120,21 @@
         </div>
     </code></pre>
     <pre class="example-pre"><code class="hljs js">
-        var case2 = Loader.query($('#case2'))[0]
-        var pickers = Loader.query('components/datepicker', case2.$relatedElement)
+        var reference = Loader.query($('#reference'))[0]
+        var later = Loader.query($('#later'))[0]
+        var pickers = Loader.query('components/datepicker', later.$relatedElement)
+        var diff
+        reference.on('change.datepickerwrapper', function(event, dates){
+            diff = dates[1].diff(dates[0], 'days')
+        })
         pickers[0].on('change.datepicker', function(event, date, type){
             pickers[1].val(
-                moment(date).add(1, 'month')
+                moment(date).add(diff, 'day')
             )
         })
         pickers[1].on('change.datepicker', function(event, date, type){
             pickers[0].val(
-                moment(date).add(-1, 'month')
+                moment(date).add(-1 * diff, 'day')
             )
         })
     </code></pre>
@@ -179,19 +204,24 @@
     require(['css!alimama/design/web/component/calendar/calendar.css'])
     require(['jquery', 'moment', 'brix/loader'], function($, moment, Loader) {
         Loader.boot(function(){
-            var case2 = Loader.query($('#case2'))[0]
-            var pickers = Loader.query('components/datepicker', case2.$relatedElement)
+            var reference = Loader.query($('#reference'))[0]
+            var later = Loader.query($('#later'))[0]
+            var pickers = Loader.query('components/datepicker', later.$relatedElement)
+            var diff
+            reference.on('change.datepickerwrapper', function(event, dates){
+                diff = dates[1].diff(dates[0], 'days')
+            })
             pickers[0].on('change.datepicker', function(event, date, type){
                 pickers[1].val(
-                    moment(date).add(1, 'month')
+                    moment(date).add(diff, 'day')
                 )
             })
             pickers[1].on('change.datepicker', function(event, date, type){
                 pickers[0].val(
-                    moment(date).add(-1, 'month')
+                    moment(date).add(-1 * diff, 'day')
                 )
             })
-
+            
             var case41 = Loader.query($('#case41'))[0]
             var case42 = Loader.query($('#case42'))[0]
             case41.on('change.datepicker', function(event, date, type) {
